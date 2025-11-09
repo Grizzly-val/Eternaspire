@@ -7,7 +7,7 @@ public class SkillScroll extends Consumables{
 
     private Skill newSkill;
     public SkillScroll(String cutsceneID, Skill newSkill) {
-        super("name", "Read to learn new skill", "Skill Scroll", cutsceneID);
+        super("Skill Scroll", "Read to learn new skill", "Scroll", cutsceneID);
         this.newSkill = newSkill;
     }
 
@@ -16,6 +16,7 @@ public class SkillScroll extends Consumables{
         System.out.println("You've learned " + newSkill.getName() + "!");
         System.out.println(newSkill.getDescription());
         player.learnSkill(newSkill);
+        player.getInventory().remove(this);
     }
     
 }

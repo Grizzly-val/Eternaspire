@@ -86,7 +86,7 @@ public class PlayerInventory extends Inventory {
         int choice = -1;
 
         while(item == null){
-            choice = OptionSelect.intInput(choice);
+            choice = OptionSelect.getArrIndex(wpnInventory.size());
             item = wpnInventory.get(choice);
         }
 
@@ -102,7 +102,7 @@ public class PlayerInventory extends Inventory {
         int choice = -1;
 
         while(item == null){
-            choice = OptionSelect.intInput(choice);
+            choice = OptionSelect.getArrIndex(potionInventory.size());
             item = potionInventory.get(choice);
         }
 
@@ -114,13 +114,13 @@ public class PlayerInventory extends Inventory {
         if(!keyInventory.isEmpty()){
             Key item = null;
             for(int i = 0; i < keyInventory.size(); i++){
-                System.out.println(i + " - " + keyInventory.get(i).getName());
+                System.out.println(i + 1 + " - " + keyInventory.get(i).getName());
             }
             int choice = -1;
 
             while(item == null){
-                choice = OptionSelect.intInput(choice);
-                item = keyInventory.get(choice);
+                choice = OptionSelect.getArrIndex(keyInventory.size());
+                item = keyInventory.get(choice - 1);
             }
 
             return item;
@@ -137,7 +137,7 @@ public class PlayerInventory extends Inventory {
         int choice = -1;
 
         while(item == null){
-            choice = OptionSelect.intInput(choice);
+            choice = OptionSelect.getArrIndex(skillScrollInventory.size());
             item = skillScrollInventory.get(choice);
         }
 

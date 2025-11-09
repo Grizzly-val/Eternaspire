@@ -15,7 +15,6 @@ public class AreaInventory extends Inventory {
     @Override
     public void add(Item item) {
         items.add(item);
-        System.out.println(item.getName() + " added to " + getName());
     }
 
     @Override
@@ -38,7 +37,7 @@ public class AreaInventory extends Inventory {
         Item selected = null;
 
         while (selected == null) {
-            choice = OptionSelect.intInput(choice);
+            choice = OptionSelect.getArrIndex(items.size());
             if (choice - 1 >= 0 && choice - 1 < items.size()) {
                 selected = items.get(choice - 1);
             } else {

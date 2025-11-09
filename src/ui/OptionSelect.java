@@ -2,7 +2,7 @@ package ui;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public abstract class OptionSelect {
+public final class OptionSelect {
     static Scanner sc = new Scanner(System.in);
 
 
@@ -11,9 +11,8 @@ public abstract class OptionSelect {
 
             try{
                 n = sc.nextInt();
-                System.out.println();
             }catch(InputMismatchException ime){
-                System.out.println("\nError!\n" + ime);
+                System.out.println("\n!! Error - " + ime + " !!");
                 sc.nextLine();
                 return -1;
             }
@@ -21,12 +20,32 @@ public abstract class OptionSelect {
             return n;
     }
 
+    public static int getArrIndex(int size){
+        int index = -1;
+
+        while(index <= 0 || index > size){
+            try{
+                System.out.print("Enter index: ");
+                index = sc.nextInt();
+            }catch(InputMismatchException ime){
+                System.out.println("\n!! Error - " + ime + " !!");
+                index = -1;
+                sc.nextLine();
+            }
+            if(index <= 0 || index > size){
+                System.out.println("\n!! Invalid index !!");
+            }
+        }
+        sc.nextLine();
+        return index;
+    }
+
     public static char charInput(char c){
         try{
             System.out.print("Choose: ");
             c = sc.nextLine().charAt(0);
         }catch(Exception e){
-            System.out.println(e);
+            System.out.println("\n!! Error - " + e + " !!");
             return '\0';
         }
         return c;
@@ -37,7 +56,7 @@ public abstract class OptionSelect {
             System.out.print("What do you want to do here?\nChoose: ");
             s = sc.nextLine();
         }catch(Exception e){
-            System.out.println(e);
+            System.out.println("\n!! Error - " + e + " !!");
             return "";
         }
         return s;

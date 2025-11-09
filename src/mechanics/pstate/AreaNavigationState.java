@@ -13,35 +13,42 @@ public class AreaNavigationState implements PlayerState {
     public void enterState(Challenger player) {
 
         System.out.println();
+        System.out.println("| You're in Eternaspire " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor: " + player.getCurrentFloor().getName() + "...");
+
+        System.out.println("------------------------------------------------------------");
         System.out.println();
-
-        System.out.println("You're in Eternaspire " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor: " + player.getCurrentFloor().getName() + "...");
-
-
-        System.out.println("What would you like to do?");
+        System.out.println("| What would you like to do?");
+        System.out.println("------------------------------------------------------------");
         char choice = '\0';
 
-        while(choice != 'b' && choice != 's'){
-            System.out.println();
-            System.out.println("b - Go back                 (Floor navigation)");
-            System.out.println("s - Explore Floor           (Area navigation)");
-            System.out.println();
+        while(choice != 'b' && choice != 'e'){
+            System.out.println("[b] - Go back                 (Floor navigation)");
+            System.out.println("[e] - Explore Floor           (Area navigation)");
+            System.out.println("------------------------------------------------------------");
             choice = OptionSelect.charInput(choice);
+            System.out.println("------------------------------------------------------------");
 
             switch(choice){
                 case 'b':
-                    System.out.println("Going back to floor navigation...");
+                    System.out.println();
+                    System.out.println();
+                    System.out.println("| Going back to floor navigation >>");
+                    System.out.println();
                     player.setState(player.getFloorNavState());
                     break;
-                case 's':
+                case 'e':
+                    System.out.println();
+                    System.out.println("| Exploring floor " + player.getCurrentFloor().getNumber() + " >>");
+                    System.out.println();
                     player.moveArea(chooseFloorAreas(player));
                     System.out.println();
-                    System.out.println("Entering " + player.getCurrentArea().getName());
+                    System.out.println("| Entering Area \"" + player.getCurrentArea().getName() + "\" >>");
                     System.out.println();
                     player.setState(player.getIdleAreaState());
                     break;
                 default:
-                    System.out.println("Invalid Input!");
+                    System.out.println();
+                    System.out.println("!! Invalid Input !!");
                     break;
             }
         }
@@ -51,17 +58,21 @@ public class AreaNavigationState implements PlayerState {
 
 
     public Area chooseFloorAreas(Challenger player){
-        for(Entry<Integer, Area> parentAreaEntry : player.getCurrentFloor().getAreas().entrySet()){
-            System.out.println(parentAreaEntry.getKey() + " - " + parentAreaEntry.getValue().getName());
-        }
-
         Area areaEntered = null;
 
         System.out.println();
         while(areaEntered == null){
-            System.out.print("Move area: ");
+            System.out.println("          | Floor Areas |");
+            System.out.println("------------------------------------");
+            for(Entry<Integer, Area> parentAreaEntry : player.getCurrentFloor().getAreas().entrySet()){
+                System.out.println(parentAreaEntry.getKey() + " - " + parentAreaEntry.getValue().getName());
+            }
+            System.out.println("------------------------------------");
+
+            System.out.print("| Select area >> ");
             areaEntered = player.getCurrentFloor().getFloorArea(OptionSelect.intInput(-1));
-            if(areaEntered == null) System.out.println("Area not found");
+            if(areaEntered == null) System.out.println("!! Area not found !!\n\n");
+            System.out.println("------------------------------------");
         }
 
         return areaEntered;

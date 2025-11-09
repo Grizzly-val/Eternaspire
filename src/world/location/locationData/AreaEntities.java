@@ -1,6 +1,8 @@
 package world.location.locationData;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map.Entry;
 
 import entity.tower_entity.Echo;
@@ -8,7 +10,7 @@ import entity.tower_entity.Remnant;
 import ui.OptionSelect;
 
 public class AreaEntities {
-    private HashMap<Integer, Remnant> areaRemnants = new HashMap<>();
+    private ArrayList<Remnant> areaRemnants = new ArrayList<>();
     private Echo areaEcho = null;
     private int areaRemnantsChoice = 1;
 
@@ -30,20 +32,27 @@ public class AreaEntities {
     public int getRemnantCount(){return areaRemnants.size();}
 
     public void addRemnant(Remnant remnant){
-        areaRemnants.put(areaRemnantsChoice++, remnant);
+        areaRemnants.add(remnant);
     }
+
+    public void remnantDefeated(Remnant remnant){
+        areaRemnants.remove(remnant);
+    }
+
     public void setEcho(Echo echo){
         this.areaEcho = echo;
     }
+
 
     public Remnant fightRemnant(){
         if(!this.hasRemnant()){
             return null;
         }
-
-        for(Entry<Integer, Remnant> remnant : areaRemnants.entrySet()){
-            System.out.println(remnant.getKey() + " - " + remnant.getValue().getName());
+        System.out.println("-------------------------------------------------------------");
+        for(int i = 0; i < areaRemnants.size(); i++){
+            System.out.println("[" + (i + 1) + "] - " + areaRemnants.get(i).getName());
         }
+        System.out.println("-------------------------------------------------------------");
         Remnant chosenRemnant = null;
 
         if(this.hasEcho()){
@@ -52,11 +61,15 @@ public class AreaEntities {
 
         while(chosenRemnant == null){
             System.out.println("Pick a remnant to fight.");
-            chosenRemnant = areaRemnants.get(OptionSelect.intInput(-1));
+            System.out.println("-------------------------------------------------------------");
+            chosenRemnant = areaRemnants.get(OptionSelect.getArrIndex(areaRemnants.size()) - 1);
             if(chosenRemnant == null) System.out.println("Invalid Remnant Choice!");
         }
         return chosenRemnant;
     }
+
+
+
 
     public Echo fightEcho(){
         char fightEchoChoice = '\0';

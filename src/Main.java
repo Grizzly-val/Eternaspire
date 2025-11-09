@@ -6,8 +6,12 @@ import world.location.locationData.FloorData;
 
 public class Main {
     public static void main(String[] args){
+        System.out.println();
+
         initWorldData();
 
+        System.out.println();
+        
         Mercenary player = new Mercenary();
 
         player.play();
