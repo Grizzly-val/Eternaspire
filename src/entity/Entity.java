@@ -1,26 +1,21 @@
 package entity;
 
-import entity.player.Challenger;
-import entity.tower_entity.TowerEntity;
 import mechanics.battleMechanics.battle.Battle;
-import mechanics.battleMechanics.skill.Skill;
 
 public abstract class Entity {
 
     private String name;
     private String description;
-    private String story;
     protected int lvl;
     protected int hp;
     protected int atk;
     protected int maxHp;
     private int lastDamage = 0;
 
-    public Entity(String name, String description, String story, int lvl, int hp, int maxHp, int atk){
+    public Entity(String name, String description, int lvl, int hp, int maxHp, int atk){
         this.lvl = lvl;
         this.name = name;
         this.description = description;
-        this.story = story;
         this.hp = hp;
         this.maxHp = maxHp;
         this.atk = atk;
@@ -33,7 +28,6 @@ public abstract class Entity {
 
     public String getName(){return name;}
     public String getDescription(){return description;}
-    public String getStory(){return story;}
 
     public abstract void basicAttack(Entity opponent);
     public abstract void usePassiveSkill(Battle battle);
@@ -66,7 +60,7 @@ public abstract class Entity {
 
 
     public void dmgAttack(Entity attackReceiver, int damage) {
-        damage = (int)((Math.random() * 11) + (damage - 5));
+        if(damage >= 5) damage = (int)((Math.random() * 11) + (damage - 5));
         System.out.println("| " + name + " hits " + attackReceiver.getName() + " for " + damage + " damage!");
         attackReceiver.takeDamage(damage);
     }

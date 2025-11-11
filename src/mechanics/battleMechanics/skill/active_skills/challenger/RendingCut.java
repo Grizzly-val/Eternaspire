@@ -1,4 +1,4 @@
-package mechanics.battleMechanics.skill.active_skills;
+package mechanics.battleMechanics.skill.active_skills.challenger;
 
 import mechanics.battleMechanics.battle.Battle;
 import mechanics.battleMechanics.skill.ActiveSkill;

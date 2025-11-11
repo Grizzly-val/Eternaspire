@@ -3,7 +3,6 @@ package world.location;
 import java.util.ArrayList;
 
 import mechanics.inventory.AreaInventory;
-import mechanics.inventory.PlayerInventory;
 import world.location.locationData.AreaEntities;
 
 public class Area extends Location {
@@ -17,6 +16,7 @@ public class Area extends Location {
 
     public Area(String name, String description, String lockID){
         super(name, description, lockID);
+        addInventory(new AreaInventory("Item Drops"));
     }
 
 

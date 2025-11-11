@@ -6,8 +6,6 @@ import world.location.locationData.FloorData;
 public class Floor extends Location{
     
     private int number;
-    private String name;
-    private String description;
 
     private HashMap<Integer, Area> areas = new HashMap<>();
     private int areaChoice = 1;

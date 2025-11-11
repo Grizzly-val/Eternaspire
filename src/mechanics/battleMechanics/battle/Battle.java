@@ -1,6 +1,5 @@
 package mechanics.battleMechanics.battle;
 
-import entity.Entity;
 import entity.player.Challenger;
 import entity.tower_entity.TowerEntity;
 import ui.OptionSelect;
@@ -57,17 +56,23 @@ public class Battle {
         System.out.println("[s] - Use Skill");
         System.out.println("-------------------------------");
 
-        char choice = OptionSelect.charInput('\0');
-        System.out.println("-----------------------------------------------------------");
-        switch(choice){
-            case 'a':
-                CHALLENGER.basicAttack(TOWER_ENTITY);
-                System.out.println("-----------------------------------------------------------");
-                break;
-            case 's':
-                CHALLENGER.useActiveSkill(this);
-                System.out.println("-----------------------------------------------------------");
-                break;
+        char choice = '\0';
+        while(choice != 'a' && choice != 's'){
+            choice = OptionSelect.charInput('\0');
+            System.out.println("-----------------------------------------------------------");
+            switch(choice){
+                case 'a':
+                    CHALLENGER.basicAttack(TOWER_ENTITY);
+                    System.out.println("-----------------------------------------------------------");
+                    break;
+                case 's':
+                    CHALLENGER.useActiveSkill(this);
+                    System.out.println("-----------------------------------------------------------");
+                    break;
+                default:
+                    System.out.println("Invalid input");
+                    break;
+            }
         }
         
     }

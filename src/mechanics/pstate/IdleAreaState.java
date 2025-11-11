@@ -1,7 +1,5 @@
 package mechanics.pstate;
 
-import java.util.ArrayList;
-
 import entity.player.Challenger;
 import entity.tower_entity.Echo;
 import entity.tower_entity.Remnant;
@@ -17,6 +15,9 @@ public class IdleAreaState implements PlayerState {
     @Override
     public void enterState(Challenger player) {
         System.out.println();
+        System.out.println("-------------------");
+        System.out.println("| | Area Idling | |");
+        System.out.println("-------------------");
         System.out.println("Eternaspire " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor\nCurrent Area: " + player.getCurrentArea().getName());
         System.out.println("--------------------------------------------");
         System.out.println();
@@ -26,8 +27,8 @@ public class IdleAreaState implements PlayerState {
         char choice = '\0';
 
         while(choice != 'b'){
-            System.out.println("[b] - Go back");
-            System.out.println("[e] - Explore area");                 // battle || loot corpses, chests, etc || uncover mysteries
+            System.out.println("[b] - Go back           (Area Navigation)");
+            System.out.println("[e] - Explore area      (Challenge / Collect)");                 // battle || loot corpses, chests, etc || uncover mysteries
             System.out.println("--------------------------------------------");
             choice = OptionSelect.charInput(choice);
             System.out.println("--------------------------------------------");
@@ -41,7 +42,7 @@ public class IdleAreaState implements PlayerState {
                     player.setState(player.getAreaNavState());
                     break;
                 case 'e':
-                    System.out.println("| Exploring  " + player.getCurrentArea().getName() + " >>");
+                    System.out.println("| Exploring " + player.getCurrentArea().getName() + " >>");
                     explore(player);
                     player.setState(player.getIdleAreaState());
                     break;
@@ -56,12 +57,13 @@ public class IdleAreaState implements PlayerState {
         char choice = '\0';
         while(choice != 'b'){
             System.out.println();
-            System.out.println("| " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor");
-            System.out.println("| " + player.getCurrentArea().getName());
+            System.out.println("| Floor     :   " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor");
+            System.out.println("| Area:     :   " + player.getCurrentArea().getName());
             System.out.println("--------------------------------------------");
             System.out.println("[b] Go back         (,,,)");
             System.out.println("[f] Danger Foe      (fight)");
             System.out.println("[c] Collectibles    (loot)");
+            System.out.println("[i] Inventory     (Open inventory)");
             System.out.println("--------------------------------------------");
             choice = OptionSelect.charInput(choice);
             System.out.println("--------------------------------------------");
@@ -69,6 +71,9 @@ public class IdleAreaState implements PlayerState {
             System.out.println();
 
             switch(choice){
+                case 'i':
+                    player.getInventoryState().enterState(player);
+                    break;
                 case 'f':
                     System.out.println();
                     if(!player.getCurrentArea().getAreaEntities().isClear()){
@@ -133,6 +138,7 @@ public class IdleAreaState implements PlayerState {
                         break;
                     }
                 case 'e':
+                    System.err.println();
                     if(!pAreaEntities.hasEcho()) System.out.println("| This area holds no Echo.");
                     
                     else{
@@ -160,8 +166,9 @@ public class IdleAreaState implements PlayerState {
 
 
     public void lootArea(Challenger player){
-        if(player.getCurrentArea().getAreaInventories().isEmpty()){
+        if(player.getCurrentArea().getAreaInventories().size() == 1 && player.getCurrentArea().getAreaInventories().get(0).getItems().isEmpty()){
             System.out.println("| There is nothing here.");
+            System.out.println("--------------------------------------------");
             return;
         }
 
@@ -170,46 +177,61 @@ public class IdleAreaState implements PlayerState {
 
         while(continueChoice != 'n'){
 
+            int choice = -1;
+            AreaInventory areaInv = null;
+            System.out.println("| Choose where to search");
+            System.out.println("--------------------------------------------");
             for(int i = 0; i < player.getCurrentArea().getAreaInventories().size(); i++){
                 System.out.println(i + 1 + " - " + player.getCurrentArea().getAreaInventories().get(i).getName());
             }
 
-            int choice = -1;
-            AreaInventory areaInv = null;
-            System.out.println("| Loot your heart out!");
-            while(areaInv == null){
-                choice = OptionSelect.getArrIndex(player.getCurrentArea().getAreaInventories().size());
-                areaInv = player.getCurrentArea().getAreaInventories().get(choice - 1);
-                if(areaInv == null){
-                    System.out.println("!! Invalid input !!");
-                }
-            }
+            System.out.println("--------------------------------------------");
+            choice = OptionSelect.getArrIndex(player.getCurrentArea().getAreaInventories().size());
+            System.out.println();
+            areaInv = player.getCurrentArea().getAreaInventories().get(choice - 1);
+            
+            System.out.println();
 
 
             
             System.out.println("| You approached a " + areaInv.getName());
             if(areaInv.getItems().isEmpty()){
-                System.out.println();
                 System.out.println("| " + areaInv.getName() + " is empty");
+                System.out.println("--------------------------------------------");
             }
             
             else{
+                System.out.println("--------------------------------------------");
                 char choiceWithItem = '\0';
                 Item selectedItem = areaInv.selectItem();
+                System.out.println("--------------------------------------------");
+                System.out.println();
                 System.out.println("| You've selected " + selectedItem.getName());
-                System.out.println(selectedItem.getDescription());
+                System.out.println("|? " + selectedItem.getDescription());
+                System.out.println("--------------------------------------------");
 
                 while(choiceWithItem != 't' && choiceWithItem != 'p'){
+                    System.out.println();
+                    System.out.println("| Do you need the item?");
+                    System.out.println("--------------------------------------------");
                     System.out.println("[t] take item");
                     System.out.println("[p] put it back");
+                    System.out.println("--------------------------------------------");
                     choiceWithItem = OptionSelect.charInput(choiceWithItem);
+                    System.out.println("--------------------------------------------");
                     switch(choiceWithItem){
                         case 't':
-                            player.getInventory().add(selectedItem);
+                            System.out.println();
+                            System.out.println("| Item collected");
+                            player.storeItem(selectedItem);
+                            System.out.println();
                             areaInv.remove(selectedItem);
+                            System.out.println("--------------------------------------------");
                             break;
                         case 'p':
-                            System.out.println("| Can't take them all");
+                            System.out.println();
+                            System.out.println("| Can't take them all...");
+                            System.out.println("--------------------------------------------");
                             break;
                         default:
                             break;
@@ -218,23 +240,26 @@ public class IdleAreaState implements PlayerState {
 
             }
 
-            System.out.print("| Would you like to continue looting?\ny/n: ");
-            continueChoice = OptionSelect.charInput(continueChoice);
-            System.out.println();
-            switch(continueChoice){
-                case 'y':
-                    System.out.println("| Collecting is fun, but don't forget what you came here for.");
-                    break;
-                case 'n':
-                    System.out.println("| Going back >>");
-                    return;
-                default:
-                    System.out.println("!! Invalid input !!");
-                    break;
-            }
+                System.out.println();
+                System.out.print("| Would you like to continue looting? (y/n)");
+                System.out.println();
+                continueChoice = OptionSelect.charInput(continueChoice);
+                System.out.println("--------------------------------------------");
+                System.out.println();
+                switch(continueChoice){
+                    case 'y':
+                        System.out.println("| Collecting is fun, but don't forget what you came here for.");
+                        break;
+                    case 'n':
+                        System.out.println("| Going back >>");
+                        return;
+                    default:
+                        System.out.println("!! Invalid input !!");
+                        break;
+                }
             System.out.println();
         
-        }
+            }
 
         
         

@@ -1,6 +1,7 @@
 package world.location.locationData;
 
 import world.location.Area;
+import world.location.Floor;
 
 public final class AreaData {
 
@@ -8,8 +9,10 @@ public final class AreaData {
     // if Area is ParentArea, player can goUp and goDown.
 
     static{
-        new Area("Ground Floor Area One", "Ground Floor Area One Description", "nolock").addArea(FloorData.getFloor(0));
-        new Area("Floor 1 Area One", "Floor 1 Area One Description", "nolock").addArea(FloorData.getFloor(1));
-        new Area("Floor 1 Area Two", "Floor 1 Area Two Description", "nolock").addArea(FloorData.getFloor(1));
+        Floor floorPtr = FloorData.getFloor(0); //  Zeroth Floor
+            new Area("The Lobby of Descent", "The start of the spiral", "nolock").addArea(floorPtr);
+
+        floorPtr = FloorData.getFloor(1);    //  First floor
+
     }
 }

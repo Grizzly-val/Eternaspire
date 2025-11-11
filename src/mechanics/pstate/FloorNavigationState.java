@@ -12,6 +12,9 @@ public class FloorNavigationState implements PlayerState {
         System.out.println();
         System.out.println("The recursive tower known as Eternaspire—where every step repeats the last.");
         System.out.println();
+        System.out.println("------------------------");
+        System.out.println("| | Floor Navigation | |");
+        System.out.println("------------------------");
         System.out.println(">   Eternaspire's " + Format.getOrdinal(pCurrFloor.getNumber()) + " floor - \"The "+ pCurrFloor.getName() + "\"");
         System.out.println(">   " + pCurrFloor.getDescription());
         System.out.println();
@@ -20,21 +23,24 @@ public class FloorNavigationState implements PlayerState {
             char choice = '\0';
             while(choice != 's'){
                 System.out.println("------------------------------------------------------------");
-                System.out.println("[a] - Ascend\n[d] - Descend\n[s] - Stay on current floor");
+                System.out.println("[a] - Ascend\n[d] - Descend\n[s] - Stay on current floor\n[i] - Open inventory");
                 System.out.println("------------------------------------------------------------");
                 choice = OptionSelect.charInput(choice);
                 System.out.println("------------------------------------------------------------");
                 System.out.println();
                 switch(choice){
+                    case 'i':
+                        player.getInventoryState().enterState(player);
+                        break;
                     case 'a':
                         System.out.println();
                         player.goUp();
-                        System.out.println("| You are now at floor " + player.getCurrentFloor().getNumber() + ": " + player.getCurrentFloor().getName());
+                        System.out.println("| You are at floor " + player.getCurrentFloor().getNumber() + ": " + player.getCurrentFloor().getName());
                         break;
                     case 'd':
                         System.out.println();
                         player.goDown();
-                        System.out.println("| You are now at floor " + player.getCurrentFloor().getNumber() + ": " + player.getCurrentFloor().getName());
+                        System.out.println("| You are at floor " + player.getCurrentFloor().getNumber() + ": " + player.getCurrentFloor().getName());
                         break;
                     case 's':
                         System.out.println();

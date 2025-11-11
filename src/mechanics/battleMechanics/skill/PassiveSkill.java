@@ -1,6 +1,5 @@
 package mechanics.battleMechanics.skill;
 
-import entity.Entity;
 import mechanics.battleMechanics.battle.Battle;
 
 public abstract class PassiveSkill extends Skill{

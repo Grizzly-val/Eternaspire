@@ -9,10 +9,8 @@ public final class FloorData {
 
     static{
         int n = 0;
-        addFloor(n++, "Ground floor", "The lowest you will ever be after entering Eternaspire.", "nolock");
-        addFloor(n++, "Name for Floor 1", "Description for floor 1", "zeroth_to_first_FloorKey");
-        addFloor(n++, "Name for Floor 2", "Description for floor 2", "nolock");
-        addFloor(n++, "Name for Floor 3", "Description for floor 3", "nolock");
+        addFloor(n++, "The Beginning of No End", "Eternaspire's Entry Point", "nolock");
+        addFloor(n++, "The Platform of Nadir", "A still platform at the spiral's starting end, heavy with the weight of descent.", "zeroth_to_first_FloorKey");
     }
 
     private FloorData(){};      // Prevents instantiation

@@ -5,6 +5,7 @@ import java.util.Map.Entry;
 import entity.player.Challenger;
 import ui.Format;
 import ui.OptionSelect;
+import world.item.consumables.Key;
 import world.location.Area;
 
 public class AreaNavigationState implements PlayerState {
@@ -13,6 +14,9 @@ public class AreaNavigationState implements PlayerState {
     public void enterState(Challenger player) {
 
         System.out.println();
+        System.out.println("-----------------------");
+        System.out.println("| | Area Navigation | |");
+        System.out.println("-----------------------");
         System.out.println("| You're in Eternaspire " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor: " + player.getCurrentFloor().getName() + "...");
 
         System.out.println("------------------------------------------------------------");
@@ -24,11 +28,15 @@ public class AreaNavigationState implements PlayerState {
         while(choice != 'b' && choice != 'e'){
             System.out.println("[b] - Go back                 (Floor navigation)");
             System.out.println("[e] - Explore Floor           (Area navigation)");
+            System.out.println("[i] - Inventory               (Open inventory)");
             System.out.println("------------------------------------------------------------");
             choice = OptionSelect.charInput(choice);
             System.out.println("------------------------------------------------------------");
 
             switch(choice){
+                case 'i':
+                    player.getInventoryState().enterState(player);
+                    break;
                 case 'b':
                     System.out.println();
                     System.out.println();
@@ -40,11 +48,18 @@ public class AreaNavigationState implements PlayerState {
                     System.out.println();
                     System.out.println("| Exploring floor " + player.getCurrentFloor().getNumber() + " >>");
                     System.out.println();
-                    player.moveArea(chooseFloorAreas(player));
+                    Area newArea = chooseFloorAreas(player);   // later implement player.moveArea(newArea);
+                    if(newArea != null){
+                        System.out.println();
+                        System.out.println();
+                        System.out.println("| Entering Area \"" + player.getCurrentArea().getName() + "\" >>");
+                        player.moveArea(newArea);
+                        player.setState(player.getIdleAreaState());
+                    }
+                    else{
+                        player.setState(player.getAreaNavState());
+                    }
                     System.out.println();
-                    System.out.println("| Entering Area \"" + player.getCurrentArea().getName() + "\" >>");
-                    System.out.println();
-                    player.setState(player.getIdleAreaState());
                     break;
                 default:
                     System.out.println();
@@ -75,7 +90,21 @@ public class AreaNavigationState implements PlayerState {
             System.out.println("------------------------------------");
         }
 
-        return areaEntered;
+        if(areaEntered.isLocked()){
+            System.out.println();
+            System.out.println("| " + areaEntered.getName() + " is locked");
+            System.out.println();
+            Key key = player.getInventory().getKey();
+            if(key != null){
+                key.consume(player, areaEntered);
+            } else System.out.println("| You do not have any key.\n| The key must be somewhere in Eternaspire\n");
+
+            return null;
+        }
+        else{
+            return areaEntered;
+        }
+        
 
     }
 

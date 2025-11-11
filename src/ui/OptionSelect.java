@@ -25,7 +25,7 @@ public final class OptionSelect {
 
         while(index <= 0 || index > size){
             try{
-                System.out.print("Enter index: ");
+                System.out.print("Choose: ");
                 index = sc.nextInt();
             }catch(InputMismatchException ime){
                 System.out.println("\n!! Error - " + ime + " !!");
@@ -33,7 +33,8 @@ public final class OptionSelect {
                 sc.nextLine();
             }
             if(index <= 0 || index > size){
-                System.out.println("\n!! Invalid index !!");
+                System.out.println("!! Invalid index !!");
+                System.out.println();
             }
         }
         sc.nextLine();
@@ -51,9 +52,29 @@ public final class OptionSelect {
         return c;
     }
 
+    public static boolean yesOrNo(){
+        char choice = '\0';
+
+        while(true){
+            try{
+                System.out.print("(y/n): ");
+                choice = sc.nextLine().trim().toLowerCase().charAt(0);
+            }catch(Exception e){
+                System.out.println("\n!! Error - " + e + " !!");
+                continue;
+            }
+
+            if(choice == 'y') return true;
+            else if(choice == 'n') return false;
+            else{
+                System.out.println("\n!! Invalid choice. Please enter y or n !!");
+            }
+        }
+    }
+
     public static String stringInput(String s){
         try{
-            System.out.print("What do you want to do here?\nChoose: ");
+            System.out.print("Choose: ");
             s = sc.nextLine();
         }catch(Exception e){
             System.out.println("\n!! Error - " + e + " !!");

@@ -1,9 +1,6 @@
 package world.location.locationData;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map.Entry;
 
 import entity.tower_entity.Echo;
 import entity.tower_entity.Remnant;
@@ -12,7 +9,6 @@ import ui.OptionSelect;
 public class AreaEntities {
     private ArrayList<Remnant> areaRemnants = new ArrayList<>();
     private Echo areaEcho = null;
-    private int areaRemnantsChoice = 1;
 
     public AreaEntities(){
     }
@@ -41,6 +37,11 @@ public class AreaEntities {
 
     public void setEcho(Echo echo){
         this.areaEcho = echo;
+    }
+
+    public void echoDefeated(){
+        System.out.println();
+        this.areaEcho = null;
     }
 
 
@@ -73,22 +74,29 @@ public class AreaEntities {
 
     public Echo fightEcho(){
         char fightEchoChoice = '\0';
-        System.out.println("The Remnants have perished, leaving behind a single whisper—an Echo that refuses to fade.");
-        System.out.println("Echo: " + areaEcho.getName());
-        System.out.println(areaEcho.getDescription());
-        System.out.println(areaEcho.getStory());
-
-        System.out.println("Would you like to fight echo? (y/n): ");
+        System.out.println("| The Remnants have perished, leaving behind a single whisper—an Echo that refuses to fade.");
+        System.out.println();
+        System.out.println("| Echo  :   " + areaEcho.getName());
+        System.out.println("| > " + areaEcho.getDescription());
+        System.out.println();
+        System.out.println("| Would you like to fight echo? (y/n): ");
+        System.out.println();
         fightEchoChoice = OptionSelect.charInput(fightEchoChoice);
+        System.out.println();
         switch(fightEchoChoice){
             case 'y':
-                System.out.println("You challenge a Remnant manifested from the lingering desire of single fallen soul — an Echo. Prepare yourself.");
+                System.out.println();
+                System.out.println("| You challenge a Remnant manifested from the lingering desire of single fallen soul — an Echo. Prepare yourself.");
                 return this.areaEcho;
             case 'n':
-                System.out.println("Even Eternaspire's Echoes wait for those who hesitate... take your time.");
+                System.out.println();
+                System.out.println("| Even Eternaspire's Echoes wait for those who hesitate... take your time.");
+                System.out.println();
                 return null;
             default:
-                System.out.println("I sense hesitation, you don't seem to be ready. Your answer must be a straightforward yes or no.");
+                System.out.println();
+                System.out.println("| I sense hesitation, you don't seem to be ready. Your answer must be a straightforward yes or no.");
+                System.out.println();
                 return null;
             }
     }

@@ -1,8 +1,7 @@
 package entity.tower_entity.remnants;
 import entity.Entity;
 import entity.tower_entity.Remnant;
-import mechanics.battleMechanics.battle.Battle;
-import mechanics.battleMechanics.skill.active_skills.ElementalThrow;
+import mechanics.battleMechanics.skill.active_skills.tower_entity.ElementalThrow;
 
 public class ElementalBlob extends Remnant {
 
@@ -11,13 +10,13 @@ public class ElementalBlob extends Remnant {
     private final static int BASE_ATK = 7;
     
     public ElementalBlob(int lvl) {
-        super((int)(BASE_HP * lvl * 0.17),
-        (int)(BASE_HP * lvl * 0.17),
-        (int)(BASE_ATK * lvl * 0.19), 
+        super((int)(BASE_HP * Math.pow(1.00 + 0.17, lvl - 1)),
+        (int)(BASE_HP * Math.pow(1.00 + 0.17, lvl - 1)),
+        (int)(BASE_ATK * Math.pow(1.00 + 0.14, lvl - 1)), 
         lvl,
         "Elemental Blob",
         "write description here",
-        "write story here",
+        "The Elemental Blob collapses into a quiet puddle, its shimmer fading into the floor.",
         new ElementalThrow(),
         null);
     }
@@ -27,18 +26,6 @@ public class ElementalBlob extends Remnant {
         System.out.println("| " + this.getName() + " flungs an Elemental Throw!");
         dmgAttack(opponent, atk);
     }
-
-    @Override
-    public void defeated(Battle battle){
-        System.out.println();
-        System.out.println("| " + getName() + " has been defeated.");
-        System.out.println("| The Elemental Blob collapses into a quiet puddle, its shimmer fading into the floor.");
-        battle.getChallenger().resetLastDamage();
-        battle.getChallenger().gainXp((int)(lvl * (1.00 + Math.random())));
-        battle.getChallenger().getCurrentArea().getAreaEntities().remnantDefeated(this);
-    }
-
-
 
     
 }

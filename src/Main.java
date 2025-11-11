@@ -1,4 +1,5 @@
 import entity.player.Mercenary;
+import ui.TextTyper;
 import world.location.locationData.AreaData;
 import world.location.locationData.AreaEntityData;
 import world.location.locationData.AreaInventoryData;

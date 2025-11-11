@@ -9,8 +9,8 @@ public abstract class Remnant extends TowerEntity{
     private ActiveSkill aSkill = null;
     private PassiveSkill pSkill = null;
     
-    public Remnant(int hp, int maxHp, int atk, int lvl, String name, String description, String story, ActiveSkill aSkill, PassiveSkill pSkill){
-        super(name, description, story,  lvl, hp, maxHp, atk);
+    public Remnant(int hp, int maxHp, int atk, int lvl, String name, String description, String defeatMessage, ActiveSkill aSkill, PassiveSkill pSkill){
+        super(name, description, lvl, hp, maxHp, atk, defeatMessage);
         this.aSkill = aSkill;
         this.pSkill = pSkill;
     }
@@ -25,7 +25,6 @@ public abstract class Remnant extends TowerEntity{
     @Override
     public void useActiveSkill(Battle battle){
         if(aSkill != null){
-            System.out.println(this.getName() + " used " + aSkill.getName());
             if(Math.random() < 0.4) { 
                 aSkill.activate(battle);
                 return;
