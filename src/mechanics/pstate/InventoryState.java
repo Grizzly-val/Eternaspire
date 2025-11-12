@@ -1,6 +1,8 @@
 package mechanics.pstate;
 
 import entity.player.Challenger;
+import mechanics.battleMechanics.skill.ActiveSkill;
+import mechanics.battleMechanics.skill.PassiveSkill;
 import ui.OptionSelect;
 import world.item.consumables.Food;
 import world.item.consumables.Key;
@@ -25,20 +27,27 @@ public class InventoryState implements PlayerState{
             System.out.println("|> Name   :   " + player.getName());
             System.out.println("|> Job    :   " + player.getJob());
 
-            // HP, SP, ATK line
+
             System.out.printf(statFormat + "\n", 
                 "HP", player.getHp(), 
                 "SP", player.getSkillPts(), 
                 "ATK", player.getAtk()
             );
 
-            // LVL and XP line
-            System.out.println(String.format("|> %-6s :   %-10s |> %-4s :   %s/%s", 
-                "LVL", player.getLvl(), 
-                "XP", player.getXp(), player.getMaxXp()
-            ));
+            
+            System.out.println(String.format("|> %-6s :   %-10s |> %-4s :   %s/%s      |> %-6s :   %s",
+                    "LVL", player.getLvl(),
+                    "XP", player.getXp(), player.getMaxXp(),
+                    "INV", player.getInventory().getOccupiedSpace() + "/" + player.getInventory().getCapacity()
+                ));
+
+            if(player.getEquippedWeapon() != null) System.out.println("|> Weapon : " + player.getEquippedWeapon().getName());
+            else System.out.println("|> Weapon : NONE");
+            
             System.out.println("----------------------------------------");
             System.out.println("[b] - Go back       (Exit inventory)");
+            System.out.println("[l] - skill list    (Check skills)");
+            System.out.println("----------------------------------------");
             System.out.println("[f] - Food          (Consume food)");
             System.out.println("[w] - Weapon        (Equip Weapon)");
             System.out.println("[s] - Skill Scroll  (Learn skill)");
@@ -48,10 +57,46 @@ public class InventoryState implements PlayerState{
             choice = OptionSelect.charInput(choice);
             switch(choice){
                 case 'b':
+
                     System.out.println("----------------------------------------");
                     System.out.println();
                     System.out.println("| Exitting inventory >>");
                     System.out.println();
+                    break;
+
+                case 'l':
+                    System.out.println("----------------------------------------");
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println("----------------");
+                    System.out.println("|Active Skills|");
+                    System.out.println("----------------");
+                    int i = 1;
+                    if(player.getActiveSkillSet().isEmpty()){
+                        System.out.println("| Active skill set is empty");
+                    }
+                    else{
+                        for(ActiveSkill aSkill : player.getActiveSkillSet()){
+                        System.out.println("| " + i++ + ". " + aSkill.getName() + "[" + aSkill.getPtUse() + "sp]");
+                        System.out.println("\t| " + aSkill.getDescription());
+                        }    
+                    }
+
+                    System.out.println();
+                    System.out.println("----------------");
+                    System.out.println("|Active Skills|");
+                    System.out.println("----------------");
+                    if(player.getPassiveSkillSet().isEmpty()){
+                        System.out.println("| Passive skill set is empty");
+                    }
+                    else{
+                        i = 1;
+                        for(PassiveSkill pSkill : player.getPassiveSkillSet()){
+                            System.out.println("| " + i++ + ". " + pSkill.getName());
+                            System.out.println("\t| " + pSkill.getDescription());
+                        }
+                    }
                     break;
                 case 'f':
                     System.out.println();
@@ -120,7 +165,7 @@ public class InventoryState implements PlayerState{
                                 }
                                 else{
                                     System.out.println();
-                                    System.out.println("| As long as you cant defend yourself...");
+                                    System.out.println("| As long as you can defend yourself...");
                                 }
                                 System.out.println();
                                 break;

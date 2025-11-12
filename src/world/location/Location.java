@@ -1,6 +1,6 @@
 package world.location;
 
-public class Location {
+public abstract class Location {
     
     private String name;
     private String description;

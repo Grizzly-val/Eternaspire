@@ -1,6 +1,7 @@
 package world.item.consumables;
 
 import entity.player.Challenger;
+import mechanics.cutscene.CutsceneManager;
 import ui.Format;
 import world.location.Area;
 import world.location.Floor;
@@ -9,9 +10,9 @@ public class Key extends Consumables{
 
     private String keyID;
 
-    public Key(String name, String description, String id, String cutsceneID) {
+    public Key(String name, String description, String keyID, String cutsceneID) {
         super(name, description, cutsceneID, 1);
-        this.keyID = id;
+        this.keyID = keyID;
     }
 
     public String getKeyID(){return keyID;}
@@ -19,6 +20,7 @@ public class Key extends Consumables{
     public void consume(Challenger player, Object target) {
         if (target instanceof Area area) {
             if (keyID.equals(area.getLockID())) {
+                triggerCutscene(this.getCutsceneID(), player);
                 area.unlock();
                 System.out.println("| You unlocked the area: " + area.getName());
                 System.out.println("| You can now enter the area \"" + area.getName() + "\"");
@@ -29,6 +31,7 @@ public class Key extends Consumables{
         } 
         else if (target instanceof Floor floor) {
             if (keyID.equals(floor.getLockID())) {
+                triggerCutscene(this.getCutsceneID(), player);
                 floor.unlock();
                 System.out.println("| You unlocked the floor: " + floor.getName());
                 System.out.println("| You can now enter the \"" + Format.getOrdinal(floor.getNumber()) + "\"");
@@ -46,5 +49,12 @@ public class Key extends Consumables{
     public void consume(Challenger player) {
         // Not used directly — keys need a target
         System.out.println("You must select a target to use this key.");
+    }
+
+    @Override
+    public void triggerCutscene(String cutsceneID, Challenger player) {
+        System.out.println();
+        CutsceneManager.checkCutscene(cutsceneID + "_as" + player.getJob(), player);
+        System.out.println();
     }
 }

@@ -1,5 +1,6 @@
 package entity;
 
+import entity.player.Challenger;
 import mechanics.battleMechanics.battle.Battle;
 
 public abstract class Entity {
@@ -28,13 +29,14 @@ public abstract class Entity {
 
     public String getName(){return name;}
     public String getDescription(){return description;}
+    public int getLastDamage(){return lastDamage;}
 
     public abstract void basicAttack(Entity opponent);
-    public abstract void usePassiveSkill(Battle battle);
-    public abstract void useActiveSkill(Battle battle);
+    public abstract void usePassiveSkill(Entity opponent, Battle battle);
+    public abstract void useActiveSkill(Entity opponent, Battle battle);
     
 
-    public abstract void defeated(Battle battle);
+    public abstract void defeated(Challenger player, Battle battle);
 
 
     public void heal(int healthpts){
@@ -60,8 +62,13 @@ public abstract class Entity {
 
 
     public void dmgAttack(Entity attackReceiver, int damage) {
+
         if(damage >= 5) damage = (int)((Math.random() * 11) + (damage - 5));
         System.out.println("| " + name + " hits " + attackReceiver.getName() + " for " + damage + " damage!");
+        if(this instanceof Challenger p){
+            if(p.getEquippedWeapon() != null)
+                damage += p.getEquippedWeapon().getAddAtk();
+        }
         attackReceiver.takeDamage(damage);
     }
 

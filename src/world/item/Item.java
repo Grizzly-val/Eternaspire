@@ -1,5 +1,6 @@
 package world.item;
 
+import entity.player.Challenger;
 
 public abstract class Item {
     
@@ -26,11 +27,7 @@ public abstract class Item {
     public int getSize(){return SIZE;}
     public String getName(){return name;}
     public String getDescription(){return description;}
+    public String getCutsceneID(){return cutsceneID;}
 
-    public void triggerCutscene(){
-        
-    }
-
-
-
+    public abstract void triggerCutscene(String cutsceneID, Challenger player);
 }

@@ -2,6 +2,8 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
+import mechanics.battleMechanics.skill.passive_skills.tower_entity.RecoveryProtocol;
+import mechanics.battleMechanics.skill.passive_skills.tower_entity.Reverberate;
 
 public class LostVanguard extends Echo {
 
@@ -11,6 +13,11 @@ public class LostVanguard extends Echo {
         "write description here",
         "The Lost Vanguard tips forward, momentum carrying it to the earth.",
         "cutscene_LostVanguard");
+
+        
+        this.giveSkill(new RecoveryProtocol()); //passive
+        this.giveSkill(new Reverberate());      //passive
+
     }
 
     @Override

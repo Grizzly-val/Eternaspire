@@ -10,7 +10,7 @@ public final class FloorData {
     static{
         int n = 0;
         addFloor(n++, "The Beginning of No End", "Eternaspire's Entry Point", "nolock");
-        addFloor(n++, "The Platform of Nadir", "A still platform at the spiral's starting end, heavy with the weight of descent.", "zeroth_to_first_FloorKey");
+        addFloor(n++, "The Platform of Nadir", "A still platform at the spiral's starting end, heavy with the weight of descent.", "FloorLock_ThePlatformOfNadir");
     }
 
     private FloorData(){};      // Prevents instantiation

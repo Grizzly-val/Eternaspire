@@ -1,7 +1,9 @@
 package mechanics.battleMechanics.battle;
 
+import entity.Entity;
 import entity.player.Challenger;
 import entity.tower_entity.TowerEntity;
+import mechanics.cutscene.CutsceneManager;
 import ui.OptionSelect;
 
 public class Battle {
@@ -18,21 +20,63 @@ public class Battle {
     public TowerEntity getTowerEntity(){return TOWER_ENTITY;}
 
 
+    public void encounterCutscene(String cutsceneID, Challenger player) {
+        System.out.println();
+        CutsceneManager.checkCutscene(cutsceneID, player);
+        System.out.println();
+    }
+
 
     public void start(){
+
+        if(!CHALLENGER.getEncountered_Entities().contains(TOWER_ENTITY.getName())){
+            System.out.println();
+            encounterCutscene("cutscene_FirstEncounterWith_" + TOWER_ENTITY.getName().replace(" ", ""), CHALLENGER);
+            System.out.println();
+        }
+        
         System.out.println();
         System.out.println("----------------------------------");
         System.out.println("| Battle Begin!");
-        System.out.println("| Opponent: " + getTowerEntity().getName());
+        System.out.println("| Opponent: " + TOWER_ENTITY.getName());
         System.out.println("----------------------------------");
         System.out.println();
 
         while(CHALLENGER.isAlive() && TOWER_ENTITY.isAlive()){
-            System.out.println("------------------------------------------------------------------------------------------------------");
-            System.out.println("[" + getChallenger().getName() + "]                                    [" + getTowerEntity().getName() + "]");
-            System.out.println("HP: " + getChallenger().getHp() + "                                            HP: " + getTowerEntity().getHp());
-            System.out.println("SP: " + getChallenger().getSkillPts());
-            System.out.println("------------------------------------------------------------------------------------------------------");
+
+            String combatFormat = "| %-35s | %-55s |";
+
+            System.out.println("-------------------------------------------------------------------------------------------------");
+
+            System.out.printf(combatFormat + "\n",
+                "[" + CHALLENGER.getName() + "]",
+                "[" + TOWER_ENTITY.getName() + "]"
+            );
+
+            String challengerHpWeapon = "\0";
+            if(getChallenger().getEquippedWeapon() != null){
+                challengerHpWeapon = "HP: " + CHALLENGER.getHp() + " | WPN: " + CHALLENGER.getEquippedWeapon().getName();
+            } else{
+                challengerHpWeapon = "HP: " + CHALLENGER.getHp() + " | WPN: " + "NONE";
+            }
+            
+
+            String enemyHp = "HP: " + TOWER_ENTITY.getHp();
+            
+            System.out.printf(combatFormat + "\n",
+                challengerHpWeapon,
+                enemyHp
+            );
+
+            String challengerSp = "SP: " + getChallenger().getSkillPts();
+
+            
+            System.out.printf(combatFormat + "\n",
+                challengerSp,
+                ""
+            );
+            
+            System.out.println("-------------------------------------------------------------------------------------------------");
 
             challengerTurn();
             
@@ -41,10 +85,14 @@ public class Battle {
         }
 
         if(!CHALLENGER.isAlive()){
-            CHALLENGER.defeated(this);
+            TOWER_ENTITY.resetLastDamage();
+            CHALLENGER.resetLastDamage();
+            CHALLENGER.defeated(CHALLENGER, this);
         }
         else if(!TOWER_ENTITY.isAlive()){
-            TOWER_ENTITY.defeated(this);
+            TOWER_ENTITY.resetLastDamage();
+            CHALLENGER.resetLastDamage();
+            TOWER_ENTITY.defeated(CHALLENGER, this);
         }
 
     }
@@ -66,7 +114,7 @@ public class Battle {
                     System.out.println("-----------------------------------------------------------");
                     break;
                 case 's':
-                    CHALLENGER.useActiveSkill(this);
+                    CHALLENGER.useActiveSkill(TOWER_ENTITY, this);
                     System.out.println("-----------------------------------------------------------");
                     break;
                 default:
@@ -74,14 +122,27 @@ public class Battle {
                     break;
             }
         }
+
+        CHALLENGER.usePassiveSkill(CHALLENGER, this);
         
     }
 
     public void towerEntityTurn(){
 
-        TOWER_ENTITY.useActiveSkill(this);
-        TOWER_ENTITY.usePassiveSkill(this);
+        TOWER_ENTITY.useActiveSkill(CHALLENGER, this);
+        TOWER_ENTITY.usePassiveSkill(CHALLENGER, this);
 
+    }
+
+
+
+    public void repeatTurn(Entity who){
+        if(who instanceof Challenger){
+            challengerTurn();
+        }
+        else if(who instanceof TowerEntity){
+            towerEntityTurn();
+        }
     }
 
 }

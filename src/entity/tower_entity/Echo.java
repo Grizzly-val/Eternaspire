@@ -2,6 +2,7 @@ package entity.tower_entity;
 
 import java.util.ArrayList;
 
+import entity.Entity;
 import mechanics.battleMechanics.battle.Battle;
 import mechanics.battleMechanics.skill.ActiveSkill;
 import mechanics.battleMechanics.skill.PassiveSkill;
@@ -27,12 +28,12 @@ public abstract class Echo extends TowerEntity {
     }
 
     @Override
-    public void useActiveSkill(Battle battle){
+    public void useActiveSkill(Entity opponent, Battle battle){
         for(ActiveSkill aSkill : aSkillSet){
             if(aSkill != null){
                 if(Math.random() < 0.4) {
-                    System.out.println(this.getName() + " used " + aSkill.getName() + " (Active Skill)");
-                    aSkill.activate(battle);
+                    System.out.println("| " + this.getName() + " used " + aSkill.getName() + " (Active Skill)");
+                    aSkill.activate(this, opponent, battle);
                     return;
                 }
             }
@@ -41,10 +42,11 @@ public abstract class Echo extends TowerEntity {
     }
     
     @Override
-    public void usePassiveSkill(Battle battle){
+    public void usePassiveSkill(Entity opponent, Battle battle){
         for(PassiveSkill pSkill : pSkillSet){
             if(pSkill != null){
-                pSkill.autoActivate(battle);
+                System.out.println("| " + this.getName() + " used " + pSkill.getName() + " (Passive Skill)");
+                pSkill.autoActivate(this, opponent, battle);
             }
         }
     }

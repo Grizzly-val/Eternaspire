@@ -1,18 +1,25 @@
 package mechanics.battleMechanics.skill.active_skills.challenger;
 
+import entity.Entity;
+import entity.player.Challenger;
 import mechanics.battleMechanics.battle.Battle;
 import mechanics.battleMechanics.skill.ActiveSkill;
 
 public class RendingCut extends ActiveSkill {
+    // this is for Mercenary
 
     public RendingCut() {
-        super("Rending Cut", "A straight-forward cut attack");
+        super("Rending Cut", "A straight-forward cut attack. | <%> 15% chance of stealing 1 skill point.", 2);
     }
 
     @Override
-    public void activate(Battle battle) {
-        System.out.println(battle.getChallenger().getName() + " used " + this.getName());
-        battle.getChallenger().dmgAttack(battle.getTowerEntity(), battle.getChallenger().getAtk() + 9);
+    public void activate(Entity user, Entity opponent, Battle battle) {
+        System.out.println("| " + user.getName() + " dove bladefirst to land a " + this.getName());
+        user.dmgAttack(opponent, (int)(user.getAtk() + (user.getAtk() * 0.19)));
+        if(Math.random() < 0.15 && user instanceof Challenger p){
+            p.addSkillPoint(1);
+        }
+        
     }
     
 }

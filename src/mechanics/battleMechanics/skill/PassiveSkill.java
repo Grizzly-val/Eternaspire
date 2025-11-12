@@ -1,5 +1,6 @@
 package mechanics.battleMechanics.skill;
 
+import entity.Entity;
 import mechanics.battleMechanics.battle.Battle;
 
 public abstract class PassiveSkill extends Skill{
@@ -8,5 +9,5 @@ public abstract class PassiveSkill extends Skill{
         super(name, description);
     }
 
-    public abstract void autoActivate(Battle battle);
+    public abstract void autoActivate(Entity user, Entity opponent, Battle battle);
 }

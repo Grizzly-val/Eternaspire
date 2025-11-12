@@ -1,18 +1,18 @@
 package world.item.wpn;
 
+import entity.Entity;
 import entity.player.Challenger;
 import mechanics.battleMechanics.skill.PassiveSkill;
+import mechanics.cutscene.CutsceneManager;
 import world.item.Item;
 
-public class Weapon extends Item{
+public abstract class Weapon extends Item{
     private int weaponStr;
-    private String basicAtkName;
     private PassiveSkill wpnSkill;
 
-    public Weapon(String name, String description, String cutsceneID, int weaponStr, String basicAtkName){
+    public Weapon(String name, String description, String cutsceneID, int weaponStr){
         super(name, description, cutsceneID, 6);
         this.weaponStr = weaponStr;
-        this.basicAtkName = basicAtkName;
     }
 
     public PassiveSkill getWpnSkill(){return wpnSkill;}
@@ -20,19 +20,33 @@ public class Weapon extends Item{
     public void useSkill(Challenger player){
 
     }
+
+    public abstract void basicAttack(Challenger user, Entity opponent, int atk);
     
     public void equip(Challenger player){
         if(player.getEquippedWeapon() == null){
-            player.setWeapon(this);
+            player.equipWeapon(this);
         }
         else{
             player.unequipWeapon();
-            player.setWeapon(this);
+            player.equipWeapon(this);
             System.out.println("| Equipped " + this.getName());
+        }
+
+        if(!player.getWeapons_Tried().contains(this.getName())){
+            System.out.println();
+            player.getWeapons_Tried().add(this.getName());
+            triggerCutscene(this.getCutsceneID(), player);
         }
     }
 
-    public String getBasicAtkName(){return basicAtkName;}
     public int getAddAtk(){return weaponStr;}
+
+    @Override
+    public void triggerCutscene(String cutsceneID, Challenger player){
+        System.out.println();
+        CutsceneManager.checkCutscene(cutsceneID, player);
+        System.out.println();
+    }
 
 }

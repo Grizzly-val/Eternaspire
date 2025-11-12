@@ -25,8 +25,10 @@ import world.location.locationData.FloorData;
 
 public abstract class Challenger extends Entity{
     
-    private final HashSet<String> ENCOUNTERED_REMNANT = new HashSet<>();
-    public HashSet<String> getEncountered_Remnant(){return ENCOUNTERED_REMNANT;}
+    private final HashSet<String> ENCOUNTERED_ENTITIES = new HashSet<>();
+    public HashSet<String> getEncountered_Entities(){return ENCOUNTERED_ENTITIES;}
+    private final HashSet<String> WEAPONS_TRIED = new HashSet<>();
+    public HashSet<String> getWeapons_Tried(){return WEAPONS_TRIED;}
 
     private final PlayerState FLOOR_NAVIGATION_STATE = new FloorNavigationState();
     private final PlayerState AREA_NAVIGATION_STATE = new AreaNavigationState();
@@ -56,10 +58,9 @@ public abstract class Challenger extends Entity{
     private int maxXp = 100;
 
 
-    public Challenger(String name, String description, String job, int hp, int maxHp, int atk, Weapon equippedWeapon){
+    public Challenger(String name, String description, String job, int hp, int maxHp, int atk){
         super(name, description, 1, hp, maxHp, atk);
         this.job = job;
-        this.equippedWeapon = equippedWeapon;
 
         System.out.println("Hello, Challenger!");
         System.out.println("Hmm... A " + job + "...");
@@ -77,16 +78,21 @@ public abstract class Challenger extends Entity{
     public int getSkillPts(){return skillPts;}
     public int getXp(){return xp;}
     public int getMaxXp(){return maxXp;}
+    public ArrayList<ActiveSkill> getActiveSkillSet(){return activeSkillSet;}
+    public ArrayList<PassiveSkill> getPassiveSkillSet(){return passiveSkillSet;}
 
-    public void setWeapon(Weapon wpn){
+    public void equipWeapon(Weapon wpn){
         equippedWeapon = wpn;
+        if(wpn != null){
+            inventory.remove(wpn);
+        }
     }
 
     public void unequipWeapon(){
         if(equippedWeapon != null){
             inventory.addItem(equippedWeapon);
             System.out.println("| Unequipped " + equippedWeapon.getName());
-            setWeapon(null);
+            equippedWeapon = null;
         }
     }
 
@@ -94,6 +100,12 @@ public abstract class Challenger extends Entity{
         System.out.println("| Dropped " + item.getName() + " at " + playerArea.getName());
         inventory.remove(item);
         playerArea.getAreaInventories().get(0).addItem(item);
+    }
+
+    public void addSkillPoint(int sp){
+        System.out.println("| Acquired " + sp + " Skill Point/s!");
+        skillPts += sp;
+        System.out.println("| Skill Point/s : " + skillPts + "/" + maxSkillPts);
     }
 
     public void storeItem(Item item){
@@ -161,40 +173,40 @@ public abstract class Challenger extends Entity{
     }
 
     @Override
-    public void usePassiveSkill(Battle battle) {
+    public void usePassiveSkill(Entity opponent, Battle battle) {
         for(PassiveSkill passiveSkill : passiveSkillSet){
-            passiveSkill.autoActivate(battle);
+            passiveSkill.autoActivate(this, opponent, battle);
         }
     }
 
     @Override
-    public void useActiveSkill(Battle battle) {
+    public void useActiveSkill(Entity opponent, Battle battle) {
         if(!activeSkillSet.isEmpty()){
             for(int i = 0; i < activeSkillSet.size(); i++){
                 System.out.println(i + 1 + " - " + activeSkillSet.get(i).getName() + " [" + activeSkillSet.get(i).getPtUse() + "pt/s]");
             }
 
-            System.out.print("Pick a skill: ");
+            System.out.print("| Pick a skill: ");
             int choice = OptionSelect.getArrIndex(activeSkillSet.size());
             ActiveSkill chosenSkill = activeSkillSet.get(choice - 1);
             if(chosenSkill != null){
                 if(skillPts - chosenSkill.getPtUse() >= 0){
-                    System.out.println("Used " + chosenSkill.getName() + " - " + chosenSkill.getPtUse());
-                    System.out.print("Skill point/s: " + skillPts + " -> " + (skillPts - chosenSkill.getPtUse()));
+                    System.out.println("| Used " + chosenSkill.getName() + " - " + chosenSkill.getPtUse());
+                    System.out.print("| Skill point/s: " + skillPts + " -> " + (skillPts - chosenSkill.getPtUse()));
                     skillPts -= chosenSkill.getPtUse();
-                    chosenSkill.activate(battle);
+                    chosenSkill.activate(this, opponent, battle);
                 }
 
                 else{
-                    System.out.println("You do not have enough Skill Points!");
+                    System.out.println("| You do not have enough Skill Points!");
                     System.out.println(chosenSkill.getName() + "[" + chosenSkill.getPtUse() + "]");
-                    System.out.println("Your Skill Point/s: " + skillPts);
-                    System.out.println("Using normal attack instead...");
+                    System.out.println("| Your Skill Point/s: " + skillPts);
+                    System.out.println("| Using normal attack instead...");
                     basicAttack(battle.getTowerEntity());
                 }
                 
             }
-            else System.out.println("Invalid skill choice!");
+            else System.out.println("| Invalid skill choice!");
         }
         
         else{
@@ -250,14 +262,18 @@ public abstract class Challenger extends Entity{
     }
     
     @Override
-    public void defeated(Battle battle){
+    public void defeated(Challenger player, Battle battle){
     }
 
     @Override
     public void basicAttack(Entity opponent) {
         if(equippedWeapon != null){
-            System.out.println("| " + this.getName() + " used " + this.getEquippedWeapon().getBasicAtkName() + " with " + this.getEquippedWeapon().getName());
-            opponent.takeDamage(getAtk() + this.getEquippedWeapon().getAddAtk());
+            equippedWeapon.basicAttack(this, opponent, atk);
+        }
+        else{
+            System.out.println("| You don't have a weapon equipped");
+            System.out.println("| " + this.getName() + " used bare fists");
+            this.dmgAttack(opponent, (int)(atk / 2));
         }
     }
 

@@ -1,9 +1,8 @@
 package world.location.locationData;
 
-import entity.tower_entity.echoes.LostVanguard;
 import entity.tower_entity.remnants.ElementalBlob;
 import entity.tower_entity.Remnant;
-import world.item.consumables.Food;
+import world.item.consumables.Key;
 import world.location.Floor;
 
 public final class AreaEntityData {
@@ -11,17 +10,11 @@ public final class AreaEntityData {
 
         Floor floorPtr = FloorData.getFloor(0);
         AreaEntities areaPtr = floorPtr.getFloorArea(1).getAreaEntities();
+            areaPtr.addRemnant((Remnant)new ElementalBlob(4).addDrops(new Key("The Whetstone Clavis", 
+                                                        "A key that sharpens the hand that holds it. No grand undertaking begins without the necessary edge.", 
+                                                                    "FloorLock_ThePlatformOfNadir", 
+                                                                "cutscene_UseKey_TheWhetstoneClavis")));
 
-        areaPtr.addRemnant((Remnant)new ElementalBlob(2));
 
-
-        /* 
-        floorPtr = FloorData.getFloor(1);
-        areaPtr = floorPtr.getFloorArea(1).getAreaEntities();
-            areaPtr.addRemnant(new ElementalBlob(1));
-            areaPtr.addRemnant(new ElementalBlob(2));
-            areaPtr.addRemnant(new ElementalBlob(3));
-            areaPtr.setEcho(new LostVanguard());
-        */
     }
 }

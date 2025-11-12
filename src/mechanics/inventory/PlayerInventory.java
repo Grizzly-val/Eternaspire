@@ -28,6 +28,8 @@ public class PlayerInventory extends Inventory {
     public ArrayList<Food> getPotionInventory(){return potionInventory;}
     public ArrayList<Key> getKeyInventory(){return keyInventory;}
     public ArrayList<SkillScroll> getSkillScrollInventory(){return skillScrollInventory;}
+    public int getCapacity(){return CAPACITY;}
+    public int getOccupiedSpace(){return occupiedSpace;}
 
     @Override
     public void addItem(Item item){

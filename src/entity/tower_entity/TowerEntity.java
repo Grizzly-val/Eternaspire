@@ -22,9 +22,13 @@ public abstract class TowerEntity extends Entity{
         this.defeatMessage = defeatMessage;
     }
 
-    public TowerEntity addDrop(Item item){
-        itemDrops.add(item);
-        return this;
+
+    public TowerEntity addDrops(Item... items){ // WOWW! I JUST LEARNED ABOUT THIS
+        for (Item item : items) {
+            this.itemDrops.add(item);
+        }
+
+        return this; // I am returning TowerEntity because we will be using this method inside an argument passing where TowerEntity is expected, so it can't be void
     }
 
     public void dropAll(Area dropArea){
@@ -51,26 +55,31 @@ public abstract class TowerEntity extends Entity{
     }
 
     @Override
-    public void defeated(Battle battle){
+    public void defeated(Challenger player, Battle battle){
         
         TextTyper.typeText("| " + getName() + " has been defeated.", 18);
         TextTyper.typeText("| " + defeatMessage, 18);
 
-        if(battle.getTowerEntity() instanceof Remnant rmnt){
-            battle.getChallenger().getCurrentArea().getAreaEntities().remnantDefeated(rmnt);
-            if(!battle.getChallenger().getEncountered_Remnant().contains(rmnt.getName())){
-                battle.getChallenger().getEncountered_Remnant().add(rmnt.getName());
-                afterBattleCutscene("cutscene_FirstEncounterWith_" + rmnt.getName().replace(" ", ""), battle.getChallenger());
+        if(this instanceof Remnant rmnt){
+            player.getCurrentArea().getAreaEntities().remnantDefeated(rmnt);
+            if(!player.getEncountered_Entities().contains(rmnt.getName())){
+                player.getEncountered_Entities().add(rmnt.getName());
+                afterBattleCutscene(
+                    "cutscene_RemnantDefeat_" + rmnt.getName().replace(" ", ""), 
+                    player);            // pass which challenger the player is as cutsceneID
             }
         }
-        else if(battle.getTowerEntity() instanceof Echo echo){
-            battle.getChallenger().getCurrentArea().getAreaEntities().echoDefeated();
-            afterBattleCutscene(echo.getCutsceneID(), battle.getChallenger());
+        else if(this instanceof Echo echo){
+            player.getCurrentArea().getAreaEntities().echoDefeated();
+            if(!player.getEncountered_Entities().contains(echo.getName())){
+                player.getEncountered_Entities().add(echo.getName());
+                afterBattleCutscene("cutscene_EchoDefeat_" + echo.getName().replace(" ", ""), player);
+            }
         }
 
-        battle.getChallenger().resetLastDamage();
-        battle.getChallenger().gainXp((int)(lvl * (1.00 + Math.random())));
-        dropAll(battle.getChallenger().getCurrentArea());
+        player.resetLastDamage();
+        player.gainXp((int)(lvl * (1.00 + Math.random())));
+        dropAll(player.getCurrentArea());
     }
 
 

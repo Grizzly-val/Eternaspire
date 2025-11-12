@@ -10,9 +10,11 @@ public final class AreaData {
 
     static{
         Floor floorPtr = FloorData.getFloor(0); //  Zeroth Floor
-            new Area("The Lobby of Descent", "The start of the spiral", "nolock").addArea(floorPtr);
+            floorPtr.addArea(new Area("The Lobby of Descent", "The start of the spiral", "nolock"));
 
         floorPtr = FloorData.getFloor(1);    //  First floor
+            floorPtr.addArea(new Area("The Suspension gate", "Narrow walkways suspended above a black void.", "nolock"));
+            floorPtr.addArea(new Area("The Shattered Span", "A broken bridge hanging between two pillars of light.", "nolock"));   
 
     }
 }
