@@ -10,12 +10,12 @@ public class ElementalBlob extends Remnant {
     private final static int BASE_ATK = 7;
     
     public ElementalBlob(int lvl) {
-        super((int)(BASE_HP * Math.pow(1.00 + 0.17, lvl - 1)),
-        (int)(BASE_HP * Math.pow(1.00 + 0.17, lvl - 1)),
-        (int)(BASE_ATK * Math.pow(1.00 + 0.14, lvl - 1)), 
+        super((int)(BASE_HP + (int)(lvl * lvl * 0.5734)), 
+        (int)(BASE_HP + (int)(lvl * lvl * 0.5734)), 
+        (int)((BASE_ATK + (int)(lvl * lvl * 0.4725))), 
         lvl,
         "Elemental Blob",
-        "write description here",
+        "A phyiscal manifestation of elements born from magic",
         "The Elemental Blob collapses into a quiet puddle, its shimmer fading into the floor.",
         new ElementalBurst(),
         null);

@@ -8,7 +8,7 @@ import mechanics.battleMechanics.skill.ActiveSkill;
 import mechanics.battleMechanics.skill.PassiveSkill;
 import mechanics.battleMechanics.skill.Skill;
 
-public abstract class Echo extends TowerEntity {
+public abstract class Echo extends TowerEntity{
 
     private ArrayList<ActiveSkill> aSkillSet = new ArrayList<>();
     private ArrayList<PassiveSkill> pSkillSet = new ArrayList<>();

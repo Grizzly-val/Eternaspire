@@ -1,8 +1,10 @@
 package world.item;
 
+import java.io.Serializable;
+
 import entity.player.Challenger;
 
-public abstract class Item {
+public abstract class Item implements Serializable{
     
     private String name;
     private String description;

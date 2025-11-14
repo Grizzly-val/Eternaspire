@@ -10,7 +10,7 @@ import world.item.consumables.Food;
 import world.item.wpn.Weapon;
 import world.item.consumables.SkillScroll;
 
-public class PlayerInventory extends Inventory {
+public class PlayerInventory extends Inventory{
 
     private final int CAPACITY = 75;
     private int occupiedSpace = 0;

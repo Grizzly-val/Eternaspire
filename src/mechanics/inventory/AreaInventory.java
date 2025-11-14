@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import world.item.Item;
 import ui.OptionSelect;
 
-public class AreaInventory extends Inventory {
+public class AreaInventory extends Inventory{
 
     private ArrayList<Item> items = new ArrayList<>();
 

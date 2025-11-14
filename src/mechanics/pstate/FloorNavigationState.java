@@ -10,12 +10,10 @@ public class FloorNavigationState implements PlayerState {
     public void enterState(Challenger player){
         Floor pCurrFloor = player.getCurrentFloor();
         System.out.println();
-        System.out.println("The recursive tower known as Eternaspire—where every step repeats the last.");
-        System.out.println();
         System.out.println("------------------------");
         System.out.println("| | Floor Navigation | |");
         System.out.println("------------------------");
-        System.out.println(">   Eternaspire's " + Format.getOrdinal(pCurrFloor.getNumber()) + " floor - \"The "+ pCurrFloor.getName() + "\"");
+        System.out.println(">   Eternaspire's " + Format.getOrdinal(pCurrFloor.getNumber()) + " floor - \""+ pCurrFloor.getName() + "\"");
         System.out.println(">   " + pCurrFloor.getDescription());
         System.out.println();
         System.out.println("                | Floor Navigation |");
@@ -23,14 +21,17 @@ public class FloorNavigationState implements PlayerState {
             char choice = '\0';
             while(choice != 's'){
                 System.out.println("------------------------------------------------------------");
-                System.out.println("[a] - Ascend\n[d] - Descend\n[s] - Stay on current floor\n[i] - Open inventory");
+                System.out.println("[a] - Ascend\n[d] - Descend\n[s] - Stay on current floor\n[i] - Open inventory\n\n[0] - EXIT GAME");
                 System.out.println("------------------------------------------------------------");
                 choice = OptionSelect.charInput(choice);
                 System.out.println("------------------------------------------------------------");
                 System.out.println();
                 switch(choice){
+                    case '0':
+                        System.out.println("EXITING GAME.");
+                        return;
                     case 'i':
-                        player.getInventoryState().enterState(player);
+                        new InventoryState().enterState(player);
                         break;
                     case 'a':
                         System.out.println();
@@ -44,7 +45,7 @@ public class FloorNavigationState implements PlayerState {
                         break;
                     case 's':
                         System.out.println();
-                        player.setState(player.getAreaNavState());
+                        new AreaNavigationState().enterState(player);
                         break;
                     default:
                         System.out.println("!! Invalid choice !!");

@@ -1,31 +1,77 @@
-The mercenary trudges along a desolate field. The air is heavy with fog, and in the distance, a massive silhouette pierces the sky — the Tower.
+[BLADE] 
+  "What… what are you?"
 
-He reaches a broken archway. The ground pulses faintly beneath him.
+[NUGGET] 
+  "Oh! You noticed me! 
+  Huh...
+  I guess introductions are in order. 
+  Name's… Nugget. But don't worry about that."
 
-CHALLENGER: (to himself) So this is it. The place fools die chasing miracles.
+[BLADE]
+  .
+  .
+  That’s not exactly helpful.
 
-??? (cheerful, echoing voice): That’s one way to greet your savior!
+[NUGGET]
+  "Eh, names are overrated anyway. 
+  Important thing is... you seem busy. Or... troubled?"
 
-CHALLENGER: (draws weapon) Who’s there?!
+[BLADE] 
+  "It's none of your concern."
 
-A small sphere of golden light bobs out from the mist, then reshapes into a tiny floating creature — half mechanical, half ethereal. Its eyes flicker like lanterns.
+| Nugget tilts its head, small wings fluttering, as if thinking.
 
-NUGGET: Ta-daa! Name’s Nugget! Your lucky charm, guide, and all-around emotional support companion!
+[NUGGET] 
+  "Hmm… that’s rough. Sounds like... you need a big win. 
+  Something that could... change things, dramatically. 
+  But hey, that's just my unsolicited thought."
 
-CHALLENGER: …A talking lamp?
+[BLADE]
+  .
+  .
+  "And you are?"
 
-NUGGET: Rude. I’m a certified Tower assistant. You look like someone in desperate need of one.
+[NUGGET] 
+  "That's not important. Really. Just… someone who notices things. Helps... nudge sometimes.
+  Suggests life-changing advices
+  about fame,
+  status,
+  money
+  miracles... *side-eye"
 
-CHALLENGER: I didn’t ask for help.
+| Blade hesitates, observing Nugget, unsure whether to trust it.
 
-NUGGET: Sure you did. Every fool who touches the Tower’s door whispers for help. Some cry, some pray, some just curse the world. Yours was more of a “gritty silence,” but I got the message.
+[NUGGET]
+  "If you wanted... a way to really make a difference, maybe there’s a path. But… whatever. Ignore me."
 
-The mercenary glares but lowers his blade.
+[BLADE] 
+  "...
+  .
+  .
+  What is it?"
 
-CHALLENGER: So what’s the price? You tower things always want something.
+[NUGGET] 
+  "Excellent! That’s settled then.
+  Oh… by the way, 
+  I might tag along. 
+  Nothing creepy. Promise."
 
-NUGGET: (smiles) Just your company.
+[BLADE] 
+  "Hey! I haven't agreed yet."
 
-The air hums as the Tower’s massive doors begin to creak open.
+[NUGGET] 
+  "I only needed your interest.
+  Plus, A mercenary like you would definitely like this.
+  About how I know about your profession,
+  .
+  .
+  uhhm- I know one when I see one?
+  Come on! Kiss your mother goodbye, 
+  make-up with her,
+  and follow me!"
 
-NUGGET: Let’s go, partner. The climb begins now.
+.
+.
+.
+.
+.

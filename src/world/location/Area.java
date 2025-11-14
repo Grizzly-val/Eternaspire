@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import mechanics.inventory.AreaInventory;
 import world.location.locationData.AreaEntities;
 
-public class Area extends Location {
+public class Area extends Location{
 
     AreaEntities areaEntities = new AreaEntities();
 

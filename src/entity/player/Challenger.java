@@ -1,8 +1,10 @@
 package entity.player;
 
+
 import java.util.ArrayList;
 import java.util.HashSet;
 
+import engine.Game;
 import entity.Entity;
 import mechanics.battleMechanics.battle.Battle;
 import mechanics.battleMechanics.skill.ActiveSkill;
@@ -10,10 +12,6 @@ import mechanics.battleMechanics.skill.PassiveSkill;
 import mechanics.battleMechanics.skill.Skill;
 import mechanics.inventory.PlayerInventory;
 import mechanics.pstate.AreaNavigationState;
-import mechanics.pstate.FloorNavigationState;
-import mechanics.pstate.IdleAreaState;
-import mechanics.pstate.InventoryState;
-import mechanics.pstate.PlayerState;
 import ui.Format;
 import ui.OptionSelect;
 import world.item.Item;
@@ -30,20 +28,8 @@ public abstract class Challenger extends Entity{
     private final HashSet<String> WEAPONS_TRIED = new HashSet<>();
     public HashSet<String> getWeapons_Tried(){return WEAPONS_TRIED;}
 
-    private final PlayerState FLOOR_NAVIGATION_STATE = new FloorNavigationState();
-    private final PlayerState AREA_NAVIGATION_STATE = new AreaNavigationState();
-    private final PlayerState IDLE_AREA_STATE = new IdleAreaState();
-    private final PlayerState INVENTORY_STATE = new InventoryState();
-
-    public PlayerState getFloorNavState(){return FLOOR_NAVIGATION_STATE;}
-    public PlayerState getAreaNavState(){return AREA_NAVIGATION_STATE;}
-    public PlayerState getIdleAreaState(){return IDLE_AREA_STATE;}
-    public PlayerState getInventoryState(){return INVENTORY_STATE;}
-
-    private PlayerState currentState = FLOOR_NAVIGATION_STATE;
-
-    private Floor currentFloor = FloorData.getFloor(0);
-    private Area currentArea = FloorData.getFloor(0).getFloorArea(1);
+    private int currentFloorNumber = 0;
+    private int currentAreaIndex = 1;
 
     private ArrayList<ActiveSkill> activeSkillSet = new ArrayList<>();
     private ArrayList<PassiveSkill> passiveSkillSet = new ArrayList <>();
@@ -52,15 +38,25 @@ public abstract class Challenger extends Entity{
     private PlayerInventory inventory = new PlayerInventory(this.getName() + "'s Inventory");
 
     private String job;
-    private int skillPts = 5;
-    private int maxSkillPts = 5;
-    private int xp = 0;
-    private int maxXp = 100;
+    private int skillPts;
+    private int maxSkillPts;
+    private int xp;
+    private int maxXp;
+
+    
+
+    private transient Game gameManager;
 
 
     public Challenger(String name, String description, String job, int hp, int maxHp, int atk){
         super(name, description, 1, hp, maxHp, atk);
         this.job = job;
+        this.skillPts = 5;
+        this.maxSkillPts = 5;
+        this.xp = 0;
+        this.maxXp = 100;
+    
+
 
         System.out.println("Hello, Challenger!");
         System.out.println("Hmm... A " + job + "...");
@@ -70,10 +66,12 @@ public abstract class Challenger extends Entity{
         displayData();
     }
 
+    public void setGameManager(Game game){this.gameManager = game;}
+
     public String getJob(){return job;}
     public Weapon getEquippedWeapon(){return equippedWeapon;}
-    public Floor getCurrentFloor(){return currentFloor;}
-    public Area getCurrentArea(){return currentArea;}
+    public Floor getCurrentFloor(){return gameManager.getFloorData().getFloor(currentFloorNumber);}
+    public Area getCurrentArea(){return getCurrentFloor().getFloorArea(currentAreaIndex);}
     public PlayerInventory getInventory(){return inventory;}
     public int getSkillPts(){return skillPts;}
     public int getXp(){return xp;}
@@ -104,7 +102,12 @@ public abstract class Challenger extends Entity{
 
     public void addSkillPoint(int sp){
         System.out.println("| Acquired " + sp + " Skill Point/s!");
-        skillPts += sp;
+        if(skillPts + sp > maxSkillPts){
+            skillPts = maxSkillPts;
+            System.out.println("| Skill Point Limit Reached");
+        }
+        
+        else skillPts += sp;
         System.out.println("| Skill Point/s : " + skillPts + "/" + maxSkillPts);
     }
 
@@ -136,7 +139,7 @@ public abstract class Challenger extends Entity{
         this.lvl += 1;
         System.out.println(this.lvl - 1 + " -> " + this.lvl);
 
-        maxXp += (int)(maxXp * 0.27);
+        maxXp += (int)(50.0 * Math.log(this.lvl));
 
         System.out.println("+1 Max Skill Point");
         System.out.println("Max Skill Points: " + maxSkillPts + " -> ");
@@ -144,11 +147,11 @@ public abstract class Challenger extends Entity{
         System.out.println(maxSkillPts);
 
         System.out.print("MAX HP: " + maxHp + " -> ");
-        maxHp += (int)(maxHp * 0.17);
+        maxHp += (int)(10.0 * Math.log(this.lvl));
         System.out.println(maxHp);
 
         System.out.print("ATK: " + atk + " -> ");
-        atk += (int)(atk * 0.11);
+        atk += (int)(3.5 * Math.log(this.lvl));
         System.out.println(atk);
 
         System.out.println("HP replenished");
@@ -158,6 +161,7 @@ public abstract class Challenger extends Entity{
         System.out.println("Skill Points replenished");
         skillPts = maxSkillPts;
         System.out.println("SP: " + skillPts);
+        
     }
 
     public void gainXp(int xpGained){
@@ -185,23 +189,25 @@ public abstract class Challenger extends Entity{
             for(int i = 0; i < activeSkillSet.size(); i++){
                 System.out.println(i + 1 + " - " + activeSkillSet.get(i).getName() + " [" + activeSkillSet.get(i).getPtUse() + "pt/s]");
             }
-
-            System.out.print("| Pick a skill: ");
+            System.out.println("-----------------------------------------------------------");
+            System.out.print("| Pick a skill >> ");
             int choice = OptionSelect.getArrIndex(activeSkillSet.size());
+            System.out.println("-----------------------------------------------------------");
             ActiveSkill chosenSkill = activeSkillSet.get(choice - 1);
             if(chosenSkill != null){
                 if(skillPts - chosenSkill.getPtUse() >= 0){
                     System.out.println("| Used " + chosenSkill.getName() + " - " + chosenSkill.getPtUse());
-                    System.out.print("| Skill point/s: " + skillPts + " -> " + (skillPts - chosenSkill.getPtUse()));
+                    System.out.println("| Skill point/s: " + skillPts + " -> " + (skillPts - chosenSkill.getPtUse()));
                     skillPts -= chosenSkill.getPtUse();
                     chosenSkill.activate(this, opponent, battle);
                 }
 
                 else{
                     System.out.println("| You do not have enough Skill Points!");
-                    System.out.println(chosenSkill.getName() + "[" + chosenSkill.getPtUse() + "]");
+                    System.out.println("| " + chosenSkill.getName() + " [" + chosenSkill.getPtUse() + "]");
                     System.out.println("| Your Skill Point/s: " + skillPts);
                     System.out.println("| Using normal attack instead...");
+                    System.out.println();
                     basicAttack(battle.getTowerEntity());
                 }
                 
@@ -218,47 +224,63 @@ public abstract class Challenger extends Entity{
 
     }
 
+    public Floor getNextFloor(){
+        return gameManager.getFloorData().getFloor(currentFloorNumber + 1);
+    }
+
+    public Floor getPrevFloor(){
+        return gameManager.getFloorData().getFloor(currentFloorNumber - 1);
+    }
 
     public void goUp(){
-        if(getCurrentFloor().getNextFloor().isLocked()){
-            System.out.println("| " + getCurrentFloor().getNextFloor().getName() + " is locked");
-            System.out.println();
-            Key key = inventory.getKey();
-            if(key != null){
-                key.consume(this, getCurrentFloor().getNextFloor());
-            }
-            else System.out.println("| You do not have any key.\n| Try to explore the " + Format.getOrdinal(getCurrentFloor().getNumber()) + " floor first to find the key.\n");
+        if(getNextFloor() == null){
+            System.out.println("| No next floor ");
+            return;
         }
 
-        else if(currentFloor.getNextFloor() != null){
-            currentFloor = currentFloor.getNextFloor();
-            System.out.println("| Ascended to the next floor\n| (Floor " + currentFloor.getPrevFloor().getNumber() + " -> Floor " + currentFloor.getNumber() + ")\n");
+        if(getNextFloor() != null){
+            if(getNextFloor().isLocked()){
+                System.out.println("| " + getNextFloor().getName() + " is locked");
+                System.out.println();
+                Key key = inventory.getKey();
+                System.out.println("------------------------------------------------------------");
+                if(key != null){
+                    System.out.println("------------------------------------------------------------");
+                    key.consume(this, getNextFloor());
+                    System.out.println("------------------------------------------------------------");
+                }
+                else System.out.println("| You do not have any key.\n| Try to explore the " + Format.getOrdinal(getCurrentFloor().getNumber()) + " floor first to find the key.\n");
+
+                return;
+            }
+            currentFloorNumber += 1;
+            System.out.println("| Ascended to the next floor\n| (Floor " + getPrevFloor().getNumber() + " -> Floor " + getCurrentFloor().getNumber() + ")\n");
+            return;
         }
-        else System.out.println("\n| No next floor\n");
+    
     }
 
     public void goDown(){
-        if(currentFloor.getPrevFloor() != null){
-            currentFloor = currentFloor.getPrevFloor();
-            System.out.println("| Descended to the previous floor\n(Floor " + currentFloor.getNextFloor().getNumber() + " -> Floor " + currentFloor.getNumber() + ")\n");
+        if(getPrevFloor() == null){
+            System.out.println("| No previous floor");
+            return;
         }
-        else System.out.println("| No previous floor\n");
+
+        if(getPrevFloor() != null){
+            currentFloorNumber -= 1;
+            System.out.println("| Descended to the previous floor\n(Floor " + getNextFloor().getNumber() + " -> Floor " + getCurrentFloor().getNumber() + ")\n");
+        }
     }
 
-    public void moveArea(Area newArea){
+    public void moveArea(int newAreaIndex){
         System.out.println();
-        System.out.println("| You entered " + newArea.getName());
-        System.out.println();
-        currentArea = newArea;
+        currentAreaIndex = newAreaIndex;
     }
 
-    public void setState(PlayerState state){
-        this.currentState = state;
-        play();
-    }
 
     public void play(){
-        currentState.enterState(this);
+        saveState();
+        new AreaNavigationState().enterState(this);
     }
     
     @Override
@@ -275,6 +297,10 @@ public abstract class Challenger extends Entity{
             System.out.println("| " + this.getName() + " used bare fists");
             this.dmgAttack(opponent, (int)(atk / 2));
         }
+    }
+
+    public void saveState(){
+        gameManager.saveGame();
     }
 
 }

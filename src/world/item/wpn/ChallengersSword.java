@@ -11,7 +11,7 @@ public class ChallengersSword extends Weapon{
 
     @Override
     public void basicAttack(Challenger user, Entity opponent, int atk) {
-        System.out.println("The blade of the Challenger's Sword carved the air with a resolute swing.");
+        System.out.println("| The blade of the Challenger's Sword carved the air with a resolute swing.");
         user.dmgAttack(opponent, atk);
     }
     

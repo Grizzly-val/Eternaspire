@@ -1,10 +1,9 @@
 package entity.player;
 
-
-public class Mercenary extends Challenger {
+public class Mercenary extends Challenger{
     
     public Mercenary(){
-        super("MercenaryName", "MercenaryDescription", "Mercenary", 100, 100, 15);
+        super("MercenaryName", "MercenaryDescription", "Mercenary", 100, 100, 20);
     }
 
 }

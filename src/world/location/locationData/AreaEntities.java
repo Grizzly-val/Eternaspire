@@ -1,12 +1,14 @@
 package world.location.locationData;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import entity.tower_entity.Echo;
 import entity.tower_entity.Remnant;
 import ui.OptionSelect;
 
-public class AreaEntities {
+public class AreaEntities implements Serializable{
+    
     private ArrayList<Remnant> areaRemnants = new ArrayList<>();
     private Echo areaEcho = null;
 

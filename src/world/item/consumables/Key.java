@@ -54,7 +54,7 @@ public class Key extends Consumables{
     @Override
     public void triggerCutscene(String cutsceneID, Challenger player) {
         System.out.println();
-        CutsceneManager.checkCutscene(cutsceneID + "_as" + player.getJob(), player);
+        CutsceneManager.checkCutscene(cutsceneID, player);
         System.out.println();
     }
 }

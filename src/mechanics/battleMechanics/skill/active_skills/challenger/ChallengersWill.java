@@ -14,7 +14,7 @@ public class ChallengersWill extends ActiveSkill{
     public void activate(Entity user, Entity opponent, Battle battle) {
         System.out.println("| Damage undone! The Challenger's Will grants a complete reversal.");
         System.out.println("| HP Replenished");
-        user.heal(500);
+        user.heal(10000);
     }
     
 }

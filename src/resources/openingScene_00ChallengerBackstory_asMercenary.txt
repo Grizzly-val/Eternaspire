@@ -1,21 +1,105 @@
-The rain falls heavy over cracked rooftops. A city asleep in hunger. In a small room, a man sits beside a frail woman covered in thin sheets.
+"Blade... Thi- *cough this is my dying wish.
+You are my pride and joy, Blade.
 
-MOTHER: (weak smile) You shouldn’t be out there this late again… the guild won’t pay you more just for working yourself to death.
+You are capable of so much more.
+...
+Can you promise me, Blade?...
+That you will quit th..."
 
-CHALLENGER: (shaking head) Someone has to pay for your medicine.
+.
+.
+.
 
-MOTHER: You’re all I have left, my brave little mercenary. Don’t let this world harden you too much.
 
-A cough wracks her body. He holds her hand, trembling.
+[Mercenary Companion]
+  "-lade...?
+  Blade!
+  BLADE!!
 
-CHALLENGER: (quietly) I’ll find a way. I promise.
+  Tsk! You sure are enjoying the sleep of your life, huh?
+  Wait? Are those tears?
+  Are you crying? Haha! Crying in your sleep, what are you? A kid?
+  Let me guess, is it about your mom? *sigh You poor kid.
+  Like what I always tell you, 
+  just keep doing a good job with the requests thrown at us and you'll eventually be able to afford your mom's treatment.
+  That is if you don't die, hahaha!"
 
-Fade to black.
+| Challenger	: Blade
+| Age		: 21
+| Job		: Mercenary
 
-Voices echo faintly — whispers about a “tower that grants what one desires, if they survive its climb.”
 
-CHALLENGER (narrating): They said the tower gives you what you’ve earned. Power. Wealth. Even salvation. I didn’t believe them—
+| At the hospital
 
-He looks at his coin pouch. Empty.
+[Blade]
+  "One more contract… and maybe, just maybe, I'll be able to afford her medicine.
+  | A soft cough echoes from the room to the hallway. He heads toward his mother’s room door, pale in the candlelight.
+  Mom!"
 
-CHALLENGER: —until I had nothing left to lose.
+[Blade's Mom]
+  "I got you! I knew coughing loud would get you to come here.
+  Hehe! I'm sorry, Blade. I had to resort to that method 'cause I missed my Blade so much."
+
+[Blade]
+  "Mom, this is no time to be joking!
+  .
+  .
+  Blood's coming out of your mouth,
+  you cough out blood almost every day, mom.
+  How can you be so relaxed?!"
+
+[Blade's Mom]
+  "Did you not learn from your dad?
+  He may not be here with us now, but I'm a firm believer of your Dad's way of life.
+  I firmly believe that 'If the Reaper is coming for the bill, I won't pay in silence.' 
+  I'm just laughing my way to the grave, son, that way, im also running away from it. Smart, aren't I?"
+
+[Blade]
+  "Don't joke about that! Just stop talking and just rest, mom."
+
+.
+.
+.
+| Silence filled the room
+
+.
+.
+
+[Blade's Mom]
+  "I'm already filled with plenty of happines, Blade.
+  I had such a loving husband,
+  I lived in a warm home, comfortable,
+  and now, I get to see my son deeply express his love towards me
+  and care for me almost everyday.
+  .
+  Except for the days you're out on your job.
+  .
+  Blade,
+  did you think I wouldn't notice?
+  .
+  You can forget about me, Blade!
+  You are capable of so much more!
+  Go live your life!
+  .
+  .
+  *sobs
+  Go quit that job, Blade. Mom's begging you.
+  Cut ties with those-
+  those dangerous bunch!
+  Don't throw your life away for me,
+  just let me die peacefully with no regret, Blade!"
+
+[Blade]
+  "How could I possibly do that?!"
+
+*SLAM!
+"OWIEE!"
+
+| Amidst the heated mother and son argument, something came flying from afar slamming onto the hospital window.
+
+| The argument was interrupted and they both wiped their tears
+
+[Blade] 
+  "I'll go check"
+
+...

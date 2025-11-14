@@ -1,7 +1,6 @@
 package world.location;
-import java.util.HashMap;
 
-import world.location.locationData.FloorData;
+import java.util.HashMap;
 
 public class Floor extends Location{
     
@@ -14,9 +13,6 @@ public class Floor extends Location{
         super(name, description, lockID);
         this.number = number;
     }
-
-    public Floor getNextFloor(){return FloorData.getFloor(number + 1);}
-    public Floor getPrevFloor(){return FloorData.getFloor(number - 1);}
 
     public HashMap<Integer, Area> getAreas(){return areas;}
     public int getNumber(){return number;}

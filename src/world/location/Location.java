@@ -1,6 +1,8 @@
 package world.location;
 
-public abstract class Location {
+import java.io.Serializable;
+
+public abstract class Location implements Serializable{
     
     private String name;
     private String description;

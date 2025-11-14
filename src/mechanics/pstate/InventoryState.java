@@ -47,6 +47,7 @@ public class InventoryState implements PlayerState{
             System.out.println("----------------------------------------");
             System.out.println("[b] - Go back       (Exit inventory)");
             System.out.println("[l] - skill list    (Check skills)");
+            System.out.println("[0] - Save game state");
             System.out.println("----------------------------------------");
             System.out.println("[f] - Food          (Consume food)");
             System.out.println("[w] - Weapon        (Equip Weapon)");
@@ -56,47 +57,55 @@ public class InventoryState implements PlayerState{
             System.out.print("| Select Inventory Section >> ");
             choice = OptionSelect.charInput(choice);
             switch(choice){
+                case '0':
+                    player.saveState();
+                    System.out.println("----------------------------------------");
+                    System.out.println("Saving current game state...");
+                    player.saveState();
+                    System.out.println();
+                    break;
                 case 'b':
 
                     System.out.println("----------------------------------------");
                     System.out.println();
                     System.out.println("| Exitting inventory >>");
                     System.out.println();
-                    break;
+                    return;
 
                 case 'l':
-                    System.out.println("----------------------------------------");
+                    System.out.println("-----------------------------------");
                     System.out.println();
                     System.out.println();
                     System.out.println();
-                    System.out.println("----------------");
-                    System.out.println("|Active Skills|");
-                    System.out.println("----------------");
+                    System.out.println("    ---------------");
+                    System.out.println("    |Active Skills|");
+                    System.out.println("-----------------------");
                     int i = 1;
                     if(player.getActiveSkillSet().isEmpty()){
                         System.out.println("| Active skill set is empty");
                     }
                     else{
                         for(ActiveSkill aSkill : player.getActiveSkillSet()){
-                        System.out.println("| " + i++ + ". " + aSkill.getName() + "[" + aSkill.getPtUse() + "sp]");
-                        System.out.println("\t| " + aSkill.getDescription());
+                            System.out.println("| " + i++ + ".) " + aSkill.getName() + " [" + aSkill.getPtUse() + "sp]");
+                            System.out.println("|\t> " + aSkill.getDescription());
                         }    
                     }
-
+                    System.out.println("-----------------------------------");
                     System.out.println();
-                    System.out.println("----------------");
-                    System.out.println("|Active Skills|");
-                    System.out.println("----------------");
+                    System.out.println("    ----------------");
+                    System.out.println("    |Passive Skills|");
+                    System.out.println("------------------------");
                     if(player.getPassiveSkillSet().isEmpty()){
                         System.out.println("| Passive skill set is empty");
                     }
                     else{
                         i = 1;
                         for(PassiveSkill pSkill : player.getPassiveSkillSet()){
-                            System.out.println("| " + i++ + ". " + pSkill.getName());
-                            System.out.println("\t| " + pSkill.getDescription());
+                            System.out.println("| " + i++ + ".) " + pSkill.getName());
+                            System.out.println("|\t> " + pSkill.getDescription());
                         }
                     }
+                    System.out.println("-----------------------------------");
                     break;
                 case 'f':
                     System.out.println();

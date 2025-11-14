@@ -78,7 +78,7 @@ public abstract class TowerEntity extends Entity{
         }
 
         player.resetLastDamage();
-        player.gainXp((int)(lvl * (1.00 + Math.random())));
+        player.gainXp((int)(lvl * (33.0 + Math.random())));
         dropAll(player.getCurrentArea());
     }
 

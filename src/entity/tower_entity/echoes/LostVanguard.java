@@ -12,7 +12,7 @@ public class LostVanguard extends Echo {
         "Lost Vanguard",
         "write description here",
         "The Lost Vanguard tips forward, momentum carrying it to the earth.",
-        "cutscene_LostVanguard");
+        "cutscene_Defeat_LostVanguard");
 
         
         this.giveSkill(new RecoveryProtocol()); //passive
@@ -22,7 +22,7 @@ public class LostVanguard extends Echo {
 
     @Override
     public void basicAttack(Entity opponent){
-        System.out.println("| " + this.getName() + " charges at you with Shield Bash");
+        System.out.println("| " + this.getName() + " charges at the Challenger with Shield Bash");
         dmgAttack(opponent, atk);
     }
     

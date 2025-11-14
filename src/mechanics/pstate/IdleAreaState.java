@@ -18,7 +18,7 @@ public class IdleAreaState implements PlayerState {
         System.out.println("-------------------");
         System.out.println("| | Area Idling | |");
         System.out.println("-------------------");
-        System.out.println("Eternaspire " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor\nCurrent Area: " + player.getCurrentArea().getName());
+        System.out.println("| Current Floor : \"" + player.getCurrentFloor().getName() + "\" (" + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor)\n| Current Area  : " + player.getCurrentArea().getName());
         System.out.println("--------------------------------------------");
         System.out.println();
         System.out.println("| What would you like to do?");
@@ -39,12 +39,12 @@ public class IdleAreaState implements PlayerState {
                     System.out.println();
                     System.out.println();
                     System.out.println("| Going back to floor entrance >>");
-                    player.setState(player.getAreaNavState());
-                    break;
+                    new AreaNavigationState().enterState(player);
+                    return;
                 case 'e':
                     System.out.println("| Exploring " + player.getCurrentArea().getName() + " >>");
                     explore(player);
-                    player.setState(player.getIdleAreaState());
+                    new IdleAreaState().enterState(player);
                     break;
                 default:
                     System.out.println("!! Invalid choice !!");
@@ -72,7 +72,7 @@ public class IdleAreaState implements PlayerState {
 
             switch(choice){
                 case 'i':
-                    player.getInventoryState().enterState(player);
+                    new InventoryState().enterState(player);
                     break;
                 case 'f':
                     System.out.println();

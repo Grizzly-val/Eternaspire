@@ -1,6 +1,8 @@
 package mechanics.battleMechanics.skill;
 
-public abstract class Skill {
+import java.io.Serializable;
+
+public abstract class Skill implements Serializable{
     
     private String name;
     private String description;

@@ -1,7 +1,6 @@
 package mechanics.cutscene;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -19,6 +18,17 @@ public final class CutsceneManager {
         cutsceneID += "_as" + player.getJob().replace(" ", "");
 
         switch(cutsceneID){
+            case "openingScene_00ChallengerBackstory_asMercenary":
+                startCutscene(cutsceneID);
+                break;
+            case "openingScene_01NuggetEncounter_asMercenary":
+                startCutscene(cutsceneID);
+                break;
+            case "openingScene_02TowerArrival_asMercenary":
+                startCutscene(cutsceneID);
+                break;
+
+
             case "cutscene_UseKey_TheWhetstoneClavis_asMercenary":
                 startCutscene(cutsceneID);
                 break;
@@ -67,30 +77,36 @@ public final class CutsceneManager {
     }
 
 
-    public static void readFile(String cutsceneFile) throws IOException{
+    
+    public static void readFile(String cutsceneFile) throws IOException {
+
+        int lineDelay = 0;
 
         InputStream inputStream = CutsceneManager.class.getClassLoader().getResourceAsStream(cutsceneFile);
 
         if (inputStream == null) {
-            System.out.println("|! Cutscene does not exist: ");
-            throw new IOException("Resource not found on classpath.");
+            System.out.println("|! Cutscene does not exist: " + cutsceneFile);
+            throw new IOException("|! Resource not found on classpath: " + cutsceneFile);
         }
-
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
 
             String line;
 
-            while((line = reader.readLine()) != null){
-                TextTyper.typeText(line, 30);
+            while ((line = reader.readLine()) != null) {
+                TextTyper.typeText(line, 0);
+                
+                lineDelay = (int)(line.length() / 0.02) - (int)(line.length() * 30);
+
+                try {
+                    Thread.sleep(0);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt(); 
+                }
             }
 
-        } catch(FileNotFoundException e){
-            System.out.println("|! Cutscene does not exist " + e);
-        } catch(IOException e){
-            System.out.println("|! Something went wrong >>! Cutscene Interrupted " + e);
+        } catch (IOException e) {
+             System.out.println("|! Something went wrong >>! Cutscene Interrupted: " + e.getMessage());
         }
-
-
     }
 }

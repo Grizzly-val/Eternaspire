@@ -1,9 +1,11 @@
 package entity;
 
+import java.io.Serializable;
+
 import entity.player.Challenger;
 import mechanics.battleMechanics.battle.Battle;
 
-public abstract class Entity {
+public abstract class Entity implements Serializable{
 
     private String name;
     private String description;
@@ -42,9 +44,16 @@ public abstract class Entity {
     public void heal(int healthpts){
         if(hp + healthpts >= maxHp){
             hp = maxHp;
+            System.out.println("| Max hp reached");
         }
-        else hp += healthpts;
+        else {
+            hp += healthpts;
+            System.out.println("| +" + healthpts + "hp");
+        }
     }
+
+
+
 
     public boolean isAlive(){
         if(hp > 0) return true;
@@ -64,11 +73,11 @@ public abstract class Entity {
     public void dmgAttack(Entity attackReceiver, int damage) {
 
         if(damage >= 5) damage = (int)((Math.random() * 11) + (damage - 5));
-        System.out.println("| " + name + " hits " + attackReceiver.getName() + " for " + damage + " damage!");
         if(this instanceof Challenger p){
             if(p.getEquippedWeapon() != null)
                 damage += p.getEquippedWeapon().getAddAtk();
         }
+        System.out.println("| " + name + " hits " + attackReceiver.getName() + " for " + damage + " damage!");
         attackReceiver.takeDamage(damage);
     }
 

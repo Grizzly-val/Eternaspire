@@ -74,7 +74,6 @@ public final class OptionSelect {
 
     public static String stringInput(String s){
         try{
-            System.out.print("Choose: ");
             s = sc.nextLine();
         }catch(Exception e){
             System.out.println("\n!! Error - " + e + " !!");

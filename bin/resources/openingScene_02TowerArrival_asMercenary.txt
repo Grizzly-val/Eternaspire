@@ -1,24 +1,85 @@
-The two step inside. The doors close behind them with a thunderous echo.
-Darkness. Then, a faint blue glow floods the hall.
+| Blade exhales deeply, the weight of Nugget’s words and his mother’s condition pressing on him. He glances back toward the small hospital room one last time.
 
-CHALLENGER: …It’s colder than I thought.
+| Blade looks at his mother. Her eyes filled with worry, as if she can feel the danger his son is about to face.
 
-NUGGET: That’s because this place isn’t alive. Not yet. The Tower watches every new challenger to see if they’re worth waking up for.
+[BLADE]
+  "Right… Mom. I’ll… I’ll make this count. I’ll come back with enough."
 
-CHALLENGER: Great. I get judged by a building now.
+| He kneels beside his mother’s bed, pressing a small pouch of coins into her hand.
 
-NUGGET: (snickers) Oh, you’ll get used to it. The higher you climb, the more it notices you.
+[BLADE'S MOM]
+  "Blade... 
+  You’ve always been my pride… my joy...
+  Is there really nothing I can do to stop you?
 
-The floor pulses faintly, lighting a spiral pattern beneath their feet.
+| Blade could only look at his mother with unpromising eyes
 
-CHALLENGER: So this is where I start.
+  Blade, just-
+  just promise me you’ll be careful, okay?"
 
-NUGGET: Yup! Floor Zero: “The Beginning of No End.” Kinda poetic, right?
+[BLADE]
+"I promise. I’ll come back. I swear it."
 
-CHALLENGER: (deadpan) Sounds like misery with extra steps.
+She weakly smiles, and he leans down, brushing her hair back gently. The morning sunlight filters through the window, casting long, hopeful shadows across the room.
 
-NUGGET: (mock gasp) Don’t be so dramatic, merc boy! You’ve got me. You’ll be fine.
+Blade rises, slinging his sword over his shoulder and grabbing his worn leather pack. He takes one last look at his mother before stepping outside. Nugget flits around impatiently, wings buzzing.
 
-The camera lingers on Nugget’s grin — for a moment, her eyes flash with a faint, unreadable red hue.
+[NUGGET]
+  "Come on! The Tower won’t wait for anyone’s goodbyes. And I know a mercenary like you isn’t going to sit still anyway."
 
-NUGGET (softly, almost to herself): …You’ll be fine.
+[BLADE]
+  (quietly, under his breath)
+  "...Ready as I’ll ever be."
+
+| They walk together through the quiet streets. Blade passes by the apothecary where he leaves the coins to pay for his mother's treatment.
+| The shopkeeper nods, unaware of the Tower looming on the horizon.
+
+| The Tower rises in the distance, impossibly tall, its faint runes glowing softly as if sensing their approach.
+| Nugget flits ahead, a playful gleam in its eyes, but something unreadable flickers in its expression — a hint of knowing too much.
+
+[NUGGET]
+ "Here we are… the beginning. First step, first floor. Don’t worry, it’s… mostly safe. Mostly."
+
+[BLADE]
+  (steadying his grip on his sword)
+  "Mostly... right. Let’s go."
+
+| The massive gates loom closer, dark and immense, faintly humming in the morning light. Blade and Nugget approach side by side, the Tower silent yet palpably alive, awaiting the mercenary who dared to step inside.
+
+
+| Blade left home with only desperation, a promise, and a sword. Ahead lay the Tower — vast, unknowable, and indifferent to the life of the boy who dared to climb it. Yet something... somewhere, seemed to notice him.
+
+| The two step inside. The doors close behind them with a thunderous echo.
+| Darkness. Then, a faint blue glow floods the hall.
+
+[BLADE] 
+  "It’s colder than I thought."
+
+[NUGGET] 
+  "That’s because this place isn’t alive. Not yet. 
+  The Tower watches every new challenger to see if they’re worth waking up for."
+
+[CHALLENGER] 
+  "Great. I get judged by a building now."
+
+[NUGGET] 
+  "Oh, you’ll get used to it. The higher you climb, the more it notices you."
+
+| The floor pulses faintly, lighting a spiral pattern beneath their feet.
+
+[CHALLENGER] 
+  "So this is where I start."
+
+[NUGGET] 
+  "Yup! Floor Zero: "The Beginning of No End." Kinda poetic, right?"
+
+[CHALLENGER] 
+  "Sounds like misery with extra steps."
+
+
+[NUGGET] 
+  "Don’t be so dramatic, merc boy! You’ve got me. You’ll be fine."
+  You’ll be fine."
+
+| And so, the Mercenary and his cheerful, blue, floating, possibly very manipulative friend stepped into the great Tower, 
+  ready to fight their way to a life of peace, prosperity, and a surprisingly tidy happily-ever-after.
