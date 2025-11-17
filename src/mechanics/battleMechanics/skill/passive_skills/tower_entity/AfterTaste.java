@@ -13,7 +13,7 @@ public class AfterTaste extends PassiveSkill{
     @Override
     public void autoActivate(Entity user, Entity opponent, Battle battle) {
         if(opponent.getLastDamage() > 0 && Math.random() < 0.4){    
-            System.out.println("| " + user.getName() + " transfers to " + opponent.getName() + " the sweet After Taste of the last bite!");
+            System.out.println("| " + user.getName() + " transfers to " + opponent.getName() + " the sweet After Taste of the last bite! (Passive Skill)");
             user.dmgAttack(opponent, user.getAtk() + (int)(opponent.getLastDamage() * 0.15));
         }
     }

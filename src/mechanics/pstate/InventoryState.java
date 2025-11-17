@@ -14,9 +14,9 @@ public class InventoryState implements PlayerState{
     public void enterState(Challenger player) {
         System.out.println();
         System.out.println();
-        System.out.println("-----------------");
-        System.out.println("| | Inventory | |");
-        System.out.println("-----------------");
+        System.out.println("-------------------");
+        System.out.println("| | Inventory 🎒| |");
+        System.out.println("-------------------");
 
         char choice = '\0';
 
@@ -45,14 +45,18 @@ public class InventoryState implements PlayerState{
             else System.out.println("|> Weapon : NONE");
             
             System.out.println("----------------------------------------");
-            System.out.println("[b] - Go back       (Exit inventory)");
-            System.out.println("[l] - skill list    (Check skills)");
+            System.out.println("| Player |");
+            System.out.println("----------");
+            System.out.println("[b] - Go back           (Exit inventory)");
+            System.out.println("[l] - skill list        (Check skills)");
             System.out.println("[0] - Save game state");
             System.out.println("----------------------------------------");
-            System.out.println("[f] - Food          (Consume food)");
-            System.out.println("[w] - Weapon        (Equip Weapon)");
-            System.out.println("[s] - Skill Scroll  (Learn skill)");
-            System.out.println("[k] - key           (Check keys)");
+            System.out.println("| Inventory |");
+            System.out.println("-------------");
+            System.out.println("[f] - Food              (Consume food)");
+            System.out.println("[w] - Weapon            (Equip Weapon)");
+            System.out.println("[s] - Skill Scroll      (Learn skill)");
+            System.out.println("[k] - key               (Check keys)");
             System.out.println("----------------------------------------");
             System.out.print("| Select Inventory Section >> ");
             choice = OptionSelect.charInput(choice);

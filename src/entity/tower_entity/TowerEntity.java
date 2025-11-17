@@ -57,8 +57,8 @@ public abstract class TowerEntity extends Entity{
     @Override
     public void defeated(Challenger player, Battle battle){
         
-        TextTyper.typeText("| " + getName() + " has been defeated.", 18);
-        TextTyper.typeText("| " + defeatMessage, 18);
+        TextTyper.typeText("| " + getName() + " has been defeated.", 18, true);
+        TextTyper.typeText("| " + defeatMessage, 18, true);
 
         if(this instanceof Remnant rmnt){
             player.getCurrentArea().getAreaEntities().remnantDefeated(rmnt);
@@ -78,9 +78,10 @@ public abstract class TowerEntity extends Entity{
         }
 
         player.resetLastDamage();
-        player.gainXp((int)(lvl * (33.0 + Math.random())));
+        player.gainXp( (int) ((((atk + hp) / 2) * Math.log(lvl * lvl * lvl)) * 1.28)  );
         dropAll(player.getCurrentArea());
     }
+
 
 
     public void afterBattleCutscene(String cutsceneID, Challenger player){

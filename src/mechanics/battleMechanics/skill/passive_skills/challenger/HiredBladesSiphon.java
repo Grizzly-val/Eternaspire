@@ -15,12 +15,12 @@ public class HiredBladesSiphon extends PassiveSkill{
         if(opponent.getLastDamage() > 0){
             if(user.getHp() < user.getHp() * 0.2){
                 if(Math.random() < 0.6){
-                    System.out.println("| " + user.getName() + " displayed a hired blade's greed. Siphoned " + opponent.getLastDamage() + "HP.");
+                    System.out.println("| " + user.getName() + " displayed a hired blade's greed. Siphoned " + opponent.getLastDamage() + "HP. (Passive Skill)");
                     user.heal(opponent.getLastDamage());
                 }
             } else{
                 if(Math.random() < 0.3){
-                    System.out.println("| " + user.getName() + " displayed a hired blade's greed. Siphoned " + opponent.getLastDamage() + "HP.");
+                    System.out.println("| " + user.getName() + " displayed a hired blade's greed. Siphoned " + opponent.getLastDamage() + "HP. (Passive Skill)");
                     user.heal(opponent.getLastDamage());
                 }
             }

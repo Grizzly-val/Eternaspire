@@ -13,7 +13,7 @@ public class FleetingAid extends PassiveSkill{
     @Override
     public void autoActivate(Entity user, Entity opponent, Battle battle) {
         if(user.getHp() < user.getMaxHp() && Math.random() < 0.80){
-            System.out.println("| " + user.getName() + " activated Fleeting aid. " + (user.getMaxHp() * 0.07) + "hp restored");
+            System.out.println("| " + user.getName() + " activated Fleeting aid. " + (user.getMaxHp() * 0.07) + "hp restored! (Passive Skill)");
             user.heal((int)(user.getMaxHp() * 0.07));
         }
     }

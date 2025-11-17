@@ -13,7 +13,7 @@ public class Reverberate extends PassiveSkill{
     @Override
     public void autoActivate(Entity user, Entity opponent, Battle battle) {
         if(Math.random() < 0.3){
-            System.out.println("| " + user.getName() + " Revertebrates for another strike");
+            System.out.println("| " + user.getName() + " Revertebrates for another strike (Passive Skill)");
             battle.repeatTurn(user);
         }
     }

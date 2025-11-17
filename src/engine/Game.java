@@ -9,6 +9,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+
 import entity.player.Challenger;
 import entity.player.Mercenary;
 import mechanics.cutscene.CutsceneManager;
@@ -47,13 +48,14 @@ public class Game implements Serializable {
 
         if (player != null) {
             System.out.println("\n| Welcome back!");
+            saveGame();
             player.play();
             return;
         }
 
         // No saved player, first time for this account
-        TextTyper.typeText("Speaking of...", 50);
-        TextTyper.typeText("Who are you?", 30);
+        TextTyper.typeText("Speaking of...", 50, true);
+        TextTyper.typeText("Who are you?", 30, true);
         System.out.println("\n| Choose your character!");
 
         char choice = '\0';
@@ -120,7 +122,9 @@ public class Game implements Serializable {
 
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(saveFile))) {
             oos.writeObject(this);
-            System.out.println("| Game saved successfully ✅");
+            System.out.println();
+            TextTyper.typeText("| Game saved successfully ✅", 30, true);
+            System.out.println("----------------------------------");
         } catch (IOException e) {
             System.err.println("! ! Failed to save game ! !");
             e.printStackTrace();

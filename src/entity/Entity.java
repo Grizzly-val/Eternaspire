@@ -15,6 +15,8 @@ public abstract class Entity implements Serializable{
     protected int maxHp;
     private int lastDamage = 0;
 
+
+
     public Entity(String name, String description, int lvl, int hp, int maxHp, int atk){
         this.lvl = lvl;
         this.name = name;
@@ -22,6 +24,7 @@ public abstract class Entity implements Serializable{
         this.hp = hp;
         this.maxHp = maxHp;
         this.atk = atk;
+
     }
 
     public int getLvl(){return lvl;}

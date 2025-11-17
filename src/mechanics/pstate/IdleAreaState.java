@@ -15,9 +15,6 @@ public class IdleAreaState implements PlayerState {
     @Override
     public void enterState(Challenger player) {
         System.out.println();
-        System.out.println("-------------------");
-        System.out.println("| | Area Idling | |");
-        System.out.println("-------------------");
         System.out.println("| Current Floor : \"" + player.getCurrentFloor().getName() + "\" (" + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor)\n| Current Area  : " + player.getCurrentArea().getName());
         System.out.println("--------------------------------------------");
         System.out.println();
@@ -27,14 +24,21 @@ public class IdleAreaState implements PlayerState {
         char choice = '\0';
 
         while(choice != 'b'){
-            System.out.println("[b] - Go back           (Area Navigation)");
-            System.out.println("[e] - Explore area      (Challenge / Collect)");                 // battle || loot corpses, chests, etc || uncover mysteries
+            System.out.println();
+            System.out.println("| Area Idling |");
+            System.out.println("---------------");
+            System.out.println("[b] - Go back           (Area Navigation )");
+            System.out.println("[e] - Explore area      (Scouting area   )");                 // battle || loot corpses, chests, etc || uncover mysteries
+            System.out.println("[i] - Open inventory    (Inventory       )");
             System.out.println("--------------------------------------------");
             choice = OptionSelect.charInput(choice);
             System.out.println("--------------------------------------------");
             System.out.println();
             
             switch(choice){
+                case 'i':
+                    new InventoryState().enterState(player);
+                    break;
                 case 'b':
                     System.out.println();
                     System.out.println();
@@ -60,6 +64,8 @@ public class IdleAreaState implements PlayerState {
             System.out.println("| Floor     :   " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor");
             System.out.println("| Area:     :   " + player.getCurrentArea().getName());
             System.out.println("--------------------------------------------");
+            System.out.println("| Scouting Area 🚩|");
+            System.out.println("-------------------");
             System.out.println("[b] Go back         (,,,)");
             System.out.println("[f] Danger Foe      (fight)");
             System.out.println("[c] Collectibles    (loot)");
@@ -117,6 +123,8 @@ public class IdleAreaState implements PlayerState {
         char choice = '\0';
 
         while(choice != 'r' && choice  != 'e'){
+            System.out.println("| Engage battle ⚔️|");
+            System.out.println("--------------------");
             System.out.println("[r] - Remnants (" + pAreaEntities.getRemnantCount() + ")");
             System.out.println("[e] - Area Echo");
             System.out.println("--------------------------------------------");

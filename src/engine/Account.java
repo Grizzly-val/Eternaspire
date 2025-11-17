@@ -1,10 +1,11 @@
 package engine;
 import java.io.Serializable;
-
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
 import ui.OptionSelect;
+import ui.TextTyper;
 
 
 public class Account implements Serializable{
@@ -28,22 +29,39 @@ public class Account implements Serializable{
     public String getPassword(){return password;}
 
 
-    private void selectGame(){
+    private void showGames(){
+        System.out.println("----------------------------------");
         for(Entry<Integer, Game> g : accountGames.entrySet()){
-            System.out.println(g.getKey() + " - " + g.getValue().getName() + "| " + g.getValue().getCreation());
+            String gameName = g.getValue().getName();
+            LocalDateTime creationDate = g.getValue().getCreation();
+
+            // Use String.format to build the entire formatted line
+            String formattedLine = String.format(
+                "%d.) %-8s - %s", 
+                g.getKey(), 
+                gameName, 
+                creationDate
+            );
+            
+            // Print the single, complete, formatted string
+            System.out.println(formattedLine);
         }
     }
 
     public void accMenu(){
+        System.out.println();
+        System.out.println();
         System.out.println("----------------------------------");
         System.out.println("| Hello, " + username + "! ");
         System.out.println("----------------------------------");
         char choice = '\0';
         while(choice != 'o'){
-            System.out.println("[n] - New game");
-            System.out.println("[l] - Load game");
-            System.out.println("[d] - Delete game");
-            System.out.println("[o] - Log out");
+            System.out.println("| Account Menu |");
+            System.out.println("----------------");
+            System.out.println("[n] - New game      ✨");
+            System.out.println("[l] - Load game     📜");
+            System.out.println("[d] - Delete game   🗑️");
+            System.out.println("[o] - Log out       🚪");
             System.out.println("----------------------------------");
             choice = OptionSelect.charInput(choice);
             System.out.println("----------------------------------");
@@ -53,38 +71,49 @@ public class Account implements Serializable{
                     manager.saveAccounts();
                     return;
                 case 'n':
+                    System.out.println("| Creating new game >>");
                     String gameName = "";
-                    System.out.print("Name your game (10): ");
-                    while(gameName.length() > 10 || gameName.length() <= 0){
+                    System.out.print("| Name your game (10) >> Game name: ");
+                    while(gameName.length() > 7 || gameName.length() < 2){
                         gameName = OptionSelect.stringInput("");
+                        System.out.println("----------------------------------");
+                        if(gameName.length() > 7 || gameName.length() < 2){
+                            System.out.println();
+                            System.out.println("| Game name must be 2 to 7 characters long! ⚠️");
+                            System.out.println();
+                        }
+                        System.out.println("----------------------------------");
                     }
 
                     accountGames.put(gameCountChoice++, new Game(gameName, manager));
-                    System.out.println("| New game \"" + gameName + "\" added at slot " + (gameCountChoice - 1));
+                    System.out.println("| New game \"" + gameName + "\" added at slot " + (gameCountChoice - 1) + " 📥");
+                    System.out.println("----------------------------------");
                     manager.saveAccounts();
                     break;
                 case 'd':
                     if(accountGames.isEmpty()){
-                        System.out.println("| No game found! Nothing to delete");
+                        System.out.println("| No game found! Nothing to delete 👻");
                         break;
                     }
 
-                    selectGame();
+                    showGames();
                     System.out.println("----------------------------------");
                     int toDelete = OptionSelect.intInput(-1);
                     System.out.println("----------------------------------");
 
                     if(toDelete == -1){
-                        System.out.println("Cancelling game deletion...");
+                        System.out.println("| Cancelling game deletion... 💨");
+                        System.out.println("----------------------------------");
                         break;
                     }
 
                     if(accountGames.get(toDelete) == null){
-                        System.out.println("Game not found! ");
+                        System.out.println("| Game not found! 👻");
+                        System.out.println("----------------------------------");
                         break;
                     }
                     accountGames.get(toDelete).deleteData();
-                    System.out.println("| Game \"" + accountGames.get(toDelete).getName() + "\" Deleted");
+                    System.out.println("| Game \"" + accountGames.get(toDelete).getName() + "\" Deleted 🗑️");
                     System.out.println("----------------------------------");
                     accountGames.remove(toDelete);
                     manager.saveAccounts();
@@ -92,25 +121,30 @@ public class Account implements Serializable{
                 case 'l':
 
                     if(accountGames.isEmpty()){
-                        System.out.println("| No game found! Start a new game");
+                        System.out.println("| No game found! Start a new game 🕳️");
+                        System.out.println("----------------------------------");
                         break;
                     }
 
-                    selectGame();
-
+                    showGames();
+                    System.out.println("----------------------------------");
                     int toEnter = OptionSelect.intInput(-1);
+                    System.out.println("----------------------------------");
+        
 
                     if(accountGames.get(toEnter) == null){
-                        System.out.println("| Game not found! ");
+                        System.out.println("| Game not found! 👻");
                         break;
                     }
 
-                    System.out.println("| Entering Eternaspire >>");
+                    TextTyper.typeText("| Entering Eternaspire >>", 50, true);
                     accountGames.get(toEnter).gameStart();
+                    System.out.println("----------------------------------");
                     
                     break;
                 default:
-                    System.out.println("! ! Invalid input ! !");
+                    System.out.println("! ! Invalid input ! ! ❓");
+                    System.out.println("----------------------------------");
                     break;
             }
 

@@ -10,17 +10,13 @@ public class FloorNavigationState implements PlayerState {
     public void enterState(Challenger player){
         Floor pCurrFloor = player.getCurrentFloor();
         System.out.println();
-        System.out.println("------------------------");
-        System.out.println("| | Floor Navigation | |");
-        System.out.println("------------------------");
         System.out.println(">   Eternaspire's " + Format.getOrdinal(pCurrFloor.getNumber()) + " floor - \""+ pCurrFloor.getName() + "\"");
         System.out.println(">   " + pCurrFloor.getDescription());
-        System.out.println();
-        System.out.println("                | Floor Navigation |");
-
             char choice = '\0';
             while(choice != 's'){
                 System.out.println("------------------------------------------------------------");
+                System.out.println("| Floor Navigation ⏳|");
+                System.out.println("---------------------");
                 System.out.println("[a] - Ascend\n[d] - Descend\n[s] - Stay on current floor\n[i] - Open inventory\n\n[0] - EXIT GAME");
                 System.out.println("------------------------------------------------------------");
                 choice = OptionSelect.charInput(choice);

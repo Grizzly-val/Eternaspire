@@ -15,9 +15,7 @@ public class AreaNavigationState implements PlayerState {
     public void enterState(Challenger player) {
 
         System.out.println();
-        System.out.println("-----------------------");
-        System.out.println("| | Area Navigation | |");
-        System.out.println("-----------------------");
+
         System.out.println("| You're in Eternaspire " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor: " + player.getCurrentFloor().getName() + "...");
 
         System.out.println("------------------------------------------------------------");
@@ -27,6 +25,8 @@ public class AreaNavigationState implements PlayerState {
         char choice = '\0';
 
         while(choice != 'f' && choice != 'e'){
+            System.out.println("| Area Navigation 📍|");
+            System.out.println("--------------------");
             System.out.println("[f] - Floor Entrance          (Floor navigation)");
             System.out.println("[e] - Explore Floor           (Area navigation)");
             System.out.println("[i] - Inventory               (Open inventory)");
@@ -80,8 +80,9 @@ public class AreaNavigationState implements PlayerState {
         System.out.println();
         int index = -1;
         while(areaEntered == null){
-            System.out.println("          | Floor Areas |");
             System.out.println("------------------------------------");
+            System.out.println("| Floor Areas 🗼|");
+            System.out.println("-----------------");
             for(Entry<Integer, Area> parentAreaEntry : player.getCurrentFloor().getAreas().entrySet()){
                 System.out.println(parentAreaEntry.getKey() + " - " + parentAreaEntry.getValue().getName());
             }

@@ -45,7 +45,6 @@ public abstract class Echo extends TowerEntity{
     public void usePassiveSkill(Entity opponent, Battle battle){
         for(PassiveSkill pSkill : pSkillSet){
             if(pSkill != null){
-                System.out.println("| " + this.getName() + " used " + pSkill.getName() + " (Passive Skill)");
                 pSkill.autoActivate(this, opponent, battle);
             }
         }

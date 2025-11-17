@@ -12,7 +12,7 @@ public final class CutsceneManager {
     public static void checkCutscene(String cutsceneID, Challenger player){
 
         System.out.println();
-        TextTyper.typeText("| Starting cutscene >>", 70);
+        TextTyper.typeText("| Starting cutscene >>", 70, true);
         System.out.println();
 
         cutsceneID += "_as" + player.getJob().replace(" ", "");
@@ -36,27 +36,27 @@ public final class CutsceneManager {
                 startCutscene(cutsceneID);  
                 break;
             case "cutscene_FirstEncounterWith_ElementalBlob_asMercenary":
-                TextTyper.typeText("| You have encountered an elemental blob for the first time", 20);
+                TextTyper.typeText("| You have encountered an elemental blob for the first time", 20, true);
                 startCutscene(cutsceneID);
-                TextTyper.typeText("| Engaging battle with Elemental Blob...", 80);
+                TextTyper.typeText("| Engaging battle with Elemental Blob...", 80, true);
                 break;
             case "cutscene_Learn_ChallengersWill_asMercenary":
-                TextTyper.typeText("| The scroll unfurls by itself. Its text burns away line by line, searing into the mercenary's shadow instead of his skin.", 20);
+                TextTyper.typeText("| The scroll unfurls by itself. Its text burns away line by line, searing into the mercenary's shadow instead of his skin.", 20, true);
                 startCutscene(cutsceneID);
-                TextTyper.typeText("| Skill unlocked: “Challenger's Will.” The Tower trembles faintly, as if it noticed.", 80);
+                TextTyper.typeText("| Skill unlocked: “Challenger's Will.” The Tower trembles faintly, as if it noticed.", 80, true);
                 break;
             case "cutscene_UseKey_TheWhetstoneClavis":
-                TextTyper.typeText("| The jagged key hums as it's pressed into the lock. Sparks race along its edge, like metal being sharpened on stone.", 20);
+                TextTyper.typeText("| The jagged key hums as it's pressed into the lock. Sparks race along its edge, like metal being sharpened on stone.", 20, true);
                 startCutscene(cutsceneID);
-                TextTyper.typeText("| The lift seals behind them. The next floor rumbles awake, echoing with the sound of metal on metal.", 80);
+                TextTyper.typeText("| The lift seals behind them. The next floor rumbles awake, echoing with the sound of metal on metal.", 80, true);
                 break;
             case "cutscene_FirstTimeEquip_ChallengersSword_asMercenary":
-                TextTyper.typeText("| The sword slides halfway out of its sheath — chipped, plain, and old. Yet when the Challenger grips it, the metal hums faintly, responding to his pulse.", 20);
+                TextTyper.typeText("| The sword slides halfway out of its sheath — chipped, plain, and old. Yet when the Challenger grips it, the metal hums faintly, responding to his pulse.", 20, true);
                 startCutscene(cutsceneID);
-                TextTyper.typeText("| Challenger's Sword in hand. Somewhere in the Tower, a quiet resonance stirs.", 80);                
+                TextTyper.typeText("| Challenger's Sword in hand. Somewhere in the Tower, a quiet resonance stirs.", 80, true);                
                 break;
             default:
-                TextTyper.typeText("Cutscene " + cutsceneID + " not found", 100);
+                TextTyper.typeText("Cutscene " + cutsceneID + " not found", 100, true);
                 break;
         }
 
@@ -94,7 +94,7 @@ public final class CutsceneManager {
             String line;
 
             while ((line = reader.readLine()) != null) {
-                TextTyper.typeText(line, 0);
+                TextTyper.typeText(line, 0, true);
                 
                 lineDelay = (int)(line.length() / 0.02) - (int)(line.length() * 30);
 

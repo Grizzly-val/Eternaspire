@@ -43,7 +43,8 @@ public abstract class Challenger extends Entity{
     private int xp;
     private int maxXp;
 
-    
+    private int baseHp;
+    private int baseAtk;
 
     private transient Game gameManager;
 
@@ -55,8 +56,9 @@ public abstract class Challenger extends Entity{
         this.maxSkillPts = 5;
         this.xp = 0;
         this.maxXp = 100;
-    
 
+        this.baseHp = hp;
+        this.baseAtk = atk;
 
         System.out.println("Hello, Challenger!");
         System.out.println("Hmm... A " + job + "...");
@@ -135,11 +137,12 @@ public abstract class Challenger extends Entity{
     }
 
     private void levelUp(){
+
         System.out.println("You have leveled up!");
         this.lvl += 1;
         System.out.println(this.lvl - 1 + " -> " + this.lvl);
 
-        maxXp += (int)(50.0 * Math.log(this.lvl));
+        maxXp += (int)(100 * ((float)lvl * 0.11));
 
         System.out.println("+1 Max Skill Point");
         System.out.println("Max Skill Points: " + maxSkillPts + " -> ");
@@ -147,11 +150,11 @@ public abstract class Challenger extends Entity{
         System.out.println(maxSkillPts);
 
         System.out.print("MAX HP: " + maxHp + " -> ");
-        maxHp += (int)(10.0 * Math.log(this.lvl));
+        maxHp += (int)(baseHp * ((float)lvl * 0.2));
         System.out.println(maxHp);
 
         System.out.print("ATK: " + atk + " -> ");
-        atk += (int)(3.5 * Math.log(this.lvl));
+        atk += (int)(baseAtk * ((float)lvl * 0.13));
         System.out.println(atk);
 
         System.out.println("HP replenished");
@@ -279,7 +282,6 @@ public abstract class Challenger extends Entity{
 
 
     public void play(){
-        saveState();
         new AreaNavigationState().enterState(this);
     }
     

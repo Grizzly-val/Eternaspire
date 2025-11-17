@@ -1,25 +1,31 @@
 package engine;
 
 import ui.OptionSelect;
+import ui.TextTyper;
 
 public class Main {
     public static void main(String[] args){
 
-        System.out.println();
-        AccountManager accManager = new AccountManager();
+        
 
         System.out.println();
-        System.out.println("Welcome to Eternaspire!");
+        TextTyper.typeText("Welcome, to Eternaspire! ⏳", 50, false);
         System.out.println();
+        System.out.println();
+
+        AccountManager accManager = new AccountManager();
 
         char choice = '\0';
         while(choice != 'e'){
             System.out.println("----------------------------------");
-            System.out.println("[p] - play");
-            System.out.println("[e] - exit game");
+            System.out.println("| Home menu |");
+            System.out.println("-------------");
+            System.out.println("[p] - play          ⚔️");
+            System.out.println("[e] - exit game     ⚔️");
             System.out.println("----------------------------------");
             choice = OptionSelect.charInput(choice);
-            System.out.println("----------------------------------");
+            System.out.println("------------------------------------");
+            System.out.println();
             switch(choice){
                 case 'e':
                     System.out.println();
@@ -27,7 +33,8 @@ public class Main {
                     System.exit(0);
                     break;
                 case 'p':
-                    System.out.println("Do you have an existing account?");
+                    System.out.println("| Do you have an existing account? |");
+                    System.out.println("------------------------------------");
                     System.out.print("| Confirm >> ");
                     String username = "";
                     String password = "";

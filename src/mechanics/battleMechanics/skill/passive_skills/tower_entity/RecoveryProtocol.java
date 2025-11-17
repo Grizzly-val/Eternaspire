@@ -13,7 +13,7 @@ public class RecoveryProtocol extends PassiveSkill{
     @Override
     public void autoActivate(Entity user, Entity opponent, Battle battle) {
         if(user.getLastDamage() > 0 && Math.random() < 0.3){
-            System.out.println("| The " + user + " stabilized, immediately initiating a Recovery Protocol!");
+            System.out.println("| The " + user + " stabilized, immediately initiating a Recovery Protocol! (Passive Skill)");
             user.heal(user.getLastDamage());
         }
 
