@@ -34,7 +34,7 @@ public class Key extends Consumables{
                 triggerCutscene(this.getCutsceneID(), player);
                 floor.unlock();
                 System.out.println("| You unlocked the floor: " + floor.getName());
-                System.out.println("| You can now enter the \"" + Format.getOrdinal(floor.getNumber()) + "\"");
+                System.out.println("| You can now enter the " + Format.getOrdinal(floor.getNumber()) + " Floor");
                 player.getInventory().remove(this);
             } else {
                 System.out.println("| This key does not fit this floor.");

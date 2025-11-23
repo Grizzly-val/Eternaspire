@@ -1,4 +1,8 @@
 {
+    // delete if necessary
+    "files.encoding": "utf8", 
+
+    // keep
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [

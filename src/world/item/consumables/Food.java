@@ -18,27 +18,24 @@ public class Food extends Consumables {
         switch(this.effect){
             case HP:
                 System.out.println("| You consumed " + getName());
-                System.out.println("| " + effectAmount + " hp gained!");
                 player.heal(effectAmount);
                 player.getInventory().remove(this);
                 break;
             case XP:
                 System.out.println("| You consumed " + getName());
-                System.out.println("| " + effectAmount + " xp added!");
                 player.gainXp(effectAmount);
                 player.getInventory().remove(this);
                 break;
             case SP:
                 System.out.println("| You consumed " + getName());
-                System.out.println("| " + effectAmount + " sp recovered!");
                 player.addSkillPoint(effectAmount);
                 player.getInventory().remove(this);
                 break;
             default:
-                System.out.println("| Food filled Challenger's stomach");
+                System.out.println("| Food filled the Challenger's stomach");
                 break;
         }
-        if(this.getCutsceneID() != "nocutscene"){
+        if(!this.getCutsceneID().equals("nocutscene")){
             triggerCutscene(getCutsceneID(), player);
         }
 
@@ -48,7 +45,7 @@ public class Food extends Consumables {
     @Override
     public void triggerCutscene(String cutsceneID, Challenger player) {
         System.out.println();
-        CutsceneManager.checkCutscene(cutsceneID + "_as" + player.getJob(), player);
+        CutsceneManager.checkCutscene(cutsceneID, player);
         System.out.println();
     }
 

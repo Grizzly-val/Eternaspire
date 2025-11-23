@@ -14,12 +14,12 @@ import mechanics.inventory.PlayerInventory;
 import mechanics.pstate.AreaNavigationState;
 import ui.Format;
 import ui.OptionSelect;
+import ui.TextTyper;
 import world.item.Item;
 import world.item.consumables.Key;
 import world.item.wpn.Weapon;
 import world.location.Area;
 import world.location.Floor;
-import world.location.locationData.FloorData;
 
 public abstract class Challenger extends Entity{
     
@@ -137,41 +137,43 @@ public abstract class Challenger extends Entity{
     }
 
     private void levelUp(){
-
-        System.out.println("You have leveled up!");
         this.lvl += 1;
-        System.out.println(this.lvl - 1 + " -> " + this.lvl);
-
-        maxXp += (int)(100 * ((float)lvl * 0.11));
-
-        System.out.println("+1 Max Skill Point");
-        System.out.println("Max Skill Points: " + maxSkillPts + " -> ");
+        Format.boxify("You have leveled up! " + (this.lvl - 1) + " -> " + this.lvl);
+        maxXp += (int)(100 * ((float)lvl * 0.188392));
+        System.out.println("---------------------------------------------------------");
+        System.out.println("| +1 Max Skill Point");   
+        System.out.print("| Max Skill Points: " + maxSkillPts + " -> ");
         maxSkillPts += 1;
         System.out.println(maxSkillPts);
-
-        System.out.print("MAX HP: " + maxHp + " -> ");
-        maxHp += (int)(baseHp * ((float)lvl * 0.2));
+        System.out.println("---------------------------------------------------------");
+        System.out.print("| MAX HP: " + maxHp + " -> ");
+        maxHp = (int)(maxHp + ((Math.sqrt(lvl) * Math.log(maxHp * lvl * baseHp))));
         System.out.println(maxHp);
+        System.out.println("---------------------------------------------------------");
 
-        System.out.print("ATK: " + atk + " -> ");
-        atk += (int)(baseAtk * ((float)lvl * 0.13));
+        System.out.print("| ATK: " + atk + " -> ");
+        atk = (int)(atk + ((Math.sqrt(lvl * 2) + Math.log(atk * lvl * baseAtk))));
         System.out.println(atk);
-
-        System.out.println("HP replenished");
+        System.out.println("---------------------------------------------------------");
+        System.out.println("| HP replenished");
         hp = maxHp;
-        System.out.println("HP: " + hp);
-
-        System.out.println("Skill Points replenished");
+        System.out.println("| HP: " + hp);
+        System.out.println("---------------------------------------------------------");
+        System.out.println("| Skill Points replenished");
         skillPts = maxSkillPts;
-        System.out.println("SP: " + skillPts);
+        System.out.println("| SP: " + skillPts);
+        System.out.println("---------------------------------------------------------");
         
     }
 
     public void gainXp(int xpGained){
-        System.out.println("\n| You gained " + xpGained + " xp!");
+
+        Format.boxify("You gained " + xpGained + " xp!");
+
         System.out.print("| xp: " + xp + " -> ");
         xp += xpGained;
-        System.out.println(xp + "\n");
+        System.out.println(xp + "");
+        System.out.println("----------------");
         
         while(xp >= maxXp){
             xp -= maxXp;
@@ -199,15 +201,16 @@ public abstract class Challenger extends Entity{
             ActiveSkill chosenSkill = activeSkillSet.get(choice - 1);
             if(chosenSkill != null){
                 if(skillPts - chosenSkill.getPtUse() >= 0){
-                    System.out.println("| Used " + chosenSkill.getName() + " - " + chosenSkill.getPtUse());
-                    System.out.println("| Skill point/s: " + skillPts + " -> " + (skillPts - chosenSkill.getPtUse()));
+                    System.out.println("| Used " + chosenSkill.getName() + " [" + chosenSkill.getPtUse() + "]");
+                    if(chosenSkill.getPtUse() != 0)
+                        System.out.println("| Skill point/s: " + skillPts + " -> " + (skillPts - chosenSkill.getPtUse()));
                     skillPts -= chosenSkill.getPtUse();
                     chosenSkill.activate(this, opponent, battle);
                 }
 
                 else{
                     System.out.println("| You do not have enough Skill Points!");
-                    System.out.println("| " + chosenSkill.getName() + " [" + chosenSkill.getPtUse() + "]");
+                    System.out.println("| Can't use " + chosenSkill.getName() + " [" + chosenSkill.getPtUse() + "sp]");
                     System.out.println("| Your Skill Point/s: " + skillPts);
                     System.out.println("| Using normal attack instead...");
                     System.out.println();
@@ -287,6 +290,17 @@ public abstract class Challenger extends Entity{
     
     @Override
     public void defeated(Challenger player, Battle battle){
+        if(!player.isAlive()){
+            TextTyper.typeText("You have fallen.", 100, true);
+            TextTyper.typeText("| " + player.getName(), 50, true);
+            TextTyper.typeText("| " + player.getJob(), 50, true);
+            TextTyper.typeText("| " + player.getLvl(), 50, true);
+            TextTyper.typeText("| Active Skills : " + player.activeSkillSet.size() + "  | Passive Skills : " + player.passiveSkillSet.size(), 80, true);
+            TextTyper.typeText("| Deleting game data ...", 70, true);
+
+            gameManager.deleteData();
+
+        }
     }
 
     @Override

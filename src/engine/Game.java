@@ -28,11 +28,15 @@ public class Game implements Serializable {
     private AccountManager manager;
     private Challenger player = null;
     private FloorData floorData = new FloorData();
+    private int gameKey;
+    private Account account;
 
-    public Game(String name, AccountManager manager) {
+    public Game(String name, AccountManager manager, int gameKey, Account account) {
         this.creation = LocalDateTime.now();
         this.name = name;
         this.manager = manager;
+        this.gameKey = gameKey;
+        this.account = account;
     }
 
     public LocalDateTime getCreation() { return creation; }
@@ -172,6 +176,11 @@ public class Game implements Serializable {
         } else {
             System.err.println("| No save file found for deletion for \"" + this.name + "\".");
         }
+        if(account.getAccountGames().get(gameKey) != null){
+            account.getAccountGames().remove(gameKey);
+        }
+        account.accMenu();
+
     }
 
 

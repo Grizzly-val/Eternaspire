@@ -24,12 +24,11 @@ public class IdleAreaState implements PlayerState {
         char choice = '\0';
 
         while(choice != 'b'){
-            System.out.println();
             System.out.println("| Area Idling |");
             System.out.println("---------------");
-            System.out.println("[b] - Go back           (Area Navigation )");
-            System.out.println("[e] - Explore area      (Scouting area   )");                 // battle || loot corpses, chests, etc || uncover mysteries
-            System.out.println("[i] - Open inventory    (Inventory       )");
+            System.out.println("[b] - Go back           (Area Navigation)");
+            System.out.println("[e] - Explore area      (Scout area)");                 // battle || loot corpses, chests, etc || uncover mysteries
+            System.out.println("[i] - Open inventory    (Inventory)");
             System.out.println("--------------------------------------------");
             choice = OptionSelect.charInput(choice);
             System.out.println("--------------------------------------------");
@@ -66,10 +65,10 @@ public class IdleAreaState implements PlayerState {
             System.out.println("--------------------------------------------");
             System.out.println("| Scouting Area 🚩|");
             System.out.println("-------------------");
-            System.out.println("[b] Go back         (,,,)");
+            System.out.println("[b] Go back         (Area entrance)");
             System.out.println("[f] Danger Foe      (fight)");
             System.out.println("[c] Collectibles    (loot)");
-            System.out.println("[i] Inventory     (Open inventory)");
+            System.out.println("[i] Inventory       (Open inventory)");
             System.out.println("--------------------------------------------");
             choice = OptionSelect.charInput(choice);
             System.out.println("--------------------------------------------");
@@ -84,9 +83,10 @@ public class IdleAreaState implements PlayerState {
                     System.out.println();
                     if(!player.getCurrentArea().getAreaEntities().isClear()){
                         System.out.println();
-                        System.out.println("| Steel yourself, that's the path forward.");
-                        System.out.println("| It's the only way to ascend the tower.");
-                        System.out.println("--------------------------------------------");
+                        System.out.println("---------------------------------------------");
+                        System.out.println("| Steel yourself, that's the path forward.  |");
+                        System.out.println("| It's the only way to ascend the tower.    |");
+                        System.out.println("---------------------------------------------");
                         engageBattle(player);
                     } else System.out.println("| Area is clear of danger");
                     System.out.println();
@@ -123,10 +123,19 @@ public class IdleAreaState implements PlayerState {
         char choice = '\0';
 
         while(choice != 'r' && choice  != 'e'){
-            System.out.println("| Engage battle ⚔️|");
+            System.out.println("| Engage battle ⚔️  |");
             System.out.println("--------------------");
-            System.out.println("[r] - Remnants (" + pAreaEntities.getRemnantCount() + ")");
-            System.out.println("[e] - Area Echo");
+
+            System.out.println("[r] - Remnants  (" + pAreaEntities.getRemnantCount() + ")");
+            
+
+
+
+            if(pAreaEntities.hasEcho())
+                System.out.println("[e] - Echo");
+            else System.out.println("[e] - Echo (Area has no Echo)");
+
+
             System.out.println("--------------------------------------------");
             choice = OptionSelect.charInput(choice);
             System.out.println("--------------------------------------------");
@@ -134,20 +143,20 @@ public class IdleAreaState implements PlayerState {
             System.out.println();
             switch(choice){
                 case 'r':
-                    if(!pAreaEntities.hasRemnant() && pAreaEntities.hasEcho()) System.out.println("A quiet yet loud echo is all that's left in this area");
-                    else if(!pAreaEntities.hasRemnant()) System.out.println("Area is clear of wandering Remnants");
+                    if(!pAreaEntities.hasRemnant() && pAreaEntities.hasEcho()) System.out.println("| A quiet yet loud echo is all that's left in this area");
+                    else if(!pAreaEntities.hasRemnant()) System.out.println("| Area is clear of wandering Remnants");
                     else{
                         Remnant chosenRemnant = pAreaEntities.fightRemnant();
+                        System.out.println();
+                        System.out.println("===============================================================");
                         System.out.println("| Engaging battle with " + chosenRemnant.getName());
                         System.out.println("| Level " + chosenRemnant.getLvl());
+                        System.out.println("===============================================================");
                         new Battle(player, chosenRemnant);
                     }
-                    if(pAreaEntities.hasRemnant()){
-                        break;
-                    }
                 case 'e':
-                    System.err.println();
-                    if(!pAreaEntities.hasEcho()) System.out.println("| This area holds no Echo.");
+                    System.out.println();
+                    if(!pAreaEntities.hasEcho()) System.out.println("\n| This area holds no Echo.\n");
                     
                     else{
                         if(!pAreaEntities.hasRemnant()){
@@ -156,8 +165,10 @@ public class IdleAreaState implements PlayerState {
                                 new Battle(player, chosenEcho);
                             }
                         } else{
-                            System.out.println("| Haste will not grant victory; the Echo waits for the worthy.");
-                            System.out.println("| Deal with the Remnants first.");
+                            System.out.println("----------------------------------------------------------------");
+                            System.out.println("| Haste will not grant victory; the Echo waits for the worthy. |");
+                            System.out.println("| Deal with the Remnants first.                                |");
+                            System.out.println("----------------------------------------------------------------");
                         }
                     }
                     break;

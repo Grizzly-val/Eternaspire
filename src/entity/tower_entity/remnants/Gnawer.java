@@ -11,9 +11,8 @@ public class Gnawer extends Remnant{
 
 
     public Gnawer(int lvl) {
-        super((int)((BASE_HP + (int)((float)lvl * lvl * 0.2)) * 2), 
-        (int)((BASE_HP + (int)((float)lvl * lvl * 0.2)) * 2), 
-        (int)(((BASE_ATK + (int)((float)lvl * lvl * 0.13))) * 2), 
+        super(BASE_HP, 
+        BASE_ATK, 
         lvl,
         "Gnawer",
         "A feral remnant of bottomless appetite, shaped like a hunched beast with bone-grinding jaws and frenzied hunger.",
@@ -27,7 +26,6 @@ public class Gnawer extends Remnant{
         System.out.println("| The Gnawer dives with its stomping jaw!");
         dmgAttack(opponent, atk);
     }
-
 
     
 }

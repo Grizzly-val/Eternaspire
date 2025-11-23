@@ -27,6 +27,7 @@ public class Account implements Serializable{
 
     public String getUsername(){return username;}
     public String getPassword(){return password;}
+    public HashMap<Integer, Game> getAccountGames(){return accountGames;}
 
 
     private void showGames(){
@@ -53,9 +54,9 @@ public class Account implements Serializable{
         System.out.println();
         System.out.println("----------------------------------");
         System.out.println("| Hello, " + username + "! ");
-        System.out.println("----------------------------------");
         char choice = '\0';
         while(choice != 'o'){
+            System.out.println("----------------------------------");
             System.out.println("| Account Menu |");
             System.out.println("----------------");
             System.out.println("[n] - New game      ✨");
@@ -85,7 +86,7 @@ public class Account implements Serializable{
                         System.out.println("----------------------------------");
                     }
 
-                    accountGames.put(gameCountChoice++, new Game(gameName, manager));
+                    accountGames.put(gameCountChoice, new Game(gameName, manager, gameCountChoice++, this));
                     System.out.println("| New game \"" + gameName + "\" added at slot " + (gameCountChoice - 1) + " 📥");
                     System.out.println("----------------------------------");
                     manager.saveAccounts();
@@ -115,7 +116,7 @@ public class Account implements Serializable{
                     accountGames.get(toDelete).deleteData();
                     System.out.println("| Game \"" + accountGames.get(toDelete).getName() + "\" Deleted 🗑️");
                     System.out.println("----------------------------------");
-                    accountGames.remove(toDelete);
+                    accountGames.get(toDelete).deleteData();
                     manager.saveAccounts();
                     break;
                 case 'l':

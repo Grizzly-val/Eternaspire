@@ -25,6 +25,8 @@ public abstract class Entity implements Serializable{
         this.maxHp = maxHp;
         this.atk = atk;
 
+        
+
     }
 
     public int getLvl(){return lvl;}
@@ -51,7 +53,7 @@ public abstract class Entity implements Serializable{
         }
         else {
             hp += healthpts;
-            System.out.println("| +" + healthpts + "hp");
+            System.out.println("| " + this.getName() + ": +" + healthpts + "hp");
         }
     }
 
@@ -76,10 +78,12 @@ public abstract class Entity implements Serializable{
     public void dmgAttack(Entity attackReceiver, int damage) {
 
         if(damage >= 5) damage = (int)((Math.random() * 11) + (damage - 5));
+
         if(this instanceof Challenger p){
             if(p.getEquippedWeapon() != null)
                 damage += p.getEquippedWeapon().getAddAtk();
         }
+        
         System.out.println("| " + name + " hits " + attackReceiver.getName() + " for " + damage + " damage!");
         attackReceiver.takeDamage(damage);
     }

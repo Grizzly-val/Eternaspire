@@ -7,7 +7,7 @@ public final class OptionSelect {
 
 
     public static int intInput(int n){
-            System.out.print("Enter choice: ");
+            System.out.print("| Enter choice: ");
 
             try{
                 n = sc.nextInt();
@@ -25,7 +25,7 @@ public final class OptionSelect {
 
         while(index <= 0 || index > size){
             try{
-                System.out.print("Choose: ");
+                System.out.print("| Choose: ");
                 index = sc.nextInt();
             }catch(InputMismatchException ime){
                 System.out.println("\n!! Error - " + ime + " !!");
@@ -43,7 +43,7 @@ public final class OptionSelect {
 
     public static char charInput(char c){
         try{
-            System.out.print("Choose: ");
+            System.out.print("| Choose: ");
             c = sc.nextLine().charAt(0);
         }catch(Exception e){
             System.out.println("\n!! Error - " + e + " !!");
@@ -57,7 +57,7 @@ public final class OptionSelect {
 
         while(true){
             try{
-                System.out.print("(y/n): ");
+                System.out.print("| (y/n): ");
                 choice = sc.nextLine().trim().toLowerCase().charAt(0);
             }catch(Exception e){
                 System.out.println("\n!! Error - " + e + " !!");

@@ -3,6 +3,7 @@ package mechanics.pstate;
 import entity.player.Challenger;
 import mechanics.battleMechanics.skill.ActiveSkill;
 import mechanics.battleMechanics.skill.PassiveSkill;
+import ui.Format;
 import ui.OptionSelect;
 import world.item.consumables.Food;
 import world.item.consumables.Key;
@@ -22,6 +23,9 @@ public class InventoryState implements PlayerState{
 
         while(choice != 'b'){
             System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println("=================================================================================");
             String statFormat = "|> %-6s :   %-10s |> %-4s :   %-10s |> %-6s :   %s";
 
             System.out.println("|> Name   :   " + player.getName());
@@ -35,7 +39,7 @@ public class InventoryState implements PlayerState{
             );
 
             
-            System.out.println(String.format("|> %-6s :   %-10s |> %-4s :   %s/%s      |> %-6s :   %s",
+            System.out.println(String.format("|> %-6s :   %-10s |> %-4s :   %s/%s    |> %-6s :   %s",
                     "LVL", player.getLvl(),
                     "XP", player.getXp(), player.getMaxXp(),
                     "INV", player.getInventory().getOccupiedSpace() + "/" + player.getInventory().getCapacity()
@@ -43,8 +47,7 @@ public class InventoryState implements PlayerState{
 
             if(player.getEquippedWeapon() != null) System.out.println("|> Weapon : " + player.getEquippedWeapon().getName());
             else System.out.println("|> Weapon : NONE");
-            
-            System.out.println("----------------------------------------");
+            System.out.println("--------------------------------------------------------------------------------");
             System.out.println("| Player |");
             System.out.println("----------");
             System.out.println("[b] - Go back           (Exit inventory)");
@@ -81,35 +84,32 @@ public class InventoryState implements PlayerState{
                     System.out.println();
                     System.out.println();
                     System.out.println();
-                    System.out.println("    ---------------");
-                    System.out.println("    |Active Skills|");
-                    System.out.println("-----------------------");
+
                     int i = 1;
                     if(player.getActiveSkillSet().isEmpty()){
                         System.out.println("| Active skill set is empty");
                     }
                     else{
+                        Format.printSection("Active Skills");
                         for(ActiveSkill aSkill : player.getActiveSkillSet()){
                             System.out.println("| " + i++ + ".) " + aSkill.getName() + " [" + aSkill.getPtUse() + "sp]");
                             System.out.println("|\t> " + aSkill.getDescription());
                         }    
                     }
-                    System.out.println("-----------------------------------");
+                    System.out.println("-------------------------------------------------------------------------");
                     System.out.println();
-                    System.out.println("    ----------------");
-                    System.out.println("    |Passive Skills|");
-                    System.out.println("------------------------");
                     if(player.getPassiveSkillSet().isEmpty()){
                         System.out.println("| Passive skill set is empty");
                     }
                     else{
                         i = 1;
+                        Format.printSection("Passive Skills");
                         for(PassiveSkill pSkill : player.getPassiveSkillSet()){
                             System.out.println("| " + i++ + ".) " + pSkill.getName());
                             System.out.println("|\t> " + pSkill.getDescription());
                         }
                     }
-                    System.out.println("-----------------------------------");
+                    System.out.println("-------------------------------------------------------------------------");
                     break;
                 case 'f':
                     System.out.println();
@@ -120,7 +120,7 @@ public class InventoryState implements PlayerState{
                         System.out.println("| Selected food : " + food.getName());
                         System.out.println("> " + food.getDescription());
                         System.out.println();
-                        System.out.println("[d] - Drop skill scroll");
+                        System.out.println("[d] - Drop food");
                         System.out.println("[e] - Eat food");
                         System.out.println("----------------------------------------");
                         switch(OptionSelect.charInput('\0')){
@@ -148,6 +148,7 @@ public class InventoryState implements PlayerState{
                     } else{
                         System.out.println();
                         System.out.println("| No food in inventory.");
+                        System.out.println("--------------------------------------");
                         System.out.println();
                     }
                     break;

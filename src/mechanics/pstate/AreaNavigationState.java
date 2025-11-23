@@ -21,10 +21,10 @@ public class AreaNavigationState implements PlayerState {
         System.out.println("------------------------------------------------------------");
         System.out.println();
         System.out.println("| What would you like to do?");
-        System.out.println("------------------------------------------------------------");
+        
         char choice = '\0';
-
         while(choice != 'f' && choice != 'e'){
+            System.out.println("------------------------------------------------------------");
             System.out.println("| Area Navigation 📍|");
             System.out.println("--------------------");
             System.out.println("[f] - Floor Entrance          (Floor navigation)");

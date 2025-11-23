@@ -7,8 +7,12 @@ import mechanics.battleMechanics.skill.passive_skills.tower_entity.Reverberate;
 
 public class LostVanguard extends Echo {
 
+    private static final int BASE_HP = 60;
+    private static final int BASE_ATK = 15;
+
     public LostVanguard() {
-        super(134, 134, 20, 24,
+
+        super(BASE_HP, BASE_ATK, 15,
         "Lost Vanguard",
         "write description here",
         "The Lost Vanguard tips forward, momentum carrying it to the earth.",

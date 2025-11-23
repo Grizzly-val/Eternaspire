@@ -11,8 +11,22 @@ public abstract class Remnant extends TowerEntity{
     private ActiveSkill aSkill;
     private PassiveSkill pSkill;
     
-    public Remnant(int hp, int maxHp, int atk, int lvl, String name, String description, String defeatMessage, ActiveSkill aSkill, PassiveSkill pSkill){
-        super(name, description, lvl, hp, maxHp, atk, defeatMessage);
+    public Remnant(int BASE_HP, int BASE_ATK, int lvl, String name, String description, String defeatMessage, ActiveSkill aSkill, PassiveSkill pSkill){
+        super(name, description, lvl, 
+            
+            (int)((BASE_HP + (int)((float)lvl * lvl * 0.2)) * 2), 
+
+            (int)((BASE_HP + (int)((float)lvl * lvl * 0.2)) * 2), 
+            
+            (int)(((BASE_ATK + (int)((float)lvl * lvl * 0.13))) * 2), 
+            
+            
+            
+            defeatMessage);
+        
+        
+        
+        
         this.aSkill = aSkill;
         this.pSkill = pSkill;
     }

@@ -15,8 +15,20 @@ public abstract class Echo extends TowerEntity{
 
     private String cutsceneID;
 
-    public Echo(int hp, int maxHp, int atk, int lvl, String name, String description, String defeatMessage, String cutsceneID){
-        super(name, description, lvl, hp, maxHp, atk, defeatMessage);
+    public Echo(int BASE_HP, int BASE_ATK, int lvl, String name, String description, String defeatMessage, String cutsceneID){
+        super(name, description, lvl, 
+            
+            (int)((BASE_HP + (int)((float)lvl * lvl * 0.2)) * 2), 
+
+            (int)((BASE_HP + (int)((float)lvl * lvl * 0.2)) * 2), 
+            
+            (int)(((BASE_ATK + (int)((float)lvl * lvl * 0.13))) * 2), 
+            
+            
+            defeatMessage);
+
+
+
         this.cutsceneID = cutsceneID;
     }
 
@@ -44,6 +56,7 @@ public abstract class Echo extends TowerEntity{
     @Override
     public void usePassiveSkill(Entity opponent, Battle battle){
         for(PassiveSkill pSkill : pSkillSet){
+            
             if(pSkill != null){
                 pSkill.autoActivate(this, opponent, battle);
             }

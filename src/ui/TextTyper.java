@@ -2,7 +2,7 @@ package ui;
 
 import java.io.IOException;
 
-public class TextTyper {
+public final class TextTyper {
 
     private static final int MAX_SKIP_CHECK_DELAY = 100; // Milliseconds to wait before checking for input
 

@@ -1,15 +1,22 @@
 package world.location.locationData;
 
+import entity.tower_entity.remnants.Cenkrath;
 import entity.tower_entity.remnants.ElementalBlob;
 import entity.tower_entity.remnants.Gnawer;
+import entity.tower_entity.remnants.Scorthrax;
+import entity.tower_entity.remnants.Spinefiend;
 import mechanics.battleMechanics.skill.active_skills.challenger.RendingCut;
+import mechanics.battleMechanics.skill.active_skills.tower_entity.NomadsWisdom;
 import entity.tower_entity.Echo;
 import entity.tower_entity.Remnant;
 import entity.tower_entity.echoes.LostVanguard;
+import entity.tower_entity.echoes.Osarion;
+import entity.tower_entity.echoes.UnmovingNomad;
 import world.item.consumables.Food;
 import world.item.consumables.FoodEffect;
 import world.item.consumables.Key;
 import world.item.consumables.SkillScroll;
+import world.item.wpn.SanctifierHammer;
 import world.location.Floor;
 
 public final class AreaEntityData {
@@ -49,6 +56,67 @@ public final class AreaEntityData {
                                                                 "FloorLock_TheLowerAscent", 
                                                                 "cutscene_UseKey_TheAscendantsToken"),
                                                                 new SkillScroll("cutscene_Learn_RendingCut", new RendingCut(), "A Blade's Manual")));
+
+
+        // Floor 2 Area 1
+        floorPtr = floorData.getFloor(2);
+        areaEntitiesPtr = floorPtr.getFloorArea(1).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new Gnawer(12));
+            areaEntitiesPtr.addRemnant((Remnant)new ElementalBlob(11).addDrops(new Food("Herbal Liquid",
+                                                                    "A bitter tonic brewed from potent herbs, known to invigorate the drinker and restore a small amount of vitality.", 
+                                                                                10, 
+                                                                            "nocutscene", 
+                                                                            FoodEffect.HP)));
+        
+        // Floor 2 Area 2
+        floorPtr = floorData.getFloor(2);
+        areaEntitiesPtr = floorPtr.getFloorArea(2).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new ElementalBlob(12));
+            areaEntitiesPtr.addRemnant(new ElementalBlob(12));
+            areaEntitiesPtr.addRemnant(new Gnawer(13));
+            areaEntitiesPtr.setEcho((Echo)new UnmovingNomad().addDrops(new Key("The Nomads Ring", "An old scuffed ring that somehow exudes freedom, it seems to thank you. It shows the way for your next adventure.", 
+                                                                    "FloorLock_TheRuinedKingdomOfNeferis",
+                                                                    "cutscene_UseKey_TheNomadsRing"),
+                                                                    new SkillScroll("cutscene_Learn_NomadsWisdom", new NomadsWisdom(), "The Scroll of the Wandering Sage")));
+    
+        //Floor 3 Area 1
+        floorPtr = floorData.getFloor(3);
+        areaEntitiesPtr = floorPtr.getFloorArea(1).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new Scorthrax(12));
+            areaEntitiesPtr.addRemnant((Remnant)new Cenkrath(13).addDrops(new Food("Coconut Water", 
+                                                                    "A refreshing drink from the desert palm, it replenishes a moderate amount of vitality and quenches thirst effectively.", 
+                                                                    15, 
+                                                                    "nocutscene", 
+                                                                    FoodEffect.HP)));
+        
+        //Floor 3 Area 2
+        floorPtr = floorData.getFloor(3);
+        areaEntitiesPtr = floorPtr.getFloorArea(2).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new Scorthrax(14));
+            areaEntitiesPtr.addRemnant(new Cenkrath(14));
+            areaEntitiesPtr.addRemnant(new Scorthrax(15));
+
+        //Floor 3 Area 3
+        floorPtr = floorData.getFloor(3);
+        areaEntitiesPtr = floorPtr.getFloorArea(3).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new Cenkrath(16));
+            areaEntitiesPtr.addRemnant((Remnant)new Scorthrax(16).addDrops(new SanctifierHammer()));
+
+        //Floor 4 Area 1
+        floorPtr = floorData.getFloor(4);
+        areaEntitiesPtr = floorPtr.getFloorArea(1).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new Cenkrath(16));
+            areaEntitiesPtr.addRemnant(new Cenkrath(14));
+            areaEntitiesPtr.addRemnant((Remnant)(new Spinefiend(17).addDrops(new Key("The Golden Ankh", 
+                                                                        "An ancient symbol of eternal life and protection, it is said to grant access to the Pharaoh's Chamber.", 
+                                                                        "AreaLock_ThePharaohsChamber", 
+                                                                        "cutscene_UseKey_TheGoldenAnkh"))));
+
+        //Floor 4 Area 2
+        floorPtr = floorData.getFloor(4);
+        areaEntitiesPtr = floorPtr.getFloorArea(2).getAreaEntities();
+            areaEntitiesPtr.setEcho((Echo)new Osarion());
+
 
 
     }

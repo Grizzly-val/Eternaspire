@@ -7,8 +7,12 @@ import mechanics.battleMechanics.battle.Battle;
 
 public class UnmovingNomad extends Echo{
 
+    private static final int BASE_HP = 50;
+    private static final int BASE_ATK = 30;
+
     public UnmovingNomad() {
-        super(130, 130, 30,18, "Unmoving Nomad", 
+        super(BASE_HP, BASE_ATK,23, 
+        "Unmoving Nomad", 
         "The Unmoving Nomad is a restless spirit, confined to a single floor, whose echoes speak of journeys he can no longer take.", 
         "The painful echo dissolves, leaving behind the true, free traveler.", 
         "cutscene_Defeat_UnmovingNomad");
