@@ -9,7 +9,7 @@ public class Main {
         
 
         System.out.println();
-        TextTyper.typeText("Welcome, to Eternaspire! ⏳", 50, false);
+        TextTyper.typeText("Welcome, to Eternaspire! ⏳", 50, true);
         System.out.println();
         System.out.println();
 

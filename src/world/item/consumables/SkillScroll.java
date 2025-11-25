@@ -24,7 +24,7 @@ public class SkillScroll extends Consumables{
     @Override
     public void triggerCutscene(String cutsceneID, Challenger player) {
         System.out.println();
-        CutsceneManager.checkCutscene(cutsceneID, player);
+        CutsceneManager.checkCutscene(cutsceneID, player, this);
         System.out.println();
     }
     

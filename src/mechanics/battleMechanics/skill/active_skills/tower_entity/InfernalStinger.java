@@ -17,5 +17,5 @@ public class InfernalStinger extends ActiveSkill{
         user.dmgAttack(opponent, user.getAtk() + (3 + user.getLvl()));
 
     }
-  
+
 }

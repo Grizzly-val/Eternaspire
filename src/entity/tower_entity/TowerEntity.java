@@ -1,5 +1,6 @@
 package entity.tower_entity;
 
+import java.lang.StackWalker.Option;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -7,6 +8,7 @@ import entity.Entity;
 import entity.player.Challenger;
 import mechanics.battleMechanics.battle.Battle;
 import mechanics.cutscene.CutsceneManager;
+import ui.OptionSelect;
 import ui.TextTyper;
 import world.item.Item;
 import world.location.Area;
@@ -83,15 +85,16 @@ public abstract class TowerEntity extends Entity{
         }
 
         player.resetLastDamage();
-        player.gainXp((int) ((Math.sqrt(maxHp + atk * 2) * Math.log(maxHp * atk))  * (Math.random() + 0.6)));
+        player.gainXp((int) ((Math.sqrt(maxHp) * Math.log(maxHp * atk))  * (Math.random() + 0.20)));
         dropAll(player.getCurrentArea());
+        OptionSelect.waiter();
     }
 
 
 
     public void afterBattleCutscene(String cutsceneID, Challenger player){
         System.out.println();
-        CutsceneManager.checkCutscene(cutsceneID, player);
+        CutsceneManager.checkCutscene(cutsceneID, player, this);
         System.out.println();
     }
 

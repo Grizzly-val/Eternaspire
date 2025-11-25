@@ -7,20 +7,20 @@ import mechanics.battleMechanics.skill.passive_skills.tower_entity.Reverberate;
 
 public class LostVanguard extends Echo {
 
-    private static final int BASE_HP = 60;
-    private static final int BASE_ATK = 15;
+    private static final int BASE_HP = 80;
+    private static final int BASE_ATK = 7;
 
     public LostVanguard() {
 
-        super(BASE_HP, BASE_ATK, 15,
+        super(BASE_HP, BASE_ATK, 11,
         "Lost Vanguard",
         "write description here",
         "The Lost Vanguard tips forward, momentum carrying it to the earth.",
         "cutscene_Defeat_LostVanguard");
 
         
-        this.giveSkill(new RecoveryProtocol()); //passive
-        this.giveSkill(new Reverberate());      //passive
+        this.giveSkill(new RecoveryProtocol());     //passive
+        this.giveSkill(new Reverberate());          //passive
 
     }
 

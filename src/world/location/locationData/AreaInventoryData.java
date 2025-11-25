@@ -1,6 +1,8 @@
 package world.location.locationData;
 
+import mechanics.battleMechanics.skill.active_skills.challenger.AvalancheStrike;
 import mechanics.battleMechanics.skill.active_skills.challenger.ChallengersWill;
+import mechanics.battleMechanics.skill.active_skills.challenger.ThermalSiphon;
 import mechanics.battleMechanics.skill.passive_skills.challenger.FleetingAid;
 import mechanics.battleMechanics.skill.passive_skills.challenger.Photosynthesis;
 import mechanics.inventory.AreaInventory;
@@ -103,6 +105,57 @@ public final class AreaInventoryData {
                 tempInventory.addItem(new ObeliskCleaver());
         
         //Floor 4 Area 2 (empty area)
-                        
+
+
+
+        // --- FLOOR 5 (The Ice Theme) ---
+        floorPtr = floorData.getFloor(5);
+        
+        // Floor 5 Area 1: The Crystalline Vestibule
+        areaPtr = floorPtr.getFloorArea(1);
+            tempInventory = new AreaInventory("Refracting Pillar");
+                // Key for Area 2
+                tempInventory.addItem(new Key("The Ring-Finger Key", "A finger frozen solid, snapping off a statue. The bone protrudes in a shape that fits a lock.", "AreaLock_TheIceboundHall", "cutscene_UseKey_RingFinger"));
+                tempInventory.addItem(new Food("Frozen Marrow", "The inside of a bone, preserved perfectly by the cold.", 50, "nocutscene", FoodEffect.HP)); 
+                areaPtr.addInventory(tempInventory);
+            
+        // Floor 5 Area 2: The Weeping Chasm
+        areaPtr = floorPtr.getFloorArea(2);
+            tempInventory = new AreaInventory("Dripping Icicle");
+                tempInventory.addItem(new SkillScroll("cutscene_Learn_ThermalSiphon", new ThermalSiphon(), "Scroll: Thermal Siphon"));
+                areaPtr.addInventory(tempInventory);
+
+        // --- FLOOR 6 (The Absolute Zero) ---
+        floorPtr = floorData.getFloor(6);
+
+        // Floor 6 Area 1: The Mirror of Regret
+        areaPtr = floorPtr.getFloorArea(1);
+            tempInventory = new AreaInventory("Black Mirror Frame");
+                // Key for Lore/Side Unlock
+                tempInventory.addItem(new Key("The Black Ice Prism", "A geometric shape that doesn't melt. Looking through it reveals things invisible to the naked eye.", "AreaLock_TheHeartfrostSpire", "cutscene_UseKey_BlackIcePrism"));
+                areaPtr.addInventory(tempInventory);
+            
+            tempInventory = new AreaInventory("Frozen Puddle");
+                tempInventory.addItem(new Food("Bioluminescent Jelly", "Glowing flesh harvested from deep beneath the ice. It tastes like battery acid.", 1, "nocutscene", FoodEffect.SP)); 
+                areaPtr.addInventory(tempInventory);
+
+        // Floor 6 Area 2: The Heartfrost Spire
+        areaPtr = floorPtr.getFloorArea(2);
+            tempInventory = new AreaInventory("Pulsing Core Fragment");
+                // Key for Area 3
+                tempInventory.addItem(new Key("The Heartbeat Sensor", "A mechanical device that only unlocks if it detects a slowing pulse.", "AreaLock_TheThroneOfEternalStillness", "cutscene_UseKey_HeartbeatSensor"));
+                tempInventory.addItem(new SkillScroll("cutscene_Learn_AvalancheStrike", new AvalancheStrike(), "Scroll: Avalanche Strike"));
+                areaPtr.addInventory(tempInventory);
+            
+            tempInventory = new AreaInventory("Frozen Petitioner");
+                tempInventory.addItem(new Food("Preserved Ration", "A military ration from the castle's original guard, flash-frozen. It is rock hard.", 25, "nocutscene", FoodEffect.HP));
+                areaPtr.addInventory(tempInventory);
+
+        // Floor 6 Area 3: The Throne of Eternal Stillness
+        areaPtr = floorPtr.getFloorArea(3);
+            tempInventory = new AreaInventory("Static Void");
+                // Void Salt grants SP
+                tempInventory.addItem(new Food("Void Salt", "Residue from the air. Tastes like static on your tongue.", 10, "nocutscene", FoodEffect.SP)); 
+                areaPtr.addInventory(tempInventory);
     }
 }

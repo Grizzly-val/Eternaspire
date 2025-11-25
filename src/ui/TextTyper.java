@@ -68,6 +68,19 @@ public final class TextTyper {
                 System.err.println("I/O Error during skip check: " + e.getMessage());
             }
         }
+
+        // ADDED BY LANZ HIHI : If player did not skip, put delay
+        if(!skip){
+            int lineDelay = 0;
+            lineDelay = 80;
+            try {
+                Thread.sleep(lineDelay);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt(); 
+            } catch(Exception e){
+                System.out.println();
+            }
+        }
         
         // Final flush to ensure all characters are printed before the endline
         System.out.flush(); 
@@ -79,5 +92,7 @@ public final class TextTyper {
         if (endl) {
             System.out.println();
         }
+
+
     }
 }

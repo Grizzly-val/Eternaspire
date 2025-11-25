@@ -22,6 +22,7 @@ public abstract class Weapon extends Item{
     }
 
     public abstract void basicAttack(Challenger user, Entity opponent, int atk);
+
     
     public void equip(Challenger player){
         if(player.getEquippedWeapon() == null){
@@ -30,14 +31,9 @@ public abstract class Weapon extends Item{
         else{
             player.unequipWeapon();
             player.equipWeapon(this);
-            System.out.println("| Equipped " + this.getName());
         }
+        System.out.println("| Equipped " + this.getName());
 
-        if(!player.getWeapons_Tried().contains(this.getName())){
-            System.out.println();
-            player.getWeapons_Tried().add(this.getName());
-            triggerCutscene(this.getCutsceneID(), player);
-        }
     }
 
     public int getAddAtk(){return weaponStr;}
@@ -45,7 +41,7 @@ public abstract class Weapon extends Item{
     @Override
     public void triggerCutscene(String cutsceneID, Challenger player){
         System.out.println();
-        CutsceneManager.checkCutscene(cutsceneID, player);
+        CutsceneManager.checkCutscene(cutsceneID, player, this);
         System.out.println();
     }
 

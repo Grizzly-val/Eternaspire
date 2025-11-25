@@ -5,6 +5,7 @@ import java.util.Map.Entry;
 import entity.player.Challenger;
 import ui.Format;
 import ui.OptionSelect;
+import ui.TextTyper;
 import world.item.consumables.Key;
 import world.location.Area;
 import world.location.locationData.FloorData;
@@ -12,18 +13,16 @@ import world.location.locationData.FloorData;
 public class AreaNavigationState implements PlayerState {
 
     @Override
-    public void enterState(Challenger player) {
-
+    public void enterState(Challenger player, PlayerState prevState) {
+    
         System.out.println();
 
-        System.out.println("| You're in Eternaspire " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor: " + player.getCurrentFloor().getName() + "...");
-
-        System.out.println("------------------------------------------------------------");
+        Format.boxify("| You're in Eternaspire " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor: " + player.getCurrentFloor().getName() + "...");
         System.out.println();
         System.out.println("| What would you like to do?");
         
         char choice = '\0';
-        while(choice != 'f' && choice != 'e'){
+        while(choice != 'f'){
             System.out.println("------------------------------------------------------------");
             System.out.println("| Area Navigation 📍|");
             System.out.println("--------------------");
@@ -36,33 +35,33 @@ public class AreaNavigationState implements PlayerState {
 
             switch(choice){
                 case 'i':
-                    new InventoryState().enterState(player);
+                    new InventoryState().enterState(player, this);
                     break;
                 case 'f':
                     System.out.println();
                     System.out.println();
-                    System.out.println("| Entering floor navigation >>");
+                    TextTyper.typeText("| Entering floor navigation >>", 30, true);
                     System.out.println();
-                    new FloorNavigationState().enterState(player);
-                    break;
+                    return;
                 case 'e':
                     System.out.println();
-                    System.out.println("| Exploring floor " + player.getCurrentFloor().getNumber() + " >>");
+                    System.out.println();
+                    TextTyper.typeText("| Exploring floor " + player.getCurrentFloor().getNumber() + " >>", 30, true);
                     System.out.println();
                     int newAreaIndex = chooseFloorAreas(player);   // later implement player.moveArea(newArea);
                     if(newAreaIndex != -1){
                         System.out.println();
                         System.out.println();
-                        System.out.println("| Entering Area \"" + player.getCurrentFloor().getFloorArea(newAreaIndex).getName() + "\" >>");
+                        TextTyper.typeText("| Entering Area \"" + player.getCurrentFloor().getFloorArea(newAreaIndex).getName() + "\" >>", 30, true);
                         player.moveArea(newAreaIndex);
-                        new IdleAreaState().enterState(player);
+                        new IdleAreaState().enterState(player, this);
+                        this.enterState(player, prevState);
                     }
                     else{
-                        new AreaNavigationState().enterState(player);
-                        return;
+                        this.enterState(player, this);
+                        System.out.println();
                     }
-                    System.out.println();
-                    break;
+                    return;
                 default:
                     System.out.println();
                     System.out.println("!! Invalid Input !!");

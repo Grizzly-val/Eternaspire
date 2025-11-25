@@ -18,11 +18,11 @@ public abstract class Echo extends TowerEntity{
     public Echo(int BASE_HP, int BASE_ATK, int lvl, String name, String description, String defeatMessage, String cutsceneID){
         super(name, description, lvl, 
             
-            (int)((BASE_HP + (int)((float)lvl * lvl * 0.2)) * 2), 
+            (int)((BASE_HP + (int)((float)lvl * lvl * 0.25)) * 1.9), 
 
-            (int)((BASE_HP + (int)((float)lvl * lvl * 0.2)) * 2), 
+            (int)((BASE_HP + (int)((float)lvl * lvl * 0.25)) * 1.9), 
             
-            (int)(((BASE_ATK + (int)((float)lvl * lvl * 0.13))) * 2), 
+            (int)(((BASE_ATK + (int)((float)lvl * 0.1882524))) * Math.log(lvl + 5)), 
             
             
             defeatMessage);

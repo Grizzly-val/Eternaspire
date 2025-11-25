@@ -1,0 +1,20 @@
+| The desert air distorts. A heavy thud shakes the ground as a massive shadow rises from behind a dune.
+
+[NUGGET] "Uh… tell me that’s just a big rock taking a stretch."
+
+[BLADE] "Rocks don’t glow like that."
+
+| Scorthrax steps into view, pincers crackling with heat, its molten tail dripping venom that burns holes into the sand.
+
+[NUGGET] "Aaaaaand the ground is melting. Perfect. Absolutely perfect."
+
+[BLADE] (tightens grip) "That thing isn’t here to scare us. It’s here to test us."
+
+[NUGGET] "I was hoping for a quiz… maybe a crossword. Not a murder-scorpion."
+
+| Scorthrax raises its tail. The hiss of molten venom fills the air.
+
+[BLADE] "If it wants a fight—
+		 —it has one."
+
+(→ Battle vs. Scorthrax begins.)

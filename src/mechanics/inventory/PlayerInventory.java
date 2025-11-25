@@ -79,7 +79,7 @@ public class PlayerInventory extends Inventory{
         }
         else if(item instanceof Food){
             if(potionInventory.remove(item)){
-                System.out.println("| " + item.getName() + " removed from Potions.");
+                System.out.println("| " + item.getName() + " removed from Foods.");
             }
         }
         else if(item instanceof Key){
@@ -105,13 +105,14 @@ public class PlayerInventory extends Inventory{
 
     public Weapon getWpn(){
         if(!wpnInventory.isEmpty()){
+            System.out.println();
             System.out.println("| Select weapon from inventory");
-            System.out.println("-----------------------------------------------------------");
+            System.out.println("==========================================================");
             Weapon item = null;
             for(int i = 0; i < wpnInventory.size(); i++){
-                System.out.println((i + 1) + " - " + wpnInventory.get(i).getName());
+                System.out.println("| " + (i + 1) + " - " + wpnInventory.get(i).getName());
             }
-            System.out.println("-----------------------------------------------------------");
+            System.out.println("==========================================================");
             int choice = -1;
 
             while(item == null){
@@ -126,13 +127,14 @@ public class PlayerInventory extends Inventory{
 
     public Food getFood(){
         if(!potionInventory.isEmpty()){
+            System.out.println();
             System.out.println("| Select food from inventory");
-            System.out.println("-----------------------------------------------------------");
+            System.out.println("==========================================================");
             Food item = null;
             for(int i = 0; i < potionInventory.size(); i++){
-                System.out.println((i + 1) + " - " + potionInventory.get(i).getName());
+                System.out.println("| " + (i + 1) + " - " + potionInventory.get(i).getName());
             }
-            System.out.println("-----------------------------------------------------------");
+            System.out.println("==========================================================");
             int choice = -1;
 
             while(item == null){
@@ -147,13 +149,14 @@ public class PlayerInventory extends Inventory{
 
     public Key getKey(){
         if(!keyInventory.isEmpty()){
+            System.out.println();
             System.out.println("| Select key from inventory");
-            System.out.println("-----------------------------------------------------------");
+            System.out.println("==========================================================");
             Key item = null;
             for(int i = 0; i < keyInventory.size(); i++){
-                System.out.println(i + 1 + " - " + keyInventory.get(i).getName());
+                System.out.println("| " + (i + 1) + " - " + keyInventory.get(i).getName());
             }
-            System.out.println("-----------------------------------------------------------");
+            System.out.println("==========================================================");
             int choice = -1;
 
             while(item == null){
@@ -168,13 +171,14 @@ public class PlayerInventory extends Inventory{
     
     public SkillScroll getSkillScroll(){
         if(!skillScrollInventory.isEmpty()){
+            System.out.println();
             System.out.println("| Select skill scroll from inventory");
-            System.out.println("-----------------------------------------------------------");
+            System.out.println("==========================================================");
             SkillScroll item = null;
             for(int i = 0; i < skillScrollInventory.size(); i++){
-                System.out.println((i + 1) + " - " + skillScrollInventory.get(i).getName());
+                System.out.println("| " + (i + 1) + " - " + skillScrollInventory.get(i).getName());
             }
-            System.out.println("-----------------------------------------------------------");
+            System.out.println("==========================================================");
             int choice = -1;
 
             while(item == null){

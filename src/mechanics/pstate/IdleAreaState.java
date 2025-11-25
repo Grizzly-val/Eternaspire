@@ -7,13 +7,15 @@ import mechanics.battleMechanics.battle.Battle;
 import mechanics.inventory.AreaInventory;
 import ui.Format;
 import ui.OptionSelect;
+import ui.TextTyper;
 import world.item.Item;
+import world.item.wpn.Weapon;
 import world.location.locationData.AreaEntities;
 
 public class IdleAreaState implements PlayerState {
 
     @Override
-    public void enterState(Challenger player) {
+    public void enterState(Challenger player, PlayerState prevState) {
         System.out.println();
         System.out.println("| Current Floor : \"" + player.getCurrentFloor().getName() + "\" (" + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor)\n| Current Area  : " + player.getCurrentArea().getName());
         System.out.println("--------------------------------------------");
@@ -36,19 +38,22 @@ public class IdleAreaState implements PlayerState {
             
             switch(choice){
                 case 'i':
-                    new InventoryState().enterState(player);
+                    new InventoryState().enterState(player, this);
                     break;
                 case 'b':
                     System.out.println();
                     System.out.println();
                     System.out.println("| Going back to floor entrance >>");
-                    new AreaNavigationState().enterState(player);
+                    System.out.println();
+                    System.out.println();
                     return;
                 case 'e':
+                    System.out.println();
                     System.out.println("| Exploring " + player.getCurrentArea().getName() + " >>");
+                    System.out.println();
                     explore(player);
-                    new IdleAreaState().enterState(player);
-                    break;
+                    this.enterState(player, prevState);
+                    return;
                 default:
                     System.out.println("!! Invalid choice !!");
                     break;
@@ -61,7 +66,7 @@ public class IdleAreaState implements PlayerState {
         while(choice != 'b'){
             System.out.println();
             System.out.println("| Floor     :   " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor");
-            System.out.println("| Area:     :   " + player.getCurrentArea().getName());
+            System.out.println("| Area      :   " + player.getCurrentArea().getName());
             System.out.println("--------------------------------------------");
             System.out.println("| Scouting Area 🚩|");
             System.out.println("-------------------");
@@ -77,7 +82,7 @@ public class IdleAreaState implements PlayerState {
 
             switch(choice){
                 case 'i':
-                    new InventoryState().enterState(player);
+                    new InventoryState().enterState(player, this);
                     break;
                 case 'f':
                     System.out.println();
@@ -102,7 +107,7 @@ public class IdleAreaState implements PlayerState {
                     System.out.println();
                     System.out.println("| Going back to area entrance >>");
                     System.out.println();
-                    break;
+                    return;
                 default:
                     System.out.println();
                     System.out.println("!! Invalid input !!");
@@ -154,9 +159,11 @@ public class IdleAreaState implements PlayerState {
                         System.out.println("===============================================================");
                         new Battle(player, chosenRemnant);
                     }
+                    if(pAreaEntities.hasRemnant())
+                        break;
                 case 'e':
                     System.out.println();
-                    if(!pAreaEntities.hasEcho()) System.out.println("\n| This area holds no Echo.\n");
+                    if(!pAreaEntities.hasEcho()) TextTyper.typeText("\n| This area holds no Echo.\n", 40, true);
                     
                     else{
                         if(!pAreaEntities.hasRemnant()){
@@ -240,6 +247,13 @@ public class IdleAreaState implements PlayerState {
                     System.out.println("--------------------------------------------");
                     switch(choiceWithItem){
                         case 't':
+                            if(selectedItem instanceof Weapon wpn){
+                                if(!player.getWeapons_Tried().contains(wpn.getName())){
+                                    System.out.println();
+                                    player.getWeapons_Tried().add(wpn.getName());
+                                    wpn.triggerCutscene(wpn.getCutsceneID(), player);
+                                }
+                            }
                             System.out.println();
                             System.out.println("| Item collected");
                             player.storeItem(selectedItem);

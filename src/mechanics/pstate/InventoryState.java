@@ -5,6 +5,7 @@ import mechanics.battleMechanics.skill.ActiveSkill;
 import mechanics.battleMechanics.skill.PassiveSkill;
 import ui.Format;
 import ui.OptionSelect;
+import ui.TextTyper;
 import world.item.consumables.Food;
 import world.item.consumables.Key;
 import world.item.consumables.SkillScroll;
@@ -12,7 +13,7 @@ import world.item.wpn.Weapon;
 
 public class InventoryState implements PlayerState{
     @Override
-    public void enterState(Challenger player) {
+    public void enterState(Challenger player, PlayerState prevState) {
         System.out.println();
         System.out.println();
         System.out.println("-------------------");
@@ -65,32 +66,34 @@ public class InventoryState implements PlayerState{
             choice = OptionSelect.charInput(choice);
             switch(choice){
                 case '0':
-                    player.saveState();
                     System.out.println("----------------------------------------");
                     System.out.println("Saving current game state...");
                     player.saveState();
+                    System.out.println();
+                    OptionSelect.waiter();
+                    System.out.println();
                     System.out.println();
                     break;
                 case 'b':
 
                     System.out.println("----------------------------------------");
                     System.out.println();
-                    System.out.println("| Exitting inventory >>");
+                    TextTyper.typeText("| Exitting inventory >>", 40, true);
                     System.out.println();
                     return;
 
                 case 'l':
-                    System.out.println("-----------------------------------");
+                    System.out.println("------------------------------------------");
                     System.out.println();
                     System.out.println();
                     System.out.println();
 
                     int i = 1;
+                    Format.printSection("Active Skills");
                     if(player.getActiveSkillSet().isEmpty()){
                         System.out.println("| Active skill set is empty");
                     }
                     else{
-                        Format.printSection("Active Skills");
                         for(ActiveSkill aSkill : player.getActiveSkillSet()){
                             System.out.println("| " + i++ + ".) " + aSkill.getName() + " [" + aSkill.getPtUse() + "sp]");
                             System.out.println("|\t> " + aSkill.getDescription());
@@ -98,18 +101,23 @@ public class InventoryState implements PlayerState{
                     }
                     System.out.println("-------------------------------------------------------------------------");
                     System.out.println();
+                    OptionSelect.waiter();
+                    System.out.println();
+                    Format.printSection("Passive Skills");
                     if(player.getPassiveSkillSet().isEmpty()){
                         System.out.println("| Passive skill set is empty");
                     }
                     else{
                         i = 1;
-                        Format.printSection("Passive Skills");
                         for(PassiveSkill pSkill : player.getPassiveSkillSet()){
                             System.out.println("| " + i++ + ".) " + pSkill.getName());
                             System.out.println("|\t> " + pSkill.getDescription());
                         }
                     }
                     System.out.println("-------------------------------------------------------------------------");
+                    System.out.println();
+                    OptionSelect.waiter();
+                    System.out.println();
                     break;
                 case 'f':
                     System.out.println();
@@ -127,7 +135,10 @@ public class InventoryState implements PlayerState{
                             case 'd':
                                 System.out.println("----------------------------------------");
                                 System.out.println();
-                                player.dropItem(player.getCurrentArea(), food);
+                                if(player.getCurrentArea() != null && !(prevState instanceof AreaNavigationState) && !(prevState instanceof FloorNavigationState)){
+                                    player.dropItem(player.getCurrentArea(), food);
+                                }
+                                else TextTyper.typeText("| Can't drop item here", 50, true);
                                 break;
                             case 'e':
                                 System.out.print("| Eat food >> ");
@@ -135,6 +146,9 @@ public class InventoryState implements PlayerState{
                                     System.out.println();
                                     System.out.println("----------------------------------------");
                                     food.consume(player);
+                                    System.out.println();
+                                    OptionSelect.waiter();
+                                    System.out.println();
                                 }
                                 else{
                                     System.out.println();
@@ -149,6 +163,8 @@ public class InventoryState implements PlayerState{
                         System.out.println();
                         System.out.println("| No food in inventory.");
                         System.out.println("--------------------------------------");
+                        System.out.println();
+                        OptionSelect.waiter();
                         System.out.println();
                     }
                     break;
@@ -168,7 +184,9 @@ public class InventoryState implements PlayerState{
                             case 'd':
                                 System.out.println("----------------------------------------");
                                 System.out.println();
-                                player.dropItem(player.getCurrentArea(), wpn);
+                                if(player.getCurrentArea() != null && !(prevState instanceof AreaNavigationState) && !(prevState instanceof FloorNavigationState))
+                                    player.dropItem(player.getCurrentArea(), wpn);
+                                else TextTyper.typeText("| Can't drop item here", 50, true);
                                 break;
                             case 'e':
                                 System.out.print("| Equip weapon >> ");
@@ -179,8 +197,10 @@ public class InventoryState implements PlayerState{
                                 }
                                 else{
                                     System.out.println();
-                                    System.out.println("| As long as you can defend yourself...");
+                                    System.out.println("| If you're fine with what you have, then okay...");
                                 }
+                                System.out.println();
+                                OptionSelect.waiter();
                                 System.out.println();
                                 break;
                             default:
@@ -188,7 +208,10 @@ public class InventoryState implements PlayerState{
                         }
                     } else{
                         System.out.println();
+                        System.out.println();
                         System.out.println("| No weapon in inventory.");
+                        System.out.println();
+                        OptionSelect.waiter();
                         System.out.println();
                     }
                     break;
@@ -208,7 +231,9 @@ public class InventoryState implements PlayerState{
                             case 'd':
                                 System.out.println("----------------------------------------");
                                 System.out.println();
-                                player.dropItem(player.getCurrentArea(), skillScroll);
+                                if(player.getCurrentArea() != null && !(prevState instanceof AreaNavigationState) && !(prevState instanceof FloorNavigationState))
+                                    player.dropItem(player.getCurrentArea(), skillScroll);
+                                else TextTyper.typeText("| Can't drop item here", 50, true);
                                 break;
                             case 'u':
                                 System.out.print("| Learn skill >> ");
@@ -228,7 +253,10 @@ public class InventoryState implements PlayerState{
                         }
                     } else{
                         System.out.println();
+                        System.out.println();
                         System.out.println("| No skill scroll in inventory.");
+                        OptionSelect.waiter();
+                        System.out.println();
                         System.out.println();
                     }
                     break;
@@ -238,12 +266,16 @@ public class InventoryState implements PlayerState{
                     System.out.println("----------------------------------------");
                     if(key != null){
                         System.out.println();
-                        System.out.println("| Key name          : " + key.getName());
-                        System.out.println("> " + key.getDescription());
+                        System.out.println("| Selected Key : " + key.getName());
+                        System.out.println("|-------------->" + key.getDescription());
                         System.out.println();
+                        OptionSelect.waiter();
                     } else {
                         System.out.println();
+                        System.out.println();
                         System.out.println("| No key in inventory.");
+                        OptionSelect.waiter();
+                        System.out.println();
                         System.out.println();
                     }
                     break;

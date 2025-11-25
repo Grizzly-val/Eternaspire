@@ -19,6 +19,8 @@ import world.location.locationData.AreaEntityData;
 import world.location.locationData.AreaInventoryData;
 import world.location.locationData.FloorData;
 
+
+
 public class Game implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -48,7 +50,13 @@ public class Game implements Serializable {
         System.out.println();
         System.out.println();
         loadPlayer();
+        System.out.println();
+
         manager.saveAccounts();
+    
+        System.out.println();
+
+        System.out.println();
 
         if (player != null) {
             System.out.println("\n| Welcome back!");
@@ -57,10 +65,10 @@ public class Game implements Serializable {
             return;
         }
 
-        // No saved player, first time for this account
-        TextTyper.typeText("Speaking of...", 50, true);
-        TextTyper.typeText("Who are you?", 30, true);
-        System.out.println("\n| Choose your character!");
+        // No saved player, first time for this account. No return :)
+        TextTyper.typeText("| Daring challenger, ", 50, true);
+        TextTyper.typeText("| Name yourself.", 30, true);
+        TextTyper.typeText("\n| Choose your character!", 40, true);
 
         char choice = '\0';
         while (choice != 'm' && choice != 'k' && choice != 'w') {
@@ -75,7 +83,7 @@ public class Game implements Serializable {
 
             switch (choice) {
                 case 'm':
-                    System.out.println("| You've chosen a Mercenary!");
+                    TextTyper.typeText("| You've chosen a Mercenary!", 70, true);
                     player = new Mercenary();
                     break;
                 case 'k':
@@ -100,9 +108,9 @@ public class Game implements Serializable {
         AreaEntityData.init(floorData);
 
         // Run opening cutscenes
-        CutsceneManager.checkCutscene("openingScene_00ChallengerBackstory", player);
-        CutsceneManager.checkCutscene("openingScene_01NuggetEncounter", player);
-        CutsceneManager.checkCutscene("openingScene_02TowerArrival", player);
+        CutsceneManager.checkCutscene("openingScene_00ChallengerBackstory", player, this);
+        CutsceneManager.checkCutscene("openingScene_01NuggetEncounter", player, this);
+        CutsceneManager.checkCutscene("openingScene_02TowerArrival", player, this);
 
         // Save the new player
         saveGame();
@@ -165,6 +173,28 @@ public class Game implements Serializable {
         }
     }
 
+    public void gameOver(GameResult result){
+        switch(result){
+            case LOSE:
+                account.addLose();
+                System.out.println();
+                TextTyper.typeText("| Deleting game data ...", 70, true);
+                System.out.println();
+                break;
+            case WIN:
+                account.addWin();
+                System.out.println();
+                TextTyper.typeText("| Deleting game data ...", 70, true);
+                System.out.println();
+                break;
+            default:
+                System.out.println("| Unknown Game Conclusion!");
+        }
+
+        account.accMenu();
+    }
+
+
     public void deleteData() {
         File saveFile = getPlayerSaveFile();
         if (saveFile.exists()) {
@@ -179,8 +209,6 @@ public class Game implements Serializable {
         if(account.getAccountGames().get(gameKey) != null){
             account.getAccountGames().remove(gameKey);
         }
-        account.accMenu();
-
     }
 
 

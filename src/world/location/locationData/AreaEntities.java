@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import entity.tower_entity.Echo;
 import entity.tower_entity.Remnant;
 import ui.OptionSelect;
+import ui.TextTyper;
 
 public class AreaEntities implements Serializable{
     
@@ -76,10 +77,13 @@ public class AreaEntities implements Serializable{
 
     public Echo fightEcho(){
         char fightEchoChoice = '\0';
-        System.out.println("| The Remnants have perished, leaving behind a single whisper—an Echo that refuses to fade.");
         System.out.println();
-        System.out.println("| Echo  :   " + areaEcho.getName());
-        System.out.println("| > " + areaEcho.getDescription());
+        System.out.println();
+        TextTyper.typeText("| The Remnants have perished, leaving behind a single whisper—an Echo that refuses to fade.", 40, true);
+        System.out.println();
+        System.out.println();
+        TextTyper.typeText("| Echo : " + areaEcho.getName(), 40, true);
+        TextTyper.typeText("|-----> " + areaEcho.getDescription(), 40, true);
         System.out.println();
         System.out.println("| Would you like to fight echo? (y/n): ");
         System.out.println();

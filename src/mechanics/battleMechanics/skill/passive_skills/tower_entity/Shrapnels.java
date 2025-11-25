@@ -12,7 +12,7 @@ public class Shrapnels extends PassiveSkill{
 
     @Override
     public void autoActivate(Entity user, Entity opponent, Battle battle) {
-        if(user.getHp() < user.getMaxHp() * 0.1){
+        if(user.getHp() <= user.getMaxHp() * 0.1){
             System.out.println("| " + user.getName() + " explodes and scatters into damaging Shrapnels (Passive Skill)");
             user.dmgAttack(opponent, 100);
             user.takeDamage(user.getMaxHp());

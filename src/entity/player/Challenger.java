@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 import engine.Game;
+import engine.GameResult;
 import entity.Entity;
 import mechanics.battleMechanics.battle.Battle;
 import mechanics.battleMechanics.skill.ActiveSkill;
@@ -12,6 +13,7 @@ import mechanics.battleMechanics.skill.PassiveSkill;
 import mechanics.battleMechanics.skill.Skill;
 import mechanics.inventory.PlayerInventory;
 import mechanics.pstate.AreaNavigationState;
+import mechanics.pstate.FloorNavigationState;
 import ui.Format;
 import ui.OptionSelect;
 import ui.TextTyper;
@@ -49,8 +51,8 @@ public abstract class Challenger extends Entity{
     private transient Game gameManager;
 
 
-    public Challenger(String name, String description, String job, int hp, int maxHp, int atk){
-        super(name, description, 1, hp, maxHp, atk);
+    public Challenger(String name, String description, String job, int maxHp, int atk){
+        super(name, description, 1, maxHp, maxHp, atk);
         this.job = job;
         this.skillPts = 5;
         this.maxSkillPts = 5;
@@ -60,12 +62,23 @@ public abstract class Challenger extends Entity{
         this.baseHp = hp;
         this.baseAtk = atk;
 
-        System.out.println("Hello, Challenger!");
-        System.out.println("Hmm... A " + job + "...");
-        System.out.println("I wonder if you'll meet the same fate as them?");
+
 
         System.out.println();
+        System.out.println();
+        TextTyper.typeText("Hello, ", 20, false);
+        TextTyper.typeText(" Challenger!", 35, true);
+        System.out.println();
+        TextTyper.typeText("Hmm...", 26, false);
+        TextTyper.typeText(" A " + job, 35, false);
+        TextTyper.typeText(" ...", 40, true);
+        System.out.println();
+        TextTyper.typeText("I wonder if you'll meet the same fate as them?", 50, true);
+        System.out.println();
+        System.out.println();
         displayData();
+
+
     }
 
     public void setGameManager(Game game){this.gameManager = game;}
@@ -91,13 +104,13 @@ public abstract class Challenger extends Entity{
     public void unequipWeapon(){
         if(equippedWeapon != null){
             inventory.addItem(equippedWeapon);
-            System.out.println("| Unequipped " + equippedWeapon.getName());
+            TextTyper.typeText("| Unequipped " + equippedWeapon.getName(), 40, true);
             equippedWeapon = null;
         }
     }
 
     public void dropItem(Area playerArea, Item item){
-        System.out.println("| Dropped " + item.getName() + " at " + playerArea.getName());
+        TextTyper.typeText("| Dropped " + item.getName() + " at " + playerArea.getName(), 40, true);
         inventory.remove(item);
         playerArea.getAreaInventories().get(0).addItem(item);
     }
@@ -128,41 +141,57 @@ public abstract class Challenger extends Entity{
     }
 
     public void displayData(){
-        System.out.println("웃 Challenger Data:");
+        TextTyper.typeText("웃 Challenger Data:", 60, true);
         System.out.println("Name: " + getName());
         System.out.println("> " + getDescription());
         System.out.println("HP: " + getHp());
         System.out.println("ATK: " + getAtk());
         System.out.println("LVL: " + getLvl());
+        TextTyper.typeText("-------------------", 60, true);
     }
 
     private void levelUp(){
         this.lvl += 1;
         Format.boxify("You have leveled up! " + (this.lvl - 1) + " -> " + this.lvl);
-        maxXp += (int)(100 * ((float)lvl * 0.188392));
+        maxXp += (int)(100 * ((float)lvl * 0.355) * Math.log(lvl + 10));
         System.out.println("---------------------------------------------------------");
         System.out.println("| +1 Max Skill Point");   
         System.out.print("| Max Skill Points: " + maxSkillPts + " -> ");
         maxSkillPts += 1;
         System.out.println(maxSkillPts);
+        OptionSelect.waiter();
+        System.out.println();
+
+
         System.out.println("---------------------------------------------------------");
         System.out.print("| MAX HP: " + maxHp + " -> ");
         maxHp = (int)(maxHp + ((Math.sqrt(lvl) * Math.log(maxHp * lvl * baseHp))));
         System.out.println(maxHp);
+        OptionSelect.waiter();
+        System.out.println();
+
         System.out.println("---------------------------------------------------------");
 
         System.out.print("| ATK: " + atk + " -> ");
-        atk = (int)(atk + ((Math.sqrt(lvl * 2) + Math.log(atk * lvl * baseAtk))));
+        atk = (int)(atk + ((Math.sqrt(lvl * 1.5) + Math.log(atk * lvl * baseAtk))));
         System.out.println(atk);
+        OptionSelect.waiter();
+        System.out.println();
+
         System.out.println("---------------------------------------------------------");
         System.out.println("| HP replenished");
         hp = maxHp;
         System.out.println("| HP: " + hp);
+        OptionSelect.waiter();
+        System.out.println();
+
         System.out.println("---------------------------------------------------------");
         System.out.println("| Skill Points replenished");
         skillPts = maxSkillPts;
         System.out.println("| SP: " + skillPts);
         System.out.println("---------------------------------------------------------");
+        OptionSelect.waiter();
+        System.out.println();
         
     }
 
@@ -240,14 +269,14 @@ public abstract class Challenger extends Entity{
 
     public void goUp(){
         if(getNextFloor() == null){
-            System.out.println("| No next floor ");
+            System.out.println("----------------");
+            System.out.println("| No next floor|");
             return;
         }
 
         if(getNextFloor() != null){
             if(getNextFloor().isLocked()){
                 System.out.println("| " + getNextFloor().getName() + " is locked");
-                System.out.println();
                 Key key = inventory.getKey();
                 System.out.println("------------------------------------------------------------");
                 if(key != null){
@@ -255,12 +284,17 @@ public abstract class Challenger extends Entity{
                     key.consume(this, getNextFloor());
                     System.out.println("------------------------------------------------------------");
                 }
-                else System.out.println("| You do not have any key.\n| Try to explore the " + Format.getOrdinal(getCurrentFloor().getNumber()) + " floor first to find the key.\n");
+                else{
+                    System.out.println("| You do not have any key.\n| Try to explore the available floors first to find the key.\n");
+                    System.out.println("------------------------------------------------------------");
+                }
 
                 return;
             }
             currentFloorNumber += 1;
-            System.out.println("| Ascended to the next floor\n| (Floor " + getPrevFloor().getNumber() + " -> Floor " + getCurrentFloor().getNumber() + ")\n");
+            System.out.println("------------------------------");
+            System.out.println("| Ascended to the next floor\n| (Floor " + getPrevFloor().getNumber() + " -> Floor " + getCurrentFloor().getNumber() + ")");
+            System.out.println("------------------------------");
             return;
         }
     
@@ -268,13 +302,16 @@ public abstract class Challenger extends Entity{
 
     public void goDown(){
         if(getPrevFloor() == null){
-            System.out.println("| No previous floor");
+            System.out.println("--------------------");
+            System.out.println("| No previous floor|");
             return;
         }
 
         if(getPrevFloor() != null){
             currentFloorNumber -= 1;
-            System.out.println("| Descended to the previous floor\n(Floor " + getNextFloor().getNumber() + " -> Floor " + getCurrentFloor().getNumber() + ")\n");
+            System.out.println("----------------------------------");
+            System.out.println("| Descended to the previous floor\n| (Floor " + getNextFloor().getNumber() + " -> Floor " + getCurrentFloor().getNumber() + ")");
+            System.out.println("----------------------------------");
         }
     }
 
@@ -285,22 +322,36 @@ public abstract class Challenger extends Entity{
 
 
     public void play(){
-        new AreaNavigationState().enterState(this);
+        new FloorNavigationState().enterState(this, new AreaNavigationState());
     }
     
     @Override
     public void defeated(Challenger player, Battle battle){
         if(!player.isAlive()){
-            TextTyper.typeText("You have fallen.", 100, true);
-            TextTyper.typeText("| " + player.getName(), 50, true);
-            TextTyper.typeText("| " + player.getJob(), 50, true);
-            TextTyper.typeText("| " + player.getLvl(), 50, true);
-            TextTyper.typeText("| Active Skills : " + player.activeSkillSet.size() + "  | Passive Skills : " + player.passiveSkillSet.size(), 80, true);
-            TextTyper.typeText("| Deleting game data ...", 70, true);
-
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
             gameManager.deleteData();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            TextTyper.typeText("You have fallen.", 100, true);
+            TextTyper.typeText("| Name : " + player.getName(), 50, true);
+            TextTyper.typeText("| Job  : " + player.getJob(), 50, true);
+            TextTyper.typeText("| LVL  : " + player.getLvl(), 50, true);
+            System.out.println();
+            TextTyper.typeText("| Active Skills : " + player.activeSkillSet.size() + "  | Passive Skills : " + player.passiveSkillSet.size(), 80, true);
+            System.out.println();
+            TextTyper.typeText("- G A M E  O V E R -", 100, true);
+
+            gameManager.gameOver(GameResult.LOSE);
 
         }
+    }
+
+    public void challengerWin(){
+        
     }
 
     @Override

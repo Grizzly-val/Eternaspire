@@ -25,7 +25,7 @@ public class Battle {
 
     public void encounterCutscene(String cutsceneID, Challenger player) {
         System.out.println();
-        CutsceneManager.checkCutscene(cutsceneID, player);
+        CutsceneManager.checkCutscene(cutsceneID, player, TOWER_ENTITY);
         System.out.println();
     }
 
@@ -86,12 +86,21 @@ public class Battle {
 
             printBattleStatus();
             challengerTurn();
+            System.out.println();
+            System.out.println();
+            OptionSelect.waiter();
+            System.out.println("-----------------------------------");
 
             System.out.println();
             System.out.println();
 
-            if(TOWER_ENTITY.isAlive())
+            if(TOWER_ENTITY.isAlive()){
+                Format.printSection(TOWER_ENTITY.getName() + "'s TURN");
                 towerEntityTurn();
+                System.out.println();
+                OptionSelect.waiter();
+                System.out.println("-----------------------------------");
+            }
         }
 
         // Result Phase
@@ -152,7 +161,6 @@ public class Battle {
     // ---------------------------------------------------------
 
     public void towerEntityTurn(){
-        Format.printSection(TOWER_ENTITY.getName() + "'s TURN");
         TOWER_ENTITY.useActiveSkill(CHALLENGER, this);
         TOWER_ENTITY.usePassiveSkill(CHALLENGER, this);
     }
