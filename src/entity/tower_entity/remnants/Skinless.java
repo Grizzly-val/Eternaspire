@@ -2,8 +2,8 @@ package entity.tower_entity.remnants;
 
 import entity.Entity;
 import entity.tower_entity.Remnant;
-import mechanics.battleMechanics.skill.active_skills.tower_entity.FleshSiphon;
-import mechanics.battleMechanics.skill.passive_skills.tower_entity.HeatLeach;
+import mechanics.battleMechanics.skill.tower_entity.active_skills.FleshSiphon;
+import mechanics.battleMechanics.skill.tower_entity.passive_skills.HeatLeach;
 
 public class Skinless extends Remnant {
 

@@ -2,14 +2,15 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
-import mechanics.battleMechanics.skill.passive_skills.tower_entity.RecoveryProtocol;
+import mechanics.battleMechanics.skill.tower_entity.passive_skills.RecoveryProtocol;
+
 
 public class Osarion extends Echo {
 
     private static final int BASE_HP = 62;
     private static final int BASE_ATK = 11;
 
-    public Osarion() {
+    public Osarion(int lvl) {
         super(BASE_HP, BASE_ATK, 26,
         "Osarion, The Tyrannical Pharaoh",
         "write description here",

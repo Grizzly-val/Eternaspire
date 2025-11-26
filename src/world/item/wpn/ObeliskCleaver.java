@@ -5,7 +5,7 @@ import entity.player.Challenger;
 
 public class ObeliskCleaver extends Weapon {
     public ObeliskCleaver(){
-        super("Obelisk Cleaver", "A heavy obsidian battle axe, its edge dark and well-worn from its past duties.", "cutscene_FirstTimeEquip_ObsidianCleaver", 25);
+        super("Obelisk Cleaver", "A heavy obsidian battle axe, its edge dark and well-worn from its past duties.", "cutscene_FirstTimeEquip_ObseliskCleaver", 25);
     }
 
     @Override

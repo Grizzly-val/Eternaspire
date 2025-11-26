@@ -1,0 +1,11 @@
+| The Shardling lets out a sound like cracking ice.
+| Its form loses cohesion, and it collapses instantly into a heap of non-animate frozen gore and ice shards.
+
+[NUGGET]
+"And... shattered.
+It’s almost sad. They spend forever trying to be whole, and one good hit sends them back to the puzzle pile."
+
+[CHALLENGER]
+(Stepping over the remains)
+"Better in pieces than dragging that pick toward me.
+Let's keep moving before the frostbite sets in."

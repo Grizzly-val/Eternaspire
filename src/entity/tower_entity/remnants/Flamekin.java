@@ -1,7 +1,7 @@
 package entity.tower_entity.remnants;
 import entity.Entity;
 import entity.tower_entity.Remnant;
-import mechanics.battleMechanics.skill.active_skills.tower_entity.Implosion;
+import mechanics.battleMechanics.skill.tower_entity.active_skills.Implosion;
 
 public class Flamekin extends Remnant {
 

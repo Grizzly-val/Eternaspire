@@ -1,0 +1,10 @@
+| Blade uncorks a flask containing a thin, golden broth. It smells medicinal, like crushed herbs and energy.
+
+[CHALLENGER]
+(Downing it in one go)
+"Bitter.
+But... effective. My legs feel lighter."
+
+[NUGGET]
+"Stamina Elixir!
+It’s basically liquid sleep. Perfect for when you've been running for three floors straight and your lungs are on fire."

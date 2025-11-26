@@ -8,7 +8,7 @@ public class UnmovingNomad extends Echo{
     private static final int BASE_HP = 100;
     private static final int BASE_ATK = 9;
 
-    public UnmovingNomad() {
+    public UnmovingNomad(int lvl) {
         super(BASE_HP, BASE_ATK,16, 
         "Unmoving Nomad", 
         "The Unmoving Nomad is a restless spirit, confined to a single floor, whose echoes speak of journeys he can no longer take.", 

@@ -2,9 +2,8 @@ package entity.tower_entity.remnants;
 
 import entity.Entity;
 import entity.tower_entity.Remnant;
-// Adjust these imports to match where you saved the skills
-import mechanics.battleMechanics.skill.active_skills.tower_entity.DesperateShank;
-import mechanics.battleMechanics.skill.passive_skills.tower_entity.SpitefulShatter;
+import mechanics.battleMechanics.skill.tower_entity.active_skills.DesperateShank;
+import mechanics.battleMechanics.skill.tower_entity.passive_skills.SpitefulShatter;
 
 public class Shardling extends Remnant {
 

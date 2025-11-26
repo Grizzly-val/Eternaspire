@@ -9,6 +9,8 @@ import engine.Game;
 import entity.player.Challenger;
 import entity.tower_entity.Echo;
 import entity.tower_entity.Remnant;
+import entity.tower_entity.echoes.MasterBlob;
+import mechanics.battleMechanics.battle.Battle;
 import ui.OptionSelect;
 import ui.TextTyper;
 import world.item.consumables.Food;
@@ -54,30 +56,13 @@ public final class CutsceneManager {
 
         switch(cutsceneID){
 
-            case "openingScene_00ChallengerBackstory_asMercenary":
+            case "cutscene_UseKey_Eternaspire_asMercenary":
                 startCutscene(cutsceneID, dir);
+                new Battle(player, new MasterBlob(60));
+                if(player.isAlive()){
+                    player.gameComplete();
+                }
                 break;
-
-
-            case "openingScene_01NuggetEncounter_asMercenary":
-                startCutscene(cutsceneID, dir);
-                break;
-
-                
-            case "openingScene_02TowerArrival_asMercenary":
-                startCutscene(cutsceneID, dir);
-                break;
-
-
-            case "cutscene_UseKey_TheWhetstoneClavis_asMercenary":
-                startCutscene(cutsceneID, dir);
-                break;
-
-
-            case "cutscene_RemnantDefeat_ElementalBlob_asMercenary":
-                startCutscene(cutsceneID, dir);  
-                break;
-
 
             case "cutscene_FirstEncounterWith_ElementalBlob_asMercenary":
                 TextTyper.typeText("| You have encountered an elemental blob for the first time", 20, true);
@@ -99,47 +84,13 @@ public final class CutsceneManager {
                 TextTyper.typeText("| The lift seals behind them. The next floor rumbles awake, echoing with the sound of metal on metal.", 80, true);
                 break;
 
-
-
             case "cutscene_FirstTimeEquip_ChallengersSword_asMercenary":
                 startCutscene(cutsceneID, dir);
                 TextTyper.typeText("| Challenger's Sword in hand. Somewhere in the Tower, a quiet resonance stirs.", 80, true);                
                 break;
 
-
-            case "cutscene_UseKey_TheLatchBreaker_asMercenary":
-                startCutscene(cutsceneID, dir);            
-                break;
-
-            case "cutscene_FirstEncounterWith_Gnawer_asMercenary":
-                startCutscene(cutsceneID, dir);
-                break;
-
-            case "cutscene_RemnantDefeat_Gnawer_asMercenary":
-                startCutscene(cutsceneID, dir);
-                break;
-
-            case "cutscene_UseKey_TheDisfragmenter_asMercenary":
-                startCutscene(cutsceneID, dir);
-                break;
-
-            case "cutscene_FirstEncounterWith_LostVanguard_asMercenary":
-                startCutscene(cutsceneID, dir);
-                break;
-
-            case "cutscene_EchoDefeat_LostVanguard_asMercenary":
-                startCutscene(cutsceneID, dir);
-                break;
-
-            case "cutscene_UseKey_TheAscendantsToken_asMercenary":
-                startCutscene(cutsceneID, dir);
-                break;
-            case "cutscene_FirstEncounterWith_UnmovingNomad_asMercenary":
-                startCutscene(cutsceneID, dir);
-                break;
-
             default:
-                TextTyper.typeText("Cutscene " + cutsceneID + " not found", 100, true);
+                startCutscene(cutsceneID, dir);
                 break;
 
         }
@@ -150,11 +101,11 @@ public final class CutsceneManager {
         System.out.println();
         System.out.println();
 
-
-
-
     }
 
+
+
+    
     public static void startCutscene(String cutsceneID, String dir){
         try {
             readFile("resources/" + dir + "/" + cutsceneID + ".txt");
@@ -174,7 +125,10 @@ public final class CutsceneManager {
             throw new IOException("|! Resource not found on classpath: " + cutsceneFile);
         }
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+        // Now inputStream is guaranteed to be non-null. 
+        // Include the InputStream in the try-with-resources to ensure explicit closure.
+        try (InputStream is = inputStream; // Assign to a new variable just to use it in the TWR block
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is))) {
 
             String line;
 
@@ -183,7 +137,9 @@ public final class CutsceneManager {
             }
 
         } catch (IOException e) {
-             System.out.println("|! Something went wrong >>! Cutscene Interrupted: " + e.getMessage());
+            System.out.println("|! Something went wrong >>! Cutscene Interrupted: " + e.getMessage());
         }
     }
+
+    
 }

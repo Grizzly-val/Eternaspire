@@ -54,7 +54,7 @@ public class IronDagger extends Weapon {
             }
         }
 
-        if(totalDmg > 0){
+        if(totalDmg > 0 && counter > 0){
             System.out.println("| " + user.getName() + " followed a " + counter + " hit combo!");
             user.dmgAttack(opponent, totalDmg);
         }

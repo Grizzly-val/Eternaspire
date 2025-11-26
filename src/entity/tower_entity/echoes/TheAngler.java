@@ -2,13 +2,13 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
-import mechanics.battleMechanics.skill.active_skills.tower_entity.AbyssalSwallow;
-import mechanics.battleMechanics.skill.passive_skills.tower_entity.BioluminescentTrap;
+import mechanics.battleMechanics.skill.tower_entity.active_skills.AbyssalSwallow;
+import mechanics.battleMechanics.skill.tower_entity.passive_skills.BioluminescentTrap;
 
 public class TheAngler extends Echo {
 
     private final static int BASE_HP = 50;
-    private final static int BASE_ATK = 21;
+    private final static int BASE_ATK = 9;
     
     public TheAngler(int lvl) {
         super(BASE_HP, 

@@ -147,7 +147,7 @@ public class InventoryState implements PlayerState{
                                     System.out.println("----------------------------------------");
                                     food.consume(player);
                                     System.out.println();
-                                    OptionSelect.waiter();
+                                    if(food.getCutsceneID().equals("nocutscene")) OptionSelect.waiter();
                                     System.out.println();
                                 }
                                 else{

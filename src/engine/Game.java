@@ -178,13 +178,13 @@ public class Game implements Serializable {
             case LOSE:
                 account.addLose();
                 System.out.println();
-                TextTyper.typeText("| Deleting game data ...", 70, true);
+                TextTyper.typeText("| Exiting game ...", 70, true);
                 System.out.println();
                 break;
             case WIN:
                 account.addWin();
                 System.out.println();
-                TextTyper.typeText("| Deleting game data ...", 70, true);
+                TextTyper.typeText("| Exiting game ...", 70, true);
                 System.out.println();
                 break;
             default:

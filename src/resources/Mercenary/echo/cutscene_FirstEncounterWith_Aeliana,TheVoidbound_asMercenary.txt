@@ -1,0 +1,43 @@
+| Blade enters The Festering Core. The room is a nightmare of fleshy walls pulsing with neon circuits.
+| In the center, suspended by chains made of black light, is a woman.
+| She wears armor that matches the Lost Vanguard's style, but it is shattered. Her skin is grey, and she weeps tears of pure void that eat through the floor.
+
+[CHALLENGER]
+"She... she looks human.
+Or she was."
+
+[NUGGET]
+(Freezing in mid-air. His voice is barely a whisper.)
+"Aeliana..."
+
+[CHALLENGER]
+"You know her?"
+
+[NUGGET]
+"I... I don't know. The name just... fell out of me.
+She feels familiar. Like a song I forgot the words to."
+
+| Blade shifts his stance, raising his weapon into a high, aggressive guard—the opening stance of Rending Cut.
+| It is the same stance the Lost Vanguard used.
+
+| Aeliana raises her head. Her eyes are empty holes. She doesn't see Blade; she looks through him, searching for someone who isn't there.
+
+[AELIANA, THE VOIDBOUND]
+(Voice echoing from everywhere at once)
+"He... promised.
+Where... is... the shield?"
+
+| Aeliana's empty eyes widen. For a split second, the void recedes.
+
+[AELIANA, THE VOIDBOUND]
+"That... stance...
+Is... he... safe?"
+
+[NUGGET]
+(Trembling)
+"She’s empty, Blade. There's no fire in her. Just... loss.
+The Tower kept her because her grief was so heavy it broke the floor.
+She’s not fighting you. She’s fighting the fact that she’s alone."
+
+[CHALLENGER]
+"Then let's show her she doesn't have to wait anymore."

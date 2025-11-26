@@ -3,6 +3,7 @@ package world.item.consumables;
 import entity.player.Challenger;
 import mechanics.cutscene.CutsceneManager;
 import ui.Format;
+import ui.OptionSelect;
 import world.location.Area;
 import world.location.Floor;
 
@@ -43,6 +44,11 @@ public class Key extends Consumables{
         else {
             System.out.println("| This key cannot be used here.");
         }
+
+
+        OptionSelect.waiter();
+        System.out.println();
+        System.out.println();
     }
 
     @Override

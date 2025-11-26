@@ -1,0 +1,25 @@
+| Blade stands at the base of a steep, spiraling incline. The path ahead is shrouded in an unnatural, heavy darkness that his eyes cannot pierce.
+| He holds up the Dilapidated Lantern. It is old, rusted, and seemingly broken, but as he approaches the dark stairs, the glass pane begins to vibrate.
+
+[CHALLENGER]
+"This lantern... it doesn't have any oil. It doesn't even have a wick.
+How is it supposed to light the way?"
+
+[NUGGET]
+"It doesn't burn oil, Blade. It burns resonance.
+The darkness here isn't an absence of light; it's an overload of memory. Too many echoes screaming at once.
+The lantern tunes them out. It cuts a path of silence through the noise."
+
+| Blade raises the lantern. A soft, blue flame ignites inside the rusted casing—not hot, but quiet.
+| The darkness ahead recoils as if physically pushed back. The path reveals itself, not just as stone steps, but as floating platforms made of solidified whispers.
+
+[CHALLENGER]
+"The light... it makes the world quiet.
+I can see the steps now. They look... fragile."
+
+[NUGGET]
+"They are made of the last words of people who gave up.
+Don't worry, they'll hold your weight. You're too stubborn to fall through a floor made of regrets.
+Welcome to The Climb of Echoes. Keep the light steady, or the noise will come back."
+
+| Blade steps onto the first spectral platform. His boot rings out with a clear, solid tone, silencing the whispers beneath his feet.

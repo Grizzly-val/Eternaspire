@@ -2,15 +2,15 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
-import mechanics.battleMechanics.skill.passive_skills.tower_entity.RecoveryProtocol;
-import mechanics.battleMechanics.skill.passive_skills.tower_entity.Reverberate;
+import mechanics.battleMechanics.skill.tower_entity.passive_skills.RecoveryProtocol;
+import mechanics.battleMechanics.skill.tower_entity.passive_skills.Reverberate;
 
 public class LostVanguard extends Echo {
 
     private static final int BASE_HP = 80;
     private static final int BASE_ATK = 7;
 
-    public LostVanguard() {
+    public LostVanguard(int lvl) {
 
         super(BASE_HP, BASE_ATK, 11,
         "Lost Vanguard",

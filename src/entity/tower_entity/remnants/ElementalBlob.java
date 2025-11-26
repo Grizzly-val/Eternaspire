@@ -1,7 +1,7 @@
 package entity.tower_entity.remnants;
 import entity.Entity;
 import entity.tower_entity.Remnant;
-import mechanics.battleMechanics.skill.active_skills.tower_entity.ElementalBurst;
+import mechanics.battleMechanics.skill.tower_entity.active_skills.ElementalBurst;
 
 public class ElementalBlob extends Remnant {
 

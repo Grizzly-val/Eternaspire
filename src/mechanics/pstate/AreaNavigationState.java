@@ -101,7 +101,13 @@ public class AreaNavigationState implements PlayerState {
             Key key = player.getInventory().getKey();
             if(key != null){
                 key.consume(player, areaEntered);
-            } else System.out.println("| You do not have any key.\n| The key must be somewhere in Eternaspire\n");
+            } else{
+                System.out.println("| You do not have any key.\n| The key must be somewhere in Eternaspire\n");
+
+            }
+            OptionSelect.waiter();
+            System.out.println();
+            System.out.println();
 
             return -1;
         }

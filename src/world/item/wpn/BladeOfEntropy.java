@@ -5,7 +5,7 @@ import entity.player.Challenger;
 
 public class BladeOfEntropy extends Weapon {
     public BladeOfEntropy(){
-        super("Blade of Entropy", "A shard of negative space that swallows light. It feels heavier than it looks.", "cutscene_Equip_BladeOfEntropy", 45);
+        super("Blade of Entropy", "A shard of negative space that swallows light. It feels heavier than it looks.", "cutscene_FirstTimeEquip_BladeOfEntropy", 45);
     }
 
     @Override

@@ -5,7 +5,7 @@ import entity.player.Challenger;
 
 public class TheCuratorsNeedle extends Weapon {
     public TheCuratorsNeedle(){
-        super("The Curator's Needle", "A massive floating needle resized for human hands. It hums with cold energy.", "cutscene_Equip_CuratorsNeedle", 25);
+        super("The Curator's Needle", "A massive floating needle resized for human hands. It hums with cold energy.", "cutscene_FirstTimeEquip_CuratorsNeedle", 25);
     }
 
     @Override

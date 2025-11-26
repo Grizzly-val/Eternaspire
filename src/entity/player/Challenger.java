@@ -153,7 +153,7 @@ public abstract class Challenger extends Entity{
     private void levelUp(){
         this.lvl += 1;
         Format.boxify("You have leveled up! " + (this.lvl - 1) + " -> " + this.lvl);
-        maxXp += (int)(100 * ((float)lvl * 0.355) * Math.log(lvl + 10));
+        maxXp += (int)(86 + ((float)Math.sqrt(lvl * lvl) * Math.log(lvl + 10)));
         System.out.println("---------------------------------------------------------");
         System.out.println("| +1 Max Skill Point");   
         System.out.print("| Max Skill Points: " + maxSkillPts + " -> ");
@@ -173,7 +173,7 @@ public abstract class Challenger extends Entity{
         System.out.println("---------------------------------------------------------");
 
         System.out.print("| ATK: " + atk + " -> ");
-        atk = (int)(atk + ((Math.sqrt(lvl * 1.5) + Math.log(atk * lvl * baseAtk))));
+        atk = (int)(atk + Math.sqrt(lvl) + 2);
         System.out.println(atk);
         OptionSelect.waiter();
         System.out.println();
@@ -287,6 +287,7 @@ public abstract class Challenger extends Entity{
                 else{
                     System.out.println("| You do not have any key.\n| Try to explore the available floors first to find the key.\n");
                     System.out.println("------------------------------------------------------------");
+                    OptionSelect.waiter();
                 }
 
                 return;
@@ -348,6 +349,26 @@ public abstract class Challenger extends Entity{
             gameManager.gameOver(GameResult.LOSE);
 
         }
+    }
+
+    public void gameComplete(){
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            gameManager.deleteData();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            TextTyper.typeText("Eternaspire Cleared!!", 100, true);
+            TextTyper.typeText("| Name : " + getName(), 50, true);
+            TextTyper.typeText("| Job  : " + getJob(), 50, true);
+            TextTyper.typeText("| LVL  : " + getLvl(), 50, true);
+            TextTyper.typeText("| Active Skills : " + activeSkillSet.size() + "  | Passive Skills : " + passiveSkillSet.size(), 80, true);
+            System.out.println();
+            TextTyper.typeText("- G A M E  O V E R -", 100, true);
+            gameManager.gameOver(GameResult.WIN);
+            
     }
 
     public void challengerWin(){

@@ -1,30 +1,43 @@
 package world.location.locationData;
 
 import entity.tower_entity.remnants.Cenkrath;
+import entity.tower_entity.remnants.CorruptedDrowner;
+import entity.tower_entity.remnants.CorruptedGnawer;
+import entity.tower_entity.remnants.CorruptedSpinefiend;
 import entity.tower_entity.remnants.Drowner;
 import entity.tower_entity.remnants.ElementalBlob;
+import entity.tower_entity.remnants.EntropyGolem;
+import entity.tower_entity.remnants.FalseReflection;
+import entity.tower_entity.remnants.FractalHorror;
 import entity.tower_entity.remnants.Gnawer;
 import entity.tower_entity.remnants.Scorthrax;
 import entity.tower_entity.remnants.Shardling;
 import entity.tower_entity.remnants.Skinless;
 import entity.tower_entity.remnants.Spinefiend;
-import mechanics.battleMechanics.skill.active_skills.challenger.RendingCut;
-import mechanics.battleMechanics.skill.active_skills.tower_entity.NomadsWisdom;
+import mechanics.battleMechanics.skill.challenger.active_skills.RendingCut;
+import mechanics.battleMechanics.skill.tower_entity.active_skills.NomadsWisdom;
 import entity.tower_entity.Echo;
 import entity.tower_entity.Remnant;
+import entity.tower_entity.echoes.BanishedKnight;
+import entity.tower_entity.echoes.Epochra;
+import entity.tower_entity.echoes.FallenPaladin;
 import entity.tower_entity.echoes.LostVanguard;
+import entity.tower_entity.echoes.Malphas;
 import entity.tower_entity.echoes.Nihil;
 import entity.tower_entity.echoes.Osarion;
 import entity.tower_entity.echoes.TheAngler;
 import entity.tower_entity.echoes.UnmovingNomad;
+import entity.tower_entity.echoes.VoidboundAeliana;
 import entity.tower_entity.echoes.Vorthos;
 import world.item.consumables.Food;
 import world.item.consumables.FoodEffect;
 import world.item.consumables.Key;
 import world.item.consumables.SkillScroll;
 import world.item.wpn.BladeOfEntropy;
+import world.item.wpn.CorruptedRedeemer;
 import world.item.wpn.SanctifierHammer;
 import world.item.wpn.TheCuratorsNeedle;
+import world.item.wpn.VanguardsBastion;
 import world.location.Floor;
 
 public final class AreaEntityData {
@@ -43,8 +56,7 @@ public final class AreaEntityData {
                                                                                 17, 
                                                                             "nocutscene",
                                                                             FoodEffect.HP)
-                                                                                )
-                                        );
+                                                                                ));
 
         // Floor 1 Area 1
         floorPtr = floorData.getFloor(1);
@@ -63,7 +75,7 @@ public final class AreaEntityData {
             areaEntitiesPtr.addRemnant(new Gnawer(9));
             areaEntitiesPtr.addRemnant(new Gnawer(9));
             areaEntitiesPtr.addRemnant(new ElementalBlob(11));
-            areaEntitiesPtr.setEcho((Echo)new LostVanguard().addDrops(new Key("The Ascendant's Token", 
+            areaEntitiesPtr.setEcho((Echo)new LostVanguard(11).addDrops(new Key("The Ascendant's Token", 
                                                                 "A mark of crossing the threshold, it grants clearance to continue the arduous climb into the spire's upper reaches.", 
                                                                 "FloorLock_TheLowerAscent", 
                                                                 "cutscene_UseKey_TheAscendantsToken"),
@@ -86,36 +98,23 @@ public final class AreaEntityData {
             areaEntitiesPtr.addRemnant(new ElementalBlob(12));
             areaEntitiesPtr.addRemnant(new ElementalBlob(12));
             areaEntitiesPtr.addRemnant(new Gnawer(13));
-            areaEntitiesPtr.setEcho((Echo)new UnmovingNomad().addDrops(new Key("The Nomads Ring", "An old scuffed ring that somehow exudes freedom, it seems to thank you. It shows the way for your next adventure.", 
+            areaEntitiesPtr.setEcho((Echo)new UnmovingNomad(16).addDrops(new Key("The Nomads Ring", "An old scuffed ring that somehow exudes freedom, it seems to thank you. It shows the way for your next adventure.", 
                                                                     "FloorLock_TheRuinedKingdomOfNeferis",
                                                                     "cutscene_UseKey_TheNomadsRing"),
                                                                     new SkillScroll("cutscene_Learn_NomadsWisdom", new NomadsWisdom(), "The Scroll of the Wandering Sage")));
     
+
+
+
+        
+
+
+
+
+
+
         //Floor 3 Area 1
         floorPtr = floorData.getFloor(3);
-        areaEntitiesPtr = floorPtr.getFloorArea(1).getAreaEntities();
-            areaEntitiesPtr.addRemnant(new Scorthrax(12));
-            areaEntitiesPtr.addRemnant((Remnant)new Cenkrath(13).addDrops(new Food("Coconut Water", 
-                                                                    "A refreshing drink from the desert palm, it replenishes a moderate amount of vitality and quenches thirst effectively.", 
-                                                                    15, 
-                                                                    "nocutscene", 
-                                                                    FoodEffect.HP)));
-        
-        //Floor 3 Area 2
-        floorPtr = floorData.getFloor(3);
-        areaEntitiesPtr = floorPtr.getFloorArea(2).getAreaEntities();
-            areaEntitiesPtr.addRemnant(new Scorthrax(14));
-            areaEntitiesPtr.addRemnant(new Cenkrath(14));
-            areaEntitiesPtr.addRemnant(new Scorthrax(15));
-
-        //Floor 3 Area 3
-        floorPtr = floorData.getFloor(3);
-        areaEntitiesPtr = floorPtr.getFloorArea(3).getAreaEntities();
-            areaEntitiesPtr.addRemnant(new Cenkrath(16));
-            areaEntitiesPtr.addRemnant((Remnant)new Scorthrax(16).addDrops(new SanctifierHammer()));
-
-        //Floor 4 Area 1
-        floorPtr = floorData.getFloor(4);
         areaEntitiesPtr = floorPtr.getFloorArea(1).getAreaEntities();
             areaEntitiesPtr.addRemnant(new Cenkrath(16));
             areaEntitiesPtr.addRemnant(new Cenkrath(14));
@@ -124,10 +123,50 @@ public final class AreaEntityData {
                                                                         "AreaLock_ThePharaohsChamber", 
                                                                         "cutscene_UseKey_TheGoldenAnkh"))));
 
+        //Floor 3 Area 2
+        floorPtr = floorData.getFloor(3);
+        areaEntitiesPtr = floorPtr.getFloorArea(2).getAreaEntities();
+            areaEntitiesPtr.setEcho((Echo)new Osarion(26).addDrops(new Key("Heart of the Avalanche", "Compressed ice pulses with the suspended fury of a mountain storm.", "FloorLock_TheGlacialGates", "cutscene_UseKey_HeartOfTheAvalanche")));
+
+
+
+
+
+
+
+
+
+        //Floor 4 Area 1
+        floorPtr = floorData.getFloor(4);
+        areaEntitiesPtr = floorPtr.getFloorArea(1).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new Scorthrax(12));
+            areaEntitiesPtr.addRemnant((Remnant)new Cenkrath(13).addDrops(new Food("Coconut Water", 
+                                                                    "A refreshing drink from the desert palm, it replenishes a moderate amount of vitality and quenches thirst effectively.", 
+                                                                    15, 
+                                                                    "nocutscene", 
+                                                                    FoodEffect.HP)));
+
         //Floor 4 Area 2
         floorPtr = floorData.getFloor(4);
         areaEntitiesPtr = floorPtr.getFloorArea(2).getAreaEntities();
-            areaEntitiesPtr.setEcho((Echo)new Osarion().addDrops(new Key("Heart of the Avalanche", "Compressed ice pulses with the suspended fury of a mountain storm.", "FloorLock_TheGlacialGates", "cutscene_UseKey_HeartOfTheAvalanche")));
+            areaEntitiesPtr.addRemnant(new Scorthrax(14));
+            areaEntitiesPtr.addRemnant(new Cenkrath(14));
+            areaEntitiesPtr.addRemnant(new Scorthrax(15));
+
+        //Floor 4 Area 3
+        floorPtr = floorData.getFloor(4);
+        areaEntitiesPtr = floorPtr.getFloorArea(3).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new Cenkrath(16));
+            areaEntitiesPtr.addRemnant((Remnant)new Scorthrax(16).addDrops(new SanctifierHammer()));
+
+
+            
+
+
+
+
+
+
 
         // Floor 5 Area 1
         floorPtr = floorData.getFloor(5);
@@ -140,6 +179,14 @@ public final class AreaEntityData {
         areaEntitiesPtr = floorPtr.getFloorArea(2).getAreaEntities();
             areaEntitiesPtr.addRemnant(new Skinless(20));
             areaEntitiesPtr.setEcho((Echo)new Vorthos(25).addDrops(new TheCuratorsNeedle()));
+
+
+
+
+
+
+
+
 
         // Floor 6 Area 1
         floorPtr = floorData.getFloor(6);
@@ -159,7 +206,92 @@ public final class AreaEntityData {
         floorPtr = floorData.getFloor(6);
         areaEntitiesPtr = floorPtr.getFloorArea(3).getAreaEntities();
             areaEntitiesPtr.addRemnant(new Skinless(22));
-            areaEntitiesPtr.setEcho((Echo)new Nihil(25).addDrops(new BladeOfEntropy()));
+            areaEntitiesPtr.setEcho((Echo)new Nihil(25).addDrops(new BladeOfEntropy(),
+                                                                        new Key("The Fractured Key", 
+                                                                        "A key that seems to glitch in and out of existence. It hurts to look at, as if reality is rejecting it.", 
+                                                                        "FloorLock_TheFragmentedThreshold", 
+                                                                        "cutscene_UseKey_TheFracturedKey")
+            ));
 
+
+
+
+
+        // --- FLOOR 7: The Fragmented Threshold ---
+        
+        // F7 Area 1: The Splintered Hall
+        floorPtr = floorData.getFloor(7);
+        areaEntitiesPtr = floorPtr.getFloorArea(1).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new CorruptedGnawer(26));
+            areaEntitiesPtr.addRemnant(new CorruptedSpinefiend(27));
+
+        // F7 Area 2: The Festering Core
+        floorPtr = floorData.getFloor(7);
+        areaEntitiesPtr = floorPtr.getFloorArea(2).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new CorruptedSpinefiend(28));
+            areaEntitiesPtr.setEcho((Echo)new VoidboundAeliana(29).addDrops(
+                new VanguardsBastion()
+            ));
+
+
+
+
+
+
+
+
+        // --- FLOOR 8: The Collapsing Void ---
+
+        // F8 Area 1: The Screaming Void
+        floorPtr = floorData.getFloor(8);
+        areaEntitiesPtr = floorPtr.getFloorArea(1).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new CorruptedDrowner(30));
+            areaEntitiesPtr.addRemnant(new CorruptedDrowner(28));
+            areaEntitiesPtr.addRemnant(new CorruptedGnawer(34));
+        
+        floorPtr = floorData.getFloor(8);
+        areaEntitiesPtr = floorPtr.getFloorArea(2).getAreaEntities();
+            // Echo: Fallen Paladin (Level 33)
+            // Drops: Corrupted Redeemer (Weapon) and Key of Absolution (Game End Key)
+            areaEntitiesPtr.setEcho((Echo)new FallenPaladin(33).addDrops(
+                new CorruptedRedeemer(),
+                new Key("Key of Absolution", 
+                        "A heavy, cold key that was once warm with holy light. It opens the path to the ultimate wish, heavy with the weight of a failed crusade.", 
+                        "FloorLock_TheFinalThreshold", 
+                        "cutscene_UseKey_KeyOfAbsolution")
+            ));                                                                            
+
+
+
+
+
+
+
+
+
+
+
+        //Floor 9 Area 1
+        floorPtr = floorData.getFloor(9);
+        areaEntitiesPtr = floorPtr.getFloorArea(1).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new FractalHorror(40));
+            areaEntitiesPtr.addRemnant(new FalseReflection(42));
+
+        //Floor 9 Area 2
+        floorPtr = floorData.getFloor(9);
+        areaEntitiesPtr = floorPtr.getFloorArea(2).getAreaEntities();
+            areaEntitiesPtr.addRemnant(new FalseReflection(43));
+            areaEntitiesPtr.addRemnant(new EntropyGolem(45));
+            areaEntitiesPtr.setEcho((Echo)new Malphas(31)); 
+        //Floor 9 Area 3
+        floorPtr = floorData.getFloor(9);
+        areaEntitiesPtr = floorPtr.getFloorArea(3).getAreaEntities();
+            areaEntitiesPtr.setEcho((Echo)new BanishedKnight(48).addDrops(new Key("Nugget's Feather", "The feather of your once companion, takes you to the \"final\" floor of the Eternaspire.", "FloorLock_TheZenith", "cutscene_UseKey_NuggetsFeather")));
+
+
+        //Floor 10 Area 1
+        floorPtr = floorData.getFloor(10);
+        areaEntitiesPtr = floorPtr.getFloorArea(1).getAreaEntities();
+            areaEntitiesPtr.setEcho((Echo)new Epochra(55).addDrops(new Key("The Eternaspire", "The Tower's Key", "FloorLock_TheEternaspire", "cutscene_UseKey_TheEternaspire")));
     }
 }

@@ -1,0 +1,13 @@
+| Blade holds the shimmering blue scroll. It feels cold, like holding a handful of river water. | 
+
+[CHALLENGER] "Magic... I’ve never relied on spells. Steel is reliable. This feels... temporary."
+
+[NUGGET] "Hence the name, 'Fleeting Aid.'  I told you earlier you'd need healing. You take too many hits, Blade. You can't just grit your teeth through everything."
+
+[CHALLENGER] "I’ve survived this long without it."
+
+[NUGGET] "And your mother is counting on you surviving longer. The Reaper is coming for the bill, remember? Best to have a way to cheat him."
+
+| Blade hesitates, then activates the scroll. A soothing light washes over his bruised knuckles.
+
+[CHALLENGER] "...Fine. It stops the bleeding. That’s all that matters."

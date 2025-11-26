@@ -1,0 +1,9 @@
+| Blade runs his thumb along the curved edge of the Scimitar. It’s light, balanced, and clearly designed for speed in a close-quarters fight. | 
+
+[CHALLENGER] "A Scimitar. Military grade, judging by the insignia on the hilt. It’s fast. Faster than the Broad Sword. But it trades cleaving power for quick cuts."
+
+[NUGGET] "Welcome to the desert floor, Blade! Slow and steady gets you cooked in the sun out here. You need to move, strike, and dodge. That blade is for skirmishing. Hit and run. Don't be a target."
+
+[CHALLENGER] "I'm a mercenary, Nugget. I fight when I'm paid to fight. It doesn't matter if it's a quick strike or a siege, as long as the job is clean."
+
+[NUGGET] "And the job here is survival. That Scimitar is a survival tool. Don't think of it as a weapon. Think of it as a way to finish a fight before the heat finishes you.

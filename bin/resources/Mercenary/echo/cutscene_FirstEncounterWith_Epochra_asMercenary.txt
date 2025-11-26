@@ -1,0 +1,84 @@
+| Blade wanders the endless green meadow of the Zenith. The wind is gentle, carrying the scent of fresh grass.
+| He looks around, shielding his eyes from the perfect, artificial sun.
+
+[CHALLENGER]
+"Nugget!
+Come on, stop hiding! The view is great, you'd love it!"
+
+| Silence. Only the wind answers. Blade sighs, scratching the back of his head.
+
+[CHALLENGER]
+"She probably got distracted by a shiny rock.
+Nugget!"
+
+[EPOCHRA]
+"Hey, Boss Blade."
+
+| The voice comes from the center of the field. It is familiar—playful, yet overlaid with a terrifying, divine resonance.
+| Blade snaps his head toward the source. Standing beneath the lone white tree is a woman formed of golden hard-light and six wings. She radiates power that makes the air vibrate.
+
+[CHALLENGER]
+(Immediately dropping into a combat stance)
+"An Echo!
+How do you know my name?
+...Wait. You don't speak flat like the others. You sound... present."
+
+[EPOCHRA]
+(Leaning casually against the spectral tree)
+"Does that give you any clue on who I am?"
+
+[CHALLENGER]
+"You are still intimidating like an Echo. Are you a fellow challenger who's really strong?
+...Have you seen a blue bird? About this tall, very loud, annoying but harmless?"
+
+[EPOCHRA]
+(Her glowing eyes narrow. She looks genuinely offended.)
+"Blade, It's me.
+See? You're just proving my point. You are an idiot."
+
+[CHALLENGER]
+(Blinking, lowering his sword slightly)
+"That tone... the insults...
+Nugget?"
+
+[EPOCHRA]
+"Took you long enough. Though 'Nugget' was just the travel-size packaging.
+This is the real me. Epochra."
+
+[CHALLENGER]
+"You're... tall. And glowing.
+I guess this explains why you knew everything about the tower.
+So, what is this? Some kind of final test? You guide me to the top, reveal your true form, we have a laugh, and then I get my wish?"
+
+[EPOCHRA]
+(Chuckling, but the sound lacks her usual warmth)
+"We did have some laughs, didn't we? Watching you punch that Blob on Floor 0 was the highlight of my century.
+And you were useful. You cleared the floors, cleaned up the glitchy data on Floor 7, put the Paladin to rest...
+You've been a very busy janitor, Blade."
+
+[CHALLENGER]
+"Janitor?
+I'm a climber. I'm here for a wish."
+
+[EPOCHRA]
+(Her expression hardens. The playful atmosphere vanishes instantly.)
+"There is no wish, Blade.
+The Tower doesn't grant desires. It eats them.
+It needs fuel. High-quality, determined souls to keep the engine running.
+And it needs a collection. New exhibits for the gallery."
+
+| She summons a massive staff that looks like a clock hand. The sky behind her cracks, revealing the gears of the Tower turning in the heavens.
+
+[EPOCHRA]
+"That's my job. I find a challenger with potential. I guide them. I fatten up their soul with hope and struggle.
+And when they reach the Zenith... I harvest them."
+
+[CHALLENGER] (Grip tightening on his sword, betrayal flashing in his eyes) "You- are you serious…?"
+
+[EPOCHRA] "HAHA YES I AM! That's the deal! The Tower Master—the one upstairs on Floor 11—promised me. If I bring him a worthy soul to replace me... I go free. I get my chains broken. I get my memories back. I get to leave this cage."
+
+| She points the staff at him.
+
+[EPOCHRA] "You are my ticket out, Blade. I like you. I really do. It’s been fun. But I’ve been tired of being trapped in this tower for so long that I’d be happy to betray one, two or three souls like yours for my own freedom. So... hold still. I promise to make it quick."
+
+[CHALLENGER] “Nugget…”

@@ -1,0 +1,24 @@
+| Blade stands before a heavy gate coated in frost, despite the searing heat of the desert behind him.
+| He holds the Heart of the Avalanche—a compressed sphere of ice that pulses with a violent, stormy rhythm. It is cold enough to burn his hand.
+
+[CHALLENGER]
+"It’s freezing.
+I can feel a storm raging inside this thing."
+
+[NUGGET]
+"That’s the Heart of the Avalanche.
+Osarion tried to control the weather to preserve his kingdom, but he only managed to bottle a blizzard.
+Insert it. But brace yourself—weather in the Tower doesn't 'change,' it crashes."
+
+| Blade pushes the ice sphere into the gate's recess.
+| CRACK.
+| The sound is deafening, like a mountain snapping in half. The heavy stone doors are blasted inward by a gale-force wind composed entirely of ice shards.
+| The heat of Neferis is instantly obliterated, replaced by a blinding white void.
+
+[CHALLENGER]
+(Shielding his face, shouting over the wind)
+"From an oven into a freezer!"
+
+[NUGGET]
+"Welcome to Floor 5: The Glacial Gates!
+Keep moving, or your blood will turn to slush!"
