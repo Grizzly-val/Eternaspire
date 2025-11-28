@@ -1,19 +1,9 @@
-
-
-
-import java.io.UnsupportedEncodingException;
-
 import engine.AccountManager;
 import ui.OptionSelect;
 import ui.TextTyper;
 
 public class Main {
-    public static void main(String[] args) throws UnsupportedEncodingException{
-
-
-        System.setProperty("file.encoding", "UTF-8");
-        System.setOut(new java.io.PrintStream(System.out, true, "UTF-8"));
-
+    public static void main(String[] args){
         
         System.out.println();
         TextTyper.typeText("Welcome, to Eternaspire! ⏳", 50, true);
