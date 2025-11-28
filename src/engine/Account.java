@@ -135,7 +135,7 @@ public class Account implements Serializable{
                 case 'l':
 
                     if(accountGames.isEmpty()){
-                        System.out.println("| No game found! Start a new game 🕳️");
+                        System.out.println("| No game found! Start a new game");
                         OptionSelect.waiter();
                         System.out.println("----------------------------------");
                         break;
