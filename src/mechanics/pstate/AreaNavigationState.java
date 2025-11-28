@@ -23,7 +23,7 @@ public class AreaNavigationState implements PlayerState {
         char choice = '\0';
         while(choice != 'f'){
             System.out.println("------------------------------------------------------------");
-            System.out.println("| Area Navigation 📍|");
+            System.out.println("| Area Navigation |");
             System.out.println("--------------------");
             System.out.println("[f] - Floor Entrance          (Floor navigation)");
             System.out.println("[e] - Explore Floor           (Area navigation)");
@@ -79,7 +79,7 @@ public class AreaNavigationState implements PlayerState {
         int index = -1;
         while(areaEntered == null){
             System.out.println("------------------------------------");
-            System.out.println("| Floor Areas 🗼|");
+            System.out.println("| Floor Areas |");
             System.out.println("-----------------");
             for(Entry<Integer, Area> parentAreaEntry : player.getCurrentFloor().getAreas().entrySet()){
                 System.out.println(parentAreaEntry.getKey() + " - " + parentAreaEntry.getValue().getName());

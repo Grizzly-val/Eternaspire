@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args){
         
         System.out.println();
-        TextTyper.typeText("Welcome, to Eternaspire! ⏳", 50, true);
+        TextTyper.typeText("Welcome, to Eternaspire!", 50, true);
         System.out.println();
         System.out.println();
 
@@ -17,8 +17,8 @@ public class Main {
             System.out.println("----------------------------------");
             System.out.println("| Home menu |");
             System.out.println("-------------");
-            System.out.println("[p] - play          ⚔️");
-            System.out.println("[e] - exit game     ⚔️");
+            System.out.println("[p] - play");
+            System.out.println("[e] - exit game");
             System.out.println("----------------------------------");
             choice = OptionSelect.charInput(choice);
             System.out.println("------------------------------------");

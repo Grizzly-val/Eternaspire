@@ -21,7 +21,7 @@ public class FloorNavigationState implements PlayerState {
             char choice = '\0';
             while(choice != '0'){
                 System.out.println("------------------------------------------------------------");
-                System.out.println("| Floor Navigation ⏳|");
+                System.out.println("| Floor Navigation |");
                 System.out.println("---------------------");
                 System.out.println("[a] - Ascend\n[d] - Descend\n[s] - Stay on current floor\n[i] - Open inventory\n\n[0] - EXIT GAME");
                 System.out.println("------------------------------------------------------------");

@@ -78,7 +78,7 @@ public class Battle {
         }
 
         System.out.println("\n==============================================================");
-        System.out.println("| BATTLE START 🗡️⚔️🛡️");
+        System.out.println("| BATTLE START");
         System.out.println("| Opponent: " + TOWER_ENTITY.getName());
         System.out.println("==============================================================\n");
 
@@ -95,7 +95,7 @@ public class Battle {
             System.out.println();
 
             if(TOWER_ENTITY.isAlive()){
-                Format.printSection(TOWER_ENTITY.getName() + "'s TURN 💢");
+                Format.printSection(TOWER_ENTITY.getName() + "'s TURN");
                 towerEntityTurn();
                 System.out.println();
                 OptionSelect.waiter();
@@ -129,8 +129,8 @@ public class Battle {
         System.out.println("------------------------------");
         System.out.println("| Attack |");
         System.out.println("----------");
-        System.out.println("[a] Normal Attack   💥");
-        System.out.println("[s] Use Skill       ☄️");
+        System.out.println("[a] Normal Attack ");
+        System.out.println("[s] Use Skill");
         System.out.println("------------------------------");
 
         char choice = '\0';
@@ -139,7 +139,7 @@ public class Battle {
             System.out.println("--------------------------------");
 
             if(choice == 'a' || choice == 's') 
-                Format.printSection(CHALLENGER.getName() + "'s TURN 💢");
+                Format.printSection(CHALLENGER.getName() + "'s TURN");
 
             switch(choice){
                 case 'a':

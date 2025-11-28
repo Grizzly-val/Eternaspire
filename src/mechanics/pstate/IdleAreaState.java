@@ -68,7 +68,7 @@ public class IdleAreaState implements PlayerState {
             System.out.println("| Floor     :   " + Format.getOrdinal(player.getCurrentFloor().getNumber()) + " floor");
             System.out.println("| Area      :   " + player.getCurrentArea().getName());
             System.out.println("--------------------------------------------");
-            System.out.println("| Scouting Area 🚩|");
+            System.out.println("| Scouting Area |");
             System.out.println("-------------------");
             System.out.println("[b] Go back         (Area entrance)");
             System.out.println("[f] Danger Foe      (fight)");
@@ -128,7 +128,7 @@ public class IdleAreaState implements PlayerState {
         char choice = '\0';
 
         while(choice != 'r' && choice  != 'e'){
-            System.out.println("| Engage battle ⚔️  |");
+            System.out.println("| Engage battle |");
             System.out.println("--------------------");
 
             System.out.println("[r] - Remnants  (" + pAreaEntities.getRemnantCount() + ")");

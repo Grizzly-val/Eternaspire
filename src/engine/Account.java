@@ -65,10 +65,10 @@ public class Account implements Serializable{
         while(choice != 'o'){
             Format.boxify(" Account Menu || W: " + wins + " | L: " + losses + " ");
             
-            System.out.println("[n] - New game      ✨");
-            System.out.println("[l] - Load game[" + accountGames.size() + "]  📜");
-            System.out.println("[d] - Delete game   🗑️");
-            System.out.println("[o] - Log out       🚪");
+            System.out.println("[n] - New game");
+            System.out.println("[l] - Load game[" + accountGames.size() + "]");
+            System.out.println("[d] - Delete game");
+            System.out.println("[o] - Log out");
             System.out.println("----------------------------------");
             choice = OptionSelect.charInput(choice);
             System.out.println("----------------------------------");
@@ -88,7 +88,7 @@ public class Account implements Serializable{
                         System.out.println("----------------------------------");
                         if(gameName.length() > 7 || gameName.length() < 2){
                             System.out.println();
-                            System.out.println("| Game name must be 2 to 7 characters long! ⚠️");
+                            System.out.println("| Game name must be 2 to 7 characters long!");
                             System.out.println();
                         }
                         System.out.println("----------------------------------");
@@ -112,13 +112,13 @@ public class Account implements Serializable{
                     System.out.println("----------------------------------");
 
                     if(toDelete == -1){
-                        System.out.println("| Cancelling game deletion... 💨");
+                        System.out.println("| Cancelling game deletion...");
                         System.out.println("----------------------------------");
                         break;
                     }
 
                     if(accountGames.get(toDelete) == null){
-                        System.out.println("| Game not found! 👻");
+                        System.out.println("| Game not found!");
                         System.out.println("----------------------------------");
                         break;
                     }
@@ -148,7 +148,7 @@ public class Account implements Serializable{
         
 
                     if(accountGames.get(toEnter) == null){
-                        System.out.println("| Game not found! 👻");
+                        System.out.println("| Game not found!");
                         break;
                     }
 
@@ -158,7 +158,7 @@ public class Account implements Serializable{
                     
                     break;
                 default:
-                    System.out.println("! ! Invalid input ! ! ❓");
+                    System.out.println("! ! Invalid input ! !");
                     System.out.println("----------------------------------");
                     break;
             }

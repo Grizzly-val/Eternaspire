@@ -16,9 +16,9 @@ public class InventoryState implements PlayerState{
     public void enterState(Challenger player, PlayerState prevState) {
         System.out.println();
         System.out.println();
-        System.out.println("-------------------");
-        System.out.println("| | Inventory 🎒| |");
-        System.out.println("-------------------");
+        System.out.println("-----------------");
+        System.out.println("| | Inventory | |");
+        System.out.println("-----------------");
 
         char choice = '\0';
 
