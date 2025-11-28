@@ -22,7 +22,7 @@ public abstract class Echo extends TowerEntity{
 
             (int)((BASE_HP + (int)((float)lvl * lvl * 0.28)) * 1.98), 
             
-            (int)(((BASE_ATK + (int)((float)lvl * 0.1982524))) * Math.log(lvl + 5)),
+            (int)(((BASE_ATK + (int)((float)lvl * lvl * 0.1))) * 1.78), 
                         
             
             defeatMessage);

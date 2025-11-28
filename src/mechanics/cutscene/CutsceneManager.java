@@ -56,12 +56,17 @@ public final class CutsceneManager {
 
         switch(cutsceneID){
 
-            case "cutscene_UseKey_Eternaspire_asMercenary":
+            case "cutscene_UseKey_TheEternaspire_asMercenary":
+                TextTyper.typeText("| Entering Eternaspire.", 100, true);
+
                 startCutscene(cutsceneID, dir);
+
+                TextTyper.typeText("| The Tower Master: Master Blob of Eternaspire.", 100, true);
                 new Battle(player, new MasterBlob(60));
                 if(player.isAlive()){
                     player.gameComplete();
                 }
+
                 break;
 
             case "cutscene_FirstEncounterWith_ElementalBlob_asMercenary":

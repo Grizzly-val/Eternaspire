@@ -1,0 +1,23 @@
+| Blade wipes the black ichor of the Gnawer off a small, rusted blade he pulled from its remains.
+| It is an Iron Dagger. Crude, unadorned, but deceptively heavy.
+
+[BLADE] 
+"A dagger.
+It’s barely a weapon compared to the sword. It looks like an eating utensil."
+
+[NUGGET]
+"Hey, don't knock the classics!
+That is an Iron Dagger. It's not for dueling; it's for... 'problem solving.'
+Specifically, problems that are very close to you and have soft spots."
+
+[BLADE] 
+(Flipping the dagger in his hand)
+"It’s balanced. Good for a quick strike when there's no room to swing a sword.
+Or for when I need to be quiet."
+
+[NUGGET]
+"Subtlety! I like it.
+A loud sword says 'I am here to fight.' A hidden dagger says 'You are already dead.'
+Keep it in your boot. You never know when you'll need a backup plan."
+
+| Blade sheathes the small weapon. It disappears easily into his gear, an invisible reassurance.

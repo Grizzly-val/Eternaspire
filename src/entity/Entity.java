@@ -84,7 +84,7 @@ public abstract class Entity implements Serializable{
                 damage += p.getEquippedWeapon().getAddAtk();
         }
         
-        System.out.println("| " + name + " hits " + attackReceiver.getName() + " for " + damage + " damage!");
+        System.out.println("| " + name + " attacks " + attackReceiver.getName() + "!");
         attackReceiver.takeDamage(damage);
     }
 

@@ -34,23 +34,13 @@ public class PlayerInventory extends Inventory{
     @Override
     public void addItem(Item item){
 
-        if(occupiedSpace + item.getSize() > CAPACITY){
-            System.out.println();
-            System.out.println("! ! Not enough space in Inventory ! !");
-            System.out.println("| Item Size : " + item.getSize() + "    Inventory : " + occupiedSpace + "/" + CAPACITY + "(" + (CAPACITY - occupiedSpace) + "left)");
-            System.out.println();
-            return;
-        }
-
-        System.out.println("| " + item.getName() + " obtained!");
-
         if(item instanceof Weapon){
             wpnInventory.add((Weapon) item);
             System.out.println("| " + item.getName() + " added to Weapons.");
         }
         else if(item instanceof Food){
             potionInventory.add((Food) item);
-            System.out.println("| " + item.getName() + " added to Potions.");
+            System.out.println("| " + item.getName() + " added to Food.");
         }
         else if(item instanceof Key){
             keyInventory.add((Key) item);

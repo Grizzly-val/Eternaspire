@@ -2,7 +2,7 @@ package entity.tower_entity.remnants;
 
 import entity.Entity;
 import entity.tower_entity.Remnant;
-import mechanics.battleMechanics.skill.tower_entity.passive_skills.AfterTaste;
+import mechanics.battleMechanics.skill.passive_skills.AfterTaste;
 
 public class Gnawer extends Remnant{
 

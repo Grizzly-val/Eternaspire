@@ -1,0 +1,63 @@
+| A small, singular eye forms in the puddle, glaring at Percival. Then, a tentacle of slime pushes the heavy, dripping sack of gold back toward Percival's feet.
+
+[TOWER MASTER]
+"Fine. The deal holds. Even if you did wreck the office.
+Take the money. It's infinite wealth. It's slimy, yes, but it will buy any ritualist, any resurrection rite, any mage or artifact you need.
+Your mother will walk again. You can fund her return to life ten times over."
+
+| Percival freezes.
+| For a heartbeat, he doesn’t breathe.
+| The Tower Master’s words hit him like a blade. Not hope — but confirmation.
+| The Tower itself couldn’t revive her.
+| He climbed all this way… and even the godlike mind at the top couldn’t undo death.
+| His grip trembles. His eyes sting, just for a moment — a crack in an otherwise unbreakable will.
+| He thinks of her smile. The one he’ll never see again except in memory.
+| He thinks of how desperately he had believed the wish would fix everything.
+| And how wrong he was.
+
+| He looks at the sack. It's disgusting, covered in rainbow slime, but now it feels heavier than the whole tower.
+| He picks it up with a slow, resigned motion.
+
+[PERCIVAL]
+(Voice quieter, almost hollow)
+"I'll take it.
+Money is money. Even if it smells like you."
+
+| It’s all he can manage. Anything more and he might break.
+
+[TOWER MASTER]
+"Excellent. Transaction complete.
+Now, please. Get out of my tower.
+I have a lot of cleanup to do, and I really don't want to see your face for another millennium."
+
+| The elevator of light reappears. Percival steps onto it, clutching the sack. Then he stops.
+
+[PERCIVAL]
+"One more thing."
+
+[TOWER MASTER]
+"What? You have the money! What more do you want?"
+
+[PERCIVAL]
+"The Echoes. Aeliana. The Paladin. Nugget.
+Let them go.
+That wasn't part of the money deal. That's my wish."
+
+[TOWER MASTER]
+(The puddle ripples, almost sighing.)
+"You greedy little anomaly.
+But... since you trashed the containment units anyway... and honestly, I'm tired of their noise in the system...
+Fine. System flush initiated.
+They're all returning to the cycle. No more loops. Just... peace."
+
+[PERCIVAL]
+"Good."
+
+| Percival steps fully onto the elevator. As he descends, he looks back one last time at the grumpy puddle of a god — but his expression is different.
+| Tired. Older. Carrying a loss no wish can rewrite.
+
+[PERCIVAL]
+(Expressionless while carrying the bag of possibly generational wealth)
+
+[TOWER MASTER]
+"Get out!"

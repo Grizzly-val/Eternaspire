@@ -11,7 +11,9 @@ import java.time.LocalDateTime;
 
 
 import entity.player.Challenger;
+import entity.player.Knight;
 import entity.player.Mercenary;
+import entity.player.Paladin;
 import mechanics.cutscene.CutsceneManager;
 import ui.OptionSelect;
 import ui.TextTyper;
@@ -71,11 +73,11 @@ public class Game implements Serializable {
         TextTyper.typeText("\n| Choose your character!", 40, true);
 
         char choice = '\0';
-        while (choice != 'm' && choice != 'k' && choice != 'w') {
+        while (choice != 'm' && choice != 'k' && choice != 'p') {
             System.out.println("----------------------------");
             System.out.println("[m] - Mercenary");
             System.out.println("[k] - Knight");
-            System.out.println("[w] - Wizard");
+            System.out.println("[p] - Paladin");
             System.out.println("----------------------------");
             System.out.print("| Select character >> ");
             choice = OptionSelect.charInput(choice);
@@ -86,16 +88,30 @@ public class Game implements Serializable {
                     TextTyper.typeText("| You've chosen a Mercenary!", 70, true);
                     player = new Mercenary();
                     break;
+
+
+
+
                 case 'k':
-                    System.out.println("| You've chosen a Knight!");
-                    // TODO: implement Knight
+                    TextTyper.typeText("| You've chosen a Knight!", 70, true);
+                    player = new Knight();
                     break;
-                case 'w':
-                    System.out.println("| You've chosen a Wizard!");
-                    // TODO: implement Wizard
+
+
+
+
+                case 'p':
+                    TextTyper.typeText("| You've chosen a Paladin!", 70, true);
+                    player = new Paladin();
                     break;
+
+
+
+
                 default:
+                    System.out.println();
                     System.out.println("| Please choose from available Challengers");
+                    System.out.println();
             }
         }
 
@@ -106,7 +122,7 @@ public class Game implements Serializable {
         floorData.init(this);
         AreaInventoryData.init(floorData);
         AreaEntityData.init(floorData);
-
+        
         // Run opening cutscenes
         CutsceneManager.checkCutscene("openingScene_00ChallengerBackstory", player, this);
         CutsceneManager.checkCutscene("openingScene_01NuggetEncounter", player, this);

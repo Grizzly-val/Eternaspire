@@ -2,8 +2,8 @@ package entity.tower_entity.remnants;
 
 import entity.Entity;
 import entity.tower_entity.Remnant;
-import mechanics.battleMechanics.skill.tower_entity.active_skills.HydroJet;
-import mechanics.battleMechanics.skill.tower_entity.passive_skills.VoidBody;
+import mechanics.battleMechanics.skill.active_skills.HydroJet;
+import mechanics.battleMechanics.skill.passive_skills.VoidBody;
 
 public class CorruptedDrowner extends Remnant {
 

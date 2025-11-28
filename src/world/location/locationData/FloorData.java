@@ -78,7 +78,7 @@ public final class FloorData implements Serializable{
 
 
         // Floor 6
-        getFloor(6).addArea(new Area("The Mirror of Regret:", "A hall of flawless black ice that reflects not your face, but the haunting visage of your past failures and deepest shames.", "nolock"));
+        getFloor(6).addArea(new Area("The Mirror of Regret", "A hall of flawless black ice that reflects not your face, but the haunting visage of your past failures and deepest shames.", "nolock"));
         getFloor(6).addArea(new Area("The Heartfrost Spire", " A cylindrical chamber where the castle's frozen core beats like a captured heart, radiating waves of palpable, soul-numbing sorrow.", "AreaLock_TheHeartfrostSpire"));
         getFloor(6).addArea(new Area("The Throne of Eternal Stillness", "A void of absolute silence and frozen time, where the Glacial Primarch sits upon a throne of black ice, embodying the end of all warmth and motion.", "AreaLock_TheThroneOfEternalStillness"));
 

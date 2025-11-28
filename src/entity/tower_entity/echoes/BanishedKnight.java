@@ -2,8 +2,8 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
-import mechanics.battleMechanics.skill.challenger.active_skills.RealitySever;
-import mechanics.battleMechanics.skill.challenger.passive_skills.TemporalJitter; 
+import mechanics.battleMechanics.skill.active_skills.RealitySever;
+import mechanics.battleMechanics.skill.passive_skills.TemporalJitter; 
 
 
 public class BanishedKnight extends Echo {

@@ -255,10 +255,19 @@ public class IdleAreaState implements PlayerState {
                                 }
                             }
                             System.out.println();
-                            System.out.println("| Item collected");
-                            player.storeItem(selectedItem);
-                            System.out.println();
-                            areaInv.remove(selectedItem);
+                            
+                            
+                            if(selectedItem.getSize() + player.getInventory().getOccupiedSpace() > player.getInventory().getCapacity()){
+                                System.out.println();
+                                System.out.println("! ! Not enough space in Inventory ! !");
+                                System.out.println("| Item Size : " + selectedItem.getSize() + "    Inventory : " + player.getInventory().getOccupiedSpace() + "/" + player.getInventory().getCapacity() + "(" + (player.getInventory().getCapacity() - player.getInventory().getOccupiedSpace()) + "left)");
+                                System.out.println();
+                            } else{
+                                player.storeItem(selectedItem);
+                                System.out.println("| Item collected");
+                                System.out.println();
+                                areaInv.remove(selectedItem);
+                            } 
                             System.out.println("--------------------------------------------");
                             break;
                         case 'p':
@@ -269,6 +278,9 @@ public class IdleAreaState implements PlayerState {
                         default:
                             break;
                     }
+                    OptionSelect.waiter();
+                    System.out.println();
+                    System.out.println();
                 }
 
             }

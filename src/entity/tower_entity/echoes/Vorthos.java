@@ -2,8 +2,8 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
-import mechanics.battleMechanics.skill.tower_entity.active_skills.FlashFreeze;
-import mechanics.battleMechanics.skill.tower_entity.passive_skills.TheCollection;
+import mechanics.battleMechanics.skill.active_skills.FlashFreeze;
+import mechanics.battleMechanics.skill.passive_skills.TheCollection;
 
 public class Vorthos extends Echo {
 

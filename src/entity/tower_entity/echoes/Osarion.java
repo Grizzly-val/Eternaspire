@@ -2,7 +2,9 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
-import mechanics.battleMechanics.skill.tower_entity.passive_skills.RecoveryProtocol;
+import mechanics.battleMechanics.skill.active_skills.SovereignsGrip;
+import mechanics.battleMechanics.skill.passive_skills.PharaohsAura;
+import mechanics.battleMechanics.skill.passive_skills.RecoveryProtocol;
 
 
 public class Osarion extends Echo {
@@ -19,6 +21,9 @@ public class Osarion extends Echo {
 
         
         this.giveSkill(new RecoveryProtocol()); //passive
+        this.giveSkill(new PharaohsAura()); //passive
+        this.giveSkill(new SovereignsGrip()); // active
+
     }
     
 

@@ -2,8 +2,8 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
-import mechanics.battleMechanics.skill.challenger.active_skills.RealitySever;
-import mechanics.battleMechanics.skill.tower_entity.passive_skills.EntropyAura;
+import mechanics.battleMechanics.skill.active_skills.RealitySever;
+import mechanics.battleMechanics.skill.passive_skills.EntropyAura;
 
 public class Nihil extends Echo {
 

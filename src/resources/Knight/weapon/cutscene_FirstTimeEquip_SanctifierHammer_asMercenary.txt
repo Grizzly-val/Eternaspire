@@ -1,0 +1,17 @@
+| Percival stands over the dissolving remains of a large Remnant, a creature that looked like a scorpion fused with dried bone. |
+
+The creature vanishes into fine gray dust, leaving behind a medium-sized hammer head attached to a simple, heavy wooden haft. The metal of the hammer gleams with a silver-white light.
+
+[PERCIVAL] "A hammer? Seems slow for a place like this."
+
+[NUGGET] "Look closer, Percival. See the glow? That’s holy metal. It's built to pierce defensive magic and banish minor spirits."
+
+[PERCIVAL] "It's heavier than my scimitar. It's not built for speed, it's built for precision. I’m a mercenary. I don’t 'sanctify', I just kill, and yet why does a weapon a paladin wields feel so familiar in my hands?"
+
+[NUGGET] (Looks at Percival and grins) "I dunno, maybe the tower has something to with it? Anyways, these ruins are crawling with the weak remnants of dead priests and forgotten soldiers. They aren't solid; they're lingering despair. You can hack at them all day with a simple blade, or you can use that hammer to just... delete them."
+
+| Percival grips the hammer, feeling its substantial weight. He gives it a slow, powerful swing. The air crackles faintly with silver light. |
+
+[PERCIVAL] "A heavy price for a clean job, but fine. If it saves me a fight, I'll carry it."
+
+[NUGGET] "That's the spirit! Less swinging, more impact!"

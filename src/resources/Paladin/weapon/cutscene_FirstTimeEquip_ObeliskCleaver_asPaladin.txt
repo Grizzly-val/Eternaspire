@@ -1,0 +1,26 @@
+| Percival forces open a sealed sarcophagus in the corner of a collapsed burial chamber.
+| Inside, resting on a bed of decayed linen, is a massive battle axe carved from a single piece of black volcanic glass.
+
+[PERCIVAL]
+(Lifting the weapon with both hands)
+"This isn't a weapon of war.
+It’s too heavy. Too brutal.
+This was made for executions."
+
+[NUGGET]
+"That’s the Obelisk Cleaver.
+The tomb guardians used these to... 'dismiss' anyone who touched the sacred monuments."
+
+| Percival swings the axe. It cleaves the air with a low, terrifying thrum. He brings it down on the stone sarcophagus, shattering the heavy lid into dust with a single blow.
+
+[PERCIVAL]
+"It doesn't cut. It obliterates.
+It’s slow, but if this hits... nothing stands back up."
+
+[NUGGET]
+"A brute force solution for a brute force world.
+Just don't miss. You won't get a second swing quickly."
+
+[PERCIVAL]
+(Strapping the massive axe to his back)
+"Then I won't miss."

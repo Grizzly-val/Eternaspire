@@ -2,6 +2,8 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
+import mechanics.battleMechanics.skill.active_skills.DesperateShank;
+import mechanics.battleMechanics.skill.passive_skills.RecoveryProtocol;
 
 public class UnmovingNomad extends Echo{
 
@@ -14,6 +16,9 @@ public class UnmovingNomad extends Echo{
         "The Unmoving Nomad is a restless spirit, confined to a single floor, whose echoes speak of journeys he can no longer take.", 
         "The painful echo dissolves, leaving behind the true, free traveler.", 
         "cutscene_Defeat_UnmovingNomad");
+
+        this.giveSkill(new RecoveryProtocol());
+        this.giveSkill(new DesperateShank());
     }
 
     @Override

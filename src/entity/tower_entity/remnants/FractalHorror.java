@@ -1,12 +1,12 @@
 package entity.tower_entity.remnants;
 import entity.Entity;
 import entity.tower_entity.Remnant;
-import mechanics.battleMechanics.skill.tower_entity.active_skills.InfiniteDetail;
+import mechanics.battleMechanics.skill.active_skills.InfiniteDetail;
 
 public class FractalHorror extends Remnant {
     
     private final static int BASE_HP = 11;
-    private final static int BASE_ATK = 25;
+    private final static int BASE_ATK = 20;
     
     public FractalHorror(int lvl) {
         super(BASE_HP, 

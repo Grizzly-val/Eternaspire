@@ -2,6 +2,7 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
+import mechanics.battleMechanics.skill.passive_skills.LiquidBody;
 
 public class MasterBlob extends Echo {
 
@@ -16,6 +17,9 @@ public class MasterBlob extends Echo {
               "The Tower Master of Eternaspire. A shifting, swirling mass of fire, ice, lightning, void, and code. The Prime State.", 
               "The Master Blob destabilizes, splashing onto the floor in a chaotic puddle of raw data.", 
               "cutscene_EchoDefeat_MasterBlob_asMercenary");
+
+
+        this.giveSkill(new LiquidBody());
     }
 
     @Override
@@ -23,6 +27,7 @@ public class MasterBlob extends Echo {
 
         if(Math.random() < 0.40){
             System.out.println("| " + this.getName() + " misses its blobly shot");
+            return;
         }
 
         // The Master Blob can use any element. We randomize the description.

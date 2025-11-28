@@ -2,7 +2,7 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
-import mechanics.battleMechanics.skill.challenger.active_skills.EclipseSmite;
+import mechanics.battleMechanics.skill.active_skills.EclipseSmite;
 
 public class FallenPaladin extends Echo {
 
@@ -17,6 +17,7 @@ public class FallenPaladin extends Echo {
               "Once a beacon of hope who sought to cleanse the tower. Now, his armor is fused to his skin, and his prayers are screamed into the abyss.", 
               "The Fallen Paladin drops to one knee, his corrupted hammer slipping from his grasp. 'The light... was it ever real?'", 
               "cutscene_Defeat_FallenPaladin"); 
+              
               this.giveSkill(new EclipseSmite());
 
     }

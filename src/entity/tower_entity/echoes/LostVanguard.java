@@ -2,8 +2,9 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
-import mechanics.battleMechanics.skill.tower_entity.passive_skills.RecoveryProtocol;
-import mechanics.battleMechanics.skill.tower_entity.passive_skills.Reverberate;
+import mechanics.battleMechanics.skill.active_skills.BashReturn;
+import mechanics.battleMechanics.skill.passive_skills.RecoveryProtocol;
+import mechanics.battleMechanics.skill.passive_skills.Reverberate;
 
 public class LostVanguard extends Echo {
 
@@ -21,6 +22,7 @@ public class LostVanguard extends Echo {
         
         this.giveSkill(new RecoveryProtocol());     //passive
         this.giveSkill(new Reverberate());          //passive
+        this.giveSkill(new BashReturn());
 
     }
 

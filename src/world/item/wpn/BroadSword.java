@@ -14,7 +14,7 @@ public class BroadSword extends Weapon {
         
         if(Math.random() < 0.20){
             System.out.println("| Weapon strength tripled.");
-            user.dmgAttack(opponent, atk + this.getAddAtk() + this.getAddAtk() + this.getAddAtk());
+            user.dmgAttack(opponent, atk + (this.getAddAtk() * 3));
         } else{
             user.dmgAttack(opponent, atk + this.getAddAtk());
         }

@@ -1,11 +1,11 @@
 package world.location.locationData;
 
-import mechanics.battleMechanics.skill.challenger.active_skills.AvalancheStrike;
-import mechanics.battleMechanics.skill.challenger.active_skills.ChallengersWill;
-import mechanics.battleMechanics.skill.challenger.active_skills.Oblivion;
-import mechanics.battleMechanics.skill.challenger.active_skills.ThermalSiphon;
-import mechanics.battleMechanics.skill.challenger.passive_skills.FleetingAid;
-import mechanics.battleMechanics.skill.challenger.passive_skills.Photosynthesis;
+import mechanics.battleMechanics.skill.active_skills.dropped.AvalancheStrike;
+import mechanics.battleMechanics.skill.active_skills.dropped.ChallengersWill;
+import mechanics.battleMechanics.skill.active_skills.dropped.Oblivion;
+import mechanics.battleMechanics.skill.active_skills.dropped.ThermalSiphon;
+import mechanics.battleMechanics.skill.passive_skills.dropped.FleetingAid;
+import mechanics.battleMechanics.skill.passive_skills.dropped.Photosynthesis;
 import mechanics.inventory.AreaInventory;
 import world.item.consumables.FoodEffect;
 import world.item.consumables.Food;
@@ -139,6 +139,7 @@ public final class AreaInventoryData {
             tempInventory = new AreaInventory("Broken Vase");
                 tempInventory.addItem(new Food("Dried Meat Strips", "Tough, salty strips of preserved meat that provide a quick boost of energy and protein.", 20, "cutscene_EatFood_DriedMeatStrips", FoodEffect.HP));
             tempInventory = new AreaInventory("Ancient Statue");
+                tempInventory.addItem(new Key("Heart of the Avalanche", "Compressed ice pulses with the suspended fury of a mountain storm.", "FloorLock_TheGlacialGates", "cutscene_UseKey_HeartOfTheAvalanche"));
                 areaPtr.addInventory(tempInventory);
 
 
@@ -158,7 +159,7 @@ public final class AreaInventoryData {
         areaPtr = floorPtr.getFloorArea(1);
             tempInventory = new AreaInventory("Refracting Pillar");
                 // Key for Area 2
-                tempInventory.addItem(new Key("The Ring-Finger Key", "A finger frozen solid, snapping off a statue. The bone protrudes in a shape that fits a lock.", "AreaLock_TheIceboundHall", "cutscene_UseKey_RingFinger"));
+                tempInventory.addItem(new Key("The Ring-Finger Key", "A finger frozen solid, snapping off a statue. The bone protrudes in a shape that fits a lock.", "AreaLock_TheIceboundHall", "cutscene_UseKey_TheRing-FingerKey"));
                 tempInventory.addItem(new Food("Frozen Marrow", "The inside of a bone, preserved perfectly by the cold.", 50, "nocutscene", FoodEffect.HP)); 
                 areaPtr.addInventory(tempInventory);
             
@@ -217,7 +218,8 @@ public final class AreaInventoryData {
         areaPtr = floorPtr.getFloorArea(3);
             tempInventory = new AreaInventory("Static Void");
                 // Void Salt grants SP
-                tempInventory.addItem(new Food("Void Salt", "Residue from the air. Tastes like static on your tongue.", 10, "nocutscene", FoodEffect.SP)); 
+                tempInventory.addItem(new Food("Void Salt", "Residue from the air. Tastes like static on your tongue.", 10, "nocutscene", FoodEffect.SP));
+                tempInventory.addItem(new SkillScroll("cutscene_Learn_Oblivion", new Oblivion(), "The Codex of Nihility"));
                 areaPtr.addInventory(tempInventory);
 
 
@@ -300,7 +302,6 @@ public final class AreaInventoryData {
         areaPtr = floorPtr.getFloorArea(3);
             tempInventory = new AreaInventory("Reality Fracture");
                 tempInventory.addItem(new Food("Quantum Foam", "A bizarre substance that seems to exist in multiple states at once, consuming it imparts a strange sense of clarity.", 15, "nocutscene", FoodEffect.SP));
-                tempInventory.addItem(new SkillScroll("cutscene_Learn_Oblivion", new Oblivion(), "The Codex of Nihility"));
                     areaPtr.addInventory(tempInventory);
     }
 }

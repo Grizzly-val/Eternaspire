@@ -16,10 +16,11 @@ public class CorruptedRedeemer extends Weapon {
         System.out.println("The Redeemer falls like a judgment from the void.");
         
         // Passive: Eclipse Crush
-        // 20% Chance to deal double damage (Critical Smite)
+        // 20% Chance to deal triple damage (Critical Smite)
         if (Math.random() < 0.20) {
             System.out.println("| BLACK LIGHTNING ERUPTS!");
-            user.dmgAttack(opponent, (int)(atk * 2.0));
+            user.dmgAttack(opponent, (int)(atk * 3));
+            user.addSkillPoint(2);
         } else {
             user.dmgAttack(opponent, atk);
         }

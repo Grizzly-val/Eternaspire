@@ -8,7 +8,6 @@ import ui.OptionSelect;
 import ui.TextTyper;
 import world.item.consumables.Key;
 import world.location.Area;
-import world.location.locationData.FloorData;
 
 public class AreaNavigationState implements PlayerState {
 

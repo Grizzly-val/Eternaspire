@@ -2,7 +2,9 @@ package entity.tower_entity.echoes;
 
 import entity.Entity;
 import entity.tower_entity.Echo;
-import mechanics.battleMechanics.skill.challenger.passive_skills.TemporalJitter; 
+import mechanics.battleMechanics.skill.active_skills.BashReturn;
+import mechanics.battleMechanics.skill.active_skills.EclipseSmite;
+import mechanics.battleMechanics.skill.passive_skills.TemporalJitter; 
 
 public class Epochra extends Echo {
 
@@ -17,7 +19,9 @@ public class Epochra extends Echo {
         "Epochra falls to its knees, changing back into the form it took when it was your companion.",
         "cutscene_Defeat_Epochra");
 
-      this.giveSkill(new TemporalJitter());    
+        this.giveSkill(new TemporalJitter());
+        this.giveSkill(new EclipseSmite());  
+        this.giveSkill(new BashReturn()); 
 
     }
 

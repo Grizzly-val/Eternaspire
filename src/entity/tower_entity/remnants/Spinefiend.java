@@ -2,12 +2,12 @@ package entity.tower_entity.remnants;
 
 import entity.Entity;
 import entity.tower_entity.Remnant;
-import mechanics.battleMechanics.skill.tower_entity.passive_skills.Shrapnels;
+import mechanics.battleMechanics.skill.passive_skills.Shrapnels;
 
 public class Spinefiend extends Remnant {
 
     private final static int BASE_HP = 35;
-    private final static int BASE_ATK = 23;
+    private final static int BASE_ATK = 19;
     
     public Spinefiend(int lvl) {
         super(BASE_HP, 

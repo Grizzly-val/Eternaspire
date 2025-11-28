@@ -3,7 +3,7 @@ package entity.tower_entity.remnants;
 
 import entity.Entity;
 import entity.tower_entity.Remnant;
-import mechanics.battleMechanics.skill.tower_entity.active_skills.InfernalStinger;
+import mechanics.battleMechanics.skill.active_skills.InfernalStinger;
 
 public class Scorthrax extends Remnant {
 

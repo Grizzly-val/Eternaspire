@@ -10,7 +10,14 @@ public class SoldiersScimitar extends Weapon {
 
     @Override
     public void basicAttack(Challenger user, Entity opponent, int atk) {
-        System.out.println("| A scimitar slices the enemy with swift motion.");
+        System.out.println("| The scimitar slices the enemy with swift motion.");
         user.dmgAttack(opponent, atk);
+        for(int i = 0; i < 3; i++){
+            if(Math.random() < 0.3){
+                System.out.println("| The scimitar is not satisfied!");
+                user.dmgAttack(opponent, atk);
+            }
+
+        }
     }
 }

@@ -1,0 +1,57 @@
+| Percival stands at the gates of the estate. He isn't wearing his ceremonial parade armor. He is wearing his battle plate—scratched, practical, and heavy.
+| He looks back at the high window of his mother's study. The light is on. She is still working. She hasn't noticed he's leaving.
+
+[PERCIVAL]
+"Goodbye, Mother.
+When I come back... you won't have to ask who I am."
+
+| He turns away, the heavy iron gate clanging shut behind him. Nugget hovers by his shoulder.
+
+[NUGGET]
+"Dramatic exit. I rate it a solid 8/10. Needs more cape fluttering."
+
+[PERCIVAL]
+"Let's just go."
+
+| ...
+
+| They stand before the Tower. It pierces the clouds, a monument to impossibility.
+| Percival feels a chill that has nothing to do with the wind.
+
+[PERCIVAL]
+"It looms. It feels... arrogant."
+
+[NUGGET]
+"It's the ultimate challenge. It judges everyone.
+But unlike your mom, if you beat this thing, it stays beaten."
+
+| The massive doors groan open. Darkness awaits.
+| They step inside. The doors slam shut.
+| The blue lights of Floor 0 flicker to life.
+
+[PERCIVAL]
+"Floor 0. 'The Beginning of No End.'
+Fitting."
+
+| He reaches for his sidearm.
+| His hand grasps air.
+| He looks down. His sword is gone. His shield is gone. Even his fine plate armor has dissolved into a simple tunic and trousers.
+
+[PERCIVAL]
+"My... my gear!
+That armor was forged by the Royal Smith! My sword was an heirloom!"
+
+[NUGGET]
+"And now it's a snack!
+The Tower eats outside metal. Call it an entry tax.
+You wanted to prove yourself? Well, now you have to do it from scratch.
+No family crest. No expensive steel. Just you."
+
+[PERCIVAL]
+(Looking at his bare hands, panic rising)
+"I... I am nothing without my crest."
+
+[NUGGET]
+"Wrong. You're a player now.
+And players level up.
+Welcome to the game, Sir Knight."
