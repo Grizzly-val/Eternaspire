@@ -22,7 +22,7 @@ This Tower is my only laboratory now."
 I need to take notes..."
 
 | He reaches for his hidden journal. It's gone.
-| He reaches for his mace. Gone.
+| He reaches for his weapon. Gone.
 | His robes are replaced by simple, rough cloth.
 
 [PERCIVAL]
@@ -32,7 +32,7 @@ Where are they?!"
 [NUGGET]
 "Consumed!
 The Tower doesn't like outside research. It prefers you to learn the hard way.
-Consider it a clean slate. No notes. No bias."
+Consider it a clean slate. No notes. No bias. Call it entry tax"
 
 [PERCIVAL]
 "That journal contained the memory of her voice!

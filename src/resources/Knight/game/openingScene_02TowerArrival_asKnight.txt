@@ -45,7 +45,7 @@ That armor was forged by the Royal Smith! My sword was an heirloom!"
 "And now it's a snack!
 The Tower eats outside metal. Call it an entry tax.
 You wanted to prove yourself? Well, now you have to do it from scratch.
-No family crest. No expensive steel. Just you."
+No family crest. No expensive steel. Just you. Call it entry tax."
 
 [PERCIVAL]
 (Looking at his bare hands, panic rising)
