@@ -28,7 +28,6 @@ This project showcases Java programming concepts such as object-oriented design,
 ♟**Blade**: the Mercenary
 ♞**Percival**: The Knight
 ♗**Another Percival**: The Paladin
-*
 📈 - **Fight** remnants and echoes to level up their hp and attack as well as uncover hidden lore of the tower!
 🔎 - **Explore** through ten floors, each with varying number of area and collect valuable loot!
 
@@ -63,7 +62,7 @@ This project showcases Java programming concepts such as object-oriented design,
  - *🔑 Keys** – Unlock floors and areas. 
  - *⚔️ Weapons* – Equip to strengthen characters, each with unique passives. 
  - *📜 Skill Scrolls** – Learn powerful skills for damage or healing.
- - *🧪 Foods** – Recover HP or SP.
+ - *🍞 Foods** – Recover HP or SP.
 *Our Inventory System also features a capacity mechanic, limiting the number of items a player can carry—adding a layer of strategy when deciding what to keep or discard.*
 
 
@@ -105,50 +104,70 @@ Class Hierarchy Overview:
 - TowerEntity → Echo / Remnant → SpecificEcho / SpecificRemnant
 - Challenger → Mercenary / Knight / Paladin
 ```
-Entity
- ├─ TowerEntity
- │   ├─ Remnant
- │   │    └─ SpecificRemnant
- │   └─ Echo
- │        └─ SpecificEcho
- └─ Challenger
-      ├─ Mercenary
-      ├─ Knight
-      └─ Paladin
+👤 Entity (Abstract Base Class)
+ │    (Logic: Contains essential methods like Update(), Draw(), GetPosition())
+ │
+ ├── 👾 TowerEntity (Abstract Enemy Class)
+ │    │
+ │    ├── 💀 Remnant (Specific Enemy Type)
+ │    │    └── 💀👻 SpecificRemnant (Concrete Enemy, e.g., 'Bloody Skeleton')
+ │    │
+ │    └── 👥 Echo
+ │         └── 👥🌫️ SpecificEcho (Concrete Enemy, e.g., 'Shifting Shadow')
+ │
+ └── 🛡️ Challenger (Player/Major NPC Class)
+      │
+      ├── 💰 Mercenary
+      │
+      ├── 🐴 Knight
+      │
+      └── ✨ Paladin
 ```
 
 
 
 
 #### Item System 🗡️🍎:
-- **Item** (Base)
-- Consumables
-- Weapon → SpecificWeapon (Unique passive holders)
+Item (Base Class)
+ │
+ ├── ⚔️ Weapon
+ │    │
+ │    └── 🗡️ SpecificWeapon (Each has unique passive logic)
+ │
+ └── 🧪 Consumable (Logic: Destroy/Decrement quantity on use)
+      │
+      ├── 🍗 Food (Effect: HP/SP/XP)
+      │
+      ├── 📜 Skill Scroll (Logic: Add "Skill" object to Player when consumed)
+      │
+      └── 🗝️ Key (Logic: Check ID against Location (i.e. Area/Floor); remove after use)
 ```
-Item
- ├─ Consumables
- └─ Weapon
-       └─ SpecificWeapon (unique passive logic)
-  
-#### Skill System ✨📜:
-- **Skill** → ActiveSkill / PassiveSkill → [Concrete Implementation]
 
-Skill
- ├─ ActiveSkill
- └─ PassiveSkill
-       └─ [Concrete skills with custom effects]
+
+#### Skill System ✨📜:
+```
+⚡ Skill (Abstract Base Class)
+ │
+ ├── 💥 ActiveSkill (Manual Execution)
+ │    │
+ │    │
+ │    └── ⚙️ Concrete Active Skills (Varying effects/SP use)
+ │
+ └── 🌟 PassiveSkill (Automatic/Always Active/Checks Condition)
+      │
+      └── ⚙️ Concrete Passive Skills (Varying effects/conditions)
 ```
 
 
 ## Location System 🗺️🏞️:
-```
-- Location → Floor / Area
 *Note: Floor manages a collection of Area objects.*
-
-Location
- ├─ Floor
- │    └─ Contains HashMap<Integer, Area>
- └─ Area
+```
+🗺️ Location (Abstract Base Class)
+ │    (Logic: Contains essential spatial properties: Global ID, Coordinates, Name)
+ │
+ ├── 🪜 Floor (Major Spatial Container)
+ │
+ └── 🚪 Area (Specific Zone/Room)
 ```
 
 
