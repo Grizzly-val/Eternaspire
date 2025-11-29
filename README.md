@@ -105,7 +105,7 @@ Class Hierarchy Overview:
 - Challenger → Mercenary / Knight / Paladin
 
 
----
+```
 **Entity**\
  ├─ TowerEntity\
  │   ├─ Remnant\
@@ -116,7 +116,7 @@ Class Hierarchy Overview:
       ├─ Mercenary\
       ├─ Knight\
       └─ Paladin
----
+```
 
 
 
