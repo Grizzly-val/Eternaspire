@@ -1,12 +1,30 @@
-<h1>✨🗼Eternaspire🗼✨</h1>
-  <p>Eternaspire is a turn-based role-playing game. Choose an avatar to ascend a tower that is said to grant anyone who conquers it a wish. Be it wealth, power, or knowledge the only limit is the challenger’s       own imagination. As you ascend the tower, you uncover fragments of the tower’s secrets and the story behind the daring challengers.</p>
-  <p>
-   <b>CS-2102</b><br>
-    Donatos, Trixter Lanz <br>
-    Ilao, Kent Patrick <br>
-    Villanueva, Franz Daniel
-  <p> 
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eternaspire - Conquer the Tower</title>
+</head>
+<body>
+
+    <header class="game-header">
+        <h1 id="game-title">✨🗼 Eternaspire 🗼✨</h1>
+        <p class="tagline">
+            Eternaspire is a turn-based role-playing game. Choose an avatar to ascend a tower that is said to grant anyone who conquers it a wish. Be it wealth, power, or knowledge—the only limit is the challenger’s own imagination. As you ascend the tower, you uncover fragments of the tower’s secrets and the story behind the daring challengers.
+        </p>
+    </header>
+
+    <footer class="project-details">
+        <h2>Project Information</h2>
+        <p class="course-code">CS-2102</p>
+        <ul class="team-roster">
+            <li>Donatos, Trixter Lanz</li>
+            <li>Ilao, Kent Patrick</li>
+            <li>Villanueva, Franz Daniel</li>
+        </ul>
+    </footer>
+
+</body>
+</html>
 
 ___
 
