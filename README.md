@@ -1,5 +1,4 @@
-<img width="208" height="178" alt="image" src="https://github.com/user-attachments/assets/cde0486b-958c-485d-a452-5087dc52b08a" /><div align="center">
-  <h1>✨🗼Eternaspire🗼✨</h1>
+<h1>✨🗼Eternaspire🗼✨</h1>
   <p>Eternaspire is a turn-based role-playing game. Choose an avatar to ascend a tower that is said to grant anyone who conquers it a wish. Be it wealth, power, or knowledge the only limit is the challenger’s       own imagination. As you ascend the tower, you uncover fragments of the tower’s secrets and the story behind the daring challengers.</p>
   <p>
    <b>CS-2102</b><br>
@@ -8,6 +7,8 @@
     Villanueva, Franz Daniel
   <p> 
 </div>
+
+___
 
 # ✦ Overview ✦
 
@@ -19,7 +20,7 @@ As players climb the tower, they uncover fragments of its secrets and the storie
 
 **Can you conquer this Tower?**
 
-
+___
 
 
 
@@ -35,7 +36,7 @@ This project showcases Java programming concepts such as object-oriented design,
 📈 - **Fight** remnants and echoes to level up their hp and attack as well as uncover hidden lore of the tower!
 🔎 - **Explore** through ten floors, each with varying number of area and collect valuable loot!
 
-
+___
 
 ## ✦ Project Structure ✦
 
@@ -51,24 +52,24 @@ This project showcases Java programming concepts such as object-oriented design,
 *⭐ **Experience Points (XP)*** – Earn XP to level up, increasing HP and SP. Leveling up fully restores HP and SP.
 
 *💰 **Collect Loot*** – Obtain items from remnants, echoes, chests, rubble, or random drops.  
-
+___
 *✨ **Skills:***  
   - *🎯 **Active Skills*** – Activated by the player and consume SP.  
   - *🛡️ **Passive Skills*** – Automatically activates per turn and do not consume SP. Occurance of a passive skill relies on chance.
-
+___
 *👹 **Enemies:*** 
 
   - *🗡️ **Remnants*** – Common foe entities scattered throughout the floors.  
   - *💀 **Echoes*** – Bosses that are strongr than remnants and guard each floor.
   *They are explained in the cutscenes!*
-
+___
 *🎒 Inventory System:** – Manage items classified as:
  - *🔑 Keys** – Unlock floors and areas. 
  - *⚔️ Weapons* – Equip to strengthen characters, each with unique passives. 
  - *📜 Skill Scrolls** – Learn powerful skills for damage or healing.
  - *🍞 Foods** – Recover HP or SP.
 *Our Inventory System also features a capacity mechanic, limiting the number of items a player can carry—adding a layer of strategy when deciding what to keep or discard.*
-
+___
 
 ### Several in-game events trigger unique cutscenes that deepen the story and provide context for the player’s journey 🧾🎬. These include:
 - *📖 Opening Cutscenes different for each characters*
@@ -81,7 +82,7 @@ This project showcases Java programming concepts such as object-oriented design,
 - *⭐ Defeating an **Echo***
 *These cutscenes enrich the lore of Eternaspire, revealing character motives, tower mysteries, and the*
 
-
+___
 
 
 ## Accound Data Storage 💾☁️
@@ -93,12 +94,13 @@ This project showcases Java programming concepts such as object-oriented design,
 > **Forcibly terminating** the program does not save current progress.
 
 
-
+___
 
 # ✦ Object-Oriented Design Principles 💻🏰
 
 > This project utilizes core Object-Oriented Programming (OOP) principles to create a modular, scalable, and maintainable game architecture. Below is an overview of how these principles are applied to the codebase.
 
+___
 
 ## 1. Encapsulation🔒📦
 
@@ -108,7 +110,7 @@ This project showcases Java programming concepts such as object-oriented design,
 - 🛡️ Inventory Management: The Inventory class encapsulates the logic for storing items, exposing only necessary methods to add or remove items, while hiding the underlying data structures for PlayerInventory and AreaInventory. 🎒
 
 
-
+___
 
  
 ## 2. Inheritance 🌳📚
@@ -116,7 +118,7 @@ This project showcases Java programming concepts such as object-oriented design,
 * 🧬 A hierarchical structure is used to promote code reusability and establish **"is-a"** relationships. Common logic is defined in parent classes, while specific behaviors are pushed down to child classes.*
 Class Hierarchy Overview:
 
-
+___
 
 
 #### Entity System 👤⚔️:
@@ -201,7 +203,7 @@ Item (Base Class)
 
 
 
-
+___
 
 
 ## 3. Polymorphism 🔄
@@ -216,7 +218,7 @@ Item (Base Class)
 - **UI Components:** OptionSelect and Format static classes abstract away the complexity of formatting strings and handling user input indices, providing a clean API for the UI layer. 🖥️✨
 - **Game Flow:** The Battle class abstracts the complexity of turn-based logic. The main game loop triggers a battle, and the Battle class handles the minute details of turn order, damage calculation, and win/loss states internally. 🕒⚔️🏆
 
-
+___
 
 
 # How to run Eternaspire
