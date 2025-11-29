@@ -99,12 +99,12 @@ This project utilizes core Object-Oriented Programming (OOP) principles to creat
 * 🧬 A hierarchical structure is used to promote code reusability and establish "is-a" relationships. Common logic is defined in parent classes, while specific behaviors are pushed down to child classes.*
 Class Hierarchy Overview:
 
-```
+
 #### Entity System 👤⚔️:
 - **Entity** (Base)
 - TowerEntity → Echo / Remnant → SpecificEcho / SpecificRemnant
 - Challenger → Mercenary / Knight / Paladin
-
+```
 **Entity**\
  ├─ TowerEntity\
  │   ├─ Remnant\
@@ -119,12 +119,12 @@ Class Hierarchy Overview:
 
 
 
-```
+
 #### Item System 🗡️🍎:
 - **Item** (Base)
 - Consumables
 - Weapon → SpecificWeapon (Unique passive holders)
-
+```
 **Item**\
  ├─ Consumables\
  └─ Weapon\
@@ -139,8 +139,9 @@ Class Hierarchy Overview:
        └─ [Concrete skills with custom effects]\
 ```
 
-```
+
 ## Location System 🗺️🏞️:
+```
 - Location → Floor / Area
 *Note: Floor manages a collection of Area objects.*
 
