@@ -74,13 +74,13 @@ This project showcases Java programming concepts such as object-oriented design,
 
 *Accound Data Storage*
 Account data are stored as a DAT file.
-*💾 Saving Progress** – Save your game via the inventory menu to resume later. This might help against that one Echo 💀💀💀
+*💾 Saving Progress* – Save your game via the inventory menu to resume later. This might help against that one Echo 💀💀💀
 
 ✦ Object-Oriented Design Principles
 
 This project utilizes core Object-Oriented Programming (OOP) principles to create a modular, scalable, and maintainable game architecture. Below is an overview of how these principles are applied to the codebase.
 
-1. Encapsulation
+##1. Encapsulation
 
 We utilize access modifiers to restrict direct access to object components and bundle data with the methods that operate on that data. This ensures data integrity and prevents external classes from putting an object into an invalid state.
 
@@ -90,54 +90,38 @@ Identity Isolation: Properties such as name and description are kept private wit
 
 Inventory Management: The Inventory class encapsulates the logic for storing items, exposing only necessary methods to add or remove items, while hiding the underlying data structures for PlayerInventory and AreaInventory.
 
-2. Inheritance
+##2. Inheritance
 
-A hierarchical structure is used to promote code reusability and establish "is-a" relationships. Common logic is defined in parent classes, while specific behaviors are pushed down to child classes.
-
+*A hierarchical structure is used to promote code reusability and establish "is-a" relationships. Common logic is defined in parent classes, while specific behaviors are pushed down to child classes.*
 Class Hierarchy Overview:
 
-Entity System:
+##Entity System:
+-Entity (Base)
+-TowerEntity → Echo / Remnant → SpecificEcho / SpecificRemnant
+-Challenger → Mercenary / Knight / Paladin
 
-Entity (Base)
+##Item System:
+-Item (Base)
+-Consumables
 
-TowerEntity → Echo / Remnant → SpecificEcho / SpecificRemnant
+-Weapon → SpecificWeapon (Unique passive holders)
 
-Challenger → Mercenary / Knight / Paladin
+##Skill System:
+-Skill → ActiveSkill / PassiveSkill → [Concrete Implementation]
+-Location System:
+-Location → Floor / Area
+*Note: Floor manages a collection of Area objects.*
 
-Item System:
+##3. Polymorphism
 
-Item (Base)
+-Polymorphism allows the game engine to treat objects of different classes as objects of a common superclass. This enables dynamic behavior handling at runtime without complex if-else chains.
+-State Pattern: The PlayerState interface is implemented by AreaNavigationState, FloorNavigationState, IdleAreaState, and InventoryState. The main game loop interacts with the generic PlayerState interface, allowing the player to switch contexts seamlessly without changing the core engine loop.
+-Combat System: The Battle class is instantiated generically. It can initiate a fight between a Challenger and any TowerEntity. The battle logic calls methods like attack() or useSkill(), and the specific object (Knight vs SpecificRemnant) determines the actual damage calculation or effect execution.
+-Skill Execution: Both ActiveSkill and PassiveSkill extend Skill. The combat system iterates through a list of Skill objects, invoking their effects. A healing skill and a damage skill are treated uniformly by the invoker, but behave differently upon execution.
 
-Consumables
+##4. Abstraction
 
-Weapon → SpecificWeapon (Unique passive holders)
-
-Skill System:
-
-Skill → ActiveSkill / PassiveSkill → [Concrete Implementation]
-
-Location System:
-
-Location → Floor / Area
-
-Note: Floor manages a collection of Area objects.
-
-3. Polymorphism
-
-Polymorphism allows the game engine to treat objects of different classes as objects of a common superclass. This enables dynamic behavior handling at runtime without complex if-else chains.
-
-State Pattern: The PlayerState interface is implemented by AreaNavigationState, FloorNavigationState, IdleAreaState, and InventoryState. The main game loop interacts with the generic PlayerState interface, allowing the player to switch contexts seamlessly without changing the core engine loop.
-
-Combat System: The Battle class is instantiated generically. It can initiate a fight between a Challenger and any TowerEntity. The battle logic calls methods like attack() or useSkill(), and the specific object (Knight vs SpecificRemnant) determines the actual damage calculation or effect execution.
-
-Skill Execution: Both ActiveSkill and PassiveSkill extend Skill. The combat system iterates through a list of Skill objects, invoking their effects. A healing skill and a damage skill are treated uniformly by the invoker, but behave differently upon execution.
-
-4. Abstraction
-
-Complex implementation details are hidden behind simple interfaces and abstract classes, exposing only what is necessary for the rest of the system to function.
-
-Utility Managers: Classes like CutsceneManager, AudioPlayer, and TextTyper act as black boxes. The game logic simply requests "Play Audio" or "Type Text," without needing to understand the underlying timing logic or rendering algorithms.
-
-UI Components: OptionSelect and Format static classes abstract away the complexity of formatting strings and handling user input indices, providing a clean API for the UI layer.
-
-Game Flow: The Battle class abstracts the complexity of turn-based logic. The main game loop triggers a battle, and the Battle class handles the minute details of turn order, damage calculation, and win/loss states internally.
+-Complex implementation details are hidden behind simple interfaces and abstract classes, exposing only what is necessary for the rest of the system to function.
+-Utility Managers: Classes like CutsceneManager, AudioPlayer, and TextTyper act as black boxes. The game logic simply requests "Play Audio" or "Type Text," without needing to understand the underlying timing logic or rendering algorithms.
+-UI Components: OptionSelect and Format static classes abstract away the complexity of formatting strings and handling user input indices, providing a clean API for the UI layer.
+-Game Flow: The Battle class abstracts the complexity of turn-based logic. The main game loop triggers a battle, and the Battle class handles the minute details of turn order, damage calculation, and win/loss states internally.
