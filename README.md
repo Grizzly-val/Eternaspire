@@ -37,19 +37,19 @@ This project showcases Java programming concepts such as object-oriented design,
 ## ✦ Project Structure ✦
 
 ## ✦ Features ✦
-*🛡️ **Choose Your Job**** – Pick from three unique classes, each with different base stats and background stories.    
+*🛡️ **Choose Your Job*** – Pick from three unique classes, each with different base stats and background stories.    
 *❤️ **HP*** – Fight for your own, deplete theirs.
-*⚡SP* – Special moves are not free
+*⚡**SP*** – Special moves are not free
 *⬆️⬇️ Ascend or Descend Floors* – Explore various areas on each floor of the tower.  
-*⭐ Experience Points (XP)* – Earn XP to level up, increasing HP and SP. Leveling up fully restores HP and SP.
-*💰 Collect Loot** – Obtain items from remnants, echoes, chests, rubble, or random drops.   
-*🪄 Skills:**  
-  *🎯 Active Skills** – Activated by the player and consume SP.  
-  *🛡️ Passive Skills** – Automatically activates per turn and do not consume SP. Occurance of a passive skill relies on chance.
+*⭐ **Experience Points (XP)*** – Earn XP to level up, increasing HP and SP. Leveling up fully restores HP and SP.
+*💰 **Collect Loot*** – Obtain items from remnants, echoes, chests, rubble, or random drops.   
+*🪄 **Skills:***  
+  *🎯 **Active Skills*** – Activated by the player and consume SP.  
+  *🛡️ **Passive Skills*** – Automatically activates per turn and do not consume SP. Occurance of a passive skill relies on chance.
 
-*👹 Enemies:**  
-  *🗡️ Remnants** – Common foe entities scattered throughout the floors.  
-  *💀 Echoes** – Bosses that are strongr than remnants and guard each floor.s
+*👹 **Enemies:*** 
+  *🗡️ **Remnants*** – Common foe entities scattered throughout the floors.  
+  *💀 **Echoes*** – Bosses that are strongr than remnants and guard each floor.s
   *They are explained in the cutscenes!*
 
 *🎒 Inventory System:** – Manage items classified as:
@@ -97,18 +97,57 @@ Class Hierarchy Overview:
 - TowerEntity → Echo / Remnant → SpecificEcho / SpecificRemnant
 - Challenger → Mercenary / Knight / Paladin
 
+Entity
+ ├─ TowerEntity
+ │   ├─ Remnant
+ │   │    └─ SpecificRemnant
+ │   └─ Echo
+ │        └─ SpecificEcho
+ └─ Challenger
+      ├─ Mercenary
+      ├─ Knight
+      └─ Paladin
+
+
+
 #### Item System 🗡️🍎:
 - Item (Base)
 - Consumables
-
 - Weapon → SpecificWeapon (Unique passive holders)
+
+  Item
+ ├─ Consumables
+ └─ Weapon
+       └─ SpecificWeapon (unique passive logic)
+
+
+  
 
 #### Skill System ✨📜:
 - Skill → ActiveSkill / PassiveSkill → [Concrete Implementation]
 
+Skill
+ ├─ ActiveSkill
+ └─ PassiveSkill
+       └─ [Concrete skills with custom effects]
+
+
+
+
+
 ## Location System 🗺️🏞️:
 - Location → Floor / Area
 *Note: Floor manages a collection of Area objects.*
+
+Location
+ ├─ Floor
+ │    └─ Contains HashMap<Integer, Area>
+ └─ Area
+
+
+
+
+
 
 ## 3. Polymorphism 🔄
 
