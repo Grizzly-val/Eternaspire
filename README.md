@@ -224,5 +224,6 @@ Item (Base Class)
 # How to run Eternaspire
 - Clone this Repository to have it locally on your computer
 - In the terminal of the **root folder** "Eternaspire", enter ***java -cp bin Main***
-<img width="411" height="50" alt="image" src="https://github.com/user-attachments/assets/ada87e2d-18f1-4566-ad69-8b635d7f6b34" />
+- <img width="411" height="50" alt="image" src="https://github.com/user-attachments/assets/ada87e2d-18f1-4566-ad69-8b635d7f6b34" />
+- **Enjoy!** *(Important)*
 
