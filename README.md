@@ -1,19 +1,30 @@
-<header class="game-header">
-        <h1 id="game-title">✨🗼 Eternaspire 🗼✨</h1>
-        <p class="tagline">
-            Eternaspire is a turn-based role-playing game. Choose an avatar to ascend a tower that is said to grant anyone who conquers it a wish. Be it wealth, power, or knowledge—the only limit is the challenger’s own imagination. As you ascend the tower, you uncover fragments of the tower’s secrets and the story behind the daring challengers.
-        </p>
-    </header>
+# ✨🗼 Eternaspire: Conquer the Tower 🗼✨
 
-    <footer class="project-details">
-        <h2>Project Information</h2>
-        <p class="course-code">CS-2102</p>
-        <ul class="team-roster">
-            <li>Donatos, Trixter Lanz</li>
-            <li>Ilao, Kent Patrick</li>
-            <li>Villanueva, Franz Daniel</li>
-        </ul>
+> **"The only limit is the challenger’s own imagination."**
 
+---
+
+## 📜 Game Overview
+
+Eternaspire is a **turn-based role-playing game** (RPG). Players choose an avatar to ascend a tower that is said to grant anyone who conquers it a wish. Be it wealth, power, or knowledge—the potential reward is limitless.
+
+As you embark on your ascent, you will uncover fragments of the tower’s secrets and the stories behind the daring challengers who came before you.
+
+---
+
+## ⚙️ Project Details
+
+* **Course Code:** CS-2102
+
+---
+
+## 👥 Development Team
+
+This project was developed by:
+
+* **Donatos, Trixter Lanz**
+* **Ilao, Kent Patrick**
+* **Villanueva, Franz Daniel**
 ___
 
 # ✦ Overview ✦
