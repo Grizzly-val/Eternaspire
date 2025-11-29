@@ -93,11 +93,11 @@ This project utilizes core Object-Oriented Programming (OOP) principles to creat
 Class Hierarchy Overview:
 
 #### Entity System 👤⚔️:
-- Entity (Base)
+- **Entity** (Base)
 - TowerEntity → Echo / Remnant → SpecificEcho / SpecificRemnant
 - Challenger → Mercenary / Knight / Paladin
 
-Entity\
+**Entity**\
  ├─ TowerEntity\
  │   ├─ Remnant\
  │   │    └─ SpecificRemnant\
@@ -106,30 +106,34 @@ Entity\
  └─ Challenger\
       ├─ Mercenary\
       ├─ Knight\
-      └─ Paladin\
+      └─ Paladin
+
+
 
 
 
 #### Item System 🗡️🍎:
-- Item (Base)
+- **Item** (Base)
 - Consumables
 - Weapon → SpecificWeapon (Unique passive holders)
 
-  Item
- ├─ Consumables
- └─ Weapon
+**Item**\
+ ├─ Consumables\
+ └─ Weapon\
        └─ SpecificWeapon (unique passive logic)
+
+
 
 
   
 
 #### Skill System ✨📜:
-- Skill → ActiveSkill / PassiveSkill → [Concrete Implementation]
+- **Skill** → ActiveSkill / PassiveSkill → [Concrete Implementation]
 
-Skill
- ├─ ActiveSkill
- └─ PassiveSkill
-       └─ [Concrete skills with custom effects]
+**Skill**\
+ ├─ ActiveSkill\
+ └─ PassiveSkill\
+       └─ [Concrete skills with custom effects]\
 
 
 
@@ -139,10 +143,10 @@ Skill
 - Location → Floor / Area
 *Note: Floor manages a collection of Area objects.*
 
-Location
- ├─ Floor
- │    └─ Contains HashMap<Integer, Area>
- └─ Area
+**Location**\
+ ├─ Floor\
+ │    └─ Contains HashMap<Integer, Area>\
+ └─ Area\
 
 
 
