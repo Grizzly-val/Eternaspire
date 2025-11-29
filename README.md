@@ -38,7 +38,7 @@ This project showcases Java programming concepts such as object-oriented design,
 
 ___
 
-## ✦ Project Structure ✦
+# ✦ Project Structure ✦
 
 ## ✦ Features ✦
 *🛡️ **Choose Your Job*** – Pick from three unique classes, each with different base stats and background stories.    
