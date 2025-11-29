@@ -38,37 +38,44 @@ This project showcases Java programming concepts such as object-oriented design,
 
 ## ✦ Features ✦
 *🛡️ **Choose Your Job*** – Pick from three unique classes, each with different base stats and background stories.    
+
 *❤️ **HP*** – Fight for your own, deplete theirs.
+
 *⚡**SP*** – Special moves are not free
-*⬆️⬇️ Ascend or Descend Floors* – Explore various areas on each floor of the tower.  
+
+*⬆️⬇️ Ascend or Descend Floors* – Explore various areas on each floor of the tower.
+
 *⭐ **Experience Points (XP)*** – Earn XP to level up, increasing HP and SP. Leveling up fully restores HP and SP.
-*💰 **Collect Loot*** – Obtain items from remnants, echoes, chests, rubble, or random drops.   
+
+*💰 **Collect Loot*** – Obtain items from remnants, echoes, chests, rubble, or random drops.  
+
 *✨ **Skills:***  
   - *🎯 **Active Skills*** – Activated by the player and consume SP.  
   - *🛡️ **Passive Skills*** – Automatically activates per turn and do not consume SP. Occurance of a passive skill relies on chance.
 
 *👹 **Enemies:*** 
-  *🗡️ **Remnants*** – Common foe entities scattered throughout the floors.  
-  *💀 **Echoes*** – Bosses that are strongr than remnants and guard each floor.s
+
+  - *🗡️ **Remnants*** – Common foe entities scattered throughout the floors.  
+  - *💀 **Echoes*** – Bosses that are strongr than remnants and guard each floor.
   *They are explained in the cutscenes!*
 
 *🎒 Inventory System:** – Manage items classified as:
-  *🔑 Keys** – Unlock floors and areas. 
-  *⚔️ Weapons* – Equip to strengthen characters, each with unique passives. 
-  *📜 Skill Scrolls** – Learn powerful skills for damage or healing.
-  *🧪 Foods** – Recover HP or SP.
+ - *🔑 Keys** – Unlock floors and areas. 
+ - *⚔️ Weapons* – Equip to strengthen characters, each with unique passives. 
+ - *📜 Skill Scrolls** – Learn powerful skills for damage or healing.
+ - *🧪 Foods** – Recover HP or SP.
 *Our Inventory System also features a capacity mechanic, limiting the number of items a player can carry—adding a layer of strategy when deciding what to keep or discard.*
 
 
 ### Several in-game events trigger unique cutscenes that deepen the story and provide context for the player’s journey. These include:
-*📖 Opening Cutscenes different for each characters*
-*🔑 Using a Key*
-*🍎 Eating Certain Foods*
-*⚔️ Picking Up a Weapon for the First Time*
-*👹 First Encounter with a Remnant*
-*🗡️ First Defeat of a Remnant*
-*💀 Echo Encounters*
-*⭐ Defeating an Echo*
+- *📖 Opening Cutscenes different for each characters*
+- *🔑 Using a Key*
+- *🍎 Eating Certain Foods*
+- *⚔️ Picking Up a Weapon for the First Time*
+- *👹 First Encounter with a Remnant*
+- *🗡️ First Defeat of a Remnant*
+- *💀 Echo Encounters*
+- *⭐ Defeating an Echo*
 *These cutscenes enrich the lore of Eternaspire, revealing character motives, tower mysteries, and the*
 
 
