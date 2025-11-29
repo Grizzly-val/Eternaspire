@@ -11,13 +11,17 @@
 
 # ✦ Overview ✦
 
-> **Eternaspire is a console-based, text-only, turn-based role-playing game built in Java.**
+**Eternaspire is a console-based, text-only, turn-based role-playing game built in Java.**
 
-> Players **choose an avatar** and ascend a** mysterious tower** said to grant any wish to those who conquer it. Whether seeking wealth, power, or knowledge, the only limit is the challenger’s imagination. 
+Players **choose an avatar** and ascend a** mysterious tower** said to grant any wish to those who conquer it. Whether seeking wealth, power, or knowledge, the only limit is the challenger’s imagination.
 
-> As players climb the tower, they uncover fragments of its secrets and the stories of daring challengers who came before. The game combines strategic turn-based combat with exploration and storytelling, **all through a simple console interface.**
+As players climb the tower, they uncover fragments of its secrets and the stories of daring challengers who came before. The game combines strategic turn-based combat with exploration and storytelling, **all through a simple console interface.**
 
 **Can you conquer this Tower?**
+
+
+
+
 
 This project showcases Java programming concepts such as object-oriented design, classes, inheritance, encapsulation, and control flow, along with user input handling and game logic.
 
@@ -78,13 +82,23 @@ This project showcases Java programming concepts such as object-oriented design,
 *These cutscenes enrich the lore of Eternaspire, revealing character motives, tower mysteries, and the*
 
 
-*Accound Data Storage*
-Account data are stored as a DAT file.
-*💾 Saving Progress* – Save your game via the inventory menu to resume later. This might help against that one Echo 💀💀💀
+
+
+## Accound Data Storage 💾☁️
+**Account data are stored as a DAT file.**
+**Saving Progress** – *Save your game via the inventory menu to resume later.* > This might help against that one Echo 💀💀💀
+### How to save game progress?
+- **0** in **Inventory Mode**
+- **Exiting game manually in floor navigation mode** automatically saves current game progress
+> **Forcibly terminating** the program does not save current progress.
+
+
+
 
 # ✦ Object-Oriented Design Principles 💻🏰
 
 This project utilizes core Object-Oriented Programming (OOP) principles to create a modular, scalable, and maintainable game architecture. Below is an overview of how these principles are applied to the codebase.
+
 
 ## 1. Encapsulation🔒📦
 
@@ -92,11 +106,17 @@ This project utilizes core Object-Oriented Programming (OOP) principles to creat
 - 🛡️ Entity Data Security: Core attributes within the Entity class (lvl, hp, atk, maxHP) are marked as protected. This allows specific subclasses like Remnant or Mercenary to manipulate their own stats during initialization or combat, while keeping them safe from unrelated utility classes. 🛡️
 - 🛡️ Identity Isolation: Properties such as name and description are kept private within specific implementations to ensure unique identity immutability after instantiation. 🧩
 - 🛡️ Inventory Management: The Inventory class encapsulates the logic for storing items, exposing only necessary methods to add or remove items, while hiding the underlying data structures for PlayerInventory and AreaInventory. 🎒
+
+
+
+
  
 ## 2. Inheritance 🌳📚
 #### 🧩 Class Hierarchy Overview
 * 🧬 A hierarchical structure is used to promote code reusability and establish "is-a" relationships. Common logic is defined in parent classes, while specific behaviors are pushed down to child classes.*
 Class Hierarchy Overview:
+
+
 
 
 #### Entity System 👤⚔️:
@@ -127,6 +147,7 @@ Class Hierarchy Overview:
 
 
 
+
 #### Item System 🗡️🍎:
 Item (Base Class)
  │
@@ -144,6 +165,9 @@ Item (Base Class)
 ```
 
 
+
+
+
 #### Skill System ✨📜:
 ```
 ⚡ Skill (Abstract Base Class)
@@ -159,6 +183,9 @@ Item (Base Class)
 ```
 
 
+
+
+
 ## Location System 🗺️🏞️:
 *Note: Floor manages a collection of Area objects.*
 ```
@@ -169,6 +196,8 @@ Item (Base Class)
  │
  └── 🚪 Area (Specific Zone/Room)
 ```
+
+
 
 
 
@@ -187,3 +216,12 @@ Item (Base Class)
 - Utility Managers: Classes like CutsceneManager, AudioPlayer, and TextTyper act as black boxes. The game logic simply requests "Play Audio" or "Type Text," without needing to understand the underlying timing logic or rendering algorithms. 🎬🔊⌨️
 - UI Components: OptionSelect and Format static classes abstract away the complexity of formatting strings and handling user input indices, providing a clean API for the UI layer. 🖥️✨
 - Game Flow: The Battle class abstracts the complexity of turn-based logic. The main game loop triggers a battle, and the Battle class handles the minute details of turn order, damage calculation, and win/loss states internally. 🕒⚔️🏆
+
+
+
+
+# How to run Eternaspire
+- Clone this Repository to have it locally on your computer
+- In the terminal of the **root folder** "Eternaspire", enter ***java -cp bin Main***
+<img width="411" height="50" alt="image" src="https://github.com/user-attachments/assets/ada87e2d-18f1-4566-ad69-8b635d7f6b34" />
+
