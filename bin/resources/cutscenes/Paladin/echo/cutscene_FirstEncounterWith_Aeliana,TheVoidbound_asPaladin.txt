@@ -1,0 +1,37 @@
+| Percival enters The Festering Core. The room is a nightmare of fleshy walls pulsing with neon circuits.
+| In the center, suspended by chains made of black light, is a woman.
+| She wears armor that matches the Lost Vanguard's style, but it is shattered. Her skin is grey, and she weeps tears of pure void that eat through the floor.
+
+[PERCIVAL]
+"She... she looks human.
+Or she was."
+
+[NUGGET]
+(Freezing in mid-air. His voice is barely a whisper.)
+"Aeliana..."
+
+[PERCIVAL]
+"You know her?"
+
+[NUGGET]
+"I... I don't know. The name just... fell out of me.
+She feels familiar. Like a song I forgot the words to."
+
+| Percival shifts his stance, raising his weapon into a high, aggressive guard—the opening stance of Rending Cut.
+| It is the same stance the Lost Vanguard used.
+
+| Aeliana raises her head. Her eyes are empty holes. She doesn't see Percival; she looks through him, searching for someone who isn't there.
+
+[AELIANA, THE VOIDBOUND]
+(Voice echoing from everywhere at once)
+"He... promised.
+Where... is... the shield?"
+
+| Aeliana's empty eyes widen. For a split second, the void recedes.
+
+[AELIANA, THE VOIDBOUND]
+"That... stance...
+Is... he... safe?"
+
+[NUGGET]
+(Trembling)

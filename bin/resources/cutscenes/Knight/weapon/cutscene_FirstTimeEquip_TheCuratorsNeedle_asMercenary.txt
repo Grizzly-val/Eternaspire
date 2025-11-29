@@ -1,0 +1,21 @@
+| Percival picks up the weapon. It is a thin, spear-like lance made of an unknown, transparent metal.
+| It feels weightless, yet impossibly rigid.
+
+[PERCIVAL]
+"It’s a needle.
+It doesn't have an edge, just a point. A point so sharp it hurts to look at."
+
+[NUGGET]
+"That’s The Curator's Needle.
+It’s not for slashing. It’s for pinpoint precision.
+It seeks out the weak points—the cracks in the armor, the gaps in the ribs.
+Vorthos used it to pin butterflies. You'll use it to pin monsters."
+
+| Percival thrusts the weapon. It hums, leaving a trail of frozen air.
+
+[PERCIVAL]
+"It hums. It wants to find a heart to stop."
+
+[NUGGET]
+"Creepy. Effective.
+Just how we like it."

@@ -1,0 +1,62 @@
+| Percival stands at the edge of a narrow stone walkway suspended over an infinite black void.
+| Blocking his path is a massive gate, but it has no hinges and no bars. Instead, it is held shut by a crackling barrier of solidified magical tension.
+| He pulls out The Latch Breaker. It’s a heavy, iron rod with a squared-off head—ugly, blunt, and completely unrefined.
+
+[PERCIVAL]
+"Another gate, another problem.
+But this 'key' doesn't have teeth. It’s just a lump of iron.
+There’s no keyhole here, Nugget. Just this... humming wall."
+
+[NUGGET]
+"That’s because it’s not a lock, silly. It’s a binding.
+The Suspension Gate isn't locked; it’s stuck. Frozen in tension.
+You don't finesse a problem like this. You shock it."
+
+[PERCIVAL]
+(Weighing the heavy iron rod in his hand)
+"So it's not a key. It's a hammer."
+
+[NUGGET] "Tomayto, tomahto. In this tower, 'opening' sometimes usually means 'breaking' something efficiently. Aim for the center node. That glowing spot where the tension is tightest. And give it a good whack! Don't be shy!"
+
+| Percival grips the Latch Breaker like a mace. He steps back, muscles tensing, and swings the blunt instrument with full force into the center of the barrier.
+| CRACK!
+| The sound is like a gunshot. The iron rod shatters upon impact, turning into dust.
+| But the barrier shatters with it. The tension snaps, and the magical wall explodes outward in a harmless shower of sparks.
+
+[NUGGET]
+"Nice swing, Boss!
+The gate is open.
+Or... well, broken. But open!
+The path leads to Floor 8: The Suspension Gate."
+
+| The barrier dissolves completely, revealing a precarious path of floating stones drifting slightly in the void's currents.
+| Percival sheathes his sword, testing the first stone with his boot. It holds, but feels unnatural.
+
+[PERCIVAL]
+"Nugget."
+
+[NUGGET]
+"Yeah, Boss?"
+
+[PERCIVAL]
+"You talk about the Tower like you've seen a thousand people stand exactly where I am.
+You know where the traps are. You know how the keys work.
+So tell me... do you actually care if I reach the top? Or are you just the one keeping score?"
+
+[NUGGET]
+(Hovering closer, his usual frantic energy stilling for a split second)
+"If I just wanted to see you die, I wouldn't have told you to dodge that blob earlier.
+I want to see how far you can go. That is much more... entertaining.
+Besides, the view from the top is boring if you're alone."
+
+[PERCIVAL]
+(Eyebrows narrowing)
+"Right. 'Entertainment'."
+
+[NUGGET]
+(Spinning in the air, cheerful tone returning instantly)
+"Exactly! Speaking of which, don't get too comfortable.
+This area is crawling with Gnawers. Nasty little rats.
+One of them swallowed the next key, The Disfragmenter. You'll need that to fix the bridge to the next zone.
+
+Oh! And keep an eye out for a Water Pocket. There's a... secret."

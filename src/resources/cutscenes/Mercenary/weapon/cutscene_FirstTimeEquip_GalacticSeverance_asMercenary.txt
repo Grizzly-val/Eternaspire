@@ -1,0 +1,44 @@
+| Embedded in a meteorite in the center of the graveyard is a sword.
+| It pulses with a deep, violet cosmic light. Space seems to bend around its edge.
+| Blade pulls it free. It feels like he is holding a constellation.
+
+[BLADE] 
+"Galactic Severance.
+It hums with the power of a dying star.
+With this... I can cut through anything. Even the final gate."
+
+[NUGGET]
+"It’s a weapon made to sever fate itself.
+Powerful stuff."
+
+| Blade looks at the blade, seeing his reflection in the cosmic steel. He smiles, a genuine, hopeful look that seems out of place in the void.
+
+[BLADE] 
+"I can't wait to see Mom lively again.
+Not just cured... but happy. I'm going to buy that house by the lake she always wanted. We'll have a garden."
+
+| Nugget flinches. The guilt hits her like a physical blow. She hovers erratically, looking for a distraction.
+
+[NUGGET]
+"Why... uh...
+Why don't you just wish for your mother's health? Keep it simple, right? Less room for the Tower to monkey's paw you?"
+
+[BLADE] 
+(Pausing, considering it)
+"Oh yeah... I could do that.
+I was too blinded by wanting to also give her a good life after being cured. I wanted everything."
+
+| He looks at Nugget, trusting her completely.
+
+[BLADE] 
+"You think I should just secure her health? Yeah... I think I should.
+As long as she's alive, I can work for the rest. I can handle the mercenary work if she's safe."
+
+| Nugget looks at him—so full of hope, so willing to sacrifice his own future comfort just to save her.
+| And she knows exactly what's going to happen to him.
+
+[NUGGET]
+(Voice cracking, forced cheerfulness sounding brittle)
+"Yeah. Health is... health is the most important thing.
+Smart choice, Blade.
+...We should get moving. The Zenith is waiting."

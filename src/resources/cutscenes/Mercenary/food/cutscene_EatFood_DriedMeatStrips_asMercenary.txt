@@ -1,0 +1,14 @@
+| Blade tears into a strip of tough, preserved meat. It takes significant effort to chew.
+
+[BLADE]
+(Grimacing)
+"I think I'm losing more energy chewing this than I'm gaining.
+This is just salted leather."
+
+[NUGGET]
+"Hey, protein is protein!
+It’s classic adventurer fuel. Keeps forever, tastes like salt, fills the void.
+Stop complaining and swallow."
+
+[BLADE]
+"I miss the soup."

@@ -1,0 +1,46 @@
+| Percival reaches The Final Nexus. It is a singular platform suspended in the center of the vortex.
+| Standing there, kneeling before a shattered altar of light, is a warrior clad in heavy, ornate plate armor.
+| The metal is fused to his skin, bubbling and black, but the stance is unmistakable. It is Percival's own resting stance, mirrored perfectly.
+
+[PERCIVAL]
+"He stands... like me. Same shifting of weight. Same grip on the weapon.
+It feels like looking into a dirty mirror. Kinda weird that I noticed that."
+
+[NUGGET]
+(Hovering closer, squinting at the corrupted figure)
+"Hey... you two kinda look identical.
+Like, same build, same brooding aura. If he wasn't covered in cursed sludge, I'd say you were twins."
+
+| Percival doesn't deny it. He steps forward, hand hovering over his hilt. The resonance is too strong to ignore.
+
+[NUGGET]
+(Her wings drooping slightly, a sudden wave of unease hitting her)
+"Percival... I don't like this one.
+I don't want you to fight him. It feels... wrong. Like kicking a puppy. A really heavily armored, dangerous puppy."
+
+[PERCIVAL]
+"He's in the way, Nugget. And he's waiting for me."
+
+[NUGGET]
+"I know, I know! But... can't we just talk to him? Maybe he's reasonable?
+I just... I really don't want to see you smash him. It feels bad."
+
+| The Paladin slowly turns his head. The visor is melted shut, but a voice rasps out from the darkness within. It is wet, weak, and filled with a heartbreaking gentleness.
+
+[FALLEN PALADIN]
+"Nugget...
+Bird..."
+
+[NUGGET]
+(Freezing)
+"He... he knows my name? Why do they always know my name?"
+
+[FALLEN PALADIN]
+"Forgive... you...
+Friend..."
+
+[NUGGET]
+"Forgive me? For what? I never met you!
+...Right?"
+
+| The Paladin struggles to his feet, raising the massive Corrupted Redeemer. He isn't holding back.

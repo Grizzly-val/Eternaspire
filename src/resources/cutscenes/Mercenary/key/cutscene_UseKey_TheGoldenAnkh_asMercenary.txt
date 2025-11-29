@@ -1,0 +1,25 @@
+| Blade stands over the rapidly decaying body of the Spinefiend. The creature a sentient cactus with a comically large, immaculate mustache dissolves into a puddle of viscous, plant-like sap. |
+
+[NUGGET] "Did you see the look on that thing’s face when you hit it? Pure betrayal! He was trying to look dignified, and you just flattened him."
+
+[BLADE]"It was a cactus with a beard trying to stab me with its spikes. I didn't have time to worry about its dignity. Did it even bleed? That was mostly sap."
+
+| Lying in the puddle of sap is The Golden Ankh. It is crafted from heavy, polished gold and radiates a profound, ancient energy. |
+
+[NUGGET] "The Golden Ankh! Oh, this is the one! This is what that ridiculous remnant was protecting. It screams 'Pharaoh's Vault' doesn't it?"
+
+[BLADE]"An ancient symbol of eternal life. This means we're at the end of the Pyramid. Osarion's Chamber."
+
+[NUGGET] "It grants access to the deepest chambers! Think of all the gold, the power, the really good dried fruit! Now hurry up, I can hear the next wave of mustachioed foliage waddling over here."
+
+| Blade holds the Ankh. The Pyramid walls rumble, and a hidden chamber entrance—perfectly Ankh-shaped—is revealed at the end of the corridor.
+
+[BLADE](Inserting the Ankh into the recess) "This is it."
+
+| The moment the Golden Ankh settles, the air in the Pyramid shimmers. The very structure of the walls stops feeling like stone and starts feeling like bone—ancient, heavy, and final. | 
+
+The massive stone slabs of the entrance grind apart, revealing a final, steep ramp leading into a blinding chamber above.
+
+[NUGGET] (Slightly subdued, but quickly recovering) "That's the kind of power that shakes the Tower, Blade. The Pharaoh's Chamber awaits! Go get that final Echo!"
+
+[BLADE] (Stepping onto the ramp, the weight of the Ankh's power still lingering on his hands) "Eternal life is a trap. I'm here for a wish, and then I'm gone."

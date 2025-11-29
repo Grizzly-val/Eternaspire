@@ -1,0 +1,28 @@
+| Blade unfurls the scroll found among the Nomad's belongings. Unlike the others, this one isn't made of parchment. It looks like a formal contract stamped on cured leather.
+| The text glows with a harsh, red ink.
+
+[BLADE]
+"'Daunting Contract.'
+This doesn't look like a spell. It looks like a bill of sale."
+
+[NUGGET]
+"That’s because it is!
+It’s an old mercenary pact. Hired Blade's Siphon.
+It operates on a simple rule: 'If I bleed you, I get paid.'
+Except the payment isn't gold. It's life."
+
+| Blade touches the contract. The red ink liquefies, running up his fingers and sinking into his veins. It doesn't feel magical; it feels greedy.
+
+[BLADE]
+(Flexing his hand, feeling a sudden, selfish hunger)
+"I can feel it.
+When I hit something... I want to take everything they have.
+It turns damage into sustenance."
+
+[NUGGET]
+"A perfect skill for a professional!
+Why rely on potions when you can just steal your enemy's health?
+It’s efficient, brutal, and ethically questionable. Just your style!"
+
+[BLADE]
+"Ethical or not, if it keeps me standing, I'll sign."

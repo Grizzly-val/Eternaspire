@@ -1,0 +1,13 @@
+| The Drowner gurgles, dissolving into a puddle of dark, briny water that quickly freezes over the hole it made.
+| Percival kicks a piece of ice over the stain.
+
+[PERCIVAL]
+"It smelled like old seawater and regret.
+I hate things that grab from below."
+
+[NUGGET]
+"It’s just a reflection of the fear of drowning.
+But good news! You didn't drown. You just... got your boots wet."
+
+[PERCIVAL]
+"Let's get off this lake. Now."

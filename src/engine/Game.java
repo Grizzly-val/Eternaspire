@@ -15,6 +15,7 @@ import entity.player.Knight;
 import entity.player.Mercenary;
 import entity.player.Paladin;
 import mechanics.cutscene.CutsceneManager;
+import ui.AudioPlayer;
 import ui.OptionSelect;
 import ui.TextTyper;
 import world.location.locationData.AreaEntityData;
@@ -82,7 +83,7 @@ public class Game implements Serializable {
             System.out.print("| Select character >> ");
             choice = OptionSelect.charInput(choice);
             System.out.println("----------------------------");
-
+            AudioPlayer.play("");
             switch (choice) {
                 case 'm':
                     TextTyper.typeText("| You've chosen a Mercenary!", 70, true);
@@ -113,6 +114,7 @@ public class Game implements Serializable {
                     System.out.println("| Please choose from available Challengers");
                     System.out.println();
             }
+
         }
 
         // Set transient fields

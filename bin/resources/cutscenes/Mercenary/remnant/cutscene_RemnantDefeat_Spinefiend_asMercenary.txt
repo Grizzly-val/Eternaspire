@@ -1,0 +1,19 @@
+| Spinefiend collapses in a dry heap, its last spines falling like | brittle needles. The once-majestic mustache droops onto the sand.
+
+[NUGGET] Oh… poor guy. Even in death he’s stylish.
+
+[BLADE] "Stylish or not, it was trying to impale us."
+
+[BLADE] "carefully pokes the husk. It caves in instantly."
+
+[NUGGET] "Wow. That’s… fragile."
+
+[BLADE] "Most threats are once you break their core."
+
+| Nugget looks at the fallen mustache.
+
+[NUGGET] "…We’re not keeping that, right?"
+
+[BLADE] "Absolutely not."
+
+[NUGGET] "Just asking."

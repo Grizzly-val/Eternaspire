@@ -1,0 +1,13 @@
+| Percival lands a precise strike on the creature's core. The shape spasms, cycling through a thousand forms in a second before collapsing into a single, harmless point of light.
+| Pling.
+| The point vanishes.
+
+[PERCIVAL]
+"Solved."
+
+[NUGGET]
+"You just divided by zero with a sword.
+I'm impressed. And slightly terrified."
+
+[PERCIVAL]
+"Let's move. The stars are waiting."

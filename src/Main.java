@@ -1,9 +1,12 @@
 import engine.AccountManager;
+import ui.AudioPlayer;
 import ui.OptionSelect;
 import ui.TextTyper;
 
 public class Main {
     public static void main(String[] args){
+        
+        AudioPlayer.play("in_menu.wav");
         
         System.out.println();
         TextTyper.typeText("Welcome, to Eternaspire!", 50, true);

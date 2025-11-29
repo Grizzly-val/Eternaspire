@@ -1,9 +1,0 @@
-| The Corrupted Spinefiend collapses, imploding into a small, dense sphere of error code before popping out of existence.
-| Blade checks his armor. A piece of his shoulder pad is just... gone. Smoothly cut away.
-
-[BLADE]
-"My armor... the metal is just missing. No scratch marks."
-
-[NUGGET]
-"You're lucky it wasn't your arm.
-This floor hates matter. It wants everything to be zero."

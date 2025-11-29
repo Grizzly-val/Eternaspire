@@ -14,6 +14,7 @@ import mechanics.battleMechanics.skill.Skill;
 import mechanics.inventory.PlayerInventory;
 import mechanics.pstate.AreaNavigationState;
 import mechanics.pstate.FloorNavigationState;
+import ui.AudioPlayer;
 import ui.Format;
 import ui.OptionSelect;
 import ui.TextTyper;
@@ -323,6 +324,7 @@ public abstract class Challenger extends Entity{
 
 
     public void play(){
+        AudioPlayer.play("in_game.wav");
         new FloorNavigationState().enterState(this, new AreaNavigationState());
     }
     
@@ -352,6 +354,7 @@ public abstract class Challenger extends Entity{
     }
 
     public void gameComplete(){
+            AudioPlayer.play("in_win.wav");
             System.out.println();
             System.out.println();
             System.out.println();
@@ -371,9 +374,6 @@ public abstract class Challenger extends Entity{
             
     }
 
-    public void challengerWin(){
-        
-    }
 
     @Override
     public void basicAttack(Entity opponent) {

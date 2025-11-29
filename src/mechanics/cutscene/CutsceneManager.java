@@ -20,7 +20,6 @@ import world.item.wpn.Weapon;
 
 public final class CutsceneManager {
     public static void checkCutscene(String cutsceneID, Challenger player, Object obj){
-
         System.out.println();
         TextTyper.typeText("| Starting cutscene >>", 70, true);
         System.out.println();
@@ -113,7 +112,7 @@ public final class CutsceneManager {
     
     public static void startCutscene(String cutsceneID, String dir){
         try {
-            readFile("resources/" + dir + "/" + cutsceneID + ".txt");
+            readFile("resources/cutscenes/" + dir + "/" + cutsceneID + ".txt");
         } catch (IOException e) {
             System.out.println("|! Cutscene loading sequence ended.");
         }

@@ -1,0 +1,25 @@
+| A soft rustle echoes from behind a cluster of cracked stones. A single cactus wiggles… dramatically.
+
+[NUGGET] "…Is that cactus moving?"
+
+[PERCIVAL] No. It’s posing.
+
+| The cactus slowly turns. A long luxurious mustache curls into view. Two glowing eyes open beneath it.
+
+[NUGGET] "Oh no. Oh NO. It’s alive AND fabulous."
+
+[PERCIVAL] (backs up) "Why does it look like it’s judging me?"
+
+[NUGGET] "Maybe because you don’t have a mustache that amazing."
+
+| Spinefiend "straightens up, spines rattling like bones clicking together. Its mustache twitches with pride."
+[PERCIVAL] "That’s not just decoration…"
+[NUGGET] "Look out—its eyebrows are made of needles!"
+
+| The creature steps forward, leaving tiny circular holes in the sand with each movement.
+
+[PERCIVAL] "Ready?"
+
+[NUGGET] "I was born ready. I mean—no, that’s a lie. But let’s go anyway!"
+
+(→ Battle vs. Spinefiend begins.)

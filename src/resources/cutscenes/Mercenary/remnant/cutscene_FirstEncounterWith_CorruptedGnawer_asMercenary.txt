@@ -1,0 +1,22 @@
+| Blade steps into a hallway that flickers. One moment it's stone, the next it's raw meat, the next it's wireframe.
+| A creature scuttles out from a hole in the texture of the wall.
+| It looks like the Gnawer from Floor 1, but wrong. Its texture is stretched, its limbs are floating detached from its body, and it emits a sound like a skipping audio file.
+
+[BLADE]
+"It’s a Gnawer. But it looks... broken."
+
+[NUGGET]
+(Wincing as the creature screeches)
+"That’s a Corrupted Gnawer.
+The Tower tried to load a rat, but the file was corrupted.
+It’s in constant pain because its biology doesn't match the physics engine anymore."
+
+[BLADE]are you saying? Piology? Bhysics?”
+
+| The creature snaps its jaw, and the sound arrives a second later.
+
+[BLADE]
+"This feels sickening."
+
+[NUGGET]
+"Put it out of its misery. It’s a mercy kill."

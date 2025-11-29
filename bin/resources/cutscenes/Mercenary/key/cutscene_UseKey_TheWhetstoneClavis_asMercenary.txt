@@ -1,0 +1,39 @@
+| Blade stands before a heavy, sealed gate at the end of the hall. The surface is seamless black stone, save for a single, jagged indentation in the center.
+| He holds up The Whetstone Clavis. It doesn't look like a standard key—it looks like a shard of crystallized flint, razor-sharp on all edges.
+
+[BLADE]
+"This is a key? It looks more like a flat stone.
+There's no handle. How am I supposed to turn it?"
+
+[NUGGET]
+"Carefully?
+The Tower doesn't believe in safe passage, Blade. Even opening a door requires a little... investment."
+
+[BLADE] 
+(Frowning at the jagged slot)
+"Investment... right."
+
+| Blade aligns the stone shard with the indentation. There is no leverage point. To turn it, he has to grip the stone itself.
+| He takes a breath, clenches his hand around the sharp edges, and twists.
+| A thin line of red runs down his wrist, mixing with the mechanism. The stone drinks it in.
+
+[NUGGET]
+"Ooh, primal.
+Blood for access. Very classic dungeon aesthetic."
+
+| The gate shudders. A deep, tectonic grinding sound echoes as the heavy stone slabs slowly groan apart, revealing a spiral staircase winding upward into the gloom.
+
+[BLADE]
+(Wrapping his hand with a scrap of cloth)
+"It's open.
+And my hand still works, though wounded"
+
+[NUGGET]
+"And there we go! The path to Floor 1: The Platform of Nadir is open.
+'Nadir' means the lowest point—rock bottom. So technically, there's nowhere to go but up!"
+
+[BLADE]
+"Rock bottom... sounds about right for a start.
+Let's leave this garbage heap behind."
+
+| Blade steps through the threshold. The air on the other side is thinner, colder, and carries the scent of ancient dust.

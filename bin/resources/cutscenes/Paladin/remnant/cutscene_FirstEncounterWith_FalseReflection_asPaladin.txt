@@ -1,0 +1,14 @@
+| Percival walks past a floating shard of mirror-like crystal.
+| His reflection in the shard stops walking. It turns to look at him, grinning a smile that is too wide, too sharp.
+| It steps out of the crystal. It looks exactly like Percival, but its colors are inverted, and its eyes are hollow.
+
+[PERCIVAL]
+"It looks like me. But it stands wrong. Too confident."
+
+[NUGGET]
+"False Reflection.
+The Stellar Graveyard is full of things that never happened.
+That thing is you, if you had no morals. If you enjoyed the killing."
+
+[PERCIVAL]
+"It doesn't have my scars. It hasn't earned my face."

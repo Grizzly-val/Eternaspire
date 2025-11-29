@@ -1,0 +1,38 @@
+| Blade stands at the edge of The Chasm of Echoes. Ahead lies a bridge of stars leading to a massive, floating graveyard of planets.
+| He holds the NULL Shard. It is a piece of pure black void that feels heavier than the planet itself.
+
+[BLADE]
+"This key... it's not metal or stone. It's just... empty space given shape."
+
+[NUGGET]
+"It unlocks The Stellar Graveyard.
+Where dead stars go to... well, not shine.
+Insert it into the rift."
+
+| Blade places the shard into a tear in reality. The rift widens, revealing the path forward. He pauses, looking down at Nugget.
+
+[BLADE]
+"Hey, Nugget."
+
+[NUGGET]
+"Yeah, Boss? Ready for the space walk?"
+
+[BLADE]
+"I just wanted to say... thanks.
+I know I gave you a hard time at the start. But I wouldn't be here without you.
+You're a good guide."
+
+| Nugget freezes. Her wings stop fluttering for a second. She looks away, her glow dimming significantly.
+
+[NUGGET]
+"I...
+Yeah. Sure. That's my job.
+Don't get sappy on me, Blade. We're not done yet."
+
+[BLADE]
+"I'm serious. When this is over, I owe you one."
+
+[NUGGET]
+(Voice barely a whisper)
+"You don't owe me anything.
+...Let's just go."

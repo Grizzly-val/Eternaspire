@@ -4,6 +4,7 @@ import entity.Entity;
 import entity.player.Challenger;
 import entity.tower_entity.TowerEntity;
 import mechanics.cutscene.CutsceneManager;
+import ui.AudioPlayer;
 import ui.Format;
 import ui.OptionSelect;
 

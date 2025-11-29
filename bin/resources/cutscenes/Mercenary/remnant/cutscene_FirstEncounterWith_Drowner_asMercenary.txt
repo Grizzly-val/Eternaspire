@@ -1,0 +1,22 @@
+| Blade walks across a vast, frozen lake. The ice is thick but transparent, revealing a dark, abyssal ocean beneath.
+| Something moves under his boots. A pale, bloated face presses up against the ice from below, staring directly at him.
+
+[BLADE]
+(Drawing his weapon and stepping back)
+"There's something under the floor.
+It’s tracking us."
+
+[NUGGET]
+"Not under... inside.
+That’s a Drowner.
+They swim through the ice like it’s water.
+Don't look at their eyes, Blade. They want you to join them in the deep."
+
+| The ice beneath Blade erupts. A water-logged, rotting hand shoots up, grabbing for his ankle.
+
+[BLADE]
+"It's phasing through!
+Get back!"
+
+[NUGGET]
+"Pop it! Pop the bloated fish!"

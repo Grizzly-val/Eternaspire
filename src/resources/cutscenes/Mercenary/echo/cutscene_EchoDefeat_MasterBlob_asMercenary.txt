@@ -1,0 +1,77 @@
+| The Master Blob shudders violently. Its shifting colors turn a muddy, chaotic grey.
+| With a wet splat, it loses its form completely, collapsing into a puddle on the control room floor.
+| Sparks fly from the damaged consoles around the room. The "sacred" equipment is smoking.
+
+[TOWER MASTER]
+(Voice vibrating from the puddle, sounding incredibly annoyed)
+"Great. Just great.
+Do you have any idea how long it takes to recalibrate a Reality Engine?
+Centuries. Literal centuries."
+
+[BLADE]
+(Lowering his weapon, breathing hard)
+"You're indeed strong... but you're not much of a fighter."
+
+[TOWER MASTER]
+"Excuse me? I am the sum of all variables! I am infinite complexity!"
+
+[BLADE]
+"Yeah, well, maybe you should have spent less time recalibrating engines and more time actually moving.
+You've been sitting in this control room for so long you forgot how to throw a punch.
+You're just a shut-in with a god complex."
+
+[TOWER MASTER]
+"I... well... hmph.
+The variable exceeded the parameters. Congratulations.
+You are the most stubborn data point I have ever processed. I was going to make you a centerpiece, but honestly? You're too much trouble to keep on a shelf."
+
+| A small, singular eye forms in the puddle, glaring at Blade. Then, a tentacle of slime pushes the heavy, dripping sack of gold back toward Blade's feet.
+
+[TOWER MASTER]
+"Fine. The deal holds. Even if you did wreck the office.
+Take the money. It's infinite wealth. It's slimy, yes, but it will buy any doctor, any medicine, any castle you want.
+Your mother will be fine. You can pay for her life ten times over."
+
+| Blade looks at the sack. It's disgusting, covered in rainbow slime, but it represents everything he fought for.
+| He thinks of the hospital bills. He thinks of the struggle.
+| He picks it up. It's heavy.
+
+[BLADE]
+"I'll take it.
+Money is money. Even if it smells like you."
+
+[TOWER MASTER]
+"Excellent. Transaction complete.
+Now, please. Get out of my tower.
+I have a lot of cleanup to do, and I really don't want to see your face for another millennium."
+
+| The elevator of light reappears. The exit. Blade steps onto it, clutching the sack. Then he stops.
+
+[BLADE]
+"One more thing."
+
+[TOWER MASTER]
+"What? You have the money! What more do you want?"
+
+[BLADE]
+"The Echoes. Aeliana. The Paladin. Nugget.
+Let them go.
+That wasn't part of the money deal. That's my wish."
+
+[TOWER MASTER]
+(The puddle ripples, almost sighing.)
+"You greedy little anomaly.
+But... since you trashed the containment units anyway... and honestly, I'm tired of their noise in the system...
+Fine. System flush initiated.
+They're all returning to the cycle. No more loops. Just... peace."
+
+[BLADE]
+"Good."
+
+| Blade steps fully onto the elevator. As he descends, he looks back one last time at the grumpy puddle of a god.
+
+[BLADE]
+"Nice doing business with you."
+
+[TOWER MASTER]
+"Get out!"

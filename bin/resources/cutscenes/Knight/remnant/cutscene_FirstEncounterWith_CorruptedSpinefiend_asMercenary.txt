@@ -1,0 +1,19 @@
+| The air smells of ozone and rotting cactus.
+| Ahead, a familiar shape wobbles into view. It’s a Spinefiend, but the majestic mustache is gone, replaced by a void of static.
+| Its spines aren't needles anymore—they are long, jagged tears in reality that drift around it.
+
+[PERCIVAL]
+"Is that... the cactus thing?
+It looks like it was drawn by a madman."
+
+[NUGGET]
+"Corrupted Spinefiend.
+It lost its style. Now it’s just a texture error with spikes.
+Don't touch the black floating spines, Percival. They don't poke you; they erase the part of you they touch."
+
+| The creature shudders, and the hallway momentarily turns upside down.
+
+[PERCIVAL]"It’s destabilizing the room just by existing, and it’s not posing."
+
+[NUGGET]
+"Then stop it from existing!"

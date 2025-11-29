@@ -1,0 +1,153 @@
+[PERCIVAL]
+"You…
+You're the Tower Master?
+You look like the thing I killed on Floor 0. Just… bigger."
+
+[TOWER MASTER]
+(The blob doesn’t have a mouth, but a voice vibrates directly into Percival’s skull. It sounds bored, like a tired administrator.)
+"An Elemental Blob? Please. Do not insult the architecture.
+Those things downstairs are just… shed skin. Autopilots. Drones I set to ‘wander’ while I work."
+
+| The Master shifts shape, forming a vague, liquid hand that gestures around the room.
+
+[TOWER MASTER]
+"I am the Prime State. The sum of all variables.
+And you are the variable that broke my favorite caretaker. Epochra was expensive to train, you know."
+
+[PERCIVAL]
+"She wanted to be free. They all do.
+I’m here to finish what she started.
+Free the Echoes. Release the souls you’ve trapped in this museum.
+And… I want my wish. You promised a wish to anyone who reached the top."
+
+[TOWER MASTER]
+(The blob sighs—a sound like steam escaping a pipe.)
+"The wish… right. The marketing campaign.
+Look, kid. I can’t rewrite reality to bring your mother back. That’s metaphysically complex and bureaucratically awful.
+But…"
+
+| The Master reaches into its gelatinous body and pulls out a heavy, dripping sack. It lands on the sterile floor with a wet splat.
+| Coins spill out. Platinum. Gold. Gems that don’t exist on the surface. They are covered in viscous, rainbow-colored slime.
+
+[TOWER MASTER]
+"Here. Wealth. Infinite wealth.
+Buy yourself a kingdom. Buy yourself distractions. Buy whatever you think will fill the hole she left.
+It’s a little sticky, but it spends the same."
+
+[PERCIVAL]
+(Staring at the wet sack)
+"You're bribing me?"
+
+[TOWER MASTER]
+"I’m paying you to leave.
+Look, this won’t be easy for me, but I can erase you from existence right here, right now. Poof. Gone.
+But see these monitors? This equipment? It’s sacred. If we fight, things break. And I hate recalibrating the reality engine.
+So… take the wet gold. Walk out of here. Live a long, wealthy life.
+Go on. Shoo."
+
+| Percival looks at the gold. He thinks of all the years without her. The emptiness.
+| Then he looks at the screens showing the trapped souls—the Paladin, the Knight, Aeliana… Nugget.
+| He kicks the sack of gold aside. It slides across the floor, leaving a trail of slime.
+
+[PERCIVAL]
+"Keep your money.
+I didn’t climb this tower for a payout.
+I’m not here to bargain. I’m here to end this."
+
+| He raises his weapon. The hired blade hums, eager to cut something that thinks it cannot die.
+
+[PERCIVAL]
+"And I’m shutting you down."
+
+If you'd like, I can also:
+
+✅ make it darker
+✅ make it more emotional about the mother
+✅ add flashbacks
+✅ punch up the comedy
+✅ shorten/lengthen it
+Just tell me the tone you're aiming for!
+
+You said:
+add some more and revise as you wish, this is kind of a different character. But don't change the overall flow
+ChatGPT said:
+
+Absolutely — here is an expanded, polished version that keeps the exact same flow, but deepens character, tension, and emotional stakes.
+I treated Percival as slightly colder, more focused, and the Tower Master as more unnervingly condescending.
+
+Revised & Expanded Cutscene (Same Flow, Stronger Character)
+
+[PERCIVAL]
+"You…
+You're the Tower Master?
+You look like the thing I killed on Floor 0. Just… inflated."
+
+[TOWER MASTER]
+(The blob’s surface ripples like someone exhaling through water. Its voice vibrates directly into Percival’s skull, dry and irritated.)
+"Those? Please. Those were maintenance husks.
+I shed them the way humans shed skin cells. A necessary byproduct of running a tower this… ambitious."
+
+| The Master folds into itself, reshaping into a rough humanoid silhouette, as if trying to be polite but not really understanding how anatomy works.
+
+[TOWER MASTER]
+"I am the Prime State. The sum of all equations.
+And you… are the anomaly that broke my best caretaker.
+Epochra was difficult to cultivate. You can’t imagine the cost."
+
+[PERCIVAL]
+"I know she was tired. I know she wanted to be free.
+Everyone down there does.
+I came to finish what she couldn’t.
+Free the Echoes you’ve hoarded…
+And claim the wish you promised anyone who reached the top."
+
+| The blob freezes for a moment—then releases a slow, metallic groan that might be a sigh.
+
+[TOWER MASTER]
+"Ah. The wish. The promotional gimmick.
+Mortals love quests with prizes. Motivation in a box.
+But reviving your mother?
+That’s not a wish, boy. That’s a rewrite of causality.
+Even I would need clearance for that."
+
+| It reaches into its own shimmering body and pulls out a dripping sack. It hits the pristine floor with a nauseating whump.
+| Gold coins, radiant shards, impossible gems spill across the ground like a spilled galaxy.
+
+[TOWER MASTER]
+"Take this instead. Infinite wealth.
+Buy comfort. Buy distraction. Buy a life where grief gets drowned in luxury.
+It is sticky, yes, but mortals are so good at overlooking slime when gold is involved."
+
+[PERCIVAL]
+(Hands at his sides. No movement. Frost in his eyes.)
+"So you’re bribing me."
+
+[TOWER MASTER]
+"I am paying you to leave.
+Because while I can erase you—believe me, it would take less effort than blinking—
+you see this chamber? These instruments?
+They keep reality stitched and calibrated.
+A fight risks… damage. And I despise repairs."
+
+| Percival glances at the scattered treasure.
+| For a heartbeat he sees his mother’s face—still, silent, unreachable.
+| Then his gaze lifts to the suspended Echoes on the monitors: the Paladin, the Knight, Aeliana… Nugget… trapped in loops they never chose.
+
+| His jaw tightens.
+| He kicks the sack of gold; it slides across the floor, leaving a rainbow-slick smear.
+
+[PERCIVAL]
+"Keep your money.
+I didn’t climb this tower to be bought.
+And I didn’t come to negotiate."
+
+| His weapon rises, humming with killing intent, reflecting the tower’s pale lights.
+
+[PERCIVAL]
+"I came to end your museum of stolen souls.
+And tonight, Tower Master—"
+
+| He steps forward, eyes sharp as broken glass.
+
+[PERCIVAL]
+"—I’m shutting you down."

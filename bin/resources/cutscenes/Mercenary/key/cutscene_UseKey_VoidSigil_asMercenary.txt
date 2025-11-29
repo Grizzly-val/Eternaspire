@@ -1,0 +1,25 @@
+| Blade stands in front of the passage linked to the floor above. The reality here is barely holding together. The walls flicker between stone and wireframe. 
+
+| The gate to the next floor is a void—a perfect, two-dimensional black circle that hurts to look at. | He holds The Void Sigil, a symbol that seems to absorb the dim light of the room.
+
+[BLADE]
+"The next floor doesn't have a door. It just has... a hole."
+
+[NUGGET]
+"That’s Floor 8: The Collapsing Void.
+The Tower is falling apart up there. The code is unravelling.
+Gravity is a suggestion. Time is optional.
+That Sigil stabilizes the hole just enough for you to step through without being scattered across the universe."
+
+| Blade holds the Sigil up to the black circle. The void ripples, stabilizing into a swirling vortex of grey and black.
+
+[BLADE]
+"It looks like a storm."
+
+[NUGGET]
+"It’s worse. It’s nothingness.
+The corrupted code, the deleted files, the forgotten memories—they all end up in the drain.
+And we're jumping right in.
+Hold your breath, Challenger. Reality is about to get very... optional."
+
+| Blade steps into the vortex.

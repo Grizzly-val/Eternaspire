@@ -1,0 +1,28 @@
+| Percival walks across a frozen lake of black ice. In the distance, a small, glowing light bobs in the darkness.
+| As he approaches, he sees a figure—a woman, weeping, curled into a ball on the ice. She glows with a faint, inviting warmth.
+
+[PERCIVAL]
+"Someone's alive here?
+She looks... lost."
+
+[NUGGET]
+"Don't go near her! That's not a person. That's a lure.
+Look down."
+
+| Percival looks at the ice. Beneath the transparent surface, a colossal, shadowy shape is moving. It is the size of a whale, and its mouth is open directly beneath the weeping woman.
+| The woman is attached to the beast by a fleshy, bioluminescent stalk.
+
+[NUGGET]
+"That is The Angler.
+It uses your empathy as bait. It knows you want to save people, so it shows you someone who needs saving.
+And when you get close... snap."
+
+| The massive jaws beneath the ice open wider. The "woman" looks up, her face a featureless void, and screams—a sound like grinding glaciers.
+
+[PERCIVAL]
+"It's using a puppet made of light.
+That's disgusting."
+
+[NUGGET]
+"It's efficient.
+Break the lure, and the beast will surface. Then you kill the real monster."

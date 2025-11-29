@@ -1,0 +1,54 @@
+| Percival wipes mud from his face. Floating in front of him is a small, glowing sphere with wings.
+
+[PERCIVAL]
+"A spirit?
+Have you come to mock me too? Or are you a demon sent to tempt me?"
+
+[NUGGET]
+"Demon? Spirit? Nah, I'm Nugget.
+And wow, that was intense. 'Burn the heretic!' Very old school.
+So... trying to revive the dead? Bold move. Usually gets you fired."
+
+[PERCIVAL]
+(Staring at the burning chapel in the distance)
+"They destroyed it. The equations. The reagents.
+I had solved the mortality paradox. I just needed... power."
+
+[NUGGET]
+"You needed a miracle.
+And let's be honest, your Church isn't in the business of granting those. They just sell the idea of them."
+
+[PERCIVAL]
+"She was everything to me. I cannot accept that she is just... gone.
+Physics says energy cannot be destroyed. Souls are energy. They have to be somewhere."
+
+[NUGGET]
+"Spoken like a true nerd! I like you.
+You're right, you know. Souls don't disappear. Sometimes... they just get trapped. Or stored."
+
+| Nugget floats closer, lowering his voice conspiratorially.
+
+[NUGGET]
+"If you want to defy the Natural Order... you need to go somewhere that doesn't follow the rules.
+Somewhere where 'impossible' is just a suggestion."
+
+[PERCIVAL]
+"The Eternaspire."
+
+[NUGGET]
+"Bingo.
+The Tower holds the keys to reality. Life, death, time... it's all just code in there.
+If you climb to the top... the Master can rewrite the file."
+
+[PERCIVAL]
+(Slowly standing up, the mud dripping from his ruined robes)
+"Rewrite the file...
+Revive her."
+
+[NUGGET]
+"Exactly. No church guards. No burning books. Just you, the Tower, and a lot of things trying to kill you.
+But hey, for a guy who committed a taboo, a little danger is nothing, right?"
+
+[PERCIVAL]
+"I will storm the gates of hell if I have to.
+Lead the way, spirit."

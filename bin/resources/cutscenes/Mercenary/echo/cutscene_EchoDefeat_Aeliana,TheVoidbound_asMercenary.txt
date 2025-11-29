@@ -1,0 +1,33 @@
+| Aeliana falls, the chains of black light shattering.
+| As she hits the ground, the corruption recedes. For a moment, she looks peaceful. The void in her eyes clears, revealing a soft, sad brown.
+
+[AELIANA]
+(Whispering)
+"I see... him.
+He is... waiting by the gate."
+
+| She smiles—a genuine, heartbreaking smile—and dissolves into soft white light.
+| However, the light does not ascend. It swirls and is pulled back into the floor, absorbed by the Tower to be recycled later. She is gone, but not free.
+
+[NUGGET]
+(Staring at the spot where she vanished, his voice hollow)
+"She thinks she found him.
+She's just going back into the cycle. The Tower won't let them go.
+Why does that make my chest hurt? I don't even have a chest."
+
+[BLADE]
+"Maybe you knew them both. In another life.
+At least for now... she has peace."
+
+| Blade walks over to the item she left behind. It is a heavy shield-blade, pristine and uncorrupted.
+
+[BLADE]
+"Vanguard's Bastion.
+It’s a weapon made of protection.
+She held onto it for him."
+
+[NUGGET]
+(Shaking himself, his voice cracking slightly before returning to 'normal')
+"Yeah. Well.
+Happy endings are rare here. Let's take the win and the loot.
+This floor... it feels too personal. I want to leave."

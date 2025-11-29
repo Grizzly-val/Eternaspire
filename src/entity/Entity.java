@@ -24,9 +24,6 @@ public abstract class Entity implements Serializable{
         this.hp = hp;
         this.maxHp = maxHp;
         this.atk = atk;
-
-        
-
     }
 
     public int getLvl(){return lvl;}
