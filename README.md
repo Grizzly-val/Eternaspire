@@ -43,9 +43,9 @@ This project showcases Java programming concepts such as object-oriented design,
 *⬆️⬇️ Ascend or Descend Floors* – Explore various areas on each floor of the tower.  
 *⭐ **Experience Points (XP)*** – Earn XP to level up, increasing HP and SP. Leveling up fully restores HP and SP.
 *💰 **Collect Loot*** – Obtain items from remnants, echoes, chests, rubble, or random drops.   
-*🪄 **Skills:***  
-  *🎯 **Active Skills*** – Activated by the player and consume SP.  
-  *🛡️ **Passive Skills*** – Automatically activates per turn and do not consume SP. Occurance of a passive skill relies on chance.
+*✨ **Skills:***  
+  - *🎯 **Active Skills*** – Activated by the player and consume SP.  
+  - *🛡️ **Passive Skills*** – Automatically activates per turn and do not consume SP. Occurance of a passive skill relies on chance.
 
 *👹 **Enemies:*** 
   *🗡️ **Remnants*** – Common foe entities scattered throughout the floors.  
