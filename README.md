@@ -105,15 +105,15 @@ Class Hierarchy Overview:
 - TowerEntity → Echo / Remnant → SpecificEcho / SpecificRemnant
 - Challenger → Mercenary / Knight / Paladin
 ```
-**Entity**\
- ├─ TowerEntity\
- │   ├─ Remnant\
- │   │    └─ SpecificRemnant\
- │   └─ Echo\
- │        └─ SpecificEcho\
- └─ Challenger\
-      ├─ Mercenary\
-      ├─ Knight\
+Entity
+ ├─ TowerEntity
+ │   ├─ Remnant
+ │   │    └─ SpecificRemnant
+ │   └─ Echo
+ │        └─ SpecificEcho
+ └─ Challenger
+      ├─ Mercenary
+      ├─ Knight
       └─ Paladin
 ```
 
@@ -125,18 +125,18 @@ Class Hierarchy Overview:
 - Consumables
 - Weapon → SpecificWeapon (Unique passive holders)
 ```
-**Item**\
- ├─ Consumables\
- └─ Weapon\
+Item
+ ├─ Consumables
+ └─ Weapon
        └─ SpecificWeapon (unique passive logic)
   
 #### Skill System ✨📜:
 - **Skill** → ActiveSkill / PassiveSkill → [Concrete Implementation]
 
-**Skill**\
- ├─ ActiveSkill\
- └─ PassiveSkill\
-       └─ [Concrete skills with custom effects]\
+Skill
+ ├─ ActiveSkill
+ └─ PassiveSkill
+       └─ [Concrete skills with custom effects]
 ```
 
 
@@ -145,10 +145,10 @@ Class Hierarchy Overview:
 - Location → Floor / Area
 *Note: Floor manages a collection of Area objects.*
 
-**Location**\
- ├─ Floor\
- │    └─ Contains HashMap<Integer, Area>\
- └─ Area\
+Location
+ ├─ Floor
+ │    └─ Contains HashMap<Integer, Area>
+ └─ Area
 ```
 
 
