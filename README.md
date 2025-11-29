@@ -9,7 +9,7 @@
   <p> 
 </div>
 
-## ✦ Overview ✦
+# ✦ Overview ✦
 
 **Eternaspire is a console-based, text-only, turn-based role-playing game built in Java.**
 
@@ -29,7 +29,7 @@ This project showcases Java programming concepts such as object-oriented design,
 ♞**Percival**: The Knight
 ♗**Another Percival**: The Paladin
 *
-📈 - **Fight** remnants and echoes to level up their hp and attack as well as uncover hidden lore of the tower!    
+📈 - **Fight** remnants and echoes to level up their hp and attack as well as uncover hidden lore of the tower!
 🔎 - **Explore** through ten floors, each with varying number of area and collect valuable loot!
 
 
@@ -54,13 +54,13 @@ This project showcases Java programming concepts such as object-oriented design,
 
 *🎒 Inventory System:** – Manage items classified as:
   *🔑 Keys** – Unlock floors and areas. 
-   *⚔️ Weapons* – Equip to strengthen characters, each with unique passives. 
+  *⚔️ Weapons* – Equip to strengthen characters, each with unique passives. 
   *📜 Skill Scrolls** – Learn powerful skills for damage or healing.
   *🧪 Foods** – Recover HP or SP.
 *Our Inventory System also features a capacity mechanic, limiting the number of items a player can carry—adding a layer of strategy when deciding what to keep or discard.*
 
 
-# Several in-game events trigger unique cutscenes that deepen the story and provide context for the player’s journey. These include:
+### Several in-game events trigger unique cutscenes that deepen the story and provide context for the player’s journey. These include:
 *📖 Opening Cutscenes different for each characters*
 *🔑 Using a Key*
 *🍎 Eating Certain Foods*
