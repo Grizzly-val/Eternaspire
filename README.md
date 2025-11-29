@@ -14,7 +14,7 @@ As you embark on your ascent, you will uncover fragments of the tower’s secret
 
 ## ⚙️ Project Details
 
-* **Course Code:** CS-2102
+* **Course Code:** CS-211
 
 ---
 
@@ -26,6 +26,7 @@ This project was developed by:
 * **Ilao, Kent Patrick**
 * **Villanueva, Franz Daniel**
 ___
+
 
 # ✦ Overview ✦
 
