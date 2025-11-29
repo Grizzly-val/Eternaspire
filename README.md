@@ -97,16 +97,16 @@ Class Hierarchy Overview:
 - TowerEntity → Echo / Remnant → SpecificEcho / SpecificRemnant
 - Challenger → Mercenary / Knight / Paladin
 
-Entity
- ├─ TowerEntity
- │   ├─ Remnant
- │   │    └─ SpecificRemnant
- │   └─ Echo
- │        └─ SpecificEcho
- └─ Challenger
-      ├─ Mercenary
-      ├─ Knight
-      └─ Paladin
+Entity\
+ ├─ TowerEntity\
+ │   ├─ Remnant\
+ │   │    └─ SpecificRemnant\
+ │   └─ Echo\
+ │        └─ SpecificEcho\
+ └─ Challenger\
+      ├─ Mercenary\
+      ├─ Knight\
+      └─ Paladin\
 
 
 
