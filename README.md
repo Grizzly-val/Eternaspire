@@ -215,7 +215,7 @@ ___
 ## 4. Abstraction 🎭📁
 
 - **Utility Managers:** Classes like CutsceneManager, AudioPlayer, and TextTyper act as black boxes. The game logic simply requests "Play Audio" or "Type Text," without needing to understand the underlying timing logic or rendering algorithms. 🎬🔊⌨️
-- **UI Components:** OptionSelect and Format static classes abstract away the complexity of formatting strings and handling user input indices, providing a clean API for the UI layer. 🖥️✨
+- **UI Components:** OptionSelect and Format static classes abstract away the complexity of formatting strings and handling user input indices, providing a clean user interface. 🖥️✨
 - **Game Flow:** The Battle class abstracts the complexity of turn-based logic. The main game loop triggers a battle, and the Battle class handles the minute details of turn order, damage calculation, and win/loss states internally. 🕒⚔️🏆
 
 ___
