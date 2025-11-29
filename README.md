@@ -11,34 +11,34 @@
 
 ## ✦ Overview ✦
 
-* Eternaspire * is a console-based, text-only, turn-based role-playing game built in Java. 
+**Eternaspire is a console-based, text-only, turn-based role-playing game built in Java.**
 
-Players choose an avatar and ascend a mysterious tower said to grant any wish to those who conquer it. Whether seeking wealth, power, or knowledge, the only limit is the challenger’s imagination. 
+Players **choose an avatar** and ascend a** mysterious tower** said to grant any wish to those who conquer it. Whether seeking wealth, power, or knowledge, the only limit is the challenger’s imagination. 
 
-As players climb the tower, they uncover fragments of its secrets and the stories of daring challengers who came before. The game combines strategic turn-based combat with exploration and storytelling, all through a simple console interface.
+As players climb the tower, they uncover fragments of its secrets and the stories of daring challengers who came before. The game combines strategic turn-based combat with exploration and storytelling, **all through a simple console interface.**
 
-Can you conquer this Tower?
+**Can you conquer this Tower?**
 
 This project showcases Java programming concepts such as object-oriented design, classes, inheritance, encapsulation, and control flow, along with user input handling and game logic.
 
-*Players Can:*
+**Players Can:**
 
-⚔️ - Pick a class from three characters! 
+⚔️ - **Pick a class from three characters!**
 *
-♟Blade: the Mercenary
-♞Percival: The Knight
-♗Another Percival: The Paladin
+♟**Blade**: the Mercenary
+♞**Percival**: The Knight
+♗**Another Percival**: The Paladin
 *
-📈 - Fight remnants and echoes to level up their hp and attack as well as uncover hidden lore of the tower!    
-🔎 - Explore through ten floors, each with varying number of area and collect valuable loot!
+📈 - **Fight** remnants and echoes to level up their hp and attack as well as uncover hidden lore of the tower!    
+🔎 - **Explore** through ten floors, each with varying number of area and collect valuable loot!
 
 
 
 ## ✦ Project Structure ✦
 
 ## ✦ Features ✦
-*🛡️ Choose Your Job** – Pick from three unique classes, each with different base stats and background stories.    
-*❤️ HP* – Fight for your own, deplete theirs.
+*🛡️ **Choose Your Job**** – Pick from three unique classes, each with different base stats and background stories.    
+*❤️ **HP*** – Fight for your own, deplete theirs.
 *⚡SP* – Special moves are not free
 *⬆️⬇️ Ascend or Descend Floors* – Explore various areas on each floor of the tower.  
 *⭐ Experience Points (XP)* – Earn XP to level up, increasing HP and SP. Leveling up fully restores HP and SP.
