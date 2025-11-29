@@ -1,4 +1,4 @@
-<div align="center">
+<img width="208" height="178" alt="image" src="https://github.com/user-attachments/assets/cde0486b-958c-485d-a452-5087dc52b08a" /><div align="center">
   <h1>✨🗼Eternaspire🗼✨</h1>
   <p>Eternaspire is a turn-based role-playing game. Choose an avatar to ascend a tower that is said to grant anyone who conquers it a wish. Be it wealth, power, or knowledge the only limit is the challenger’s       own imagination. As you ascend the tower, you uncover fragments of the tower’s secrets and the story behind the daring challengers.</p>
   <p>
@@ -67,7 +67,7 @@ This project showcases Java programming concepts such as object-oriented design,
 *Our Inventory System also features a capacity mechanic, limiting the number of items a player can carry—adding a layer of strategy when deciding what to keep or discard.*
 
 
-### Several in-game events trigger unique cutscenes that deepen the story and provide context for the player’s journey. These include:
+### Several in-game events trigger unique cutscenes that deepen the story and provide context for the player’s journey 🧾🎬. These include:
 - *📖 Opening Cutscenes different for each characters*
 - *🔑 Using a Key*
 - *🍎 Eating Certain Foods*
@@ -89,14 +89,14 @@ This project utilizes core Object-Oriented Programming (OOP) principles to creat
 
 ## 1. Encapsulation🔒📦
 
-- We utilize access modifiers to restrict direct access to object components and bundle data with the methods that operate on that data. This ensures data integrity and prevents external classes from putting an object into an invalid state.
-- Entity Data Security: Core attributes within the Entity class (lvl, hp, atk, maxHP) are marked as protected. This allows specific subclasses like Remnant or Mercenary to manipulate their own stats during initialization or combat, while keeping them safe from unrelated utility classes. 🛡️
-- Identity Isolation: Properties such as name and description are kept private within specific implementations to ensure unique identity immutability after instantiation. 🧩
-- Inventory Management: The Inventory class encapsulates the logic for storing items, exposing only necessary methods to add or remove items, while hiding the underlying data structures for PlayerInventory and AreaInventory. 🎒
+- 🛡️ We utilize access modifiers to restrict direct access to object components and bundle data with the methods that operate on that data. This ensures data integrity and prevents external classes from putting an object into an invalid state.
+- 🛡️ Entity Data Security: Core attributes within the Entity class (lvl, hp, atk, maxHP) are marked as protected. This allows specific subclasses like Remnant or Mercenary to manipulate their own stats during initialization or combat, while keeping them safe from unrelated utility classes. 🛡️
+- 🛡️ Identity Isolation: Properties such as name and description are kept private within specific implementations to ensure unique identity immutability after instantiation. 🧩
+- 🛡️ Inventory Management: The Inventory class encapsulates the logic for storing items, exposing only necessary methods to add or remove items, while hiding the underlying data structures for PlayerInventory and AreaInventory. 🎒
  
 ## 2. Inheritance 🌳📚
 #### 🧩 Class Hierarchy Overview
-*A hierarchical structure is used to promote code reusability and establish "is-a" relationships. Common logic is defined in parent classes, while specific behaviors are pushed down to child classes.*
+* 🧬 A hierarchical structure is used to promote code reusability and establish "is-a" relationships. Common logic is defined in parent classes, while specific behaviors are pushed down to child classes.*
 Class Hierarchy Overview:
 
 #### Entity System 👤⚔️:
@@ -104,6 +104,8 @@ Class Hierarchy Overview:
 - TowerEntity → Echo / Remnant → SpecificEcho / SpecificRemnant
 - Challenger → Mercenary / Knight / Paladin
 
+
+---
 **Entity**\
  ├─ TowerEntity\
  │   ├─ Remnant\
@@ -114,7 +116,7 @@ Class Hierarchy Overview:
       ├─ Mercenary\
       ├─ Knight\
       └─ Paladin
-
+---
 
 
 
