@@ -11,7 +11,7 @@
 
 ## ✦ Overview ✦
 
-*Eternaspire* is a console-based, text-only, turn-based role-playing game built in Java. 
+* Eternaspire * is a console-based, text-only, turn-based role-playing game built in Java. 
 
 Players choose an avatar and ascend a mysterious tower said to grant any wish to those who conquer it. Whether seeking wealth, power, or knowledge, the only limit is the challenger’s imagination. 
 
