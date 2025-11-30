@@ -14,13 +14,11 @@ As you embark on your ascent, you will uncover fragments of the tower’s secret
 
 ## ⚙️ Project Details
 
-* **Course Code:** CS-211
+* **Course Code:** CS-211 📝
 
 ---
 
-## 👥 Development Team
-
-This project was developed by:
+## 👥 Development Team 🐛🚀
 
 * **Donatos, Trixter Lanz**
 * **Ilao, Kent Patrick**
@@ -47,13 +45,17 @@ This project showcases Java programming concepts such as object-oriented design,
 **Players Can:**
 
 ⚔️ - **Pick a class from three characters!**
-- **Blade**  ♙: the Mercenary
-- **Percival**  ♘: The Knight
-- **Another Percival** ♗: The Paladin
+- **Blade**             ♙  : the Mercenary
+- **Percival**          ♘  : The Knight
+- **Another Percival**  ♗  : The Paladin
 
 📈 - **Fight** remnants and echoes to level up their hp and attack as well as uncover hidden lore of the tower!
 
 🔎 - **Explore** through ten floors, each with varying number of area and collect valuable loot!
+
+📁 - **Create New Accounts and Games** Establish your legacy! Start a fresh journey with a new character, or manage multiple ongoing adventures under one player profile.
+
+💾 - **Save Accounts and Games** Secure your progress instantaneously! Your game state and character data are automatically backed up to the cloud after major milestones.
 
 ___
 
@@ -107,6 +109,10 @@ ___
 ## Accound Data Storage 💾☁️
 **Account data are stored as a DAT file.**
 **Saving Progress** – *Save your game via the inventory menu to resume later.* > This might help against that one Echo 💀💀💀
+
+> <img width="132" height="77" alt="image" src="https://github.com/user-attachments/assets/683610ed-00f9-47e4-9ce1-14daef63ab2e" />
+
+
 ### How to save game progress?
 - **0** in **Inventory Mode**
 - **Exiting game manually in floor navigation mode** automatically saves current game progress
