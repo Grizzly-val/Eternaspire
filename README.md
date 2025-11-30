@@ -115,6 +115,134 @@ ___
 
 ___
 
+
+
+
+
+
+
+
+```
+📁 ETERNASPIRE
+│
+├── 🗂️ .vscode
+├── 📦 bin
+├── 📚 lib
+│
+└── 📁 src
+    │
+    ├── ⚙️ engine
+    │   ├── Account.java
+    │   ├── AccountManager.java
+    │   ├── Game.java
+    │   └── GameResult.java
+    │
+    ├── 👤 entity
+    │   ├── player
+    │   │   ├── Challenger.java
+    │   │   ├── Knight.java
+    │   │   ├── Mercenary.java
+    │   │   └── Paladin.java
+    |   |  
+    │   └── tower_entity
+    │   |        ├── echoes
+    |   |        |      └── [Specific echoes]
+    │   |        └── remnants
+    |   |        |       └── [Specific remnants]
+    │   |        ├── Remnant.java
+    |   |        ├── Echo.java
+    |   |        └── TowerEntity.java
+    |   |
+    |   └── Entity.java
+    |
+    ├── ⚔️ mechanics
+    │   ├── battle — Battle.java
+    │   ├── skill
+    |   │     ├── active_skills
+    |   |     |       ├── dropped — [Specific dropped active skills]
+    |   |     |       └── [Specific active skills]
+    |   │     └── passive_skills
+    |   |     |       ├── dropped — [Specific dropped passive skills]
+    |   |     |       └── [Specific passive skills]
+    │   │     ├── ActiveSkill.java
+    │   │     └── PassiveSkill.java
+    │   │     └── Skill.java
+    |   |
+    │   ├── Inventory
+    │   │   ├── AreaInventory.java
+    │   │   ├── Inventory.java
+    │   │   └── PlayerInventory.java
+    │   ├── pstate
+    │   │   ├── AreaNavigationState.java
+    │   │   ├── FloorNavigationState.java
+    │   │   ├── IdleAreaState.java
+    │   │   ├── InventoryState.java
+    │   │   └── PlayerState.java
+    │   └── cutscene — CutsceneManager.java
+    │
+    │
+    ├── 🌎 world
+    │   ├── item
+    │   │   └── Item.java
+    |   |   │     ├── consumables
+    |   |   │     │     ├── Consumables.java
+    |   |   │     │     ├── Food.java
+    |   |   │     │     ├── FoodEffect.java
+    |   |   │     │     ├── Key.java
+    |   |   │     │     └── SkillScroll.java
+    |   |   │     └── wpn
+    |   |   |          ├── Weapon.java
+    |   |   |          └── [Specific weapons]
+    |   |   └── Item.java
+    |   |
+    |   |
+    |   └── 📍 location
+    |       ├── Area.java
+    |       ├── Floor.java
+    |       ├── Location.java
+    |       └── locationData
+    |               ├── FloorData.java
+    |               ├── AreaInventoryData.java
+    |               ├── AreaEntityData.java
+    |               └── AreaEntities.java               
+    |   
+    ├── 🎨 ui
+    │   ├── AudioPlayer.java
+    │   ├── Format.java
+    │   ├── OptionSelect.java
+    │   └── TextTyper.java
+    │
+    ├── 🖼️ resources
+    │   ├── background_audio — [Background_audios.wav]
+    │   └── cutscenes — [Cutsences.txt]
+    │
+    ├── Main.java
+    ├── [gameName]_game_save.dat
+    └── accounts.dat
+    
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+___
+
+
 # ✦ Object-Oriented Design Principles 💻🏰
 
 > This project utilizes core Object-Oriented Programming (OOP) principles to create a modular, scalable, and maintainable game architecture. Below is an overview of how these principles are applied to the codebase.
