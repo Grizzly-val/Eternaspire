@@ -107,9 +107,9 @@ ___
 
 
 ## Accound Data Storage 💾☁️
-**Account data are stored as a DAT file.**
+🗃️ **Account data are stored as a DAT file.**
 
-**Saving Progress** – *Save your game via the inventory menu to resume later.* > This might help against that one Echo 💀💀💀
+🗃️ **Saving Progress** – *Save your game via the inventory menu to resume later.* > This might help against that one Echo 💀💀💀
 
 > <img width="132" height="77" alt="image" src="https://github.com/user-attachments/assets/683610ed-00f9-47e4-9ce1-14daef63ab2e" />
 
@@ -252,7 +252,7 @@ ___
 
 # ✦ Object-Oriented Design Principles 💻🏰
 
-> This project utilizes core Object-Oriented Programming (OOP) principles to create a modular, scalable, and maintainable game architecture. Below is an overview of how these principles are applied to the codebase.
+> This project utilizes core **Object-Oriented Programming (OOP)** principles to create a modular, scalable, and maintainable game architecture. Below is an overview of how these principles are applied to the codebase.
 
 ___
 
@@ -330,7 +330,6 @@ Item (Base Class)
 ⚡ Skill (Abstract Base Class)
  │
  ├── 💥 ActiveSkill (Manual Execution)
- │    │
  │    │
  │    └── ⚙️ Concrete Active Skills (Varying effects/SP use)
  │
