@@ -47,9 +47,9 @@ This project showcases Java programming concepts such as object-oriented design,
 **Players Can:**
 
 ⚔️ - **Pick a class from three characters!**
-- ♟**Blade**: the Mercenary
-- ♞**Percival**: The Knight
-- ♗**Another Percival**: The Paladin
+- **Blade**  ♙: the Mercenary
+- **Percival**  ♘: The Knight
+- **Another Percival** ♗: The Paladin
 
 📈 - **Fight** remnants and echoes to level up their hp and attack as well as uncover hidden lore of the tower!
 
@@ -66,7 +66,7 @@ ___
 
 *⚡**SP*** – Special moves are not free
 
-*⬆️⬇️ Ascend or Descend Floors* – Explore various areas on each floor of the tower.
+*⬆️⬇️ **Ascend or Descend Floors*** – Explore various areas on each floor of the tower.
 
 *⭐ **Experience Points (XP)*** – Earn XP to level up, increasing HP and SP. Leveling up fully restores HP and SP.
 
@@ -82,11 +82,11 @@ ___
   - *💀 **Echoes*** – Bosses that are strongr than remnants and guard each floor.
   *They are explained in the cutscenes!*
 ___
-*🎒 Inventory System:** – Manage items classified as:
- - *🔑 Keys** – Unlock floors and areas. 
- - *⚔️ Weapons* – Equip to strengthen characters, each with unique passives. 
- - *📜 Skill Scrolls** – Learn powerful skills for damage or healing.
- - *🍞 Foods** – Recover HP or SP.
+*🎒 **Inventory System:*** – Manage items classified as:
+ - *🔑 **Keys*** – Unlock floors and areas. 
+ - *⚔️ **Weapons*** – Equip to strengthen characters, each with unique passives. 
+ - *📜 **Skill Scrolls*** – Learn powerful skills for damage or healing.
+ - *🍞 **Foods*** – Recover HP or SP.
 *Our Inventory System also features a capacity mechanic, limiting the number of items a player can carry—adding a layer of strategy when deciding what to keep or discard.*
 ___
 
@@ -134,7 +134,7 @@ ___
  
 ## 2. Inheritance 🌳📚
 #### 🧩 Class Hierarchy Overview
-* 🧬 A hierarchical structure is used to promote code reusability and establish **"is-a"** relationships. Common logic is defined in parent classes, while specific behaviors are pushed down to child classes.*
+* 🧬 A hierarchical structure is used to promote code reusability and establish **"is-a"** relationships. Common logic is defined in parent classes, while specific behaviors are pushed down to child classes.
 Class Hierarchy Overview:
 
 ___
