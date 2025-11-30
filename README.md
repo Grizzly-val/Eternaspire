@@ -49,10 +49,11 @@ This project showcases Java programming concepts such as object-oriented design,
 ⚔️ - **Pick a class from three characters!**
 - ♟**Blade**: the Mercenary
 - ♞**Percival**: The Knight
-- ♗**Another Percival**: The Paladin/
+- ♗**Another Percival**: The Paladin
 
-📈 - **Fight** remnants and echoes to level up their hp and attack as well as uncover hidden lore of the tower!/
-🔎 - **Explore** through ten floors, each with varying number of area and collect valuable loot!/
+📈 - **Fight** remnants and echoes to level up their hp and attack as well as uncover hidden lore of the tower!
+
+🔎 - **Explore** through ten floors, each with varying number of area and collect valuable loot!
 
 ___
 
