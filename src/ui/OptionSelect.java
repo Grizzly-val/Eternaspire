@@ -36,7 +36,7 @@ public final class OptionSelect {
                 index = -1;
                 SC.nextLine();
             }
-            if(index <= 0 || index > size){
+            if(index <= 0 || index > size && (index != -1)){
                 System.out.println("\n!! Oops! Invalid index !!\n");
                 AudioPlayer.playOverlay("error.wav");
                 System.out.println();

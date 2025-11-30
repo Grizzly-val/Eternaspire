@@ -13,7 +13,7 @@ public class CorruptedRedeemer extends Weapon {
 
     @Override
     public void basicAttack(Challenger user, Entity opponent, int atk) {
-        System.out.println("The Redeemer falls like a judgment from the void.");
+        System.out.println("| The Redeemer falls like a judgment from the void.");
         
         // Passive: Eclipse Crush
         // 20% Chance to deal triple damage (Critical Smite)

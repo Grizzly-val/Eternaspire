@@ -44,8 +44,8 @@ public class InventoryState implements PlayerState{
                     "INV", player.getInventory().getOccupiedSpace() + "/" + player.getInventory().getCapacity()
                 ));
 
-            if(player.getEquippedWeapon() != null) System.out.println("|> Weapon : " + player.getEquippedWeapon().getName());
-            else System.out.println("|> Weapon : NONE");
+            if(player.getEquippedWeapon() != null) System.out.println("|> Weapon :   " + player.getEquippedWeapon().getName());
+            else System.out.println("|> Weapon :   NONE");
             System.out.println("--------------------------------------------------------------------------------");
             System.out.println("| Player |");
             System.out.println("----------");

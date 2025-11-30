@@ -11,14 +11,14 @@ public class AvalancheStrike extends ActiveSkill {
 
     @Override
     public void activate(Entity user, Entity opponent, Battle battle) {
-        int hits = 3;
+        int hits = 5;
         System.out.println("| " + user.getName() + " unleashes an avalanche of blows!");
         
         for(int i = 0; i < hits; i++){
             // 70% Hit Chance per strike
             if(Math.random() > 0.3){ 
                 // Each hit deals 80% ATK
-                int dmg = (int)(user.getAtk() * 0.8);
+                int dmg = (int)(user.getAtk() * 1.5);
                 user.dmgAttack(opponent, dmg);
             } else {
                 System.out.println("| A strike missed!");

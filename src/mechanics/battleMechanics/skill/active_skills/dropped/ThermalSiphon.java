@@ -18,7 +18,7 @@ public class ThermalSiphon extends ActiveSkill {
         user.dmgAttack(opponent, dmg);
         
         // Heal for 50% of damage dealt
-        int healAmount = dmg / 2;
+        int healAmount = dmg;
 
         user.heal(healAmount);
         System.out.println("| " + user.getName() + " recovered " + healAmount + " HP.");

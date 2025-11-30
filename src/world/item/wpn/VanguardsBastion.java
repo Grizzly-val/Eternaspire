@@ -13,7 +13,7 @@ public class VanguardsBastion extends Weapon {
 
     @Override
     public void basicAttack(Challenger user, Entity opponent, int atk) {
-        System.out.println("The Bastion strikes with the weight of a broken promise.");
+        System.out.println("| The Bastion strikes with the weight of a broken promise.");
         
         // Passive: Retribution
         // If the user has taken damage recently (hp < max), strike harder

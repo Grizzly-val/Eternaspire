@@ -12,7 +12,7 @@ public class MasterBlob extends Echo {
     public MasterBlob(int lvl) {
         super(BASE_HP, 
               BASE_ATK, 
-              60, 
+              lvl, 
               "Master Blob", 
               "The Tower Master of Eternaspire. A shifting, swirling mass of fire, ice, lightning, void, and code. The Prime State.", 
               "The Master Blob destabilizes, splashing onto the floor in a chaotic puddle of raw data.", 

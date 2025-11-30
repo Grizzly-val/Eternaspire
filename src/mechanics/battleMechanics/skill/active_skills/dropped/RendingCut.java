@@ -9,7 +9,7 @@ public class RendingCut extends ActiveSkill {
     // this is for Mercenary
 
     public RendingCut() {
-        super("Rending Cut", "A straight-forward cut attack. | <%> 15% chance of stealing 1 skill point.", 2);
+        super("Rending Cut", "A straight-forward cut attack. | <%> 15% chance of stealing 3 skill point.", 2);
     }
 
     @Override

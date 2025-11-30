@@ -13,7 +13,7 @@ public class Photosynthesis extends PassiveSkill{
     @Override
     public void autoActivate(Entity user, Entity opponent, Battle battle) {
         System.out.println("| " + user.getName() + " absorbs the rays of the sun hp restored through Photosynthesis! (Passive Skill)");
-        user.heal((int)(user.getMaxHp() * 0.1));
+        user.heal((int)(user.getMaxHp() * 0.18));
     }
     
 }

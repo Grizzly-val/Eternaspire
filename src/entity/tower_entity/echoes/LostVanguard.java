@@ -13,7 +13,7 @@ public class LostVanguard extends Echo {
 
     public LostVanguard(int lvl) {
 
-        super(BASE_HP, BASE_ATK, 11,
+        super(BASE_HP, BASE_ATK, lvl,
         "Lost Vanguard",
         "The lingering echo of a once-proud guardian, forever bound to its duty even in death.",
         "The Lost Vanguard tips forward, momentum carrying it to the earth.",

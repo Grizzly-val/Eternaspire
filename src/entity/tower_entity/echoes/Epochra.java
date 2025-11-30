@@ -13,7 +13,7 @@ public class Epochra extends Echo {
 
     public Epochra(int lvl) {
 
-        super(BASE_HP, BASE_ATK, 55,
+        super(BASE_HP, BASE_ATK, lvl,
         "Epochra, Keeper of Eternity",
         "Once a powerful conqueror of worlds now bound to the tower as its caretaker, It gives off aura you've never felt before.",
         "Epochra falls to its knees, changing back into the form it took when it was your companion.",

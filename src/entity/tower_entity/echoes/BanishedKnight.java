@@ -13,7 +13,7 @@ public class BanishedKnight extends Echo {
 
     public BanishedKnight(int lvl) {
 
-        super(BASE_HP, BASE_ATK, 48,
+        super(BASE_HP, BASE_ATK, lvl,
         "Banished Knight",
         "The Banished Knight, once a proud challenger whose goal was to conquer the tower and regain his lost honour, now bound to the tower for eternity.",
         "The reflection fades, the weapon he wielded falling silent as the echo of what might have been is finally laid to rest. There is only one protagonist left standing in this universe.",

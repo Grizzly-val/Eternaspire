@@ -12,11 +12,11 @@ public class BladeOfEntropy extends Weapon {
     public void basicAttack(Challenger user, Entity opponent, int atk) {
         // Passive Effect: Chance to trigger 'Reality Sever' for massive damage
         if (Math.random() < 0.19) {
-            System.out.println("The blade severs reality itself!");
+            System.out.println("| The blade severs reality itself!");
             // Deals 150% damage
             user.dmgAttack(opponent, (int)(atk * 4.5));
         } else {
-            System.out.println("The blade slices through the air with a hollow sound.");
+            System.out.println("| The blade slices through the air with a hollow sound.");
             user.dmgAttack(opponent, atk);
         }
     }

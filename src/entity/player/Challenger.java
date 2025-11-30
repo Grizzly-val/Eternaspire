@@ -358,7 +358,7 @@ public abstract class Challenger extends Entity{
     }
 
     public void gameComplete(){
-            AudioPlayer.play("in_menu");
+            AudioPlayer.play("in_menu.wav");
             System.out.println();
             System.out.println();
             System.out.println();

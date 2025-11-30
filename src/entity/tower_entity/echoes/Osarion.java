@@ -13,7 +13,7 @@ public class Osarion extends Echo {
     private static final int BASE_ATK = 11;
 
     public Osarion(int lvl) {
-        super(BASE_HP, BASE_ATK, 26,
+        super(BASE_HP, BASE_ATK, lvl,
         "Osarion, The Tyrannical Pharaoh",
         "A tyrant who sacrificed his people to achieve immortality, now imprisoned in the tower eternally.",
         "The tyrannical pharaoh falls to his knees, giving his tortured subjects peace at last.",
