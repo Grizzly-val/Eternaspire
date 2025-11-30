@@ -279,10 +279,10 @@ ___
  ├── 👾 TowerEntity (Abstract Enemy Class)
  │    │
  │    ├── 💀 Remnant (Specific Enemy Type)
- │    │    └── 💀👻 SpecificRemnant (Concrete Enemy, e.g., 'Bloody Skeleton')
+ │    │    └── 💀👻 SpecificRemnant (Concrete Enemy, e.g., 'ElementalBlob')
  │    │
  │    └── 👥 Echo
- │         └── 👥🌫️ SpecificEcho (Concrete Enemy, e.g., 'Shifting Shadow')
+ │         └── 👥🌫️ SpecificEcho (Concrete Enemy, e.g., 'Gnawer')
  │
  └── 🛡️ Challenger (Player/Major NPC Class)
       │
