@@ -71,7 +71,7 @@ public class Battle {
     // ---------------------------------------------------------
 
     public void start(){
-
+        AudioPlayer.playFromStart("in_battle.wav");;
         if(!CHALLENGER.getEncountered_Entities().contains(TOWER_ENTITY.getName())){
             encounterCutscene("cutscene_FirstEncounterWith_" 
                               + TOWER_ENTITY.getName().replace(" ", ""), 
@@ -112,12 +112,16 @@ public class Battle {
             System.out.println("----------------------------------------------------------------");
             System.out.println();
             System.out.println();
+            AudioPlayer.playOverlay("battle_lose.wav");
+            AudioPlayer.play("in_menu.wav");
             CHALLENGER.defeated(CHALLENGER, this);
         }
         else if(!TOWER_ENTITY.isAlive()){
             System.out.println("----------------------------------------------------------------");
             System.out.println();
             System.out.println();
+            AudioPlayer.playOverlay("battle_win.wav");
+            AudioPlayer.play("in_game.wav");
             TOWER_ENTITY.defeated(CHALLENGER, this);
         }
     }

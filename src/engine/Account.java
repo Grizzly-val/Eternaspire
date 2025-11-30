@@ -31,6 +31,8 @@ public class Account implements Serializable{
         this.manager = manager;
     }
 
+    public AccountManager getManager(){return manager;}
+
     public String getUsername(){return username;}
     public String getPassword(){return password;}
     public HashMap<Integer, Game> getAccountGames(){return accountGames;}
@@ -79,6 +81,7 @@ public class Account implements Serializable{
                     TextTyper.typeText("| Bye, " + username + " :c", 40, true);
                     System.out.println();
                     manager.saveAccounts();
+                    AudioPlayer.play("in_menu.wav");
                     return;
                 case 'n':
                     TextTyper.typeText("| Creating new game >>", 40, true);

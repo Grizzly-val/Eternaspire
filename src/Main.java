@@ -5,9 +5,7 @@ import ui.TextTyper;
 
 public class Main {
     public static void main(String[] args){
-        
         AudioPlayer.play("in_menu.wav");
-        
         System.out.println();
         TextTyper.typeText("Welcome, to Eternaspire!", 50, true);
         System.out.println();
@@ -17,6 +15,7 @@ public class Main {
 
         char choice = '\0';
         while(choice != 'e'){
+            
             System.out.println("----------------------------------");
             System.out.println("| Home menu |");
             System.out.println("-------------");

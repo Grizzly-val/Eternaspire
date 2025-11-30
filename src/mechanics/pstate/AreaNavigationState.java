@@ -3,6 +3,7 @@ package mechanics.pstate;
 import java.util.Map.Entry;
 
 import entity.player.Challenger;
+import ui.AudioPlayer;
 import ui.Format;
 import ui.OptionSelect;
 import ui.TextTyper;
@@ -102,9 +103,10 @@ public class AreaNavigationState implements PlayerState {
                 key.consume(player, areaEntered);
             } else{
                 System.out.println("| You do not have any key.\n| The key must be somewhere in Eternaspire\n");
+                AudioPlayer.playOverlay("unavailable.wav");
+                OptionSelect.waiter();
 
             }
-            OptionSelect.waiter();
             System.out.println();
             System.out.println();
 

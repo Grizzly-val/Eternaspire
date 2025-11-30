@@ -2,6 +2,7 @@ package world.item.consumables;
 
 import entity.player.Challenger;
 import mechanics.cutscene.CutsceneManager;
+import ui.AudioPlayer;
 import ui.Format;
 import ui.OptionSelect;
 import world.location.Area;
@@ -25,9 +26,11 @@ public class Key extends Consumables{
                 area.unlock();
                 System.out.println("| You unlocked the area: " + area.getName());
                 System.out.println("| You can now enter the area \"" + area.getName() + "\"");
-                player.getInventory().remove(this); // optional: consume the key
+                AudioPlayer.playOverlay("unlock.wav");
+                player.getInventory().remove(this);
             } else {
                 System.out.println("| This key doesn not fit this area.");
+                AudioPlayer.playOverlay("unavailable.wav");
             }
         } 
         else if (target instanceof Floor floor) {
@@ -36,9 +39,11 @@ public class Key extends Consumables{
                 floor.unlock();
                 System.out.println("| You unlocked the floor: " + floor.getName());
                 System.out.println("| You can now enter the " + Format.getOrdinal(floor.getNumber()) + " Floor");
+                AudioPlayer.playOverlay("unlock.wav");
                 player.getInventory().remove(this);
             } else {
                 System.out.println("| This key does not fit this floor.");
+                AudioPlayer.playOverlay("unavailable.wav");
             }
         } 
         else {

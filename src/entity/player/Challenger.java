@@ -272,6 +272,7 @@ public abstract class Challenger extends Entity{
         if(getNextFloor() == null){
             System.out.println("----------------");
             System.out.println("| No next floor|");
+            AudioPlayer.playOverlay("unavailable.wav");
             return;
         }
 
@@ -287,6 +288,7 @@ public abstract class Challenger extends Entity{
                 }
                 else{
                     System.out.println("| You do not have any key.\n| Try to explore the available floors first to find the key.\n");
+                    AudioPlayer.playOverlay("unavailable.wav");
                     System.out.println("------------------------------------------------------------");
                     OptionSelect.waiter();
                 }
@@ -297,6 +299,7 @@ public abstract class Challenger extends Entity{
             System.out.println("------------------------------");
             System.out.println("| Ascended to the next floor\n| (Floor " + getPrevFloor().getNumber() + " -> Floor " + getCurrentFloor().getNumber() + ")");
             System.out.println("------------------------------");
+            
             return;
         }
     
@@ -306,6 +309,7 @@ public abstract class Challenger extends Entity{
         if(getPrevFloor() == null){
             System.out.println("--------------------");
             System.out.println("| No previous floor|");
+            AudioPlayer.playOverlay("unavailable.wav");
             return;
         }
 
@@ -354,7 +358,7 @@ public abstract class Challenger extends Entity{
     }
 
     public void gameComplete(){
-            AudioPlayer.play("in_win.wav");
+            AudioPlayer.play("in_menu");
             System.out.println();
             System.out.println();
             System.out.println();
@@ -363,11 +367,13 @@ public abstract class Challenger extends Entity{
             System.out.println();
             System.out.println();
             System.out.println();
+            System.out.println("=======================================================================");
             TextTyper.typeText("Eternaspire Cleared!!", 100, true);
             TextTyper.typeText("| Name : " + getName(), 50, true);
             TextTyper.typeText("| Job  : " + getJob(), 50, true);
             TextTyper.typeText("| LVL  : " + getLvl(), 50, true);
             TextTyper.typeText("| Active Skills : " + activeSkillSet.size() + "  | Passive Skills : " + passiveSkillSet.size(), 80, true);
+            System.out.println("======================================================================");
             System.out.println();
             TextTyper.typeText("- G A M E  O V E R -", 100, true);
             gameManager.gameOver(GameResult.WIN);

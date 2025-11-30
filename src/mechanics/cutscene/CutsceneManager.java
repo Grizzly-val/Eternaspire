@@ -11,6 +11,7 @@ import entity.tower_entity.Echo;
 import entity.tower_entity.Remnant;
 import entity.tower_entity.echoes.MasterBlob;
 import mechanics.battleMechanics.battle.Battle;
+import ui.AudioPlayer;
 import ui.OptionSelect;
 import ui.TextTyper;
 import world.item.consumables.Food;
@@ -20,6 +21,8 @@ import world.item.wpn.Weapon;
 
 public final class CutsceneManager {
     public static void checkCutscene(String cutsceneID, Challenger player, Object obj){
+
+        AudioPlayer.playOverlay("cutscene_cue.wav");
         System.out.println();
         TextTyper.typeText("| Starting cutscene >>", 70, true);
         System.out.println();

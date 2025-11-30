@@ -83,7 +83,6 @@ public class Game implements Serializable {
             System.out.print("| Select character >> ");
             choice = OptionSelect.charInput(choice);
             System.out.println("----------------------------");
-            AudioPlayer.play("");
             switch (choice) {
                 case 'm':
                     TextTyper.typeText("| You've chosen a Mercenary!", 70, true);
@@ -116,6 +115,8 @@ public class Game implements Serializable {
             }
 
         }
+
+        AudioPlayer.playOverlay("select_character.wav");
 
         // Set transient fields
         player.setGameManager(this);
@@ -196,20 +197,24 @@ public class Game implements Serializable {
             case LOSE:
                 account.addLose();
                 System.out.println();
+                TextTyper.typeText("| Better luck next time, " + player.getName() + ".", 70, true);
                 TextTyper.typeText("| Exiting game ...", 70, true);
                 System.out.println();
                 break;
             case WIN:
                 account.addWin();
                 System.out.println();
+                TextTyper.typeText("| Job well done, " + player.getName() + "!", 70, true);
                 TextTyper.typeText("| Exiting game ...", 70, true);
                 System.out.println();
                 break;
             default:
                 System.out.println("| Unknown Game Conclusion!");
         }
-
-        account.accMenu();
+        account.getManager().saveAccounts();
+        TextTyper.typeText("| Bye, " + account.getUsername() + " :c", 40, true);
+        TextTyper.typeText("| Bye, " + player.getName() + " :c", 40, true);
+        System.exit(0);
     }
 
 

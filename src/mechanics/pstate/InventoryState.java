@@ -16,16 +16,14 @@ public class InventoryState implements PlayerState{
     public void enterState(Challenger player, PlayerState prevState) {
         System.out.println();
         System.out.println();
-        System.out.println("-----------------");
-        System.out.println("| | Inventory | |");
-        System.out.println("-----------------");
+
 
         char choice = '\0';
 
         while(choice != 'b'){
-            System.out.println();
-            System.out.println();
-            System.out.println();
+            System.out.println("-----------------");
+            System.out.println("| | Inventory | |");
+            System.out.println("-----------------");
             System.out.println("=================================================================================");
             String statFormat = "|> %-6s :   %-10s |> %-4s :   %-10s |> %-6s :   %s";
 
@@ -78,7 +76,7 @@ public class InventoryState implements PlayerState{
 
                     System.out.println("----------------------------------------");
                     System.out.println();
-                    TextTyper.typeText("| Exitting inventory >>", 40, true);
+                    TextTyper.typeText("| Exiting inventory >>", 40, true);
                     System.out.println();
                     return;
 

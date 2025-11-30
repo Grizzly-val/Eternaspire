@@ -1,19 +1,19 @@
-| Blade finds a scroll made of thin, fire-resistant copper foil resting on a frozen pedestal.
+| Percival finds a scroll made of thin, fire-resistant copper foil resting on a frozen pedestal.
 | It is warm to the touch, melting the frost beneath it.
 
-[BLADE]
+[PERCIVAL]
 "This scroll... it’s etched into metal.
-'To burn is to live. To steal warmth is to survive.'"
+'To burn is to live. To steal warmth is to survive.' "
 
 [NUGGET]
 "Ooh, Thermal Siphon!
 That’s a nasty little trick. It lets you drain the heat right out of an enemy.
 You burn them, and the energy heals you. It’s vampirism, but spicy."
 
-| Blade touches the copper sheet. It dissolves into sparks that sink into his skin.
+| Percival touches the copper sheet. It dissolves into sparks that sink into his skin.
 | He feels a strange hunger in his palms—a desire to touch something hot and drink the energy.
 
-[BLADE]
+[PERCIVAL]
 (Looking at his hand, which now glows faintly red)
 "I can feel the heat in the air.
 Instead of burning me... it feels like fuel."

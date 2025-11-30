@@ -1,11 +1,7 @@
 package ui;
 
 import javax.sound.sampled.*;
-
-import org.w3c.dom.Text;
-
 import java.io.File;
-import java.io.IOException;
 
 public class AudioPlayer {
 
@@ -15,12 +11,16 @@ public class AudioPlayer {
     // Stores last playback frame position per file
     private static long lastFrame = 0;
 
+    /**
+     * Regular play:
+     * - If same audio → resume from saved frame
+     * - If different → play from start
+     */
     public static void play(String filePath) {
 
-        TextTyper.typeText("\n\n......\n\n", 90, true);
         String fullPath = "src/resources/background_audio/" + filePath;
 
-        // If it's the same audio and it's paused → resume
+        // Same audio → resume
         if (currentClip != null && fullPath.equals(currentPath)) {
             currentClip.setFramePosition((int) lastFrame);
             currentClip.start();
@@ -28,7 +28,61 @@ public class AudioPlayer {
             return;
         }
 
-        // New audio → stop previous
+        // New audio → reset resume position
+        lastFrame = 0;
+        startNewClip(fullPath);
+    }
+
+    /**
+     * Always plays from the very beginning,
+     * even if it's the same audio file.
+     */
+    public static void playFromStart(String filePath) {
+
+        String fullPath = "src/resources/background_audio/" + filePath;
+
+        // Reset resume frame
+        lastFrame = 0;
+
+        startNewClip(fullPath);
+    }
+
+
+
+    public static void playOverlay(String filePath) {
+        String fullPath = "src/resources/background_audio/" + filePath;
+
+        try {
+            File file = new File(fullPath);
+            AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
+
+            Clip overlayClip = AudioSystem.getClip();
+            overlayClip.open(audioStream);
+
+            // Optional volume lowering for overlay
+            if (overlayClip.isControlSupported(FloatControl.Type.MASTER_GAIN)) {
+                FloatControl ctrl = (FloatControl) overlayClip.getControl(FloatControl.Type.MASTER_GAIN);
+                ctrl.setValue(-5.0f); // Adjust overlay volume
+            }
+
+            overlayClip.start();
+
+            // Auto-close when finished playing (prevents memory leak)
+            overlayClip.addLineListener(event -> {
+                if (event.getType() == LineEvent.Type.STOP) {
+                    overlayClip.close();
+                }
+            });
+
+        } catch (Exception e) {
+            System.out.println("| Cannot load overlay audio: " + fullPath);
+        }
+    }
+
+    /**
+     * Internal helper — opens and plays new file
+     */
+    private static void startNewClip(String fullPath) {
         stop();
 
         try {
@@ -39,27 +93,28 @@ public class AudioPlayer {
             currentClip.open(audioStream);
             currentPath = fullPath;
 
-            // LOWER VOLUME
+            // Lower volume
             if (currentClip.isControlSupported(FloatControl.Type.MASTER_GAIN)) {
                 FloatControl ctrl = (FloatControl) currentClip.getControl(FloatControl.Type.MASTER_GAIN);
-                ctrl.setValue(-27.0f);
+                ctrl.setValue(-10.0f);
             }
 
-            // If returning to this audio, restore position
-            currentClip.setFramePosition((int) lastFrame);
-
+            currentClip.setFramePosition(0);
             currentClip.start();
             currentClip.loop(Clip.LOOP_CONTINUOUSLY);
 
-        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            System.out.println("| Cannot load audio file: " + fullPath);
         }
     }
 
+    /**
+     * Stop the audio — saves the last frame for resume.
+     */
     public static void stop() {
         if (currentClip != null) {
 
-            // Save the last frame WHERE WE STOPPED
+            // Save current frame for resume
             lastFrame = currentClip.getLongFramePosition();
 
             currentClip.stop();

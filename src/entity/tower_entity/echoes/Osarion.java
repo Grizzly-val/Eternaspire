@@ -15,7 +15,7 @@ public class Osarion extends Echo {
     public Osarion(int lvl) {
         super(BASE_HP, BASE_ATK, 26,
         "Osarion, The Tyrannical Pharaoh",
-        "write description here",
+        "A tyrant who sacrificed his people to achieve immortality, now imprisoned in the tower eternally.",
         "The tyrannical pharaoh falls to his knees, giving his tortured subjects peace at last.",
         "cutscene_Defeat_Osarion");
 

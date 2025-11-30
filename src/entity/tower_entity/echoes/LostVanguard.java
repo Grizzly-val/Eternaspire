@@ -15,7 +15,7 @@ public class LostVanguard extends Echo {
 
         super(BASE_HP, BASE_ATK, 11,
         "Lost Vanguard",
-        "write description here",
+        "The lingering echo of a once-proud guardian, forever bound to its duty even in death.",
         "The Lost Vanguard tips forward, momentum carrying it to the earth.",
         "cutscene_Defeat_LostVanguard");
 

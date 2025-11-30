@@ -11,9 +11,11 @@ public final class OptionSelect {
 
             try{
                 n = SC.nextInt();
+                AudioPlayer.playOverlay("click.wav");
             }catch(InputMismatchException ime){
                 System.out.println("\n!! Error - " + ime + " !!");
                 SC.nextLine();
+                AudioPlayer.playOverlay("error.wav");
                 return -1;
             }
             SC.nextLine();
@@ -27,13 +29,16 @@ public final class OptionSelect {
             try{
                 System.out.print("| Choose: ");
                 index = SC.nextInt();
+                AudioPlayer.playOverlay("click.wav");
             }catch(InputMismatchException ime){
                 System.out.println("\n!! Error - " + ime + " !!");
+                AudioPlayer.playOverlay("error.wav");
                 index = -1;
                 SC.nextLine();
             }
             if(index <= 0 || index > size){
                 System.out.println("!! Invalid index !!");
+                AudioPlayer.playOverlay("error.wav");
                 System.out.println();
             }
         }
@@ -45,8 +50,10 @@ public final class OptionSelect {
         try{
             System.out.print("| Choose: ");
             c = SC.nextLine().charAt(0);
+            AudioPlayer.playOverlay("click.wav");
         }catch(Exception e){
             System.out.println("\n!! Error - " + e + " !!");
+            AudioPlayer.playOverlay("error.wav");
             return '\0';
         }
         return c;
@@ -59,14 +66,17 @@ public final class OptionSelect {
             try{
                 System.out.print("| (y/n): ");
                 choice = SC.nextLine().trim().toLowerCase().charAt(0);
+                AudioPlayer.playOverlay("click.wav");
             }catch(Exception e){
                 System.out.println("\n!! Error - " + e + " !!");
+                AudioPlayer.playOverlay("error.wav");
                 continue;
             }
 
             if(choice == 'y') return true;
             else if(choice == 'n') return false;
             else{
+                AudioPlayer.playOverlay("error.wav");
                 System.out.println("\n!! Invalid choice. Please enter y or n !!");
             }
         }
@@ -75,8 +85,10 @@ public final class OptionSelect {
     public static String stringInput(String s){
         try{
             s = SC.nextLine();
+            AudioPlayer.playOverlay("enter.wav");
         }catch(Exception e){
             System.out.println("\n!! Error - " + e + " !!");
+            AudioPlayer.playOverlay("error.wav");
             return "";
         }
         return s;
@@ -85,6 +97,7 @@ public final class OptionSelect {
     public static void waiter(){
         System.out.print("| Press Enter to Continue >> ");
         SC.nextLine();
+        AudioPlayer.playOverlay("click.wav");
         System.out.println();
         System.out.println();
     }

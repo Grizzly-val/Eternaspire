@@ -5,6 +5,7 @@ import entity.tower_entity.Echo;
 import entity.tower_entity.Remnant;
 import mechanics.battleMechanics.battle.Battle;
 import mechanics.inventory.AreaInventory;
+import ui.AudioPlayer;
 import ui.Format;
 import ui.OptionSelect;
 import ui.TextTyper;
@@ -259,11 +260,13 @@ public class IdleAreaState implements PlayerState {
                             
                             if(selectedItem.getSize() + player.getInventory().getOccupiedSpace() > player.getInventory().getCapacity()){
                                 System.out.println();
+                                AudioPlayer.playOverlay("unavailable.wav");
                                 System.out.println("! ! Not enough space in Inventory ! !");
                                 System.out.println("| Item Size : " + selectedItem.getSize() + "    Inventory : " + player.getInventory().getOccupiedSpace() + "/" + player.getInventory().getCapacity() + "(" + (player.getInventory().getCapacity() - player.getInventory().getOccupiedSpace()) + "left)");
                                 System.out.println();
                             } else{
                                 player.storeItem(selectedItem);
+                                AudioPlayer.playOverlay("collect.wav");
                                 System.out.println("| Item collected");
                                 System.out.println();
                                 areaInv.remove(selectedItem);

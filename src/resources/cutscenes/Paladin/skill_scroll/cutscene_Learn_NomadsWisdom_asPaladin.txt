@@ -1,29 +1,29 @@
-| The massive, spectral form of the Unmoving Nomad falls to one knee. | 
+| The massive, spectral form of the Unmoving Nomad falls to one knee. |
 
 The Echo—a spirit clad in tattered traveling leathers and carrying a heavy, rusted walking stick—looks up at the tower's ceiling one last time.
 
 [NUGGET] "And down he goes! Another legend returned to the dust."
 
-| The Nomad’s form dissolves into blue mist, leaving behind a worn, leather-bound journal that glows faintly on the cold stone. | 
+| The Nomad’s form dissolves into blue mist, leaving behind a worn, leather-bound journal that glows faintly on the cold stone. |
 
-Blade approaches it cautiously, his weapon still drawn.
+Percival approaches it cautiously, his weapon still drawn.
 
-[BLADE]"He didn't fight like a soldier. He fought like he was... searching for something. Even while swinging that staff, he kept looking past me."
+[PERCIVAL]"He didn't fight like a soldier. He fought like he was... searching for something. Even while swinging that staff, he kept looking past me."
 
-[NUGGET] "That’s because he wasn't a warrior, Blade. He was a traveler. The Unmoving Nomad. In life, he wanted to see every corner of the world. He came to the Tower not for power, but because it was the ultimate mystery."
+[NUGGET] "That’s because he wasn't a warrior, Percival. He was a traveler. The Unmoving Nomad. In life, he wanted to see every corner of the world. He came to the Tower not for power, but because it was the ultimate mystery."
 
-[BLADE] (Sheathing his sword and picking up the journal) "Curiosity."
+[PERCIVAL] (Sheathing his sword and picking up the journal) "Curiosity."
 
 [NUGGET] "Fatal curiosity. He spent so long admiring the architecture and mapping the floors that he forgot to survive. The Tower loves a tourist. They make the easiest snacks."
 
-| Blade opens the journal. The pages are filled with frantic scribbles—maps of shifting corridors, sketches of safe zones, and notes on how to find water in stone. | 
+| Percival opens the journal. The pages are filled with frantic scribbles—maps of shifting corridors, sketches of safe zones, and notes on how to find water in stone. |
 
-The text glows and absorbs into Blade's hand.
+The text glows and absorbs into Percival's hand.
 
-[BLADE] "Nomad's Wisdom... I can feel it. Instincts. Navigation. Survival. He mapped the dangers so others wouldn't have to."
+[PERCIVAL] "Nomad's Wisdom... I can feel it. Instincts. Navigation. Survival. He mapped the dangers so others wouldn't have to."
 
 [NUGGET] "Ironically, he only became useful after he died. With that skill, you'll spot traps and safe paths before they kill you. Try not to get distracted by the view like he did, okay?"
 
-[BLADE] "Don't worry. I'm not here for the scenery. I'm here for the prize."
+[PERCIVAL] "Don't worry. I'm not here for the scenery. I'm here for the prize."
 
-| Blade stows the empty journal binding. He looks toward the stairs, his eyes now scanning the path with a sharper, more analytical gaze. |
+| Percival stows the empty journal binding. He looks toward the stairs, his eyes now scanning the path with a sharper, more analytical gaze.
