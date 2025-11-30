@@ -200,114 +200,95 @@ public class IdleAreaState implements PlayerState {
         }
 
 
-        char continueChoice = '\0';
 
-        while(continueChoice != 'n'){
+        int choice = -1;
+        AreaInventory areaInv = null;
+        System.out.println("| Choose where to search");
+        System.out.println("--------------------------------------------");
+        for(int i = 0; i < player.getCurrentArea().getAreaInventories().size(); i++){
+            System.out.println(i + 1 + " - " + player.getCurrentArea().getAreaInventories().get(i).getName());
+        }
 
-            int choice = -1;
-            AreaInventory areaInv = null;
-            System.out.println("| Choose where to search");
-            System.out.println("--------------------------------------------");
-            for(int i = 0; i < player.getCurrentArea().getAreaInventories().size(); i++){
-                System.out.println(i + 1 + " - " + player.getCurrentArea().getAreaInventories().get(i).getName());
-            }
-
-            System.out.println("--------------------------------------------");
-            choice = OptionSelect.getArrIndex(player.getCurrentArea().getAreaInventories().size());
-            System.out.println();
-            areaInv = player.getCurrentArea().getAreaInventories().get(choice - 1);
-            
-            System.out.println();
-
-
-            
-            System.out.println("| You approached a " + areaInv.getName());
-            if(areaInv.getItems().isEmpty()){
-                System.out.println("| " + areaInv.getName() + " is empty");
-                System.out.println("--------------------------------------------");
-            }
-            
-            else{
-                System.out.println("--------------------------------------------");
-                char choiceWithItem = '\0';
-                Item selectedItem = areaInv.selectItem();
-                System.out.println("--------------------------------------------");
-                System.out.println();
-                System.out.println("| You've selected " + selectedItem.getName());
-                System.out.println("|? " + selectedItem.getDescription());
-                System.out.println("--------------------------------------------");
-
-                while(choiceWithItem != 't' && choiceWithItem != 'p'){
-                    System.out.println();
-                    System.out.println("| Do you need the item?");
-                    System.out.println("--------------------------------------------");
-                    System.out.println("[t] take item");
-                    System.out.println("[p] put it back");
-                    System.out.println("--------------------------------------------");
-                    choiceWithItem = OptionSelect.charInput(choiceWithItem);
-                    System.out.println("--------------------------------------------");
-                    switch(choiceWithItem){
-                        case 't':
-                            if(selectedItem instanceof Weapon wpn){
-                                if(!player.getWeapons_Tried().contains(wpn.getName())){
-                                    System.out.println();
-                                    player.getWeapons_Tried().add(wpn.getName());
-                                    wpn.triggerCutscene(wpn.getCutsceneID(), player);
-                                }
-                            }
-                            System.out.println();
-                            
-                            
-                            if(selectedItem.getSize() + player.getInventory().getOccupiedSpace() > player.getInventory().getCapacity()){
-                                System.out.println();
-                                AudioPlayer.playOverlay("unavailable.wav");
-                                System.out.println("! ! Not enough space in Inventory ! !");
-                                System.out.println("| Item Size : " + selectedItem.getSize() + "    Inventory : " + player.getInventory().getOccupiedSpace() + "/" + player.getInventory().getCapacity() + "(" + (player.getInventory().getCapacity() - player.getInventory().getOccupiedSpace()) + "left)");
-                                System.out.println();
-                            } else{
-                                player.storeItem(selectedItem);
-                                AudioPlayer.playOverlay("collect.wav");
-                                System.out.println("| Item collected");
-                                System.out.println();
-                                areaInv.remove(selectedItem);
-                            } 
-                            System.out.println("--------------------------------------------");
-                            break;
-                        case 'p':
-                            System.out.println();
-                            System.out.println("| Can't take them all...");
-                            System.out.println("--------------------------------------------");
-                            break;
-                        default:
-                            break;
-                    }
-                    OptionSelect.waiter();
-                    System.out.println();
-                    System.out.println();
-                }
-
-            }
-
-                System.out.println();
-                System.out.print("| Would you like to continue looting? (y/n)");
-                System.out.println();
-                continueChoice = OptionSelect.charInput(continueChoice);
-                System.out.println("--------------------------------------------");
-                System.out.println();
-                switch(continueChoice){
-                    case 'y':
-                        System.out.println("| Collecting is fun, but don't forget what you came here for.");
-                        break;
-                    case 'n':
-                        System.out.println("| Going back >>");
-                        return;
-                    default:
-                        System.out.println("!! Invalid input !!");
-                        break;
-                }
-            System.out.println();
+        System.out.println("--------------------------------------------");
+        choice = OptionSelect.getArrIndex(player.getCurrentArea().getAreaInventories().size());
+        System.out.println();
+        areaInv = player.getCurrentArea().getAreaInventories().get(choice - 1);
         
+        System.out.println();
+
+
+        
+        System.out.println("| You approached a " + areaInv.getName());
+        if(areaInv.getItems().isEmpty()){
+            System.out.println("| " + areaInv.getName() + " is empty");
+            System.out.println("--------------------------------------------");
+            OptionSelect.waiter();
+            return;
+        }
+        
+        else{
+            System.out.println("--------------------------------------------");
+            char choiceWithItem = '\0';
+            Item selectedItem = areaInv.selectItem();
+            System.out.println("--------------------------------------------");
+            System.out.println();
+            System.out.println("| You've selected " + selectedItem.getName());
+            System.out.println("|? " + selectedItem.getDescription());
+            System.out.println("--------------------------------------------");
+
+            while(choiceWithItem != 't' && choiceWithItem != 'p'){
+                System.out.println();
+                System.out.println("| Do you need the item?");
+                System.out.println("--------------------------------------------");
+                System.out.println("[t] take item");
+                System.out.println("[p] put it back");
+                System.out.println("--------------------------------------------");
+                choiceWithItem = OptionSelect.charInput(choiceWithItem);
+                System.out.println("--------------------------------------------");
+                switch(choiceWithItem){
+                    case 't':
+                        if(selectedItem instanceof Weapon wpn){
+                            if(!player.getWeapons_Tried().contains(wpn.getName())){
+                                System.out.println();
+                                player.getWeapons_Tried().add(wpn.getName());
+                                wpn.triggerCutscene(wpn.getCutsceneID(), player);
+                            }
+                        }
+                        System.out.println();
+                        
+                        
+                        if(selectedItem.getSize() + player.getInventory().getOccupiedSpace() > player.getInventory().getCapacity()){
+                            System.out.println();
+                            AudioPlayer.playOverlay("unavailable.wav");
+                            System.out.println("! ! Not enough space in Inventory ! !");
+                            System.out.println("| Item Size : " + selectedItem.getSize() + "    Inventory : " + player.getInventory().getOccupiedSpace() + "/" + player.getInventory().getCapacity() + "(" + (player.getInventory().getCapacity() - player.getInventory().getOccupiedSpace()) + "left)");
+                            System.out.println();
+                        } else{
+                            player.storeItem(selectedItem);
+                            AudioPlayer.playOverlay("collect.wav");
+                            System.out.println("| Item collected");
+                            System.out.println();
+                            areaInv.remove(selectedItem);
+                        } 
+                        System.out.println("--------------------------------------------");
+                        break;
+                    case 'p':
+                        System.out.println();
+                        System.out.println("| Can't take them all...");
+                        System.out.println("--------------------------------------------");
+                        break;
+                    default:
+                        break;
+                }
+                OptionSelect.waiter();
+                System.out.println();
+                System.out.println();
             }
+
+        }
+        System.out.println();
+    
+
 
         
         

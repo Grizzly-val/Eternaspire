@@ -13,7 +13,7 @@ public final class OptionSelect {
                 n = SC.nextInt();
                 AudioPlayer.playOverlay("click.wav");
             }catch(InputMismatchException ime){
-                System.out.println("\n!! Error - " + ime + " !!");
+                System.out.println("\n!! Oops! Invalid Input !!\n");
                 SC.nextLine();
                 AudioPlayer.playOverlay("error.wav");
                 return -1;
@@ -31,13 +31,13 @@ public final class OptionSelect {
                 index = SC.nextInt();
                 AudioPlayer.playOverlay("click.wav");
             }catch(InputMismatchException ime){
-                System.out.println("\n!! Error - " + ime + " !!");
+                System.out.println("\n!! Oops! Invalid Input !!\n");
                 AudioPlayer.playOverlay("error.wav");
                 index = -1;
                 SC.nextLine();
             }
             if(index <= 0 || index > size){
-                System.out.println("!! Invalid index !!");
+                System.out.println("\n!! Oops! Invalid index !!\n");
                 AudioPlayer.playOverlay("error.wav");
                 System.out.println();
             }
@@ -52,7 +52,7 @@ public final class OptionSelect {
             c = SC.nextLine().charAt(0);
             AudioPlayer.playOverlay("click.wav");
         }catch(Exception e){
-            System.out.println("\n!! Error - " + e + " !!");
+            System.out.println("\n!! Oops! Invalid Input !!\n");
             AudioPlayer.playOverlay("error.wav");
             return '\0';
         }
@@ -68,7 +68,7 @@ public final class OptionSelect {
                 choice = SC.nextLine().trim().toLowerCase().charAt(0);
                 AudioPlayer.playOverlay("click.wav");
             }catch(Exception e){
-                System.out.println("\n!! Error - " + e + " !!");
+                System.out.println("\n!! Oops! Invalid Input !!\n");
                 AudioPlayer.playOverlay("error.wav");
                 continue;
             }
@@ -87,7 +87,7 @@ public final class OptionSelect {
             s = SC.nextLine();
             AudioPlayer.playOverlay("enter.wav");
         }catch(Exception e){
-            System.out.println("\n!! Error - " + e + " !!");
+            System.out.println("\n!! Oops! Invalid Input !!\n");
             AudioPlayer.playOverlay("error.wav");
             return "";
         }

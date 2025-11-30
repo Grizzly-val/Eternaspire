@@ -81,7 +81,7 @@ public class AreaNavigationState implements PlayerState {
         while(areaEntered == null){
             System.out.println("------------------------------------");
             System.out.println("| Floor Areas |");
-            System.out.println("-----------------");
+            System.out.println("---------------");
             for(Entry<Integer, Area> parentAreaEntry : player.getCurrentFloor().getAreas().entrySet()){
                 System.out.println(parentAreaEntry.getKey() + " - " + parentAreaEntry.getValue().getName());
             }

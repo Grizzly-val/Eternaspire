@@ -126,6 +126,8 @@ public class Game implements Serializable {
         AreaInventoryData.init(floorData);
         AreaEntityData.init(floorData);
         
+
+        AudioPlayer.play("opening.wav");
         // Run opening cutscenes
         CutsceneManager.checkCutscene("openingScene_00ChallengerBackstory", player, this);
         CutsceneManager.checkCutscene("openingScene_01NuggetEncounter", player, this);
