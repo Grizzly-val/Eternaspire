@@ -3,16 +3,16 @@
 
 [NUGGET]
 "Go on. It won't bite.
-That token is your hall pass. It tells the Tower you didn't just survive—you conquered."
+That token is your hall pass. It tells the Tower you didn't just survive-you conquered."
 
 [BLADE]
 "It feels heavy.
 Like I'm carrying the weight of the one who dropped it."
 
 [NUGGET]
-"That’s the point.
+"That's the point.
 You overcame the first hurdle, Blade. The Tower respects that.
-It’s not just a key; it’s a receipt for the fight."
+It's not just a key; it's a receipt for the fight."
 
 | Blade places the token into the circular recess on the gate. The metal absorbs it instantly.
 | The gate groans, the heavy bars retracting with a sound like a deep breath being released.

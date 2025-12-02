@@ -8,7 +8,7 @@ It hums with the power of a dying star.
 With this... I can cut through anything. Even the final gate."
 
 [NUGGET]
-"It’s a weapon made to sever fate itself.
+"It's a weapon made to sever fate itself.
 Powerful stuff."
 
 | Percival looks at the blade, seeing his reflection in the cosmic steel. He smiles, a genuine, hopeful look that seems out of place in the void.
@@ -24,7 +24,7 @@ I miss her so much. I'm going to buy that house by the lake she always wanted. W
 [PERCIVAL]
 "How do you think I should explain her own revival to her? I'll have to worry about that then, hmmmm"
 
-| Nugget looks at him—so full of hope, so willing to sacrifice his own future comfort just to save her.
+| Nugget looks at him-so full of hope, so willing to sacrifice his own future comfort just to save her.
 | And she knows exactly what's going to happen to him.
 
 [NUGGET]

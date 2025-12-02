@@ -1,5 +1,5 @@
 | The desert heat of Floor 3 is brutal. Percival uncorks a battered canteen found in the sand.
-| He pours the water into his mouth. It’s lukewarm, but in the scorching sun, it feels like a blessing.
+| He pours the water into his mouth. It's lukewarm, but in the scorching sun, it feels like a blessing.
 
 [PERCIVAL]
 (Wiping his mouth)

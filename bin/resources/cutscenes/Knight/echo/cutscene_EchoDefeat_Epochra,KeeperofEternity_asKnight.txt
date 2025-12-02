@@ -1,59 +1,59 @@
 | Epochra falls. Her six golden wings shatter into shards of light that rain down on the meadow.
-| She hits the grass, shrinking back down, her divine form collapsing—returning to something small and familiar, almost like Nugget, but fading quickly.
+| She hits the grass, shrinking back down, her divine form collapsing-returning to something small and familiar, almost like Nugget, but fading quickly.
 
 [EPOCHRA]
 (Glitching between divine and squeaky)
-“The cycle repeats… my freedom…”
+"The cycle repeats... my freedom..."
 
 [BLADE]
-“You hesitated. Back there, when you struck. You pulled the punch.”
+"You hesitated. Back there, when you struck. You pulled the punch."
 
 [EPOCHRA]
 (Weak laugh)
-“I didn’t have much time to prepare myself.
+"I didn't have much time to prepare myself.
 Blade, you are an easy target for me.
-I hope you’re not belittling the strength of the Almighty Language Fluent Epochra of the 10th Floor, The Highest Floor of Eternaspire.”
+I hope you're not belittling the strength of the Almighty Language Fluent Epochra of the 10th Floor, The Highest Floor of Eternaspire."
 
 [PERCIVAL]
-“If you were that strong, you wouldn’t be fading.”
+"If you were that strong, you wouldn't be fading."
 
 [EPOCHRA]
-“Cocky Percival… well, not that it matters.
-No matter what you do, the Tower will grind you down anyway. Maybe you’ll become my co-Echo here on the 10th Floor.
+"Cocky Percival... well, not that it matters.
+No matter what you do, the Tower will grind you down anyway. Maybe you'll become my co-Echo here on the 10th Floor.
 Or maybe the Tower will create an 11th Floor just for your corpse.
-Either way, I’m confident you’re destined to be an Echo.
+Either way, I'm confident you're destined to be an Echo.
 Maybe even a communicative one, like me.
-We could be neighbors.”
+We could be neighbors."
 
 [PERCIVAL]
-“I’m not becoming a ghost.
-How do I get to the Master’s Floor?
-If they promised you freedom, then I’ll force my own wish out of them—
-the recognition I came here for.”
+"I'm not becoming a ghost.
+How do I get to the Master's Floor?
+If they promised you freedom, then I'll force my own wish out of them-
+the recognition I came here for."
 
 [EPOCHRA]
 (Her fading glow flickers; she looks at him with genuine pity)
-“Force it out of them?
-That’s impossible.
+"Force it out of them?
+That's impossible.
 Do you want to become a Corrupt?
-Because that’s what happens to ambition here.”
+Because that's what happens to ambition here."
 
-| She reaches into her core and pulls out a large, normal-looking key—
+| She reaches into her core and pulls out a large, normal-looking key-
 | The Eternaspire Key.
 
 [EPOCHRA]
-“But… if you want to try and fail… take it.
+"But... if you want to try and fail... take it.
 It opens the control room. Floor 11.
-Just don’t say I didn’t warn you.
-I’ll probably forget you when I’m rebuilt, but listen—
-it’s been fun.
+Just don't say I didn't warn you.
+I'll probably forget you when I'm rebuilt, but listen-
+it's been fun.
 Lose beautifully, Percival.
-Maybe become an Echo and break the tower from the inside as ‘The Banished Knight, Echo of the 11th Floor.’”
+Maybe become an Echo and break the tower from the inside as 'The Banished Knight, Echo of the 11th Floor.'"
 
 | She closes her eyes.
 | With a soft chime, she dissolves into mist.
 
 [PERCIVAL]
 (Picking up the key, cold and determined)
-“Goodbye, Nugget.
-I’ll make sure to mention your complaint to management.”
+"Goodbye, Nugget.
+I'll make sure to mention your complaint to management."

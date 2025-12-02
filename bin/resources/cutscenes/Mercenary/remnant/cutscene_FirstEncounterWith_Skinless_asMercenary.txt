@@ -1,5 +1,5 @@
 | Blade stops. The biting cold of the floor suddenly vanishes, replaced by a wave of sickening, humid heat.
-| Emerging from the mist is a gaunt, shivering figure. It has no skin—only raw, exposed muscle and weeping veins.
+| Emerging from the mist is a gaunt, shivering figure. It has no skin-only raw, exposed muscle and weeping veins.
 | Steam rises violently from its body as the intense internal heat battles the freezing air.
 
 [BLADE]
@@ -8,15 +8,15 @@
 It looks... in agony."
 
 [NUGGET]
-"That’s a Skinless.
+"That's a Skinless.
 They are cursed with burning fever in a world of ice.
 They aren't shivering from cold, Blade. They're shivering because they are boiling alive from the inside."
 
-| The creature screams—a wet, gurgling sound—and lunges, desperate to transfer its heat.
+| The creature screams-a wet, gurgling sound-and lunges, desperate to transfer its heat.
 
 [NUGGET]
 "Don't let it touch you! It wants to steal your skin to cool down!"
 
 [BLADE]
-"Steal my—
-Okay. That’s enough. Put it out of its misery."
+"Steal my-
+Okay. That's enough. Put it out of its misery."

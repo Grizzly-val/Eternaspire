@@ -7,7 +7,7 @@ This is just salted leather."
 
 [NUGGET]
 "Hey, protein is protein!
-It’s classic adventurer fuel. Keeps forever, tastes like salt, fills the void.
+It's classic adventurer fuel. Keeps forever, tastes like salt, fills the void.
 Stop complaining and swallow."
 
 [BLADE]

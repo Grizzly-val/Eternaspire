@@ -6,18 +6,18 @@
 It feels heavy. Like there are too many voices trying to speak at once."
 
 [NUGGET]
-"That’s because there are!
-It’s a Skill Scroll, but this one is special. Think of it as a... 'Starter Pack' from the Tower."
+"That's because there are!
+It's a Skill Scroll, but this one is special. Think of it as a... 'Starter Pack' from the Tower."
 
 [PERCIVAL]
 "The Tower gives gifts? I thought it only took things."
 
 [NUGGET]
 "Oh, the Tower didn't write this. The climbers did.
-It’s the crystallized stubbornness of every poor soul who stood exactly where you are and screamed 'I am not done yet!'
+It's the crystallized stubbornness of every poor soul who stood exactly where you are and screamed 'I am not done yet!'
 It's the collective will of the Challengers. Go on, accept it."
 
-| Percival frowns, but he can feel the pulse of the scroll—a desperate, clawing need to survive.
+| Percival frowns, but he can feel the pulse of the scroll-a desperate, clawing need to survive.
 | He crushes the parchment in his hand. Instead of crumbling, it bursts into particles of golden light that rush into his chest.
 | Percival gasps. His fatigue vanishes instantly. The bruises on his hands fade, and his breathing steadies.
 
@@ -27,9 +27,9 @@ It's the collective will of the Challengers. Go on, accept it."
 The exhaustion is just... gone. I feel completely restored."
 
 [NUGGET]
-"That’s Challenger's Will.
-It’s an active rejection of death. When you're beaten down, you use that focus to force your body back to its peak.
-It’s a second wind, Percival. A full reset on your vitality."
+"That's Challenger's Will.
+It's an active rejection of death. When you're beaten down, you use that focus to force your body back to its peak.
+It's a second wind, Percival. A full reset on your vitality."
 
 | Percival clenches his fist, feeling the new power sitting dormant within him, ready to be called upon.
 

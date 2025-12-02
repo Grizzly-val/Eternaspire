@@ -1,12 +1,12 @@
 | Before there were stories, there was a fracture.
 | Some say the world split by accident. Others whisper it was carved open on purpose.
-| No one agrees—only that something tore the sky from its reflection.
+| No one agrees-only that something tore the sky from its reflection.
 
 | From that wound rose a structure no one remembers building.
 | A tower older than memory, taller than truth.
-| It reaches upward… or downward… depending on who is telling the tale.
+| It reaches upward... or downward... depending on who is telling the tale.
 
-| Travelers speak of its pull. Not a voice, not a prophecy—just a quiet pressure at the edge of thought.
+| Travelers speak of its pull. Not a voice, not a prophecy-just a quiet pressure at the edge of thought.
 | And today, as the horizon thins and the air hums with an old tension, one more soul feels that pull.
 
 | ...
@@ -34,7 +34,7 @@ Like what I always tell you:
 Just keep doing a good job with the requests thrown at us and you'll eventually be able to afford her treatment.
 That is if you don't die, hahaha!"
 
-| The laughter fades as the wagon rumbles on. Blade stares out the back, clutching a small pouch of coins—his share of the reward.
+| The laughter fades as the wagon rumbles on. Blade stares out the back, clutching a small pouch of coins-his share of the reward.
 
 
 | Challenger : Blade
@@ -56,9 +56,9 @@ That is if you don't die, hahaha!"
 
 [BLADE]
 (Whispering to himself)
-"One more contract… and maybe, just maybe, I'll be able to afford the next dose."
+"One more contract... and maybe, just maybe, I'll be able to afford the next dose."
 
-| A soft cough echoes from the room. Blade’s eyes widen, and he rushes through the door.
+| A soft cough echoes from the room. Blade's eyes widen, and he rushes through the door.
 
 [BLADE]
 "Mom!"
@@ -105,7 +105,7 @@ Cut ties with those dangerous people!
 Don't throw your life away for me... just let me die peacefully with no regrets!"
 
 [BLADE]
-"How could I possibly do that?! I can't just—"
+"How could I possibly do that?! I can't just-"
 
 | SLAM!
 | "OWIEE!"

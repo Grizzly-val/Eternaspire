@@ -1,6 +1,7 @@
 package entity.player;
 
 
+import java.lang.StackWalker.Option;
 import java.util.ArrayList;
 import java.util.HashSet;
 
@@ -335,38 +336,40 @@ public abstract class Challenger extends Entity{
     @Override
     public void defeated(Challenger player, Battle battle){
         if(!player.isAlive()){
+            AudioPlayer.playOverlay("battle_lose.wav");
+            AudioPlayer.play("in_menu.wav");
             System.out.println();
             System.out.println();
             System.out.println();
             System.out.println();
-            gameManager.deleteData();
             System.out.println();
             System.out.println();
             System.out.println();
-            TextTyper.typeText("You have fallen.", 100, true);
+            TextTyper.typeText("| You have fallen.", 100, true);
             TextTyper.typeText("| Name : " + player.getName(), 50, true);
             TextTyper.typeText("| Job  : " + player.getJob(), 50, true);
             TextTyper.typeText("| LVL  : " + player.getLvl(), 50, true);
             System.out.println();
             TextTyper.typeText("| Active Skills : " + player.activeSkillSet.size() + "  | Passive Skills : " + player.passiveSkillSet.size(), 80, true);
             System.out.println();
-            TextTyper.typeText("- G A M E  O V E R -", 100, true);
-
+            TextTyper.typeText("-----------------------\n|- G A M E  O V E R -|\n-----------------------", 80, true);
+            OptionSelect.waiter();
+            gameManager.deleteData();
             gameManager.gameOver(GameResult.LOSE);
 
         }
     }
 
     public void gameComplete(){
-            AudioPlayer.play("in_menu.wav");
+            AudioPlayer.play("game_win.wav");
             System.out.println();
             System.out.println();
             System.out.println();
             System.out.println();
-            gameManager.deleteData();
             System.out.println();
             System.out.println();
             System.out.println();
+            TextTyper.typeText("...", 80, true);
             System.out.println("=======================================================================");
             TextTyper.typeText("Eternaspire Cleared!!", 100, true);
             TextTyper.typeText("| Name : " + getName(), 50, true);
@@ -375,7 +378,9 @@ public abstract class Challenger extends Entity{
             TextTyper.typeText("| Active Skills : " + activeSkillSet.size() + "  | Passive Skills : " + passiveSkillSet.size(), 80, true);
             System.out.println("======================================================================");
             System.out.println();
-            TextTyper.typeText("- G A M E  O V E R -", 100, true);
+            TextTyper.typeText("-----------------------\n|- G A M E  O V E R -|\n-----------------------", 80, true);
+            OptionSelect.waiter();
+            gameManager.deleteData();
             gameManager.gameOver(GameResult.WIN);
             
     }

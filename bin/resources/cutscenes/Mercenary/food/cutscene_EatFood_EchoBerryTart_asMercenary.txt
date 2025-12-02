@@ -6,7 +6,7 @@
 It makes my head spin a little."
 
 [NUGGET]
-"That’s an Echo Berry. They grow in the cracks where the reality is thin.
+"That's an Echo Berry. They grow in the cracks where the reality is thin.
 It replenishes your focus. Good for the mind, bad for the sweet tooth."
 
 [BLADE]

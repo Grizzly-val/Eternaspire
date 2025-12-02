@@ -17,7 +17,7 @@ Or she was."
 "I... I don't know. The name just... fell out of me.
 She feels familiar. Like a song I forgot the words to."
 
-| Blade shifts his stance, raising his weapon into a high, aggressive guard—the opening stance of Rending Cut.
+| Blade shifts his stance, raising his weapon into a high, aggressive guard-the opening stance of Rending Cut.
 | It is the same stance the Lost Vanguard used.
 
 | Aeliana raises her head. Her eyes are empty holes. She doesn't see Blade; she looks through him, searching for someone who isn't there.
@@ -35,9 +35,9 @@ Is... he... safe?"
 
 [NUGGET]
 (Trembling)
-"She’s empty, Blade. There's no fire in her. Just... loss.
+"She's empty, Blade. There's no fire in her. Just... loss.
 The Tower kept her because her grief was so heavy it broke the floor.
-She’s not fighting you. She’s fighting the fact that she’s alone."
+She's not fighting you. She's fighting the fact that she's alone."
 
 [BLADE]
 "Then let's show her she doesn't have to wait anymore."

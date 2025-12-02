@@ -9,7 +9,7 @@
 "I am... eternal."
 
 [BLADE]
-"He’s huge. But he's talking to ghosts.
+"He's huge. But he's talking to ghosts.
 He doesn't even know we're here."
 
 [NUGGET]
@@ -24,9 +24,9 @@ He wished to rule forever. So the Tower gave him an empty room and a crown that 
 "Kneel! Tribute! My... legacy!"
 
 [BLADE]
-"He’s trapped in his own ego."
+"He's trapped in his own ego."
 
 [NUGGET]
-"He’s a parasite. He fed on his people to build this place, and now he's just a hollow shell guarding a pile of rocks.
-He’s not tragic, Blade. He’s pathetic.
-Go knock him off that high chair. He’s been sitting there long enough."
+"He's a parasite. He fed on his people to build this place, and now he's just a hollow shell guarding a pile of rocks.
+He's not tragic, Blade. He's pathetic.
+Go knock him off that high chair. He's been sitting there long enough."

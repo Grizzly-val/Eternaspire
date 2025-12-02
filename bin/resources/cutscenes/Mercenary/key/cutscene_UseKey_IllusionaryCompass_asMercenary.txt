@@ -3,14 +3,14 @@
 
 [BLADE]
 "We've walked past this same jackal statue three times.
-It’s a loop. The whole floor is shifting."
+It's a loop. The whole floor is shifting."
 
 [NUGGET]
-"It’s not shifting, it’s lying!
-This is the Labyrinth, Blade. It’s designed to keep grave robbers walking in circles until they starve.
+"It's not shifting, it's lying!
+This is the Labyrinth, Blade. It's designed to keep grave robbers walking in circles until they starve.
 Good thing we came prepared. Remember that compass we found in the oasis?"
 
-| Blade pulls out the Illusionary Compass. The needle doesn't point north. It spins wildly before snapping to a fixed direction—straight through a solid stone wall.
+| Blade pulls out the Illusionary Compass. The needle doesn't point north. It spins wildly before snapping to a fixed direction-straight through a solid stone wall.
 
 [BLADE]
 "It's pointing at the wall."
@@ -20,7 +20,7 @@ Good thing we came prepared. Remember that compass we found in the oasis?"
 The Compass points to 'Truth.' If it says go through the wall, you go through the wall.
 Trust the tool, not your eyes."
 
-| Blade hesitates, then steps forward, bracing his shoulder. He expects impact, but passes through the stone like it’s mist.
+| Blade hesitates, then steps forward, bracing his shoulder. He expects impact, but passes through the stone like it's mist.
 | The illusion dissolves, revealing a hidden passage leading deeper into the structure.
 
 [BLADE]

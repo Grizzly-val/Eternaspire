@@ -7,7 +7,7 @@ import mechanics.battleMechanics.skill.active_skills.EclipseSmite;
 public class FallenPaladin extends Echo {
 
     private final static int BASE_HP = 68; 
-    private final static int BASE_ATK = 15;
+    private final static int BASE_ATK = 13;
 
     public FallenPaladin(int lvl) {
         super(BASE_HP, 

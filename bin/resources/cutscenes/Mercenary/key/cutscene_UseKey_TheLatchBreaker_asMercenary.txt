@@ -1,15 +1,15 @@
 | Blade stands at the edge of a narrow stone walkway suspended over an infinite black void.
 | Blocking his path is a massive gate, but it has no hinges and no bars. Instead, it is held shut by a crackling barrier of solidified magical tension.
-| He pulls out The Latch Breaker. It’s a heavy, iron rod with a squared-off head—ugly, blunt, and completely unrefined.
+| He pulls out The Latch Breaker. It's a heavy, iron rod with a squared-off head-ugly, blunt, and completely unrefined.
 
 [BLADE]
 "Another gate, another problem.
-But this 'key' doesn't have teeth. It’s just a lump of iron.
-There’s no keyhole here, Nugget. Just this... humming wall."
+But this 'key' doesn't have teeth. It's just a lump of iron.
+There's no keyhole here, Nugget. Just this... humming wall."
 
 [NUGGET]
-"That’s because it’s not a lock, silly. It’s a binding.
-The Suspension Gate isn't locked; it’s stuck. Frozen in tension.
+"That's because it's not a lock, silly. It's a binding.
+The Suspension Gate isn't locked; it's stuck. Frozen in tension.
 You don't finesse a problem like this. You shock it."
 
 [BLADE]

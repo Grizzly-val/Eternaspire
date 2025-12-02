@@ -4,10 +4,10 @@ The image etched on the tablet depicts a flower absorbing light.
 
 [PERCIVAL] "Photosynthesis? It's a way to draw energy from the phantom sun on this floor. Passive healing. It's slow, but it's constant."
 
-[NUGGET] "A little trick from the local plant life. The desert doesn't just want to dehydrate you—it wants you to burn resources. This skill negates that."
+[NUGGET] "A little trick from the local plant life. The desert doesn't just want to dehydrate you-it wants you to burn resources. This skill negates that."
 
 [PERCIVAL] (Absorbing the tablet's energy. He feels a strange warmth, not of heat, but of renewal) "It feels alien. I rely on my own strength. Not on... sun magic."
 
-[NUGGET] "Adapt, Percival! That's the Nomad's lesson, remember? Use the Tower’s own ridiculous rules against it. Think of it as the ultimate passive income. Free healing, compliments of the Tower's bizarre weather system."
+[NUGGET] "Adapt, Percival! That's the Nomad's lesson, remember? Use the Tower's own ridiculous rules against it. Think of it as the ultimate passive income. Free healing, compliments of the Tower's bizarre weather system."
 
 [PERCIVAL] "Free healing. Fine. I'll take any advantage I can get."

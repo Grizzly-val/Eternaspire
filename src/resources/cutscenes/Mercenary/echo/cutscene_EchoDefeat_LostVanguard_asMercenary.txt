@@ -13,7 +13,7 @@ The Tower, in its cruelty, preserved that peace.
 It trapped the warrior in the eternal instant of that greatest act, forcing it to stand guard over an empty room, waiting for a lover who likely met the same fate as him inside the Eternal Tower.
 
 It is called the Lost Vanguard because it is protecting, but knows not who or what.
-The face, the name—all gone. Only the instinct to protect remained, shielding nothing but the empty air behind it.
+The face, the name-all gone. Only the instinct to protect remained, shielding nothing but the empty air behind it.
 
 | The armor crumbles into dust, carried away by a sudden, mournful wind.
 | As the chest plate disintegrates, a heavy object detaches from the steel and falls with a dull thud, sliding across the stone to stop at Blade's feet. It is the Ascendant's Token.
@@ -40,10 +40,10 @@ Weak souls break and become hunger, like the rats. Strong souls... they become h
 It didn't remember her face, Blade. It just remembered that it wasn't allowed to move."
 
 [BLADE]
-"That’s worse than dying."
+"That's worse than dying."
 
 [NUGGET]
-"That’s the Tower. It preserves your 'greatest' moment until it becomes your cage.
+"That's the Tower. It preserves your 'greatest' moment until it becomes your cage.
 Now, pick up the token. We have a climb to finish, and unlike him, you still know why you're doing it."
 
 [BLADE]

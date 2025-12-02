@@ -1,21 +1,21 @@
 | Blade steps onto a floating island of rock. Above and below, there is no sky, only a swirling vortex of grey static and deleted data.
 | Suddenly, the empty air beside him ripples.
-| A creature bursts out of the void as if breaking the surface of water. It is a Corrupted Drowner, but it isn't swimming in water—it's swimming through the empty space itself.
+| A creature bursts out of the void as if breaking the surface of water. It is a Corrupted Drowner, but it isn't swimming in water-it's swimming through the empty space itself.
 | Its body is flickering, half-rendered, with textures stretching into infinity.
 
 [BLADE]
-"It’s swimming in the air.
+"It's swimming in the air.
 And it looks... unfinished."
 
 [NUGGET]
 "The physics engine is broken here, Blade.
 Gravity, density, water... it's all just code now. And that code is rotting.
-That Drowner thinks the air is an ocean. Don't let it drag you into the 'deep'—there's no bottom to this floor."
+That Drowner thinks the air is an ocean. Don't let it drag you into the 'deep'-there's no bottom to this floor."
 
-| The creature gurgles—a sound of distorted audio feedback—and dives at them, its rotting hands phasing through a floating rock to grab at Blade.
+| The creature gurgles-a sound of distorted audio feedback-and dives at them, its rotting hands phasing through a floating rock to grab at Blade.
 
 [BLADE]
-"It’s phasing through the cover!"
+"It's phasing through the cover!"
 
 [NUGGET]
 "Walls are suggestions up here! Hit it before it drags you into the recycle bin!"

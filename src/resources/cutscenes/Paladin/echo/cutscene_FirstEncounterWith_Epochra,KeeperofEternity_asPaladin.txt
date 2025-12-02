@@ -14,7 +14,7 @@ Nugget!"
 [EPOCHRA]
 "Hey, Boss Percival."
 
-| The voice comes from the center of the field. It is familiar—playful, yet overlaid with a terrifying, divine resonance.
+| The voice comes from the center of the field. It is familiar-playful, yet overlaid with a terrifying, divine resonance.
 | Percival snaps his head toward the source. Standing beneath the lone white tree is a woman formed of golden hard-light and six wings. She radiates power that makes the air vibrate.
 
 [PERCIVAL]
@@ -69,12 +69,12 @@ And it needs a collection. New exhibits for the gallery."
 "That's my job. I find a challenger with potential. I guide them. I fatten up their soul with hope and struggle.
 And when they reach the Zenith... I harvest them."
 
-[PERCIVAL] (Grip tightening on his sword, betrayal flashing in his eyes) "You- are you serious…?"
+[PERCIVAL] (Grip tightening on his sword, betrayal flashing in his eyes) "You- are you serious...?"
 
-[EPOCHRA] "HAHA YES I AM! That's the deal! The Tower Master—the one upstairs on Floor 11—promised me. If I bring him a worthy soul to replace me... I go free. I get my chains broken. I get my memories back. I get to leave this cage."
+[EPOCHRA] "HAHA YES I AM! That's the deal! The Tower Master-the one upstairs on Floor 11-promised me. If I bring him a worthy soul to replace me... I go free. I get my chains broken. I get my memories back. I get to leave this cage."
 
 | She points the staff at him.
 
-[EPOCHRA] "You are my ticket out, Percival. I like you. I really do. It’s been fun. But I’ve been tired of being trapped in this tower for so long that I’d be happy to betray one, two or three souls like yours for my own freedom. So... hold still. I promise to make it quick."
+[EPOCHRA] "You are my ticket out, Percival. I like you. I really do. It's been fun. But I've been tired of being trapped in this tower for so long that I'd be happy to betray one, two or three souls like yours for my own freedom. So... hold still. I promise to make it quick."
 
 [PERCIVAL] "Nugget..."

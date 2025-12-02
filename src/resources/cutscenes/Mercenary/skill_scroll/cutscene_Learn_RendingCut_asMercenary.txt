@@ -4,10 +4,10 @@
 [BLADE]
 "This was his. The Vanguard's.
 'A Blade's Manual.'
-It’s surprisingly... simple. No magic runes, just diagrams of strikes."
+It's surprisingly... simple. No magic runes, just diagrams of strikes."
 
 [NUGGET]
-"That’s because he wasn't a mage, Blade. He was a soldier.
+"That's because he wasn't a mage, Blade. He was a soldier.
 Soldiers don't have time for fancy incantations. They need things that work when they're tired, bleeding, and outnumbered."
 
 [BLADE]
@@ -18,7 +18,7 @@ It disregards defense entirely to tear through armor."
 [NUGGET]
 "Irony is a funny thing, isn't it?
 The man who held the shield forever... his only special technique was a move that left him wide open.
-Maybe that’s why he fell. Or maybe that’s how he kept them safe for so long—by making sure the enemy couldn't hit back."
+Maybe that's why he fell. Or maybe that's how he kept them safe for so long-by making sure the enemy couldn't hit back."
 
 | Blade grips the parchment. It crumbles into silver light, flowing into his hands and hardening his grip.
 | He feels the muscle memory of a thousand desperate parries and one decisive counter-attack imprint itself onto his mind.

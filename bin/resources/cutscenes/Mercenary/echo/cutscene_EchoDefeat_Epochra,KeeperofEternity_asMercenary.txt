@@ -1,5 +1,5 @@
 | Epochra falls. Her six golden wings shatter into shards of light that rain down on the meadow like falling stars.
-| She hits the grass, shrinking back down. Her divine form flickers and fades, leaving her small, broken, and floating just inches off the ground—looking almost like Nugget again, but fading fast.
+| She hits the grass, shrinking back down. Her divine form flickers and fades, leaving her small, broken, and floating just inches off the ground-looking almost like Nugget again, but fading fast.
 
 [EPOCHRA]
 (Muttering to herself, her voice glitching between divine and squeaky)
@@ -28,7 +28,7 @@ If they promised you your wish for freedom, I'll force it out of them, and my wi
 That's impossible. You don't stand a chance. That's too ambitious.
 Do you want to become a Corrupt? Because that's what happens to ambition here."
 
-| She reaches into her chest—into her very core—and pulls a regular looking large key.
+| She reaches into her chest-into her very core-and pulls a regular looking large key.
 | This is the key, The Eternaspire.
 
 [EPOCHRA]

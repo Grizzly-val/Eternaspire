@@ -2,17 +2,17 @@
 | Lying amidst the shards of glass is a small, golden, spherical creature with tiny fluttering wings. It shakes itself off like a wet dog.
 
 [BLADE]
-"What… what are you?"
+"What... what are you?"
 
 [NUGGET]
 "Oh! You noticed me!
 Huh...
 I guess introductions are in order.
-Name's… Nugget. But don't worry about that."
+Name's... Nugget. But don't worry about that."
 
 [BLADE]
 "..."
-"That’s not exactly helpful."
+"That's not exactly helpful."
 
 [NUGGET]
 "Eh, names are overrated anyway.
@@ -24,7 +24,7 @@ Important thing is... you seem busy. Or... troubled?"
 | The creature tilts its head, small wings fluttering, as if thinking.
 
 [NUGGET]
-"Hmm… that’s rough. Sounds like... you need a big win.
+"Hmm... that's rough. Sounds like... you need a big win.
 Something that could... change things, dramatically.
 But hey, that's just my unsolicited thought."
 
@@ -32,12 +32,12 @@ But hey, that's just my unsolicited thought."
 "..."
 "And you are?"
 
-[NUGGET] "That's not important. Really. Just… someone who notices things. Helps... nudge sometimes. Suggests life-changing advices about fame, status, money ... miracles...” (side-eyes)
+[NUGGET] "That's not important. Really. Just... someone who notices things. Helps... nudge sometimes. Suggests life-changing advices about fame, status, money ... miracles..." (side-eyes)
 
 | Blade hesitates, observing Nugget, unsure whether to trust it. He glances back at his mother.
 
 [NUGGET]
-"If you wanted... a way to really make a difference, maybe there’s a path. But… whatever. Ignore me."
+"If you wanted... a way to really make a difference, maybe there's a path. But... whatever. Ignore me."
 
 | Nugget turns around, pretending to leave through the broken window.
 
@@ -48,8 +48,8 @@ But hey, that's just my unsolicited thought."
 
 [NUGGET]
 (Spinning around instantly, beaming)
-"Excellent! That’s settled then.
-Oh… by the way,
+"Excellent! That's settled then.
+Oh... by the way,
 I might tag along.
 Nothing creepy. Promise."
 
@@ -62,7 +62,7 @@ Plus, a mercenary like you would definitely like this.
 About how I know about your profession?
 .
 .
-Uhhm—I know one when I see one?
+Uhhm-I know one when I see one?
 Come on! Kiss your mother goodbye,
 make up with her,
 and follow me!"

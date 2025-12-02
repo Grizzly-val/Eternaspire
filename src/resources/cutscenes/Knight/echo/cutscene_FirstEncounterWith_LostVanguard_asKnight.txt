@@ -1,11 +1,11 @@
 | Percival steps off the restored bridge onto a wide, circular platform.
-| The air here is different—heavier. It smells not of rot or ozone, but of old iron and dried blood.
+| The air here is different-heavier. It smells not of rot or ozone, but of old iron and dried blood.
 | In the center of the platform stands a figure. It is humanoid, clad in armor that looks centuries old, cracked and fused with the stone beneath it.
 | It holds a massive, fractured shield, its head bowed in eternal vigil.
 
 [PERCIVAL]
 (Stopping abruptly)
-"That’s not a monster. That’s... a person.
+"That's not a monster. That's... a person.
 Is he alive?"
 
 [NUGGET]
@@ -22,7 +22,7 @@ This thing... it feels like it's waiting."
 [NUGGET]
 "You've got a sharp soul, Percival.
 See, the Gnawers, the Blobs? They are Remnants.
-Think of them like... bugs in a jar. The Tower catches small, simple souls—animals, pests, confused spirits—and mashes them together until they're just hunger with legs.
+Think of them like... bugs in a jar. The Tower catches small, simple souls-animals, pests, confused spirits-and mashes them together until they're just hunger with legs.
 The Tower keeps them like a child hoarding pets."
 
 | The armored figure slams its shield into the ground. A shockwave of blue energy ripples across the floor, shaking the platform.
@@ -44,4 +44,4 @@ Now? He's just a wall that the Tower put in your way."
 | The Lost Vanguard raises a rusted blade, pointing it silently at Percival. It is a challenge, not an instinct.
 
 [PERCIVAL]
-"He’s not hunting. He’s doing his duty."
+"He's not hunting. He's doing his duty."

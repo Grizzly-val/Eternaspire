@@ -1,18 +1,18 @@
-[NUGGET] "AAAA— WHY DOES IT HAVE SO MANY LEGS?!"
+[NUGGET] "AAAA- WHY DOES IT HAVE SO MANY LEGS?!"
 
-[PERCIVAL] (steps forward) "It’s a crawler. Desert hunter."
+[PERCIVAL] (steps forward) "It's a crawler. Desert hunter."
 
-[NUGGET] "Hunter? No, nonono—bury it back underground!"
+[NUGGET] "Hunter? No, nonono-bury it back underground!"
 
 | Cenkrath lowers its head, antennae twitching, sensing vibrations.
 
-[PERCIVAL] "It’s reading us. Deciding which one to strike first."
+[PERCIVAL] "It's reading us. Deciding which one to strike first."
 
 [NUGGET] Pick him! Pick him! He looks way tastier!
 
 Cenkrath snaps forward, sand spraying everywhere.
 
-[PERCIVAL] "Too late—
+[PERCIVAL] "Too late-
 It chose both of us."
 
-(→ Battle vs. Cenkrath begins.)
+( Battle vs. Cenkrath begins.)

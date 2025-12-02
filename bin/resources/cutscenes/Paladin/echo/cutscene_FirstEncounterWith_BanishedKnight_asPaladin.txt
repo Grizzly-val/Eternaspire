@@ -1,4 +1,4 @@
-| Percival enters the final arena of The Fused Dimensions.  | Reality here is a chaotic swirl of every previous floor—sand mixing with ice, clockwork gears grinding against fleshy walls. 
+| Percival enters the final arena of The Fused Dimensions.  | Reality here is a chaotic swirl of every previous floor-sand mixing with ice, clockwork gears grinding against fleshy walls. 
 
 
 | Standing in the center is a warrior. He wears armor that is battered, broken, and scorched, but the silhouette is undeniably familiar.  | He holds a sword that looks like a shattered version of the Galactic Severance. 
@@ -28,7 +28,7 @@
 
 [NUGGET] "Yeah, because you are stupid... An idiot... A fool." 
 
-[PERCIVAL] "W—" 
+[PERCIVAL] "W-" 
 
 | Before Percival can finish, the Banished Knight snaps his head up. He sees Nugget.  | A roar of pure, unfiltered hatred erupts from the helmet.  | The Knight moves faster than any Echo before him. | He ignores Percival entirely, blurring into a streak of steel aimed directly at the floating companion. 
 
@@ -45,7 +45,7 @@
 
 | Percival turns back to the Knight, his grip tightening on the Galactic Severance until his knuckles turn white. 
 
-[PERCIVAL] "You... you cheap-shotting armor pile. She’s just a guide!" 
+[PERCIVAL] "You... you cheap-shotting armor pile. She's just a guide!" 
 
 | The Knight turns slowly to Percival. He doesn't attack immediately.  | He looks at Percival with a confusing mixture of rage and pity. 
 

@@ -1,5 +1,5 @@
-| Blade lands the final blow. There is no impact sound—only a distortion, like a bad signal on a screen.
-| Nihil’s form flickers violently. For a second, the static clears, revealing the faint, weeping outline of a man... before it dissolves entirely into nothingness.
+| Blade lands the final blow. There is no impact sound-only a distortion, like a bad signal on a screen.
+| Nihil's form flickers violently. For a second, the static clears, revealing the faint, weeping outline of a man... before it dissolves entirely into nothingness.
 
 [BLADE]
 "He didn't scream. He didn't fight back at the end.
@@ -20,12 +20,12 @@ It feels like holding a black hole."
 
 [BLADE]
 "And this key... The Fractured Key.
-It’s glitching. I can see my hand through it."
+It's glitching. I can see my hand through it."
 
 [NUGGET]
 (Staring at the empty spot where Nihil was)
 "Total erasure.
-That’s the danger of this place. If you lose your drive... you don't just die. You fade.
+That's the danger of this place. If you lose your drive... you don't just die. You fade.
 You become background noise."
 
 [BLADE]
@@ -34,9 +34,9 @@ You become background noise."
 
 [NUGGET] (Shaking his head, forcing a bright, slightly manic smile) "Me? I'm fantastic! Just contemplating the terrifying fragility of existence! Standard Tuesday stuff! Now come on, grab that key and lezgoo upward conquer this filthy eternally spiraling upwards baby tower!"
 
-[BLADE] “Key? Oh, didn’t see tha- wait… What do you mean by baby tower?"
+[BLADE] "Key? Oh, didn't see tha- wait... What do you mean by baby tower?"
 
-[NUGGET] "LET’S GO!! YIPPIE"
+[NUGGET] "LET'S GO!! YIPPIE"
 
 [BLADE] "HEY! NUGGET!
 .

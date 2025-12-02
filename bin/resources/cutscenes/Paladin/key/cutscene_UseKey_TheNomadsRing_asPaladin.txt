@@ -1,6 +1,6 @@
 | Percival stands before the heavy gate leading up to the next floor. It is sealed by a circular stone plate with a small, smooth indentation in the center. |
 
-He pulls out The Nomad’s Ring, a dull silver band found with the Echo's remains.
+He pulls out The Nomad's Ring, a dull silver band found with the Echo's remains.
 
 [PERCIVAL] "This ring... it's just old and scuffed. But it feels different from the other keys. It's warm, almost thankful."
 
@@ -10,11 +10,11 @@ He pulls out The Nomad’s Ring, a dull silver band found with the Echo's remain
 
 | The gate swings open silently, revealing a short passage that quickly gives way to a shocking vista. A hot, dry gust of wind blows sand and fine grit into the hall. |
 
-Beyond the doorway is a vast, open-air desert, complete with towering, crumbling dunes and the ruin of an ancient city—all contained somehow within the confines of the Tower.
+Beyond the doorway is a vast, open-air desert, complete with towering, crumbling dunes and the ruin of an ancient city-all contained somehow within the confines of the Tower.
 
 [PERCIVAL] (Stopping dead in his tracks, shielding his eyes from the sudden, intense heat and light) "A... a desert? We're inside a tower, Nugget! How is there a whole desert in here? Where is the sun coming from?"
 
-[NUGGET] (Hovering in the shade of the archway, his voice taking on a knowing, almost teasing quality) "The Tower is... flexible, Percival. It’s not just a big building. Think of it less like a tower and more like a spine. A spine that pierces through a lot of very interesting places. It collects not just souls, but environments."
+[NUGGET] (Hovering in the shade of the archway, his voice taking on a knowing, almost teasing quality) "The Tower is... flexible, Percival. It's not just a big building. Think of it less like a tower and more like a spine. A spine that pierces through a lot of very interesting places. It collects not just souls, but environments."
 
 | Percival looks back at the cold stone floor they just left, then out at the scorching sand. The absurdity of it visibly unnerves him more than the monsters did. |
 

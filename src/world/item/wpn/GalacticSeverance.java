@@ -14,7 +14,7 @@ public class GalacticSeverance extends Weapon {
         
       //Passive Effect: If opponent is an Echo class entity, deal extra damage
         if(opponent instanceof entity.tower_entity.Echo){
-            int extraDamage = atk * 5; // 50% extra damage
+            int extraDamage = (int)(atk * 3.5); // 350% extra damage
             System.out.println("| The Galactic Severance glows brightly against " + opponent.getName() + ", dealing an extra " + extraDamage + " damage!");
             user.dmgAttack(opponent, atk + extraDamage);
         } else {

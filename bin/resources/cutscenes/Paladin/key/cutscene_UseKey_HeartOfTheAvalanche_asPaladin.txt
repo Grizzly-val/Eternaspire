@@ -1,14 +1,14 @@
 | Percival stands before a heavy gate coated in frost, despite the searing heat of the desert behind him.
-| He holds the Heart of the Avalanche—a compressed sphere of ice that pulses with a violent, stormy rhythm. It is cold enough to burn his hand.
+| He holds the Heart of the Avalanche-a compressed sphere of ice that pulses with a violent, stormy rhythm. It is cold enough to burn his hand.
 
 [PERCIVAL]
-"It’s freezing.
+"It's freezing.
 I can feel a storm raging inside this thing."
 
 [NUGGET]
-"That’s the Heart of the Avalanche.
+"That's the Heart of the Avalanche.
 Osarion tried to control the weather to preserve his kingdom, but he only managed to bottle a blizzard.
-Insert it. But brace yourself—weather in the Tower doesn't 'change,' it crashes."
+Insert it. But brace yourself-weather in the Tower doesn't 'change,' it crashes."
 
 | Percival pushes the ice sphere into the gate's recess.
 | CRACK.

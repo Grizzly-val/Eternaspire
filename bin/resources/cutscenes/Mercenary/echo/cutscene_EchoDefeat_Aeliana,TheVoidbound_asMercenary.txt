@@ -6,7 +6,7 @@
 "I see... him.
 He is... waiting by the gate."
 
-| She smiles—a genuine, heartbreaking smile—and dissolves into soft white light.
+| She smiles-a genuine, heartbreaking smile-and dissolves into soft white light.
 | However, the light does not ascend. It swirls and is pulled back into the floor, absorbed by the Tower to be recycled later. She is gone, but not free.
 
 [NUGGET]
@@ -23,7 +23,7 @@ At least for now... she has peace."
 
 [BLADE]
 "Vanguard's Bastion.
-It’s a weapon made of protection.
+It's a weapon made of protection.
 She held onto it for him."
 
 [NUGGET]

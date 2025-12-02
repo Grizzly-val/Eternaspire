@@ -9,7 +9,7 @@
 "I am... eternal."
 
 [PERCIVAL]
-"He’s huge. But he's talking to ghosts.
+"He's huge. But he's talking to ghosts.
 He doesn't even know we're here."
 
 [NUGGET]
@@ -24,8 +24,8 @@ He wished to rule forever. So the Tower gave him an empty room and a crown that 
 "Kneel! Tribute! My... legacy!"
 
 [PERCIVAL]
-"He’s trapped in his own ego."
+"He's trapped in his own ego."
 
 [NUGGET]
-"He’s a parasite. He fed on his people to build this place, and now he's just a hollow shell guarding a pile of rocks.
+"He's a parasite. He fed on his people to build this place, and now he's just a hollow shell guarding a pile of rocks.
 He won't let you pass, Percival. To him, you're just another brick."

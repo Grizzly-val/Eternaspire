@@ -1,10 +1,10 @@
 [PERCIVAL]
-"You…
+"You...
 You're the Tower Master?
-You look like the thing I killed on Floor 0. Just… bigger."
+You look like the thing I killed on Floor 0. Just... bigger."
 
 [TOWER MASTER]
-(The blob’s voice vibrates directly into Percival’s mind—flat, bored, almost annoyed.)
+(The blob's voice vibrates directly into Percival's mind-flat, bored, almost annoyed.)
 "Those? Mere husks. Auto-pilots.
 I shed them the way humans shed skin.
 You fought my leftovers."
@@ -14,24 +14,24 @@ You fought my leftovers."
 [TOWER MASTER]
 "I am the Prime State.
 The original equation.
-And you…
-You’re the upstart who broke my caretaker. Epochra took centuries to tune properly."
+And you...
+You're the upstart who broke my caretaker. Epochra took centuries to tune properly."
 
 [PERCIVAL]
 "She wanted freedom. They all do.
-I'm here to finish what she started—
+I'm here to finish what she started-
 to release the Echoes you archived like trophies.
-And… I want my wish.
+And... I want my wish.
 You said anyone who reached the top gets one."
 
 [TOWER MASTER]
 (The blob sighs; the room vibrates with the sound of steam escaping machinery.)
-"The wish… yes, the promotional tagline.
+"The wish... yes, the promotional tagline.
 Mortals love dramatic incentives."
 
 | The Master reaches inside itself and pulls out a glistening, dripping sack.
 | It crashes onto the floor with a wet thud.
-| Gold spills out—bright, legitimate, unmistakably valuable, yet covered in rainbow slime.
+| Gold spills out-bright, legitimate, unmistakably valuable, yet covered in rainbow slime.
 
 [TOWER MASTER]
 "Here.
@@ -41,17 +41,17 @@ and they will write your name in every book."
 
 [PERCIVAL]
 (He watches the coins roll and clink.)
-"...You’re bribing me?"
+"...You're bribing me?"
 
 [TOWER MASTER]
-"I’m preventing paperwork.
+"I'm preventing paperwork.
 Listen carefully, variable:
-I can delete you—cleanly, painlessly, instantly.
+I can delete you-cleanly, painlessly, instantly.
 But if we fight, this chamber breaks, systems fail,
 and I have to recalibrate everything.
 Tedious. Wasteful."
 
-| The blob gestures at the screens displaying Echoes—frozen memories of the Paladin, the Knight, Aeliana… Nugget.
+| The blob gestures at the screens displaying Echoes-frozen memories of the Paladin, the Knight, Aeliana... Nugget.
 
 [TOWER MASTER]
 "So take the gold.
@@ -64,16 +64,16 @@ A reputation pre-packaged for convenience."
 | It slides across the floor, leaving a slimy streak behind.
 
 [PERCIVAL]
-"Recognition earned through a shortcut isn’t recognition at all."
+"Recognition earned through a shortcut isn't recognition at all."
 
 | He grips his weapon. The blade crackles, hungry, alive.
 
 [PERCIVAL]
-"You don’t get to decide what my name means.
-And I’m not leaving with your pity-money."
+"You don't get to decide what my name means.
+And I'm not leaving with your pity-money."
 
 | He levels his weapon at the Prime State.
 
 [PERCIVAL]
 "I climbed this tower to prove myself.
-And I’m proving it by shutting you down."
+And I'm proving it by shutting you down."

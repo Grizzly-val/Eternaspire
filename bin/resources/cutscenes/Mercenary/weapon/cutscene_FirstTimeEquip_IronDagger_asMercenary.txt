@@ -3,7 +3,7 @@
 
 [BLADE] 
 "A dagger.
-It’s barely a weapon compared to the sword. It looks like an eating utensil."
+It's barely a weapon compared to the sword. It looks like an eating utensil."
 
 [NUGGET]
 "Hey, don't knock the classics!
@@ -12,7 +12,7 @@ Specifically, problems that are very close to you and have soft spots."
 
 [BLADE] 
 (Flipping the dagger in his hand)
-"It’s balanced. Good for a quick strike when there's no room to swing a sword.
+"It's balanced. Good for a quick strike when there's no room to swing a sword.
 Or for when I need to be quiet."
 
 [NUGGET]

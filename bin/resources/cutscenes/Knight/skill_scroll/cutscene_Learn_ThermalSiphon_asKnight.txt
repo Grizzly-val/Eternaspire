@@ -2,16 +2,16 @@
 | It is warm to the touch, melting the frost beneath it.
 
 [PERCIVAL]
-"This scroll... it’s etched into metal.
+"This scroll... it's etched into metal.
 'To burn is to live. To steal warmth is to survive.' "
 
 [NUGGET]
 "Ooh, Thermal Siphon!
-That’s a nasty little trick. It lets you drain the heat right out of an enemy.
-You burn them, and the energy heals you. It’s vampirism, but spicy."
+That's a nasty little trick. It lets you drain the heat right out of an enemy.
+You burn them, and the energy heals you. It's vampirism, but spicy."
 
 | Percival touches the copper sheet. It dissolves into sparks that sink into his skin.
-| He feels a strange hunger in his palms—a desire to touch something hot and drink the energy.
+| He feels a strange hunger in his palms-a desire to touch something hot and drink the energy.
 
 [PERCIVAL]
 (Looking at his hand, which now glows faintly red)

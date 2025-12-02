@@ -3,7 +3,7 @@
 
 [NUGGET]
 "And... shattered.
-It’s almost sad. They spend forever trying to be whole, and one good hit sends them back to the puzzle pile."
+It's almost sad. They spend forever trying to be whole, and one good hit sends them back to the puzzle pile."
 
 [BLADE]
 (Stepping over the remains)

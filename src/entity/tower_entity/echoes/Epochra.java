@@ -9,7 +9,7 @@ import mechanics.battleMechanics.skill.passive_skills.TemporalJitter;
 public class Epochra extends Echo {
 
     private static final int BASE_HP = 90;
-    private static final int BASE_ATK = 30;
+    private static final int BASE_ATK = 15;
 
     public Epochra(int lvl) {
 

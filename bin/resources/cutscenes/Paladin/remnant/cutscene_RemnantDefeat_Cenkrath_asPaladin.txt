@@ -1,20 +1,20 @@
-| Cenkrath’s pale segments sink halfway into the sand, its long body unmoving. The desert wind begins to scatter its remains like dry powder.
+| Cenkrath's pale segments sink halfway into the sand, its long body unmoving. The desert wind begins to scatter its remains like dry powder.
 
-[NUGGET] "Okay… okay, that’s freaky. I blinked and half of it vanished."
+[NUGGET] "Okay... okay, that's freaky. I blinked and half of it vanished."
 
-[PERCIVAL] "Crawlers don’t leave corpses. The desert eats them the moment they fall."
+[PERCIVAL] "Crawlers don't leave corpses. The desert eats them the moment they fall."
 
 | Nugget shivers, watching the sand swallow the last fragments.
 
-[NUGGET] "I’m gonna be paranoid every time sand moves now."
+[NUGGET] "I'm gonna be paranoid every time sand moves now."
 
-[PERCIVAL] "Good. Means you’ll survive longer"
+[PERCIVAL] "Good. Means you'll survive longer"
 
 | wipes the dust off their blade.
 
 
-[NUGGET] "So… we done here?"
+[NUGGET] "So... we done here?"
 
 [PERCIVAL] "With this one."
 
-[NUGGET] "That’s not comforting."
+[NUGGET] "That's not comforting."

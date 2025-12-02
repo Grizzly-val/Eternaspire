@@ -6,8 +6,8 @@
 This doesn't look like a spell. It looks like a bill of sale."
 
 [NUGGET]
-"That’s because it is!
-It’s an old mercenary pact. Hired Blade's Siphon.
+"That's because it is!
+It's an old mercenary pact. Hired Blade's Siphon.
 It operates on a simple rule: 'If I bleed you, I get paid.'
 Except the payment isn't gold. It's life."
 
@@ -22,7 +22,7 @@ It turns damage into sustenance."
 [NUGGET]
 "A perfect skill for a professional!
 Why rely on potions when you can just steal your enemy's health?
-It’s efficient, brutal, and ethically questionable. Just your style!"
+It's efficient, brutal, and ethically questionable. Just your style!"
 
 [PERCIVAL]
 "Ethical or not, if it keeps me standing, I'll sign."

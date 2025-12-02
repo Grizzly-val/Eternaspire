@@ -85,7 +85,7 @@ public abstract class TowerEntity extends Entity{
         }
 
         player.resetLastDamage();
-        player.gainXp((int) ((Math.sqrt((maxHp + atk + lvl) * 4.4) * Math.log(maxHp * atk))  * (Math.random() + 0.40)));
+        player.gainXp((int) ((Math.sqrt((maxHp + atk) * (lvl / 2)) * Math.log(maxHp * atk))  * (Math.random() + 0.40)));
         dropAll(player.getCurrentArea());
         OptionSelect.waiter();
     }

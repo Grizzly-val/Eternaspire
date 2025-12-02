@@ -8,7 +8,7 @@ import mechanics.battleMechanics.skill.passive_skills.UndyingDevotion;
 
 public class VoidboundAeliana extends Echo {
 
-    private final static int BASE_HP = 50;
+    private final static int BASE_HP = 40;
     private final static int BASE_ATK = 15;
 
     public VoidboundAeliana(int lvl) {

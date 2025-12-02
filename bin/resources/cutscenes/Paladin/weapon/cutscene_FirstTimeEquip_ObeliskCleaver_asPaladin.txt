@@ -4,18 +4,18 @@
 [PERCIVAL]
 (Lifting the weapon with both hands)
 "This isn't a weapon of war.
-It’s too heavy. Too brutal.
+It's too heavy. Too brutal.
 This was made for executions."
 
 [NUGGET]
-"That’s the Obelisk Cleaver.
+"That's the Obelisk Cleaver.
 The tomb guardians used these to... 'dismiss' anyone who touched the sacred monuments."
 
 | Percival swings the axe. It cleaves the air with a low, terrifying thrum. He brings it down on the stone sarcophagus, shattering the heavy lid into dust with a single blow.
 
 [PERCIVAL]
 "It doesn't cut. It obliterates.
-It’s slow, but if this hits... nothing stands back up."
+It's slow, but if this hits... nothing stands back up."
 
 [NUGGET]
 "A brute force solution for a brute force world.

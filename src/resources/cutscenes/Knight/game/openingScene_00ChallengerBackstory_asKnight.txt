@@ -1,6 +1,6 @@
 | Before there were stories, there was a fracture.
 | Some say the world split by accident. Others whisper it was carved open on purpose.
-| No one agrees—only that something tore the sky from its reflection.
+| No one agrees-only that something tore the sky from its reflection.
 
 | From that wound rose a structure no one remembers building.
 | A tower older than memory, taller than truth.
@@ -10,7 +10,7 @@
 
 | The setting is a grand, cold hall adorned with banners of House Sterling.
 | A young Knight, Percival, kneels on the polished stone floor, head bowed. His armor is gleaming, dented from a fresh victory.
-| He holds up a golden wreath—a symbol of the highest tournament honor.
+| He holds up a golden wreath-a symbol of the highest tournament honor.
 
 [PERCIVAL]
 "Mother. I have returned.
@@ -23,7 +23,7 @@ The Grand Tourney... I won. I defeated the General's son in the final bout."
 
 [PERCIVAL]
 (His hands trembling slightly, lowering the wreath)
-"I... I trained for months. I didn't sleep. I mastered the—"
+"I... I trained for months. I didn't sleep. I mastered the-"
 
 [PERCIVAL'S MOTHER]
 "And?

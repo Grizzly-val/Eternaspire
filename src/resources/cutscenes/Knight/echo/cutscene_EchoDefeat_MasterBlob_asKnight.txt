@@ -2,84 +2,84 @@
 | It collapses into a puddle, consoles sparking and smoking around the room.
 
 [TOWER MASTER]
-“Great. Just great.
+"Great. Just great.
 Do you have any idea how long a Reality Engine takes to recalibrate?
-Centuries. Literal centuries.”
+Centuries. Literal centuries."
 
 [PERCIVAL]
-“Strong… but not much of a fighter.”
+"Strong... but not much of a fighter."
 
 [TOWER MASTER]
-“Excuse me? I am the sum of all variables! I am infinite complexity!”
+"Excuse me? I am the sum of all variables! I am infinite complexity!"
 
 [PERCIVAL]
-“Yeah, well, maybe you should’ve spent less time calibrating engines
+"Yeah, well, maybe you should've spent less time calibrating engines
 and more time learning how to move.
-You’re just a shut-in with a god complex.”
+You're just a shut-in with a god complex."
 
 [TOWER MASTER]
-“Hmph.
+"Hmph.
 The variable exceeded its parameters.
 Congratulations.
-You’re the most stubborn data point I’ve ever processed.
+You're the most stubborn data point I've ever processed.
 I was going to make you a centerpiece, but honestly?
-You’re too much trouble.”
+You're too much trouble."
 
 | A small eye forms in the puddle. A tentacle pushes a slimy sack of gold toward Percival.
 
 [TOWER MASTER]
-“Fine. The deal holds.
+"Fine. The deal holds.
 Take the money. Infinite wealth. Sticky but universal.
-Use it as proof—
+Use it as proof-
 proof you cleared Eternaspire.
-Flash that in any kingdom, and even the most stubborn parent would have no choice but to acknowledge you.”
+Flash that in any kingdom, and even the most stubborn parent would have no choice but to acknowledge you."
 
 | Percival stares at the sack.
 
 [PERCIVAL]
-“…Proof, huh?”
+"...Proof, huh?"
 
-| He picks it up. It’s heavy.
+| He picks it up. It's heavy.
 
 [PERCIVAL]
-“I’ll take it.
+"I'll take it.
 Money is money.
-Even if it smells like you.”
+Even if it smells like you."
 
 [TOWER MASTER]
-“Excellent. Transaction complete.
-Now get out. I have a millennium of cleanup to do.”
+"Excellent. Transaction complete.
+Now get out. I have a millennium of cleanup to do."
 
-| The elevator of light forms. Percival steps on—then pauses.
+| The elevator of light forms. Percival steps on-then pauses.
 
 [PERCIVAL]
-“One more thing.”
+"One more thing."
 
 [TOWER MASTER]
-“What now? You have the money! What more do you want?”
+"What now? You have the money! What more do you want?"
 
 [PERCIVAL]
-“The Echoes. Aeliana. The Paladin. Nugget.
+"The Echoes. Aeliana. The Paladin. Nugget.
 Let them go.
-That’s my wish.”
+That's my wish."
 
 [TOWER MASTER]
 (The puddle ripples, sounding exhausted.)
-“You greedy little anomaly…
+"You greedy little anomaly...
 But fine.
 You broke half the containment units anyway.
 System flush initiated.
 They will return to the cycle.
 No more loops.
-Just peace.”
+Just peace."
 
 [PERCIVAL]
-“Good.”
+"Good."
 
 | He steps onto the elevator fully, looking back one last time.
 
 [PERCIVAL]
-“Nice doing business with you.”
+"Nice doing business with you."
 
 [TOWER MASTER]
-“GET. OUT.”
+"GET. OUT."

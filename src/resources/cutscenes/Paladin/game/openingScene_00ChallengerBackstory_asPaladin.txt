@@ -1,12 +1,12 @@
 | Before there were stories, there was a fracture.
-| No one agrees—only that something tore the sky from its reflection.
+| No one agrees-only that something tore the sky from its reflection.
 | From that wound rose a structure no one remembers building.
 | It calls to those who have peered into the abyss and begged it to blink.
 
 | ...
 
 | The scene is a hidden, underground laboratory beneath a chapel. The air is thick with smoke and the smell of burning paper.
-| A man in priestly robes—Percival—is frantically trying to gather scattered notes from the floor. His hands are stained with ink and ash.
+| A man in priestly robes-Percival-is frantically trying to gather scattered notes from the floor. His hands are stained with ink and ash.
 | Above, heavy boots stomp on the floorboards. The door bursts open.
 
 [CHURCH ENFORCER]
@@ -34,7 +34,7 @@ I can fix it! I can bring her back!"
 "You are mad with grief.
 Burn it all. Leave nothing of this blasphemy."
 
-| Percival watches helplessly as his life's work—years of alchemy, theology, and forbidden magic—turns to ash in seconds.
+| Percival watches helplessly as his life's work-years of alchemy, theology, and forbidden magic-turns to ash in seconds.
 | The portrait of his mother on the desk curls and blackens in the flames.
 
 [PERCIVAL]

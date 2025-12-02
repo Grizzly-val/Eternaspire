@@ -156,7 +156,7 @@ public class Game implements Serializable {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(saveFile))) {
             oos.writeObject(this);
             System.out.println();
-            TextTyper.typeText("| Game saved successfully ✅", 30, true);
+            TextTyper.typeText("| Game saved successfully", 30, true);
             System.out.println("----------------------------------");
         } catch (IOException e) {
             System.err.println("! ! Failed to save game ! !");
@@ -187,7 +187,7 @@ public class Game implements Serializable {
 
             setPlayer(loadedGame.getPlayer()); 
 
-            System.out.println("| Game loaded successfully ✅");
+            System.out.println("| Game loaded successfully");
         } catch (IOException | ClassNotFoundException e) {
             System.err.println("! ! Failed to load player ! !");
             e.printStackTrace();
@@ -200,14 +200,12 @@ public class Game implements Serializable {
                 account.addLose();
                 System.out.println();
                 TextTyper.typeText("| Better luck next time, " + player.getName() + ".", 70, true);
-                TextTyper.typeText("| Exiting game ...", 70, true);
                 System.out.println();
                 break;
             case WIN:
                 account.addWin();
                 System.out.println();
                 TextTyper.typeText("| Job well done, " + player.getName() + "!", 70, true);
-                TextTyper.typeText("| Exiting game ...", 70, true);
                 System.out.println();
                 break;
             default:
@@ -216,6 +214,17 @@ public class Game implements Serializable {
         account.getManager().saveAccounts();
         TextTyper.typeText("| Bye, " + account.getUsername() + " :c", 40, true);
         TextTyper.typeText("| Bye, " + player.getName() + " :c", 40, true);
+        switch(result){
+            case LOSE:
+                AudioPlayer.play("battle_lose.wav");
+                break;
+            case WIN:
+                AudioPlayer.play("battle_win.wav");
+                break;
+            default:
+                System.out.println("| ?");
+        }
+        TextTyper.typeText("\n\n| Exiting game...\n", 100, true);
         System.exit(0);
     }
 

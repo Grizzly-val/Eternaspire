@@ -1,5 +1,5 @@
 | The hallway ahead is blocked by a strange, shimmering distortion.
-| The floor tiles ripple like disturbed water, and a shape bulges upward—translucent, wobbling, and pulsing with faint, erratic arcs of lightning.
+| The floor tiles ripple like disturbed water, and a shape bulges upward-translucent, wobbling, and pulsing with faint, erratic arcs of lightning.
 | It lets out a sound that resembles a wet sneeze.
 
 [PERCIVAL]
@@ -8,7 +8,7 @@
 It looks like a storm cloud drowned in a puddle."
 
 [NUGGET]
-"Eww! It’s jiggly!
+"Eww! It's jiggly!
 That, my friend, is an Elemental Blob.
 Think of it as the Tower's way of saying 'Hello!'... with voltage."
 
@@ -41,7 +41,7 @@ Use those magical Paladin skills you brag about!"
 Mom would be so proud."
 
 [NUGGET]
-"That’s the spirit!
+"That's the spirit!
 Go get 'em, tiger! Or... go get 'em, punching bag!
 I'll be over here, providing moral support from a safe distance."
 

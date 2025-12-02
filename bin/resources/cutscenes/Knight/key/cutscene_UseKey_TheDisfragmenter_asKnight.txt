@@ -1,10 +1,10 @@
 | Percival stands at the precipice of a massive gap in the walkway.
-| Floating in the void between two pillars of light are thousands of stone shards—parts of a bridge that shattered long ago.
+| Floating in the void between two pillars of light are thousands of stone shards-parts of a bridge that shattered long ago.
 | He holds up The Disfragmenter. The geometric crystal pulses rapidly, vibrating in his hand as if trying to escape toward the ruin.
 
 [NUGGET]
 "Don't drop it! Or... actually, do.
-The bridge isn't gone, Percival. It’s just... confused. It forgot how to be a bridge.
+The bridge isn't gone, Percival. It's just... confused. It forgot how to be a bridge.
 That crystal reminds it."
 
 [PERCIVAL]
@@ -12,8 +12,8 @@ That crystal reminds it."
 The stone has a memory?"
 
 [NUGGET]
-"Everything in the Tower has a memory. That’s why it hurts to be here.
-Just toss the crystal into the cloud of debris. It’ll do the rest."
+"Everything in the Tower has a memory. That's why it hurts to be here.
+Just toss the crystal into the cloud of debris. It'll do the rest."
 
 | Percival hesitates, then tosses the shimmering crystal into the floating field of rocks.
 | The moment it leaves his hand, it freezes in mid-air. A blinding flash of white light erupts.
@@ -27,4 +27,4 @@ Like the damage never happened."
 
 [NUGGET]
 "Order from chaos.
-It’s a beautiful trick, isn't it? Too bad it only works on rocks."
+It's a beautiful trick, isn't it? Too bad it only works on rocks."

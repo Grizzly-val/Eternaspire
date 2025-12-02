@@ -8,7 +8,7 @@ It hums with the power of a dying star.
 With this... I can cut through anything. Even the final gate."
 
 [NUGGET]
-"It’s a weapon made to sever fate itself.
+"It's a weapon made to sever fate itself.
 Powerful stuff."
 
 | Percival looks at the blade, seeing his reflection in the cosmic steel. He smiles, a genuine, hopeful look that seems out of place in the void.
@@ -25,7 +25,7 @@ Not just proud... but PROUD."
 [PERCIVAL]
 "Can you help me tell mom about our tower climb?"
 
-| Nugget looks at him—so full of hope, while she knows exactly what's going to happen to him.
+| Nugget looks at him-so full of hope, while she knows exactly what's going to happen to him.
 
 [NUGGET]
 (Voice cracking, forced cheerfulness sounding brittle)

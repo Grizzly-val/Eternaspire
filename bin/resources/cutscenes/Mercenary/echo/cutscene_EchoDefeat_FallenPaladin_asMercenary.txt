@@ -33,9 +33,9 @@ Tell her... I wasn't... afraid."
 "He never found the answer. I had to lie to him.
 ...Why did I do that? I don't even know him."
 
-[BLADE]"You guided him too? Don’t we two share a lot in common? I’d basically be him if I had chosen a god instead of a sword."
+[BLADE]"You guided him too? Don't we two share a lot in common? I'd basically be him if I had chosen a god instead of a sword."
 
-[NUGGET] (Voice hollow, trembling with an emotion she can't name) "I... I don't know. Why does it feel like I've stood here a thousand times before? I don’t even know who I am at this point, why am I feeling extreme guilt."
+[NUGGET] (Voice hollow, trembling with an emotion she can't name) "I... I don't know. Why does it feel like I've stood here a thousand times before? I don't even know who I am at this point, why am I feeling extreme guilt."
 
 | She wipes her face aggressively, trying to scrub away the confusion.
 

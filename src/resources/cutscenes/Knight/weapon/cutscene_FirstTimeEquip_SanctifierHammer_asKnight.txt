@@ -4,9 +4,9 @@ The creature vanishes into fine gray dust, leaving behind a medium-sized hammer 
 
 [PERCIVAL] "A hammer? Seems slow for a place like this."
 
-[NUGGET] "Look closer, Percival. See the glow? That’s holy metal. It's built to pierce defensive magic and banish minor spirits."
+[NUGGET] "Look closer, Percival. See the glow? That's holy metal. It's built to pierce defensive magic and banish minor spirits."
 
-[PERCIVAL] "It's heavier than my scimitar. It's not built for speed, it's built for precision. I’m a mercenary. I don’t 'sanctify', I just kill, and yet why does a weapon a paladin wields feel so familiar in my hands?"
+[PERCIVAL] "It's heavier than my scimitar. It's not built for speed, it's built for precision. I'm a mercenary. I don't 'sanctify', I just kill, and yet why does a weapon a paladin wields feel so familiar in my hands?"
 
 [NUGGET] (Looks at Percival and grins) "I dunno, maybe the tower has something to with it? Anyways, these ruins are crawling with the weak remnants of dead priests and forgotten soldiers. They aren't solid; they're lingering despair. You can hack at them all day with a simple blade, or you can use that hammer to just... delete them."
 

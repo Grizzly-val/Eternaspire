@@ -1,5 +1,5 @@
 | The rain has stopped, but the sky remains grey.
-| Percival stands before the Tower. He clutches a heavy book—the only journal he managed to hide in his robes—and a simple mace.
+| Percival stands before the Tower. He clutches a heavy book-the only journal he managed to hide in his robes-and a simple mace.
 
 [PERCIVAL]
 "It radiates energy.

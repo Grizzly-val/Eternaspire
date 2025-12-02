@@ -9,7 +9,7 @@ He doesn't just kill you. He pauses you.
 He collects moments of perfect stillness. He wants to turn us into statues for his gallery."
 
 [VORTHOS]
-(His voice sounds like a glacier calving—slow, booming, and impossibly deep)
+(His voice sounds like a glacier calving-slow, booming, and impossibly deep)
 "Why... do... you... move?
 Motion... is... chaos.
 Be... still."
@@ -17,9 +17,9 @@ Be... still."
 | Vorthos raises the massive needle. The air around it crystallizes.
 
 [PERCIVAL]
-"He’s slow.
+"He's slow.
 But we have to be careful."
 
 [NUGGET]
-"He’s already dead, Percival. He just hasn't shattered yet.
+"He's already dead, Percival. He just hasn't shattered yet.
 Break him before he adds us to the shelf!"

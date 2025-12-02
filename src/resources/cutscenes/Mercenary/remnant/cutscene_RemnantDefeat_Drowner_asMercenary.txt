@@ -6,7 +6,7 @@
 I hate things that grab from below."
 
 [NUGGET]
-"It’s just a reflection of the fear of drowning.
+"It's just a reflection of the fear of drowning.
 But good news! You didn't drown. You just... got your boots wet."
 
 [BLADE]

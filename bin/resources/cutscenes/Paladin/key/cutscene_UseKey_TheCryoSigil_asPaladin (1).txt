@@ -1,12 +1,12 @@
-| Percival stands before a gate made of weeping blue stone. The air here isn't just cold; it’s heavy, pressing against his chest like deep water.
-| He holds The Cryo Sigil, the jagged rune found among Vorthos’ treasures. It is small, but his arm strains to lift it.
+| Percival stands before a gate made of weeping blue stone. The air here isn't just cold; it's heavy, pressing against his chest like deep water.
+| He holds The Cryo Sigil, the jagged rune found among Vorthos' treasures. It is small, but his arm strains to lift it.
 
 [PERCIVAL]
 "This key... it weighs a ton.
-It’s just a piece of ice, but it feels like holding a lead brick."
+It's just a piece of ice, but it feels like holding a lead brick."
 
 [NUGGET]
-"That’s because it’s not just ice. It’s weight.
+"That's because it's not just ice. It's weight.
 Vorthos didn't just freeze people; he froze their regrets. That key is dense with things left unsaid."
 
 | Percival inserts the heavy sigil into the lock. It doesn't click. It sighs.
@@ -14,7 +14,7 @@ Vorthos didn't just freeze people; he froze their regrets. That key is dense wit
 
 [PERCIVAL]
 "The wind stopped.
-It’s unnaturally quiet in there."
+It's unnaturally quiet in there."
 
 [NUGGET]
 (Hovering lower than usual, her voice subdued)

@@ -6,12 +6,12 @@ Take the money. It's infinite wealth. It's slimy, yes, but it will buy any ritua
 Your mother will walk again. You can fund her return to life ten times over."
 
 | Percival freezes.
-| For a heartbeat, he doesn’t breathe.
-| The Tower Master’s words hit him like a blade. Not hope — but confirmation.
-| The Tower itself couldn’t revive her.
-| He climbed all this way… and even the godlike mind at the top couldn’t undo death.
-| His grip trembles. His eyes sting, just for a moment — a crack in an otherwise unbreakable will.
-| He thinks of her smile. The one he’ll never see again except in memory.
+| For a heartbeat, he doesn't breathe.
+| The Tower Master's words hit him like a blade. Not hope - but confirmation.
+| The Tower itself couldn't revive her.
+| He climbed all this way... and even the godlike mind at the top couldn't undo death.
+| His grip trembles. His eyes sting, just for a moment - a crack in an otherwise unbreakable will.
+| He thinks of her smile. The one he'll never see again except in memory.
 | He thinks of how desperately he had believed the wish would fix everything.
 | And how wrong he was.
 
@@ -23,7 +23,7 @@ Your mother will walk again. You can fund her return to life ten times over."
 "I'll take it.
 Money is money. Even if it smells like you."
 
-| It’s all he can manage. Anything more and he might break.
+| It's all he can manage. Anything more and he might break.
 
 [TOWER MASTER]
 "Excellent. Transaction complete.
@@ -53,7 +53,7 @@ They're all returning to the cycle. No more loops. Just... peace."
 [PERCIVAL]
 "Good."
 
-| Percival steps fully onto the elevator. As he descends, he looks back one last time at the grumpy puddle of a god — but his expression is different.
+| Percival steps fully onto the elevator. As he descends, he looks back one last time at the grumpy puddle of a god - but his expression is different.
 | Tired. Older. Carrying a loss no wish can rewrite.
 
 [PERCIVAL]

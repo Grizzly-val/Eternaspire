@@ -3,11 +3,11 @@
 
 [PERCIVAL]
 "This thing... we found it floating in the debris, but it feels alive.
-It’s trying to look through the static."
+It's trying to look through the static."
 
 [NUGGET]
 (Hovering low, her wings drooping, avoiding looking at the path ahead)
-"It’s a relic from a higher floor. It fell down here when the reality started collapsing.
+"It's a relic from a higher floor. It fell down here when the reality started collapsing.
 It sees the truth, Percival. If you look through it... the static will clear. You'll see the path to The Final Nexus."
 
 [PERCIVAL]

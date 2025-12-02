@@ -1,5 +1,5 @@
 | The massive golden armor cracks down the center.
-| Osarion tries to stand, reaching out desperately toward the ceiling—toward a sun that isn't there.
+| Osarion tries to stand, reaching out desperately toward the ceiling-toward a sun that isn't there.
 
 [OSARION]
 (Voice rasping, fading into a hiss of sand)
@@ -39,4 +39,4 @@ Is that why you're here, Nugget?"
 [NUGGET]
 (Freezing for a split second, then spinning around cheerfully)
 "I'm here for the entertainment! And right now, the show is moving to Floor 5!
-Grab the key! It’s getting stuffy in here!"
+Grab the key! It's getting stuffy in here!"

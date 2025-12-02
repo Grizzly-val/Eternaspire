@@ -1,6 +1,6 @@
-| Percival runs his thumb along the curved edge of the Scimitar. It’s light, balanced, and clearly designed for speed in a close-quarters fight. |
+| Percival runs his thumb along the curved edge of the Scimitar. It's light, balanced, and clearly designed for speed in a close-quarters fight. |
 
-[PERCIVAL] "A Scimitar. Military grade, judging by the insignia on the hilt. It’s fast. Faster than the Broad Sword. But it trades cleaving power for quick cuts."
+[PERCIVAL] "A Scimitar. Military grade, judging by the insignia on the hilt. It's fast. Faster than the Broad Sword. But it trades cleaving power for quick cuts."
 
 [NUGGET] "Welcome to the desert floor, Percival! Slow and steady gets you cooked in the sun out here. You need to move, strike, and dodge. That blade is for skirmishing. Hit and run. Don't be a target."
 

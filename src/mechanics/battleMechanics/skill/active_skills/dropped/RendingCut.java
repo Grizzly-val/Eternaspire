@@ -15,7 +15,7 @@ public class RendingCut extends ActiveSkill {
     @Override
     public void activate(Entity user, Entity opponent, Battle battle) {
         System.out.println("| " + user.getName() + " dove bladefirst to land a " + this.getName());
-        user.dmgAttack(opponent, (int)(user.getAtk() * 2.3));
+        user.dmgAttack(opponent, (int)(user.getAtk() * 1.69));
         if(user instanceof Challenger p && Math.random() < 0.45){
             p.addSkillPoint(3);
         } else{

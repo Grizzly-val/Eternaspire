@@ -1,4 +1,4 @@
-| Blade stands before the gate to the next floor. The metal isn't rusted or frozen—it's wrong.
+| Blade stands before the gate to the next floor. The metal isn't rusted or frozen-it's wrong.
 | Parts of the gate are pixelated. Others are missing entirely, replaced by floating wireframe meshes.
 | Blade holds up The Fractured Key. It vibrates violently, syncing with the instability of the door.
 
@@ -9,7 +9,7 @@ Not breaking... just... failing to exist."
 [NUGGET]
 "Reality is getting thin, Blade.
 The Tower is struggling to keep the simulation running this high up.
-Insert the key. But be careful—I don't think the laws of physics apply past this point."
+Insert the key. But be careful-I don't think the laws of physics apply past this point."
 
 | Blade inserts the glitching key. The world momentarily turns into wireframe and static before snapping back.
 | The gate dissolves into a shower of digital artifacts.
@@ -26,7 +26,7 @@ What is this place?"
 
 [NUGGET]
 "Floor 7: The Fragmented Threshold.
-It’s where the Tower keeps the things it broke but couldn't delete.
+It's where the Tower keeps the things it broke but couldn't delete.
 Corrupted data. Corrupted souls.
 And... her."
 

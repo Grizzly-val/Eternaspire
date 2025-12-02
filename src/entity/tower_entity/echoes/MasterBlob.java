@@ -6,8 +6,8 @@ import mechanics.battleMechanics.skill.passive_skills.LiquidBody;
 
 public class MasterBlob extends Echo {
 
-    private final static int BASE_HP = 170;
-    private final static int BASE_ATK = 35;
+    private final static int BASE_HP = 175;
+    private final static int BASE_ATK = 27;
 
     public MasterBlob(int lvl) {
         super(BASE_HP, 

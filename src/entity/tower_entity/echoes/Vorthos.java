@@ -8,7 +8,7 @@ import mechanics.battleMechanics.skill.passive_skills.TheCollection;
 public class Vorthos extends Echo {
 
     // Boss stats are significantly higher
-    private final static int BASE_HP = 50; 
+    private final static int BASE_HP = 57; 
     private final static int BASE_ATK = 4;
     
     public Vorthos(int lvl) {

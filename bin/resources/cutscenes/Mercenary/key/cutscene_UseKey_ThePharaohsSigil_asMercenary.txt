@@ -18,10 +18,10 @@ The light does not dissipate. Instead, it forms a perfect, seamless archway of p
 
 [BLADE] "It's open. But where does this lead? We're still inside the city."
 
-[NUGGET] "We’re inside the city, but we’re changing the elevation. Look ahead, Mercenary."
+[NUGGET] "We're inside the city, but we're changing the elevation. Look ahead, Mercenary."
 
 | Through the glowing archway, a spiraling ramp is visible, winding up into the roof of this massive chamber. The ramp is carved into the interior of a huge, impossibly large structure that must be the center of Neferis. |
 
 [BLADE] "A pyramid. In the center of the city. The Pyramid of Osarion."
 
-[NUGGET] "The Pyramid of Osarion. The tyrant's final, desperate resting place. This is where the real heat begins, Blade. Let’s see what a wish looks like when it’s gone horribly, monumentally wrong."
+[NUGGET] "The Pyramid of Osarion. The tyrant's final, desperate resting place. This is where the real heat begins, Blade. Let's see what a wish looks like when it's gone horribly, monumentally wrong."

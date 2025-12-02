@@ -1,4 +1,4 @@
-| Blade stands before a door that looks like a healing wound—fleshy, scabbed over, and pulsing.
+| Blade stands before a door that looks like a healing wound-fleshy, scabbed over, and pulsing.
 | He holds The Festering Key. It is covered in living rust that squirms against his gloves. It feels feverishly hot.
 
 [BLADE]
@@ -6,8 +6,8 @@
 The lock looks like a sore."
 
 [NUGGET]
-"That’s the entrance to The Festering Core.
-The corruption is thickest there. It’s where the Tower dumps the things it can't fix.
+"That's the entrance to The Festering Core.
+The corruption is thickest there. It's where the Tower dumps the things it can't fix.
 Insert the key. Try not to think about the squelching sound."
 
 | Blade grimaces and pushes the rusting key into the soft, yielding center of the door.
@@ -16,7 +16,7 @@ Insert the key. Try not to think about the squelching sound."
 
 [NUGGET]
 (Floating back, hesitant)
-"She’s in there.
+"She's in there.
 I can feel the sorrow leaking out. It tastes like ash."
 
 [BLADE]

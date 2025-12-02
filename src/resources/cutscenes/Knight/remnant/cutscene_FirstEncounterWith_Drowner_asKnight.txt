@@ -4,12 +4,12 @@
 [PERCIVAL]
 (Drawing his weapon and stepping back)
 "There's something under the floor.
-It’s tracking us."
+It's tracking us."
 
 [NUGGET]
 "Not under... inside.
-That’s a Drowner.
-They swim through the ice like it’s water.
+That's a Drowner.
+They swim through the ice like it's water.
 Don't look at their eyes, Percival. They want you to join them in the deep."
 
 | The ice beneath Percival erupts. A water-logged, rotting hand shoots up, grabbing for his ankle.

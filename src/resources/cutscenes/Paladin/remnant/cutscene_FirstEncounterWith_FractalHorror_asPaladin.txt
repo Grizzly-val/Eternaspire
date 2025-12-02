@@ -3,12 +3,12 @@
 
 [NUGGET]
 "Don't stare at it directly! That's a Fractal Horror.
-It’s infinite geometry compressed into a finite space. If you try to calculate its edges, your brain will melt out of your ears."
+It's infinite geometry compressed into a finite space. If you try to calculate its edges, your brain will melt out of your ears."
 
 [PERCIVAL]
 (Calmly readying his weapon, not even blinking)
 "Used to be, seeing math try to eat me would have been the weirdest part of my day.
-Now? It’s just another thing in the way."
+Now? It's just another thing in the way."
 
 [NUGGET]
 "You're getting blase about cosmic horrors, Percival. That's concerning."

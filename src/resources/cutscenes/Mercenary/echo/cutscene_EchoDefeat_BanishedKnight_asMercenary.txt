@@ -17,7 +17,7 @@ This... belongs to Nugget."
 | Blade looks around frantically, scanning the debris pile where Nugget was thrown.
 
 [BLADE]
-"Nugget! It’s clear!
+"Nugget! It's clear!
 Nugget?"
 
 | Silence. The debris is settled. There is no blue glow. No sarcastic remark.
@@ -30,12 +30,12 @@ Did the Knight...?"
 | He looks down at the feather in his hand. It pulses with a soft, rhythmic light, pulling gently toward the massive gate at the end of the platform. The gate to the Zenith.
 
 [BLADE]
-"It’s pulling me.
-This feather... it’s the key.
-She’s gone ahead. She has to be. Or she’s waiting at the top."
+"It's pulling me.
+This feather... it's the key.
+She's gone ahead. She has to be. Or she's waiting at the top."
 
 | Blade grips the feather tight. The doubt planted by the Knight's words gnaws at him, but he pushes it down.
 
 [BLADE]
-"I’m coming, Nugget.
+"I'm coming, Nugget.
 Floor 10. Let's finish this."

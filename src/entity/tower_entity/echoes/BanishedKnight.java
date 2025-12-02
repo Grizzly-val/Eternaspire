@@ -9,7 +9,7 @@ import mechanics.battleMechanics.skill.passive_skills.TemporalJitter;
 public class BanishedKnight extends Echo {
 
     private static final int BASE_HP = 56;
-    private static final int BASE_ATK = 20;
+    private static final int BASE_ATK = 13;
 
     public BanishedKnight(int lvl) {
 

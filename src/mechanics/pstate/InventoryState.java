@@ -97,7 +97,7 @@ public class InventoryState implements PlayerState{
                             System.out.println("|\t> " + aSkill.getDescription());
                         }    
                     }
-                    System.out.println("-------------------------------------------------------------------------");
+                    System.out.println();
                     System.out.println();
                     OptionSelect.waiter();
                     System.out.println();
@@ -112,7 +112,7 @@ public class InventoryState implements PlayerState{
                             System.out.println("|\t> " + pSkill.getDescription());
                         }
                     }
-                    System.out.println("-------------------------------------------------------------------------");
+                    System.out.println();
                     System.out.println();
                     OptionSelect.waiter();
                     System.out.println();
