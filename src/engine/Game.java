@@ -30,11 +30,11 @@ public class Game implements Serializable {
 
     private LocalDateTime creation;
     private String name;
-    private AccountManager manager;
+    private transient AccountManager manager;
     private Challenger player = null;
     private FloorData floorData = new FloorData();
     private int gameKey;
-    private Account account;
+    private transient Account account;
 
     public Game(String name, AccountManager manager, int gameKey, Account account) {
         this.creation = LocalDateTime.now();
@@ -49,6 +49,14 @@ public class Game implements Serializable {
     public Challenger getPlayer() { return player; }
     public FloorData getFloorData(){return floorData;}
 
+    public void setManager(AccountManager accManager){
+        this.manager = accManager;
+    }
+
+    public void setAccount(Account acc){
+        this.account = acc;
+    }
+    
     public void gameStart() {
         System.out.println();
         System.out.println();
@@ -179,12 +187,15 @@ public class Game implements Serializable {
                 return; // 'this.player' remains null, gameStart() proceeds to character creation
             }
 
+            // Copy only the serializable / safe fields from the saved object.
+            // DO NOT overwrite transient references (manager/account) — they should remain
+            // the same as the owning Account/AccountManager in memory.
             this.creation = loadedGame.getCreation();
             this.name = loadedGame.getName();
-            this.manager = loadedGame.manager;
             this.floorData = loadedGame.getFloorData();
+            // note: we DO NOT set this.manager = loadedGame.manager; // manager is transient
 
-
+            // set player and reattach transient references on player
             setPlayer(loadedGame.getPlayer()); 
 
             System.out.println("| Game loaded successfully");
@@ -193,6 +204,7 @@ public class Game implements Serializable {
             e.printStackTrace();
         }
     }
+
 
     public void gameOver(GameResult result){
         switch(result){

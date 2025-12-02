@@ -14,11 +14,12 @@ public class Account implements Serializable{
 
     private String username;
     private String password;
-    private AccountManager manager;
+    private transient AccountManager manager;
     
     private int wins = 0;
     private int losses = 0;
     private int totalGames = 0;
+
 
     private HashMap<Integer, Game> accountGames = new HashMap<>();
     private int gameCountChoice = 1;
@@ -36,6 +37,11 @@ public class Account implements Serializable{
     public String getUsername(){return username;}
     public String getPassword(){return password;}
     public HashMap<Integer, Game> getAccountGames(){return accountGames;}
+
+    public void setManager(AccountManager accManager){
+        this.manager = accManager;
+    }
+
 
 
     private void showGames(){
@@ -104,38 +110,47 @@ public class Account implements Serializable{
                     System.out.println("----------------------------------");
                     manager.saveAccounts();
                     break;
-                case 'd':
-                    if(accountGames.isEmpty()){
-                        System.out.println("| No game found! Nothing to delete 👻");
-                        break;
-                    }
+                    case 'd':
+                        if(accountGames.isEmpty()){
+                            System.out.println("| No game found! Nothing to delete 👻");
+                            break;
+                        }
 
-                    showGames();
-                    System.out.println("-------------------------------------");
-                    int toDelete = OptionSelect.intInput(-1);
-                    System.out.println("----------------------------------");
-
-                    if(toDelete == -1){
-                        System.out.println("| Cancelling game deletion...");
+                        showGames();
+                        System.out.println("-------------------------------------");
+                        int toDelete = OptionSelect.intInput(-1);
                         System.out.println("----------------------------------");
-                        break;
-                    }
 
-                    if(accountGames.get(toDelete) == null){
-                        System.out.println("| Game not found!");
+                        if(toDelete == -1){
+                            System.out.println("| Cancelling game deletion...");
+                            System.out.println("----------------------------------");
+                            break;
+                        }
+
+                        Game gameToDelete = accountGames.get(toDelete);
+                        if(gameToDelete == null){
+                            System.out.println("| Game not found!");
+                            System.out.println("----------------------------------");
+                            break;
+                        }
+
+                        String deletedName = gameToDelete.getName();
+
+                        // Delete the on-disk save and remove from accountGames once.
+                        gameToDelete.deleteData(); // this removes the game entry from accountGames
+
+                        System.out.println("| Game \"" + deletedName + "\" Deleted 🗑️");
+                        OptionSelect.waiter();
+
+                        if(totalGames - 1 >= 0){
+                            totalGames -= 1;
+                        }
                         System.out.println("----------------------------------");
+
+                        // save accounts after changes
+                        manager.saveAccounts();
                         break;
-                    }
-                    accountGames.get(toDelete).deleteData();
-                    System.out.println("| Game \"" + accountGames.get(toDelete).getName() + "\" Deleted 🗑️");
-                    OptionSelect.waiter();
-                    if(totalGames - 1 >= 0){
-                        totalGames -= 1;
-                    }
-                    System.out.println("----------------------------------");
-                    accountGames.get(toDelete).deleteData();
-                    manager.saveAccounts();
-                    break;
+
                 case 'l':
 
                     if(accountGames.isEmpty()){

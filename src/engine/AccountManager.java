@@ -45,34 +45,49 @@ public class AccountManager implements Serializable{
     public HashMap<String, Account> getSavedAccounts(){return savedAccounts;}
 
 
-    @SuppressWarnings("unchecked")
-    public HashMap<String, Account> loadAccounts() {
-        File saveFile = new File("accounts.dat");
-        if (!saveFile.exists()) {
-            TextTyper.typeText("| No save file found. Starting fresh!", 30, true);
-            return new HashMap<>(); // Start with an empty map
-        }
-        
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(saveFile))) {
-            
-            // This line reads the entire HashMap object from the file
-            Object loadedObject = ois.readObject(); 
-            
-            // Safety check and cast
-            if (loadedObject instanceof HashMap) {
-                TextTyper.typeText("| Accounts successfully loaded!", 30, true);
-                return (HashMap<String, Account>) loadedObject; 
+@SuppressWarnings("unchecked")
+public HashMap<String, Account> loadAccounts() {
+    File saveFile = new File("accounts.dat");
+    if (!saveFile.exists()) {
+        TextTyper.typeText("| No save file found. Starting fresh!", 30, true);
+        return new HashMap<>(); // Start with an empty map
+    }
+
+    try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(saveFile))) {
+
+        Object loadedObject = ois.readObject();
+
+        if (loadedObject instanceof HashMap) {
+            TextTyper.typeText("| Accounts successfully loaded!", 30, true);
+            HashMap<String, Account> loaded = (HashMap<String, Account>) loadedObject;
+
+            // Reattach manager reference to each Account and reattach Games to their Account + manager
+            for (Account acc : loaded.values()) {
+                acc.setManager(this);
+
+                // reattach each Game's manager and account
+                for (Game g : acc.getAccountGames().values()) {
+                    // make sure game object is not null
+                    if (g != null) {
+                        g.setManager(this);
+                        g.setAccount(acc);
+                    }
+                }
             }
-            
-        } catch (Exception e) {
-            System.err.println();
-            TextTyper.typeText("! ! Error loading accounts: " + e.getMessage() + " ! !", 30, true);
-            System.out.println();
-            // If anything goes wrong, we fall back to a fresh start
+
+            return loaded;
         }
-        
-        return new HashMap<>();
-    }    
+
+    } catch (Exception e) {
+        System.err.println();
+        TextTyper.typeText("! ! Error loading accounts: " + e.getMessage() + " ! !", 30, true);
+        System.out.println();
+        // fall back to empty
+    }
+
+    return new HashMap<>();
+}
+  
 
  /* 
     public Challenger loadSavedPlayer(String playerFileName) {
